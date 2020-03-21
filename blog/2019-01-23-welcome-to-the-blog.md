@@ -5,6 +5,9 @@ description: >-
   using python package Mido to send midi information to Ableton Live - an
   introduction
 date: 2020-01-24T06:37:03.014Z
+description: 'using python package Mido to send midi information to Ableton Live - an introduction'
+published: true
+
 tags:
   - python
   - music
