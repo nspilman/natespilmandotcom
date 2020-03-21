@@ -1,7 +1,7 @@
 <template>
   <div id="app">
     <div id = "header">
-      <g-link to= "/">
+      <g-link v-if="path !='/'" to= "/">
           <span class="home-link"> NATESPILMAN.COM </span>
       </g-link>
       </div>
@@ -20,6 +20,16 @@ query {
   }
 }
 </static-query>
+
+<script>
+export default {
+  data(){
+    return {
+      path: window.location.pathname,
+    }
+  }
+}
+</script>
 
 <style>
 @import "../assets/css/bootstrap.min.css";
