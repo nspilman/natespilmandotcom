@@ -12,8 +12,6 @@ tags:
   - mido
 published: true
 ---
-
-
 *instructions originally sourced from [this fine reddit post](https://www.reddit.com/r/ableton/comments/5tuihk/any_good_resources_on_python_to_ableton/)*
 
 ### Getting Started
@@ -44,7 +42,12 @@ The first thing we must do is create our midi port.
 1. On Mac OS, navigate to `Midi Audio Setup`. 
 2. double click on IAC Driver
 3. On the window that pops up, click "ports". 
-4. There will probably already be a port named "Bus 1". Create a new port, or rename the current one. 
+4. There will probably already be a port named "Bus 1". Create a new port, or rename the current one. I named mine "pioneer."
 
    ![IAC Driver ports](/uploads/1pythonmidi_iacdriverports.png "IAC Driver ports")
 
+
+
+- - -
+
+### Point your midi player to your new port
