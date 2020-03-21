@@ -44,13 +44,15 @@ The first thing we must do is create our midi port.
 3. On the window that pops up, click "ports". 
 4. There will probably already be a port named "Bus 1". Create a new port, or rename the current one. I named mine "pioneer."
 
-   ![IAC Driver ports](/uploads/1pythonmidi_iacdriverports.png "IAC Driver ports")
+![IAC Driver ports](/uploads/1pythonmidi_iacdriverports.png "IAC Driver ports")
 
 - - -
 
 ### Point your midi player to your new port
 
 This next step is different based on which midi player you use. The following screenshot is from Ableton Live 10 Intro.    
+
+
 
 ![Ableton - point your midi track at your IAC driver port](/uploads/1pythonmidi_abletonmidiport.png "Ableton - point your midi track at your IAC driver port")
 
