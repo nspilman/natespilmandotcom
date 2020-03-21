@@ -23,7 +23,7 @@ Then, install `mido` via `pip install mido`. Full `mido` documentation [here](ht
 
 - - -
 
-### All Design
+### Design
 
 The final workflow will be as follows - 
 
