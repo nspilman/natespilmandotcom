@@ -4,6 +4,7 @@ title: Generating a midi music stream with Python
 date: 2020-01-24T06:37:03.014Z
 description: 'using python package Mido to send midi information to Ableton Live - an introduction'
 # image: /img/img_1631.jpg
+published: true
 tags:
   - python
   - music

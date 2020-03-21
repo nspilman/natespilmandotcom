@@ -22,7 +22,7 @@
 
 <page-query>
 query Posts {
-  posts: allPost {
+  posts: allPost(filter: { published: { eq: true }}) {
     edges {
       node {
         id
@@ -31,6 +31,7 @@ query Posts {
         description
         path
         excerpt
+        published
     }
   }
   }

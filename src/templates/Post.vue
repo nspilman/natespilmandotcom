@@ -78,6 +78,7 @@ export default {
 }
 
 #post-body{
+    text-align: left;
     display:flex;
     flex-direction: column;
 }
@@ -88,5 +89,13 @@ img{
 
 .post{
     padding:2em;
+}
+
+ul {
+    list-style-position: inside;
+}
+
+ul p {
+  display:inline;
 }
 </style>
