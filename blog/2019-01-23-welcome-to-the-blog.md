@@ -1,9 +1,7 @@
 ---
 templateKey: blog-post
 title: Generating a midi music stream with Python
-description: >-
-  using python package Mido to send midi information to midi player - an
-  introduction
+description: using python package Mido to send midi information to midi player - an introduction
 date: 2020-01-24T06:37:03.014Z
 tags:
   - python
