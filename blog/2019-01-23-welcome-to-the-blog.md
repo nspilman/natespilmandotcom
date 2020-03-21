@@ -46,8 +46,59 @@ The first thing we must do is create our midi port.
 
    ![IAC Driver ports](/uploads/1pythonmidi_iacdriverports.png "IAC Driver ports")
 
+- - -
+
+### Point your midi player to your new port
+
+This next step is different based on which midi player you use. The following screenshot is from Ableton Live 10 Intro.    
+
+![Ableton - point your midi track at your IAC driver port](/uploads/1pythonmidi_abletonmidiport.png "Ableton - point your midi track at your IAC driver port")
+
 
 
 - - -
 
-### Point your midi player to your new port
+### Write your python code
+
+Below is some sample code that will play send your midi player a middle C, which is represented with the integer 60. Musical notes are represented with the values 1 through 127. When you run the following code, it will play once. 
+
+```python
+import mido
+
+middleC = 60
+msg = mido.Message('note_on', note=middleC, velocity=64)
+outport = mido.open_output('IAC Driver pioneer')
+outport.send(msg)
+```
+
+<iframe width="80%" height="`00" src="https://clyp.it/wpdhjpc4/widget" frameborder="0"></iframe>
+
+To demonstrate what I mean, I modified the above code to play continuously, pausing for .5 seconds every after every play. 
+
+```
+import mido
+from time import sleep
+
+middleC = 60
+while True:
+    msg = mido.Message('note_on', note=middleC, velocity=64)
+    outport = mido.open_output('IAC Driver pioneer')
+    outport.send(msg)
+    sleep(.5)
+```
+
+
+
+![midi note looping](/uploads/1pythonmidi_repeatingnote.gif "midi note looping")
+
+
+
+- - -
+
+### In conclusion
+
+You can now send midi messages to your midi player from Python as it if were a midi controller! 
+
+We'll build cooler stuff with this in blogposts to come. 
+
+See you next time!
