@@ -6,6 +6,7 @@ tags:
   - singlewordtag
   - a multi-word tag
   - test
+published: true
 ---
 # Markdown: Syntax
 
