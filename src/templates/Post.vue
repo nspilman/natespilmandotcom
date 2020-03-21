@@ -83,8 +83,9 @@ export default {
     flex-direction: column;
 }
 img{
-    width:100%;
-    height:auto;
+    max-width:100%;
+    max-height:50vw;
+    text-align: center;
 }
 
 .post{
