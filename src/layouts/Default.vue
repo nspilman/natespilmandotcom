@@ -25,7 +25,7 @@ query {
 export default {
   data(){
     return {
-      path: window.location.pathname,
+      path: process.isClient ? window.location.pathname : "/",
     }
   }
 }
