@@ -29,5 +29,11 @@ module.exports = {
         publicPath: `/admin`
       }
     },
+    {
+      use: '@gridsome/plugin-google-analytics',
+      options: {
+        id: process.env.GOOGLE_ANALYTICS_KEY
+      }
+    }
   ]
 }
