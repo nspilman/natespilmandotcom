@@ -61,7 +61,10 @@ post:post(path:$path)
 export default {
   metaInfo() {
     return {
-      title: this.$page.title
+      title: this.$page.post.title,
+      meta: [
+        { name: "description", content: this.$page.post.description }
+     ]
     };
   },
   methods:{
