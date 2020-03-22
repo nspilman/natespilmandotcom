@@ -1,6 +1,6 @@
 <template>
   <Layout>
-    <article id="home" class="panel special">
+    <article id="blog" class="panel special">
       <div class="image">
         <img :src="mainImage" alt data-position="center center" id="main-image" />
       </div>
@@ -51,7 +51,6 @@ export default {
   },
   computed:{
     posts(){
-      console.log(this.$page.posts.edges)
       return this.$page.posts.edges
     }
   }
@@ -64,11 +63,19 @@ img {
   background-color: white;
 }
 
+@media only screen and (max-width: 600px) {
+.image{
+max-height: unset;
+}  
+}
+
+
 .home-links a {
   margin-right: 1rem;
 }
 
 .content {
   justify-content: flex-start;
+  display:block;
 }
 </style>

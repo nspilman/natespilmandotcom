@@ -82,9 +82,9 @@ export default {
     display:flex;
     flex-direction: column;
 }
-img{
+#post-body > p > img{
     max-width:100%;
-    max-height:50vw;
+    max-height:50vh;
     text-align: center;
 }
 
