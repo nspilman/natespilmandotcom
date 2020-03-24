@@ -1,11 +1,11 @@
 <template>
     <Layout>
          <section id="all-tags">
-             <h1>All Tags </h1>
+             <h1> All Tags </h1>
         <ul>
             <li v-for="tag in tagsByCount" :key="tag.id">
               <g-link :to="`tags/${tag.title}`"> {{tag.count}} - {{tag.title}} </g-link>
-                </li>
+            </li>
 
             </ul>
     </section>
