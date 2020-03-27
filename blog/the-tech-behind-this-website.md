@@ -6,7 +6,12 @@ tags:
   - tech
   - javascript
   - meta
-published: false
+  - Netlify
+  - Gridsome
+  - Netlifycms
+  - Namecheap
+  - Vue.js
+published: true
 ---
 ## Front End - Frameworks and styles - 
 ### Gridsome - Static site generation
@@ -37,11 +42,27 @@ Their backgrounds are free, as long as you mention them on the site you on which
 
 ## Hosting and Deployment -
 ### Github
+[https://www.github.com/](https://www.github.com/)
 
-* Netlify
-* Namecheap
+Github is the world most popular place to store and collaborate on code. I won't go too deep into Github, but it allows me to save my code remotely, as well as provide other applications access to it. 
+
+
+### Netlify
+[https://www.netlify.com/](https://www.netlify.com/)
+
+Netlify is a wonderful magical service that builds and deploys code for you, for free. You give it permissions to your Github account and a branch of a specific repo , and it rebuilds your website every time your that branch has new code. By default it deploys to a unique_nonsense_string.netlify.com, but you can update the unique_nonsense_string to something more suitable. For example, this site is hosted at 
+natespilmandotcom.netlify.com, with the DNS settings set to natespilman.com. 
+
+### Namecheap
+[https://www.namecheap.com/](https://www.namecheap.com/)
+Namecheap is the domain provider through which I manage and purchase my domains. 
 
 ## Content Management
-* Netlify CMS
+### Netlify CMS
+[https://gridsome.org/docs/guide-netlify-cms/](https://gridsome.org/docs/guide-netlify-cms/)
+
+Netlify CMS is a user friendly admin UI for creating new posts! I'm using it right now to write this. It's an open source gridsome plugin that you grant access to your github repo, and it commits new markdown files to your github repo on publish. 
+
+
 
 
