@@ -20,6 +20,9 @@
               <li>
                 <g-link class="button" to="/blog">Blog</g-link>
               </li>
+              <li>
+                <g-link class="button" to="https://www.instagram.com/natespilman/">Instagram</g-link>
+              </li>
               <!-- <li> -->
               <!-- <router-link class="button" to="/work">Photography</router-link> -->
               <!-- </li> -->
