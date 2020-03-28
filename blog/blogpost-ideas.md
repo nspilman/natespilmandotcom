@@ -8,6 +8,5 @@ published: false
 ---
 \- Image light processing 
 
-\- The stack of the website 
-
 \- Educational recommendations
+- Beers I like
