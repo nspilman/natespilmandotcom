@@ -15,31 +15,23 @@
         <div id="post-body" v-html="$page.post.content" />
       </article>
       <!-- <BlogCommmentWrapper postId = {post.id} draft = {post.frontmatter.draft}/> -->
-    </div>
-    <ul
+      <ul
       :style="{
             display: `flex`,
             flexWrap: `wrap`,
             justifyContent: `space-between`,
             listStyle: `none`,
-            padding: 0,
+            padding: '2em',
           }"
     >
-      <li>
-        <!-- {previous && (
-              <Link to={previous.fields.slug} rel="prev">
-                ← {previous.frontmatter.title}
-              </Link>
-        )}-->
+      <li v-if="previousPost">
+        <g-link :to="previousPost.path"> {{previousPost.title}} </g-link>
       </li>
-      <li>
-        <!-- {next && (
-              <Link to={next.fields.slug} rel="next">
-                {next.frontmatter.title} →
-        </Link>-->
-        <!-- )} -->
+      <li v-if="nextPost">
+        <g-link :to="nextPost.path"> {{nextPost.title}} </g-link>
       </li>
     </ul>
+    </div>
     </article>
   </Layout>
 </template>
@@ -56,6 +48,20 @@ post:post(path:$path)
       }
   }
 </page-query>
+<static-query>
+query {
+  posts: allPost(filter: { published: { eq: true }}, sortBy: "date", order: ASC) {
+    edges {
+      node {
+        id
+        title
+        path
+    }
+  }
+  }
+  }
+</static-query>
+
   <script>
   import formatDate from "../utils/formattedDateString"
 export default {
@@ -70,6 +76,29 @@ export default {
   methods:{
     formattedDateString(string){
       return formatDate(string)
+    }
+  },
+  computed:{
+    currentIndex(){
+      return this.$static.posts.edges.map(edge => edge.node.path).indexOf(this.$page.post.path)
+    },
+    nextPost(){
+      if(this.currentIndex < this.$static.posts.edges.length -1){
+        const nextIndex = this.currentIndex + 1;
+        return this.$static.posts.edges[nextIndex].node
+      }
+      else{
+        return -1
+      }
+    },
+      previousPost(){
+      if(this.currentIndex > 0){
+        const previousPost = this.currentIndex - 1;
+        return this.$static.posts.edges[previousPost].node
+      }
+      else{
+        return -1
+      }
     }
   }
 };
