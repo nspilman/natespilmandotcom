@@ -8,5 +8,4 @@ published: false
 ---
 \- Image light processing 
 
-\- Educational recommendations
 - Beers I like
