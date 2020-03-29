@@ -1,6 +1,6 @@
 ---
 title: My best-of beginner software development educational resources list
-description: The resources that first got me going
+description: The educational resources that got me going
 date: 2020-03-29T05:27:57.827Z
 tags:
   - software
