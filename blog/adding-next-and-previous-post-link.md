@@ -1,5 +1,5 @@
 ---
-title: Adding Next and Previous post link
+title: Adding Next and Previous post link to the blog
 description: A seemingly hacky way to handle pagination
 date: 2020-03-28T17:13:36.586Z
 tags:
