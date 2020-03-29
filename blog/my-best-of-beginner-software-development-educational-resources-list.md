@@ -5,7 +5,7 @@ date: 2020-03-28T05:27:57.827Z
 tags:
   - software
   - education
-published: false
+published: true
 ---
 Over the course of the last few years, I transitioned career roles from an IT implementation project manager to software developer. I wanted to share some of the free and inexpensive resources that helped me get started in my education. 
 
