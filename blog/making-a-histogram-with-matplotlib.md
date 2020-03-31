@@ -17,40 +17,38 @@ We'll be making a histogram using `matplotlib` to display light distribution of 
 For example -  The light distribution of the this image ...![alt text](https://images.unsplash.com/photo-1583364481915-dacea3e06d18?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=600&q=80 "Example Image for Light Distribution")
 
 <br>
-*image from [unsplash.com](unsplash.com)*
-[](unsplash.com)... is this - 
-
+\*image from \[unsplash.com](unsplash.com)\*
+\[](unsplash.com)... is this - 
 
 ![](/uploads/3lightdistroimages_introexample.png)
 
 We can see a large distribution of dark pixels than light ones. 
 
-
-
 Why are we doing this? Because we can! While I don't have a ton of specific use cases for this, being able to use data to answer questions is important. Our initial question is "What is the light distribution of this image?" 
 
-
-
-## What we'll be doing? 
+## What we'll be doing?
 
 All of the following steps are in Python.  
 
-1.  Use `PIL` to load an image into memory. 
-
+1. Use `PIL` to load an image into memory. 
 2. Shrink the image down to a pixel size we can more easily view. 
-
 3. Use `numpy` to convert our image into an array. Flatten the 3d array into a 2d array of the RGB values. 
-
 4. Convert the pixel array into an array of the pixel light values - the sun of the rgb values.  
-
 5. Use `matplotlib` to generate the histogram. 
 
 Let's get started! 
 
----
+- - -
+
 ## Use PIL to load an image into memory.
-```python 
+
+PIL is an absolutely magical package for image processing.  I created the `getImageFromUrl(url)` method that takes in a url, uses python's `requests` package to make the https request, and then load the image. We need to pass the response content into BytesIO to read the requests content into a format that PIL can consume and convert into an Image object. 
+
+By the end of this code, we have an image from the internet in memory as a PIL.Image object. 
+
+```python
 from PIL import Image
+import requests
 
 def getImageFromUrl(url):
     response = requests.get(url)
@@ -61,10 +59,13 @@ imageUrl = "https://images.unsplash.com/photo-1583364481915-dacea3e06d18?ixlib=r
 image = getImageFromUrl(imageUrl)
 ```
 
----
-## Shrink the image down to a pixel size we can more easily view. 
-``` python
+- - -
 
+## Shrink the image down to a pixel size we can more easily view.
+
+I created a helper method to resize the image file so that it's largest side is a pixel count we pass in. This is to keep pixel count low enough to analyze quickly and in a controlled way. By the end of this block, we have a resized image with 150 pixels as the largest side, and the aspect ratio remaining the same. 
+
+```python
 def resize_setLargestSide(image,maxSide):
     width,height = image.size
     widthRatio = width / (width + height)
@@ -81,24 +82,37 @@ def resize_setLargestSide(image,maxSide):
 
 newImage = resize_setLargestSide(image,150)
 ```
----
-## Use `numpy` to convert our image into an array. Flatten the 3d array into a 2d array of the RGB values. 
+
+- - -
+
+## Use `numpy` to convert our image into an array. Flatten the 3d array into a 2d array of the RGB values.
+
+the `np.array` method converts a PIL.Image object to a 3d np array - height by width by pixels (r,g,b). numpy arrays have the property `shape`, which in the case below returns the width, height, and 3, which is the length of the pixel. I create `flattenedShape` which will be used to convert the 3d array into a 2d array by multiplying the length by width, which is then passed into `reshape()`, a method that lives on the np array.
+
+`reshape()` only works if the number of values remains the same, so had  I not multiplied width by height, `reshape()` would have failed. 
 
 ```python
+import numpy as np
+
 imageArray = np.array(newImage)
 shape = imageArray.shape
-reshapedImage = imageArray.reshape(shape[0] * shape[1],shape[2])
+flattenedShape = (shape[0] * shape[1],shape[2])
+reshapedImage = imageArray.reshape(flattenedShape)
 ```
 
----
-## Convert the pixel array into an array of the pixel light values - the sun of the rgb values.  
+- - -
+
+## Convert the pixel array into an array of the pixel light values - the sun of the rgb values.
+
+Boy do I love [list comprehensions.](https://www.pythonforbeginners.com/basics/list-comprehensions-in-python) Below takes the 2d array and converts it to a 1 dimensional array of pixel light values, by summing the 3 values of the pixel. 
 
 ```python
 colorValues = [sum(pixel) for pixel in reshapedImage]
 ```
 
----
-5. Use `matplotlib` to generate the histogram. 
+- - -
+
+## Use `matplotlib` to generate the histogram.
 
 ```python
 import matplotlib.pyplot as plt
@@ -113,5 +127,4 @@ def generateHistogram(x,bins,labels,axis,facecolor = 'blue'):
 
 histogram = generateHistogram(colorValues,20,{"title":'Light Values',"xlabel":"Pixel Concentration","ylabel":"Amount of Light"},[0,775,0,4000])
 histogram.show()
-
 ```
