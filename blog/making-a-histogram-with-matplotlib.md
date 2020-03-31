@@ -56,7 +56,9 @@ def getImageFromUrl(url):
     response = requests.get(url)
     return Image.open(BytesIO(response.content))
 
-image = getImageFromUrl("https://images.unsplash.com/photo-1583364481915-dacea3e06d18?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=600&q=80")
+imageUrl = "https://images.unsplash.com/photo-1583364481915-dacea3e06d18?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=600&q=80"
+
+image = getImageFromUrl(imageUrl)
 ```
 
 ---
