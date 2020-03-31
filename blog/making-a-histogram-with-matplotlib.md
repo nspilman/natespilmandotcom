@@ -8,8 +8,10 @@ tags:
   - histogram
   - data science
   - pillow
-published: false
+published: true
 ---
+*All images used in this post are from the amazing [Unsplash.com](Unsplash.com)*
+
 ## Introduction
 
 We'll be making a histogram using `matplotlib` to display light distribution of pixel count in JPG images. Each pixel has an RGB value(red, green, blue) ranging 0 to 255, with the light value representing the sum of those values. `(0,0,0)` is black - zero light, and `(255,255,255)` is white - full light. Our `x` axis range will be 0 to 765. 
@@ -17,8 +19,8 @@ We'll be making a histogram using `matplotlib` to display light distribution of 
 For example -  The light distribution of the this image ...![alt text](https://images.unsplash.com/photo-1583364481915-dacea3e06d18?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=600&q=80 "Example Image for Light Distribution")
 
 <br>
-\*image from \[unsplash.com](unsplash.com)\*
-\[](unsplash.com)... is this - 
+
+is this - 
 
 ![](/uploads/3lightdistroimages_introexample.png)
 
@@ -107,7 +109,7 @@ reshapedImage = imageArray.reshape(flattenedShape)
 Boy do I love [list comprehensions.](https://www.pythonforbeginners.com/basics/list-comprehensions-in-python) Below takes the 2d array and converts it to a 1 dimensional array of pixel light values, by summing the 3 values of the pixel.  At this point, we have our data ready to graph!
 
 ```python
-colorValues = [sum(pixel) for pixel in reshapedImage]
+lightValues = [sum(pixel) for pixel in reshapedImage]
 ```
 
 - - -
@@ -126,3 +128,75 @@ plt.title('Light Values')
 plt.axis([0,775,0,4000])
 plt.show()
 ```
+
+## Full Code
+
+```python
+from PIL import Image
+from io import BytesIO
+import requests
+
+def getImageFromUrl(url):
+    response = requests.get(url)
+    return Image.open(BytesIO(response.content))
+
+imageUrl = "https://images.unsplash.com/photo-1583364481915-dacea3e06d18?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=600&q=80"
+
+image = getImageFromUrl(imageUrl)
+
+def resize_setLargestSide(image,maxSide):
+    width,height = image.size
+    widthRatio = width / (width + height)
+    heightRatio = height / (width + height)
+    if width > height:
+        newWidth = maxSide
+        widthPlusHeight = newWidth / widthRatio
+        newHeight = widthPlusHeight - newWidth
+    else:
+        newHeight = maxSide
+        widthPlusHeight = newHeight / heightRatio
+        newWidth = widthPlusHeight - newHeight
+    return image.resize((int(newWidth),int(newHeight)))
+
+newImage = resize_setLargestSide(image,150)
+
+import numpy as np
+
+imageArray = np.array(newImage)
+shape = imageArray.shape
+flattenedShape = (shape[0] * shape[1],shape[2])
+reshapedImage = imageArray.reshape(flattenedShape)
+
+lightValues = [sum(pixel) for pixel in reshapedImage]
+
+import matplotlib.pyplot as plt
+
+plt.hist(lightValues, bins=20, facecolor = 'blue')
+plt.ylabel("Amount of Light")
+plt.xlabel("Pixel Concentration")
+plt.title('Light Values')
+plt.axis([0,775,0,4000])
+plt.show()
+```
+
+## Example Outputs
+
+input image -  ![High Contrast - Dark and Light](https://images.unsplash.com/photo-1514729077270-37608dea7d7d?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=600&q=80 "High Contrast - Dark and Light")
+
+![Dark Image light distribution](/uploads/3lightdistroimages_darkimage.png "Dark Image light distribution")
+
+
+
+- - -
+
+![More Neutral Image](https://images.unsplash.com/photo-1516649195228-a023c093df99?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=600&q=80 "More Neutral Image")
+
+
+
+![Dark Image neutral distribution](/uploads/3lightdistroimages_neutralimage.png "Dark Image neutral distribution")
+
+- - -
+
+![Bright Image](https://images.unsplash.com/photo-1538935516496-9972a989f715?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=600&q=80 "Bright Image")
+
+![Dark Image light distribution](/uploads/3lightdistroimages_lightimage.png "Dark Image light distribution")
