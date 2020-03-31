@@ -41,13 +41,3 @@ All of the following steps are in Python.
 3. Use `numpy` to convert our image into an array. Flatten the 3d array into a 2d array of the RGB values. 
 
 4. Convert the pixel array into an array of the pixel light values - the sun of the rgb values.  
-
-
-
-We're going to use the official documents are try our best.  https://matplotlib.org/api/_as_gen/matplotlib.pyplot.hist.html
-
-The api spec is ridiculously overwhelming, but we'll figure this one our. 
-
-```python
-matplotlib.pyplot.hist(x, bins=None, range=None, density=False, weights=None, cumulative=False, bottom=None, histtype='bar', align='mid', orientation='vertical', rwidth=None, log=False, color=None, label=None, stacked=False, *, data=None, **kwargs)[source]
-```
