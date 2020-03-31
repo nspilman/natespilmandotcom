@@ -16,9 +16,9 @@ published: true
 
 We'll be making a histogram using `matplotlib` to display light distribution of pixel count in JPG images. Each pixel has an RGB value(red, green, blue) ranging 0 to 255, with the light value representing the sum of those values. `(0,0,0)` is black - zero light, and `(255,255,255)` is white - full light. Our `x` axis range will be 0 to 765. 
 
-For example -  The light distribution of the this image ...![alt text](https://images.unsplash.com/photo-1583364481915-dacea3e06d18?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=600&q=80 "Example Image for Light Distribution")
+For example -  The light distribution of the this image ...
 
-<br>
+<br>![alt text](https://images.unsplash.com/photo-1583364481915-dacea3e06d18?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=600&q=80 "Example Image for Light Distribution")
 
 is this - 
 
@@ -181,22 +181,32 @@ plt.show()
 
 ## Example Outputs
 
-input image -  ![High Contrast - Dark and Light](https://images.unsplash.com/photo-1514729077270-37608dea7d7d?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=600&q=80 "High Contrast - Dark and Light")
+#### input
+![High Contrast - Dark and Light](https://images.unsplash.com/photo-1514729077270-37608dea7d7d?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=600&q=80 "High Contrast - Dark and Light")
+
+#### output
 
 ![Dark Image light distribution](/uploads/3lightdistroimages_darkimage.png "Dark Image light distribution")
 
 
 
+
+
 - - -
+
+#### input
 
 ![More Neutral Image](https://images.unsplash.com/photo-1516649195228-a023c093df99?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=600&q=80 "More Neutral Image")
 
 
-
+#### output
 ![Dark Image neutral distribution](/uploads/3lightdistroimages_neutralimage.png "Dark Image neutral distribution")
 
 - - -
 
+#### input
+
 ![Bright Image](https://images.unsplash.com/photo-1538935516496-9972a989f715?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=600&q=80 "Bright Image")
 
+#### output
 ![Dark Image light distribution](/uploads/3lightdistroimages_lightimage.png "Dark Image light distribution")
