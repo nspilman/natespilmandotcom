@@ -104,7 +104,7 @@ reshapedImage = imageArray.reshape(flattenedShape)
 
 ## Convert the pixel array into an array of the pixel light values - the sun of the rgb values.
 
-Boy do I love [list comprehensions.](https://www.pythonforbeginners.com/basics/list-comprehensions-in-python) Below takes the 2d array and converts it to a 1 dimensional array of pixel light values, by summing the 3 values of the pixel. 
+Boy do I love [list comprehensions.](https://www.pythonforbeginners.com/basics/list-comprehensions-in-python) Below takes the 2d array and converts it to a 1 dimensional array of pixel light values, by summing the 3 values of the pixel.  At this point, we have our data ready to graph!
 
 ```python
 colorValues = [sum(pixel) for pixel in reshapedImage]
@@ -114,17 +114,15 @@ colorValues = [sum(pixel) for pixel in reshapedImage]
 
 ## Use `matplotlib` to generate the histogram.
 
+And now, we graph! 
+
 ```python
 import matplotlib.pyplot as plt
 
-def generateHistogram(x,bins,labels,axis,facecolor = 'blue'):
-    plt.hist(x, bins=bins, facecolor = 'blue')
-    plt.ylabel(labels.get('ylabel'))
-    plt.xlabel(labels['xlabel'])
-    plt.title(labels['title'])
-    plt.axis(axis)
-    return plt
-
-histogram = generateHistogram(colorValues,20,{"title":'Light Values',"xlabel":"Pixel Concentration","ylabel":"Amount of Light"},[0,775,0,4000])
-histogram.show()
+plt.hist(lightValues, bins=20, facecolor = 'blue')
+plt.ylabel("Amount of Light")
+plt.xlabel("Pixel Concentration")
+plt.title('Light Values')
+plt.axis([0,775,0,4000])
+plt.show()
 ```
