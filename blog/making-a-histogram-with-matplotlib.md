@@ -1,18 +1,53 @@
 ---
-title: Making a histogram with Matplotlib
-description: Because I haven't yet been able to make a good one
-date: 2020-03-25T04:37:20.180Z
+title: 'JPG Light Value Analysis with Python, PIL and MatPlotLib'
+description: Building a Histogram to analyze the light values of an image
+date: 2020-04-01T04:37:20.180Z
 tags:
   - python
   - matplotlib
   - histogram
   - data science
+  - pillow
 published: false
 ---
-We're going to use the official documents are try our best. 
-https://matplotlib.org/api/_as_gen/matplotlib.pyplot.hist.html
+## Introduction
+
+We'll be making a histogram using `matplotlib` to display light distribution of pixel count in JPG images. Each pixel has an RGB value(red, green, blue) ranging 0 to 255, with the light value representing the sum of those values. `(0,0,0)` is black - zero light, and `(255,255,255)` is white - full light. Our `x` axis range will be 0 to 765. 
+
+For example -  The light distribution of the this image ...![alt text](https://images.unsplash.com/photo-1583364481915-dacea3e06d18?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=600&q=80 "Example Image for Light Distribution")
+
+*image from [unsplash.com](unsplash.com)*
+
+[](unsplash.com)... is this - 
+
+![](/uploads/3lightdistroimages_introexample.png)
+
+We can see a large distribution of dark pixels than light ones. 
+
+
+
+Why are we doing this? Because we can! While I don't have a ton of specific use cases for this, being able to use data to answer questions is important. Our initial question is "What is the light distribution of this image?" 
+
+
+
+## What we'll be doing? 
+
+All of the following steps are in Python. 
+
+1.  Use `PIL` to load an image into memory. 
+
+2. Shrink the image down to a pixel size we can more easily view. 
+
+3. Use `numpy` to convert our image into an array. Flatten the 3d array into a 2d array of the RGB values. 
+
+4. Convert the pixel array into an array of the pixel light values - the sun of the rgb values.  
+
+
+
+We're going to use the official documents are try our best.  https://matplotlib.org/api/_as_gen/matplotlib.pyplot.hist.html
 
 The api spec is ridiculously overwhelming, but we'll figure this one our. 
-```python 
+
+```python
 matplotlib.pyplot.hist(x, bins=None, range=None, density=False, weights=None, cumulative=False, bottom=None, histtype='bar', align='mid', orientation='vertical', rwidth=None, log=False, color=None, label=None, stacked=False, *, data=None, **kwargs)[source]
 ```
