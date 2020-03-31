@@ -20,6 +20,7 @@ For example -  The light distribution of the this image ...![alt text](https://i
 
 [](unsplash.com)... is this - 
 
+
 ![](/uploads/3lightdistroimages_introexample.png)
 
 We can see a large distribution of dark pixels than light ones. 
