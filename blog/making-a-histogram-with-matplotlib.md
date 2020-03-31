@@ -16,8 +16,8 @@ We'll be making a histogram using `matplotlib` to display light distribution of 
 
 For example -  The light distribution of the this image ...![alt text](https://images.unsplash.com/photo-1583364481915-dacea3e06d18?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=600&q=80 "Example Image for Light Distribution")
 
+<br>
 *image from [unsplash.com](unsplash.com)*
-
 [](unsplash.com)... is this - 
 
 
