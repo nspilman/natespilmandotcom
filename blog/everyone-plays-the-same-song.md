@@ -1,7 +1,7 @@
 ---
 title: 'Everyone Plays the Same Song '
 description: A fun and educational covers project
-date: 2020-04-18T19:43:55.705Z
+date: 2020-04-19T19:43:55.705Z
 tags:
   - music
   - covers
