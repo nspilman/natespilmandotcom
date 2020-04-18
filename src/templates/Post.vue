@@ -79,6 +79,9 @@ export default {
     }
   },
   computed:{
+    post(){
+      return this.$page.post
+    },
     currentIndex(){
       return this.$static.posts.edges.map(edge => edge.node.path).indexOf(this.$page.post.path)
     },
@@ -99,6 +102,11 @@ export default {
       else{
         return -1
       }
+    }
+  },
+  watch:{
+    post(){
+      location.reload();
     }
   }
 };
