@@ -11,6 +11,8 @@ I present, Everyone Plays the Same Song - a covers project. The way it works is 
 
 The purpose of this project is to promote musical education, practice and community - 
 
-**Want to participate?** The signup form for round 1 is [here](https://forms.gle/6pskg66GqMg4yv7X9). 
+**Want to participate?**
+
+####  The signup form for round 1 is [here](https://forms.gle/6pskg66GqMg4yv7X9). 
 
 We'll choose the song to cover sometime the week of April 20th, and set a submission deadline after that. Stay tuned.
