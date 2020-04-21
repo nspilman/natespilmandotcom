@@ -21,28 +21,54 @@ The purpose of this project is to promote musical education, practice and commun
 
 We'll choose the song to cover sometime the week of April 20th, and set a submission deadline after that. Stay tuned.
 
-
-
-### How Signup Works - 
+### How Signup Works -
 
 Signups in the song submission stage will be closing April 22nd. 
 
 [Fill out this sign up form](https://forms.gle/nEVtvbhRt3uMKBLh9) with your name, email address and at least one and up to three songs you'd like to cover. 
 
-
-
 ### How Song Selection Works -
 
 After song submission closes, all participants will fill out of poll with all submitted songs and their corresponding youtube links to listen to. Participants will rate the songs 1 to 5 on a scale of "Definitely don't want to cover" to "I'm super down to cover this song."  Voting a 1 vetos the song - which is a valid move if you don't see the song as technically possible for you as a musician to pull off. The survey will also include the question "In how many weeks should our cover submissions be due?"
 
-
-
-#### Once results are in, we'll strive to make the most fair selection via the following rules - 
+#### Once results are in, we'll strive to make the most fair selection via the following rules -
 
 * If there is a clear favorite that hasn't been vetoed, then that song will be chosen. 
 * If there are multiple popular songs without vetos, we will randomly choose one of them. 
 * If there are no obvious winners, we will discuss as participants how to move forward - allowing discussion of current submissions as well as opening the pool back up for new songs. 
 
-
-
 We'll also discuss and decide on the cover song due date based on poll results.
+
+#### Round One submissions 
+
+*as of 4/20*
+
+[Youtube Playlist of Song Submissions](https://www.youtube.com/watch?v=nb6ou_k4OzM&list=PLDkm3cHHN23E4dncmC-rAoyUiGq6gQSF9)
+
+| **Song**                          | **Artist**                      | **Youtube Video**                                                                           |
+| --------------------------------- | ------------------------------- | ------------------------------------------------------------------------------------------- |
+| 3 Nights                          | Dominic Fike                    | <https://youtu.be/nb6ou_k4OzM>                                                              |
+| Bags                              | Clairo                          | <https://youtu.be/L9HYJbe9Y18>                                                              |
+| Circle the Drain                  | Soccer Mommy                    | <https://youtu.be/i2CHP0SMEF4>                                                              |
+| Clay Pigeons                      | John Prine (not his originally) | <https://youtu.be/20Rucu7uNwc>                                                              |
+| Get Free                          | Major Lazer                     | [https://www.youtube.com/watch?​v=OI3shBXlqsw](https://www.youtube.com/watch?v=OI3shBXlqsw) |
+| I've Been Waiting                 | Lil Pee & ILoveMakonnen         | [https://www.youtube.com/watch?​v=dQYPimscA20](https://www.youtube.com/watch?v=dQYPimscA20) |
+| Inside Out                        | Spoon                           | [https://www.youtube.com/watch?​v=RIii_4tW6dU](https://www.youtube.com/watch?v=RIii_4tW6dU) |
+| Lucid Dreams                      | Juice WRLD                      | [https://youtu.be/_fh64GbFSw4](https://youtu.be/_fh64GbFSw4)                                |
+| Once Upon A Time In New York City | Huey Lewis                      | <https://youtu.be/YTk_8dXiN2I>                                                              |
+| Only Shallow                      | My Bloody Valentine             | <https://youtu.be/49cwYNVIu5E>                                                              |
+| Passionfruit                      | Drake                           | <https://youtu.be/COz9lDCFHjw>                                                              |
+| Schpoople                         | Yorick van der Plugh            | <https://youtu.be/-E1AkpKsY1I>                                                              |
+| Sk8er Boi                         | Avril                           | <https://youtu.be/TIy3n2b7V9k>                                                              |
+| Substitution                      | Silver Sun Pickups              | [https://www.youtube.com/watch?​v=Mfdq4QyUDf8](https://www.youtube.com/watch?v=Mfdq4QyUDf8) |
+| Take it Easy                      | Surfaces                        | <https://youtu.be/JJ63cfhD91U>                                                              |
+| The Book of Love                  | The Magnetic Fields             | <https://youtu.be/7FtbrDFgB_4>                                                              |
+| You Missed My Heart               | Mark Kozelek                    | <https://youtu.be/yeN68JQpejo>                                                              |
+| Your Belgian Things               | The Mountain Goats              | <https://youtu.be/DCSpyMJRnNQ>                                                              |
+
+
+
+Happy Listening :-)
+
+Thanks for being involved,\
+Nate
