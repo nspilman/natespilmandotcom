@@ -59,7 +59,7 @@ We'll also discuss and decide on the cover song due date based on poll results.
 | -------------------------------------- | ----------------------------------- | ---------------------------------------------------------------- |
 | 3 Nights                               | Dominic Fike                        | <https://youtu.be/nb6ou_k4OzM>                                   |
 | Bags                                   | Clairo                              | <https://youtu.be/L9HYJbe9Y18>                                   |
-| Blinding Lights                        | The Weeknd                          | [https://youtu.be/4NRXx6U8ABQ](<| https://youtu.be/4NRXx6U8ABQ>) |
+| Blinding Lights                        | The Weeknd                          | <https://youtu.be/4NRXx6U8ABQ> |
 | Circle the Drain                       | Soccer Mommy                        | <https://youtu.be/i2CHP0SMEF4>                                   |
 | Clay Pigeons                           | John Prine (not his originally)     | <https://youtu.be/20Rucu7uNwc>                                   |
 | Endless                                | Pinegrove                           | <https://youtu.be/-E1AkpKsY1I>                                   |
