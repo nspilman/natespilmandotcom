@@ -37,8 +37,6 @@ After song submission closes, all participants will fill out of poll with all su
 * If there are multiple popular songs without vetos, we will randomly choose one of them. 
 * If there are no obvious winners, we will discuss as participants how to move forward - allowing discussion of current submissions as well as opening the pool back up for new songs. 
 
-
-
   #### Vote Rubric
 
   | Vote | Significance                  |
@@ -57,31 +55,30 @@ We'll also discuss and decide on the cover song due date based on poll results.
 
 [Youtube Playlist of Song Submissions](https://www.youtube.com/watch?v=nb6ou_k4OzM&list=PLDkm3cHHN23E4dncmC-rAoyUiGq6gQSF9)
 
-
-
-| Song                                   | Artist                              | Youtube Video                                                |
-| -------------------------------------- | ----------------------------------- | ------------------------------------------------------------ |
-| 3 Nights                               | Dominic Fike                        | <https://youtu.be/nb6ou_k4OzM>                               |
-| Bags                                   | Clairo                              | <https://youtu.be/L9HYJbe9Y18>                               |
-| Circle the Drain                       | Soccer Mommy                        | <https://youtu.be/i2CHP0SMEF4>                               |
-| Clay Pigeons                           | John Prine (not his originally)     | <https://youtu.be/20Rucu7uNwc>                               |
-| Get Free                               | Major Lazer                         | <https://www.youtube.com/watch?v=OI3shBXlqsw>                |
-| Gift Of The Magi 2: Return Of The Magi | AJJ (formerly Andrew Jackson Jihad) | <https://www.youtube.com/watch?v=Er4Gx7x_bVM>                |
-| I've Been Waiting                      | Lil Pee & ILoveMakonnen             | <https://www.youtube.com/watch?v=dQYPimscA20>                |
-| Inside Out                             | Spoon                               | <https://www.youtube.com/watch?v=RIii_4tW6dU>                |
-| Lucid Dreams                           | Juice WRLD                          | [https://youtu.be/_fh64GbFSw4](https://youtu.be/_fh64GbFSw4) |
-| Once Upon A Time In New York City      | Huey Lewis                          | <https://youtu.be/YTk_8dXiN2I>                               |
-| Only Shallow                           | My Bloody Valentine                 | <https://youtu.be/49cwYNVIu5E>                               |
-| Passionfruit                           | Drake                               | <https://youtu.be/COz9lDCFHjw>                               |
-| Schpoople                              | Yorick van der Plugh                | <https://youtu.be/-E1AkpKsY1I>                               |
-| Sk8er Boi                              | Avril                               | <https://youtu.be/TIy3n2b7V9k>                               |
-| Somebody That I Used To Know           | Gotye                               | <https://www.youtube.com/watch?v=8UVNT4wvIGY>                |
-| Substitution                           | Silver Sun Pickups                  | <https://www.youtube.com/watch?v=Mfdq4QyUDf8>                |
-| Take it Easy                           | Surfaces                            | <https://youtu.be/JJ63cfhD91U>                               |
-| The Book of Love                       | The Magnetic Fields                 | <https://youtu.be/7FtbrDFgB_4>                               |
-| Under the Milky Way                    | The Church                          | <https://www.youtube.com/watch?v=pWxJEIz7sSA>                |
-| You Missed My Heart                    | Mark Kozelek                        | <https://youtu.be/yeN68JQpejo>                               |
-| Your Belgian Things                    | The Mountain Goats                  | <https://youtu.be/DCSpyMJRnNQ>                               |
+| Song                                   | Artist                              | Youtube Video                                                    |
+| -------------------------------------- | ----------------------------------- | ---------------------------------------------------------------- |
+| 3 Nights                               | Dominic Fike                        | <https://youtu.be/nb6ou_k4OzM>                                   |
+| Bags                                   | Clairo                              | <https://youtu.be/L9HYJbe9Y18>                                   |
+| Blinding Lights                        | The Weeknd                          | [https://youtu.be/4NRXx6U8ABQ](<| https://youtu.be/4NRXx6U8ABQ>) |
+| Circle the Drain                       | Soccer Mommy                        | <https://youtu.be/i2CHP0SMEF4>                                   |
+| Clay Pigeons                           | John Prine (not his originally)     | <https://youtu.be/20Rucu7uNwc>                                   |
+| Endless                                | Pinegrove                           | <https://youtu.be/-E1AkpKsY1I>                                   |
+| Get Free                               | Major Lazer                         | <https://www.youtube.com/watch?v=OI3shBXlqsw>                    |
+| Gift Of The Magi 2: Return Of The Magi | AJJ (formerly Andrew Jackson Jihad) | <https://www.youtube.com/watch?v=Er4Gx7x_bVM>                    |
+| I've Been Waiting                      | Lil Pee & ILoveMakonnen             | <https://www.youtube.com/watch?v=dQYPimscA20>                    |
+| Inside Out                             | Spoon                               | <https://www.youtube.com/watch?v=RIii_4tW6dU>                    |
+| Lucid Dreams                           | Juice WRLD                          | [https://youtu.be/_fh64GbFSw4](https://youtu.be/_fh64GbFSw4)     |
+| Once Upon A Time In New York City      | Huey Lewis                          | <https://youtu.be/YTk_8dXiN2I>                                   |
+| Only Shallow                           | My Bloody Valentine                 | <https://youtu.be/49cwYNVIu5E>                                   |
+| Passionfruit                           | Drake                               | <https://youtu.be/COz9lDCFHjw>                                   |
+| Sk8er Boi                              | Avril                               | <https://youtu.be/TIy3n2b7V9k>                                   |
+| Somebody That I Used To Know           | Gotye                               | <https://www.youtube.com/watch?v=8UVNT4wvIGY>                    |
+| Substitution                           | Silver Sun Pickups                  | <https://www.youtube.com/watch?v=Mfdq4QyUDf8>                    |
+| Take it Easy                           | Surfaces                            | <https://youtu.be/JJ63cfhD91U>                                   |
+| The Book of Love                       | The Magnetic Fields                 | <https://youtu.be/7FtbrDFgB_4>                                   |
+| Under the Milky Way                    | The Church                          | <https://www.youtube.com/watch?v=pWxJEIz7sSA>                    |
+| You Missed My Heart                    | Mark Kozelek                        | <https://youtu.be/yeN68JQpejo>                                   |
+| Your Belgian Things                    | The Mountain Goats                  | <https://youtu.be/DCSpyMJRnNQ>                                   |
 
 Happy Listening :-)
 
