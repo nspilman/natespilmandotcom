@@ -28,5 +28,6 @@ I'm not going to get into setting up a Form itself, because it's very straightfo
  
 ### Google Forms + Google Sheets Integration 
 
-<img src="/uploads/5googleformssheetsintegrationlink.png" width="200">
+<img src="/uploads/5googleformssheetsintegrationlink.png" width="600">
+
 
