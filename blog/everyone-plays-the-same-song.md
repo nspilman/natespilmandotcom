@@ -9,15 +9,21 @@ published: true
 ---
 [](https://forms.gle/QnkJ6snwtAJ6Betq5)
 
-[Click here to participate.](https://forms.gle/QnkJ6snwtAJ6Betq5)
+*May 16th update* 
+
+## Round One - Bags by Clairo -  is complete!
+
+<iframe width="100%" height="300" scrolling="no" frameborder="no" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/playlists/1049388463&color=%23ff5500&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true&visual=true"></iframe>
+
+
+
+\------------------------------
 
 I present, Everyone Plays the Same Song - a covers project. The way it works is simple - all participants record covers of the same song. The covers are then compiled, and we can enjoy comparing everyone's take. We'll probably post the whole thing on Soundcloud - but we'll figure that out when we get there. This is the first round. 
 
 The purpose of this project is to promote musical education, practice and community - 
 
 **Want to participate?**
-
-#### The signup form for round 1 is [here](https://forms.gle/6pskg66GqMg4yv7X9).
 
 We'll choose the song to cover sometime the week of April 20th, and set a submission deadline after that. Stay tuned.
 
@@ -82,8 +88,6 @@ We'll also discuss and decide on the cover song due date based on poll results.
 
 Happy Listening :-)
 
-
-
 ### Round One Winner
 
 The votes are in, and the song we're covering is **Bags by Clairo!**
@@ -91,8 +95,6 @@ The votes are in, and the song we're covering is **Bags by Clairo!**
 **Song submissions are due May 11, 2020!**
 
 Full vote breakdown below.
-
-
 
 | Song                                                                         | Average Vote | Vetos |
 | ---------------------------------------------------------------------------- | ------------ | ----- |
@@ -118,8 +120,6 @@ Full vote breakdown below.
 | Once Upon A Time In New York City - Huey Lewis                               | 2.44         | 2     |
 | Gift Of The Magi 2: Return Of The Magi - AJJ (formerly Andrew Jackson Jihad) | 2.33         | 3     |
 | Take it Easy - Surfaces                                                      | 2.33         | 2     |
-
-
 
 **Some things I found interesting -** 
 
