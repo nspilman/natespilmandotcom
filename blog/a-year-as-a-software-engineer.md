@@ -5,7 +5,7 @@ date: 2020-05-17T16:49:49.488Z
 tags:
   - Software development
   - tech
-published: false
+published: true
 ---
 Time has flown since I started my first full time Software Developer role. I wanted to reflect on my time and try to identify all the important stuff I've learned over the year. I
 
@@ -55,6 +55,4 @@ Below is a quick list of the more technical things that have stuck with me.
 
   * The way I like to describe it is, if I have a bunch of different classes that represent a bunch of different potential employees. Some of these classes inherit the interface Chef, which means these classes implement all of the methods that is in the Chef interface. In english terms - it means they can cook. If we can a Restaurant class, with the power of interfaces, the restaurant doesn't need to use any specific class in its code. It instead can write to the chef interface - knowing confidently that when it calls Chef.Cook() on the interface, any of the classes that implement the Chef interface will know what that means. 
   * Let's say we have class Nate. Nate implements the Chef interface, meaning Nate can do all the things that a Chef can do. It doesn't matter how Nate does it. That's specific the Nate's implementation. Nate can also implement other interfaces. If Nate implemented the SoftwareDeveloper interface, it means that Nate can also be used by the SoftwareCompany class that uses the SoftwareDeveloper in its code. 
-  * Interfaces are also necessary for testing. In the above example, if the Kitchen class, instead of coding to the Chef interface, they coded to Nate, which is a class that implements the Chef interface. If I want to test the kitchen, we now have to instantiate Nate. But if Nate also implements the SoftwareDeveloper interface, there may be a whole lot of stuff that Nate needs for SoftwareDeveloper that we don't need for Chef. If we coded to the interface instead, we wouldn't have to spin up any of the SoftwareDeveloper dependencies to test the kitchen. Instead we can create a new class - a Mock - that is used for testing purposes only, and doesn't require anything outside of the signature you're specifically mocking. 
-*
-*
+  * Interfaces are also necessary for testing. In the above example, if the Kitchen class, instead of coding to the Chef interface, they coded to Nate, which is a class that implements the Chef interface. If I want to test the kitchen, we now have to instantiate Nate. But if Nate also implements the SoftwareDeveloper interface, there may be a whole lot of stuff that Nate needs for SoftwareDeveloper that we don't need for Chef. If we coded to the interface instead, we wouldn't have to spin up any of the SoftwareDeveloper dependencies to test the kitchen. Instead we can create a new class - a Mock - that is used for testing purposes only, and doesn't require anything outside of the signature you're specifically mocking.
