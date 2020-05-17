@@ -9,7 +9,7 @@ published: false
 ---
 Time has flown since I started my first full time Software Developer role. I wanted to reflect on my time and try to identify all the important stuff I've learned over the year. I
 
-#### High level role details - 
+#### High level role details -
 
 * The role is Full Stack. 
 
@@ -19,13 +19,9 @@ Time has flown since I started my first full time Software Developer role. I wan
 * We have a culture of paired programming. 
 * We both maintain a legacy application and build modern microservices. 
 
-
-
 I've been fortunate to work on a team of experienced developers, willing to answer the mountain of questions I've had over the year. 
 
-
-
-### General Software Development stuff - 
+### General Software Development stuff -
 
 * Educational code bases and enterprise production code bases are very different places. It's the difference between adding a field to a json return object and adding a field to the json return object except the value we're trying to pull is currently not expose to this class, and we'd really rather not break encapsulation for this purpose - so maybe we can tunnel back down to a point where the code paths meet and grab the value there? Let me spend all day trying to figure this out. 
 * Getting code to do the thing you want it to do is the easy part. Getting code in a state of long term readability and maintainability is where things get difficult. 
@@ -46,6 +42,19 @@ I've been fortunate to work on a team of experienced developers, willing to answ
 
 ### C# .NET Specific stuff
 
-* I learned the joys and pains of object oriented programming. I into the job with mostly experience with Python and JavaScript. I was familiar with Object Oriented concepts, but honestly didn't understand them. 
+I basically went from not knowing C# to being a competent C# developer. Most of the credit again goes to my brilliant ever-patient coworkers for walking me through all my questions and glaring shortcomings. 
+
+C# is a fantastic language for writing robust, enterprise software. Microsoft is making the development experience easier and easier, and C# & the .NET framework continue improving at a rapid clip. 
+
+Below is a quick list of the more technical things that have stuck with me. 
+
+* Encapsulation is your friend. Everything should be private - encapsulated within the class - by default. Of course things that should be public should be public, but that should be an intentional design decision. 
+
+  * To use a vacuum as an example - aren't we glad that the inner workings of the suction system don't have a public interface? Instead the only public interfaces are the power plug and the on/off button. 
+* Interfaces are your friend. This is a concept that took me longer to grasp, but without it it would be impossible to write and test software on a large scale. The way it's always described is as "a contract", which is both true and any makes sense if you already understand the concept. 
+
+  * The way I like to describe it is, if I have a bunch of different classes that represent a bunch of different potential employees. Some of these classes inherit the interface Chef, which means these classes implement all of the methods that is in the Chef interface. In english terms - it means they can cook. If we can a Restaurant class, with the power of interfaces, the restaurant doesn't need to use any specific class in its code. It instead can write to the chef interface - knowing confidently that when it calls Chef.Cook() on the interface, any of the classes that implement the Chef interface will know what that means. 
+  * Let's say we have class Nate. Nate implements the Chef interface, meaning Nate can do all the things that a Chef can do. It doesn't matter how Nate does it. That's specific the Nate's implementation. Nate can also implement other interfaces. If Nate implemented the SoftwareDeveloper interface, it means that Nate can also be used by the SoftwareCompany class that uses the SoftwareDeveloper in its code. 
+  * Interfaces are also necessary for testing. In the above example, if the Kitchen class, instead of coding to the Chef interface, they coded to Nate, which is a class that implements the Chef interface. If I want to test the kitchen, we now have to instantiate Nate. But if Nate also implements the SoftwareDeveloper interface, there may be a whole lot of stuff that Nate needs for SoftwareDeveloper that we don't need for Chef. If we coded to the interface instead, we wouldn't have to spin up any of the SoftwareDeveloper dependencies to test the kitchen. Instead we can create a new class - a Mock - that is used for testing purposes only, and doesn't require anything outside of the signature you're specifically mocking. 
 *
 *
