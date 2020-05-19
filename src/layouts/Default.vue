@@ -79,4 +79,8 @@ a:visited{
 /* .component-fade-leave-active below version 2.1.8 */ {
   opacity: 0;
 }
+
+ul {
+    list-style-position: outside;
+}
 </style>
