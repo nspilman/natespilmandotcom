@@ -9,6 +9,14 @@ published: true
 ---
 [](https://forms.gle/QnkJ6snwtAJ6Betq5)
 
+## Round Two - Signups are open!
+
+[Round Two Signup Form Link ](https://forms.gle/Wp67K34MxLTiEGvH7)
+
+project details after the Round One link. 
+
+
+
 ## Round One - Bags by Clairo -  is complete!
 
 <iframe width="100%" height="300" scrolling="no" frameborder="no" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/playlists/1049388463&color=%23ff5500&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true&visual=true"></iframe>
@@ -17,17 +25,13 @@ published: true
 
 \------------------------------
 
-I present, Everyone Plays the Same Song - a covers project. The way it works is simple - all participants record covers of the same song. The covers are then compiled, and we can enjoy comparing everyone's take. We'll probably post the whole thing on Soundcloud - but we'll figure that out when we get there. This is the first round. 
+I present, Everyone Plays the Same Song - a covers project. The way it works is simple - all participants record covers of the same song. The covers are then compiled, and we can enjoy comparing everyone's take.
 
 The purpose of this project is to promote musical education, practice and community - 
 
-**Want to participate?**
-
-We'll choose the song to cover sometime the week of April 20th, and set a submission deadline after that. Stay tuned.
-
 ### How Signup Works -
 
-We will be kicking off Round 2 shortly, after which I'll publish the submission form and deadline. If you want to participate, fill out the form with your name, email address and at least one and up to three songs you'd like to cover. 
+If you want to participate, fill out the submission form with your name, email address and at least one and up to three songs you'd like to cover. 
 
 ### How Song Selection Works -
 
@@ -49,7 +53,9 @@ After song submission closes, all participants will fill out of poll with all su
   | 4    | I'd like to cover this        |
   | 5    | I'd REALLY like to cover this |
 
-We'll also discuss and decide on the cover song due date based on poll results.
+### How Song Submission works - 
+
+We'll decide on a deadline, and all participants will submit a link to their cover on soundcloud by that deadline. I'll then publish a playlist with everyone's versions, which we'll all listen to together at a post-submission listening party. 
 
 Thanks for being involved,\
 Nate
