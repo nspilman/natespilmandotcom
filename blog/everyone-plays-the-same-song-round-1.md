@@ -14,7 +14,9 @@ published: true
 
 #### Round One submissions
 
-[Youtube Playlist of Song Submissions](https://www.youtube.com/watch?v=nb6ou_k4OzM&list=PLDkm3cHHN23E4dncmC-rAoyUiGq6gQSF9)
+[Youtube Playlist of Song Submissions](https://www.youtube.com/watch?v=nb6ou_k4OzM&list=PLDkm3cHHN23E4dncmC-rAoyUiGq6gQSF9)[](https://open.spotify.com/playlist/2E6YaKOYWnGSpMkypS1HTb?si=l0mCS-siTiGMScCYFFlZFA)
+
+[Spotify Playlist of Song Submissions](https://open.spotify.com/playlist/2E6YaKOYWnGSpMkypS1HTb?si=l0mCS-siTiGMScCYFFlZFA)
 
 | Song                                   | Artist                              | Youtube Video                                                |
 | -------------------------------------- | ----------------------------------- | ------------------------------------------------------------ |
