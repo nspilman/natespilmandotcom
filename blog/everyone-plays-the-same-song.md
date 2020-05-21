@@ -11,7 +11,7 @@ published: true
 
 ## Round Two - Signups are open!
 
-[Round Two Signup Form Link ](https://forms.gle/Wp67K34MxLTiEGvH7)
+[Round Two Signup Form Link ](https://forms.gle/Wp67K34MxLTiEGvH7)- closing **5/26.** 
 
 project details after the Round One link. 
 
