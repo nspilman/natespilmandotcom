@@ -57,6 +57,7 @@ Below is a quick list of the more technical things that have stuck with me.
   * Let's say we have class Nate. Nate implements the Chef interface, meaning Nate can do all the things that a Chef can do. It doesn't matter how Nate does it - that's specific to Nate's implementation. Nate can also implement other interfaces. If Nate implemented the SoftwareDeveloper interface, it means that Nate can also be used by the SoftwareCompany class that uses the SoftwareDeveloper in its code. 
   * Interfaces are also necessary for testing. In the above example, if the Kitchen class, instead of coding to the Chef interface, they coded to Nate, which is a class that implements the Chef interface. If I want to test the Kitchen, we now have to instantiate Nate. But if Nate also implements the SoftwareDeveloper interface, there may be a whole lot of stuff that Nate needs for SoftwareDeveloper that we don't need for Chef. If we coded to the interface instead, we wouldn't have to spin up any of the SoftwareDeveloper dependencies to test the Kitchen. Instead we can create a new class - a Mock - that is used for testing purposes only, and doesn't require anything outside of the signature you're specifically mocking.
 * I've already alluded to it a few times - but I learned how to write unit tests. I've learned Unit Tests should be seen as the business requirements of the software. "When A occurs, X should be the outcome." Untested code is dangerous code, because when you need to make a change in the future, you don't have a business requirement to test against. 
+* I'm a huge fan of paired programming. It's so easy to get lost in the weeds that it's helpful to have someone there to remind you of the bigger picture. It's easy to miss a typo that your pair catches in real time. It's much easier to process a complicated workflow by talking it through with a pair.  
 
 ### Soft Skills Stuff -
 
@@ -70,6 +71,7 @@ Most of the items here I learned in my previous role as an Implementation Projec
 
   * For example - I merged two feature branches when I meant to merge develop into a feature branch. We didn't notice for a few days. I then had to spend about a day and a half reverting and cherry picking commits to get us back to a clean place. We refer to this as "Branchpocalypse" and no one has made said mistake since. 
 * Team culture is paramount. To paraphrase my company's CIO - "We don't want any heroes. If you need to step up and be a hero, do, but then we need to figure out the systematic failure that required you to be a hero." We spend quality time as a team discussing the best way of doing things, and follow team agreements. So says the African proverb - "If you want to go fast, go alone. If you want to go far, go together."
+* Project management skills go a long way, even in this technical role. Clear note taking, confirmation that everyone's on the same page, understanding of who's responsible for what and by when, etc, have done me well this year, 
 
 Parting thoughts - 
 
