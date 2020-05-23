@@ -15,8 +15,6 @@ published: true
 
 project details after the Round One link. 
 
-
-
 ## Round One - Bags by Clairo -  is complete!
 
 <iframe width="100%" height="300" scrolling="no" frameborder="no" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/playlists/1049388463&color=%23ff5500&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true&visual=true"></iframe>
@@ -31,7 +29,7 @@ The purpose of this project is to promote musical education, practice and commun
 
 ### How Signup Works -
 
-If you want to participate, fill out the submission form with your name, email address and at least one and up to three songs you'd like to cover. 
+If you want to participate, fill out the submission form with your name, email address and at least one song you'd like to cover. 
 
 ### How Song Selection Works -
 
@@ -53,7 +51,7 @@ After song submission closes, all participants will fill out of poll with all su
   | 4    | I'd like to cover this        |
   | 5    | I'd REALLY like to cover this |
 
-### How Song Submission works - 
+### How Song Submission works -
 
 We'll decide on a deadline, and all participants will submit a link to their cover on soundcloud by that deadline. I'll then publish a playlist with everyone's versions, which we'll all listen to together at a post-submission listening party. 
 
