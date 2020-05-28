@@ -6,7 +6,7 @@ tags:
   - Music
 published: true
 ---
-### ROUND ONE SUBMISSIONS
+### ROUND TWO SUBMISSIONS
 
 [Spotify Playlist](https://open.spotify.com/playlist/3Pne4X16qhy13e8V1Rw30U?si=cbn6iTd1QB26dR6ZA8mzyA) 
 
