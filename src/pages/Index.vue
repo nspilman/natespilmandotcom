@@ -9,8 +9,8 @@
           <header>
             <div>
               <h1>Nate Spilman</h1>
-              <hr/>
-              <p>Software Engineer</p>             
+              <hr />
+              <p>Software Engineer</p>
               <p>Musician</p>
               <p>Photographer</p>
             </div>
@@ -23,10 +23,12 @@
               <li>
                 <g-link class="button" to="https://www.instagram.com/natespilman/">Instagram</g-link>
               </li>
-              <!-- <li> -->
-              <!-- <router-link class="button" to="/work">Photography</router-link> -->
-              <!-- </li> -->
-              <!--<li><a href="#elements" class="button">Elements</a></li>-->
+              <li>
+                <g-link
+                  to="https://natespilman.tech/media/pdfs/2019_Resume.pdf"
+                  class="button"
+                >Resume</g-link>
+              </li>
             </ul>
           </nav>
           <ul class="icons">
@@ -42,6 +44,15 @@
                 class="icon fa-instagram"
               >
                 <span class="label">Instagram</span>
+              </a>
+            </li>
+            <li>
+              <a
+                href="https://www.linkedin.com/in/natespilman/"
+                target="_blank"
+                class="icon fa-linkedin"
+              >
+                <span class="label">LinkedIn</span>
               </a>
             </li>
             <br />
