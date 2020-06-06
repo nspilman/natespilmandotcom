@@ -8,13 +8,13 @@ published: true
 ---
 ## The Everyone Plays the Same - Round 2 cover song is ...
 
-### Stevie Wonder - I Believe (When I Fall In Love)
+##### Stevie Wonder - I Believe (When I Fall In Love)
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/H--_-gPX3Nw" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
-### **Song submissions will be due:** Monday June 29th.
+##### **Song submissions will be due:** Monday June 29th.
 
-
+<br>
 
 ### ROUND TWO SUBMISSIONS
 
@@ -56,14 +56,12 @@ published: true
 
 Hi
 
-### Cover song Selection voting - 
+### Cover song Selection voting -
 
 Items of note - 
 
 * The highest voted song was Bob Dylan's Don't Think Twice, It's All Right, but was was disqualified with a veto. 
 * Iron Maiden's Number of the Beast averaged at a 3, even with 4 vetos. 
-
-
 
 More numbers to come, but for now here's the average votes per song. 
 
