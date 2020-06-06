@@ -6,6 +6,16 @@ tags:
   - Music
 published: true
 ---
+## The Everyone Plays the Same - Round 2 cover song is ...
+
+### Stevie Wonder - I Believe (When I Fall In Love)
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/H--_-gPX3Nw" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+### **Song submissions will be due:** Monday June 29th.
+
+
+
 ### ROUND TWO SUBMISSIONS
 
 [Spotify Playlist](https://open.spotify.com/playlist/3Pne4X16qhy13e8V1Rw30U?si=cbn6iTd1QB26dR6ZA8mzyA) 
@@ -43,3 +53,49 @@ published: true
 | Under The Boardwalk                      | The Drifters              | <https://youtu.be/EPEqRMVnZNU>                               |
 | chained to the rhythm                    | katy perry                | <https://youtu.be/eYv_1D8URBY>                               |
 | number of the beast                      | Iron maiden.              | <https://youtu.be/7-iRf9AWoyE>                               |
+
+Hi
+
+### Cover song Selection voting - 
+
+Items of note - 
+
+* The highest voted song was Bob Dylan's Don't Think Twice, It's All Right, but was was disqualified with a veto. 
+* Iron Maiden's Number of the Beast averaged at a 3, even with 4 vetos. 
+
+
+
+More numbers to come, but for now here's the average votes per song. 
+
+| Song                                                             | Avg Vote Count | Vetos |
+| ---------------------------------------------------------------- | -------------- | ----- |
+| Bob Dylan - Don't Think Twice, It's All Right                    | 3.79           | 1     |
+| **Stevie Wonder - I Believe (When I Fall In Love)**              | **3.50**       | **0** |
+| Save the last dance for me - The Drifters                        | 3.43           | 0     |
+| 1901 - Phoenix                                                   | 3.43           | 0     |
+| The Drifters - Under the Boardwalk                               | 3.43           | 0     |
+| The National - 'Rylan'                                           | 3.43           | 0     |
+| Everywhere - Fleetwood Mac                                       | 3.43           | 0     |
+| Dawes - A Little Bit of Everything                               | 3.36           | 1     |
+| Bon Iver - PDLIF                                                 | 3.36           | 0     |
+| The National - 'The System Only Dreams in Total Darkness'        | 3.36           | 0     |
+| The White Buffalo - Highwayman                                   | 3.36           | 0     |
+| MUNA - Stayaway                                                  | 3.21           | 2     |
+| Flume feat. Toro y Moi - The Difference                          | 3.14           | 1     |
+| Yo-Yo Ma & Bobby McFerrin - Coyote                               | 3.14           | 1     |
+| now, now - school friends                                        | 3.14           | 1     |
+| The National- Exile Vilify                                       | 3.14           | 0     |
+| The Disctricts - Salt                                            | 3.14           | 0     |
+| Maybe I'll Come Down - Soul Coughing                             | 3.07           | 0     |
+| Grimes - REALiTi                                                 | 3.07           | 1     |
+| Radiohead - Creep                                                | 3.07           | 1     |
+| Harry Styles - Golden                                            | 3.07           | 0     |
+| MIKA - Grace Kelly                                               | 3.00           | 0     |
+| Iron Maiden - The Number of the Beast                            | 3.00           | 4     |
+| Katy Perry - Chained To The Rhythm (Lyrics) ft. Skip Marley      | 2.93           | 1     |
+| Golden Vessel - Shoulders (ft. Elkkle & Mallrat)                 | 2.93           | 2     |
+| James Blake - Don't Miss It                                      | 2.86           | 0     |
+| Juliet and Caesar - Cautious Clay                                | 2.71           | 2     |
+| Tom Lehrer - Poisoning Pigeons In The Park                       | 2.64           | 3     |
+| YEEK - ONLY IN THE WEST                                          | 2.50           | 2     |
+| SUGAR Remix (feat. Dua Lipa, Ryan Beatty & Jon B) - BROCKHAMPTON | 2.07           | 6     |
