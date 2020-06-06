@@ -6,9 +6,7 @@ tags:
   - Music
 published: true
 ---
-## The Everyone Plays the Same - Round 2 cover song is ...
-
-##### Stevie Wonder - I Believe (When I Fall In Love)
+## The round 2 cover song is Stevie Wonder - I Believe (When I Fall In Love)
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/H--_-gPX3Nw" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
