@@ -6,7 +6,9 @@ tags:
   - Music
 published: true
 ---
-## The round 2 cover song is Stevie Wonder - I Believe (When I Fall In Love)
+#### The cover is in - 
+
+#### Song: I Believe (When I Fall In Love) by Stevie Wonder
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/H--_-gPX3Nw" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
