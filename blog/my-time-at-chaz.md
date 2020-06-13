@@ -75,6 +75,7 @@ The conversation luls for a moment as we stop and watch [Seattle mayor Jenny Dur
 
 * CHAZ is not the unruly anarchist state that some are portraying it as, but it's seen to some as a distraction from the core BLM movement. 
 * Speaking of which - don't let this blogpost distract you from the fact [that 60,000 people took part in the 1.8-mile March of Silence](https://www.seattletimes.com/seattle-news/thousands-march-in-seattle-in-silence-to-show-support-of-black-lives/) later that day, Friday June 12 in support of Black Lives Matter. 
+* [there are black focused events happening at CHAZ](https://twitter.com/Omarisal/status/1271923987962949632) - Just maybe not at 11am on a Friday. 
 * All the news reports I've seen only show the precinct and none of the beautiful artwork around it. They're trying to make it scarier than it is. 
 * Whether CHAZ becomes Seattle's [Christiania](https://theculturetrip.com/europe/denmark/articles/christiania-13-things-to-know-about-copenhagens-hippie-free-town/) or is disbanded, I hope the artwork remains. I hope the resolution is non-violent. I hope CHAZ is turning the dial toward social justice. 
 
