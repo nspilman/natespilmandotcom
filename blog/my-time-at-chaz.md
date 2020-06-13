@@ -17,15 +17,9 @@ Overall, it was nothing to be afraid of. There were no weapons - just folks taki
 * Places to get free food. 
 * A sausage stand where you can pay for a sausage. 
 
-
-
 The Zone was lit up with artwork, starting with the enormous Black Lives Matter mural on the pavement. The police station was straight up vandalized. Regardless of how this ends, I hope the art remains. 
 
-
-
 Regarding the politics of it all - almost I spoke with expected to see the Zone used as a bargaining chip with the city for greater police reform measures. Most of the people at CHAZ were white. [Seattle is 65% white and only 7% black](https://en.wikipedia.org/wiki/Demographics_of_Seattle#:~:text=The%20racial%20composition%20of%20the,or%20Latino%20of%20any%20race.), but there were still some vibes that CHAZ was a way for white folks to co-opt a black movement (more on this later). I also encountered an older white man who kept trying to vandalize the police station even further, with a black male in his 20s standing guard against his efforts. 
-
-
 
 Without further ado, here are some photos. 
 
@@ -33,9 +27,19 @@ Without further ado, here are some photos.
 
 ![](/uploads/chaz_38.jpg)
 
+![](/uploads/chaz_12.jpg) ![](/uploads/chaz_3.jpg) ![](/uploads/chaz_4.jpg) ![](/uploads/chaz_16.jpg) ![](/uploads/chaz_19.jpg)
+
+![](/uploads/3df6bdca-747d-43a3-9bfe-139b636bde54.jpeg)
+
+![](/uploads/32a9bf48-cab8-4c95-a1b8-2a0c0c0b974a.jpeg)
 
 
-The art is beautiful. 
+
+As for the Police Station - 
+
+![](/uploads/chaz_7.jpg) ![](/uploads/chaz_10.jpg) ![](/uploads/chaz_31.jpg) ![](/uploads/chaz_37.jpg)
+
+And of course - 
 
 * The people I met - 
 
@@ -44,8 +48,3 @@ The art is beautiful.
   * Black woman who wanted the barriers down
   * Lunatic anarchist 
   * Bootstrapping young black man
-* Overall notes:
-
-  * Absolutely beautiful
-  * The shut down police precinct 
-  * Section on the conversation
