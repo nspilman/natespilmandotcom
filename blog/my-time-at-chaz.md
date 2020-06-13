@@ -63,6 +63,6 @@ A third black person showed up - appearing in his early 20s (but who can tell wi
 
 The younger black man responds "No disrespect but I don't need white people to like me. You can hate me as much as you want as long as I know my rights." 
 
-The black woman's main point was "We need to take down the barriers, as barriers represent what black people have been running up against for years. The barriers are offensive. " The protestor responded that he and other black protestors saw the barriers as necessary, and not as a reminder of their oppression. 
+The black woman's main point was "We need to take down the barriers, as barriers represent what black people have been running up against for years. The barriers are offensive. Taking down the barriers should be seen as an olive branch to the Seattle police department to make meaningful change happen." The protestor responded that he and other black protestors saw the barriers as necessary to keep the violent police out, and not as a reminder of their oppression. 
 
 Near the end of the conversation, the black woman pointed to a "BLM" tag behind a chain linked fence and indicated how awful of an image that was. A white guy in the crowd yells "Then let's replace it with art!" to which she responds "How will that help black people?"
