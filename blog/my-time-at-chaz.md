@@ -78,6 +78,7 @@ The conversation luls for a moment as we stop and watch [Seattle mayor Jenny Dur
 * [there are black focused events happening at CHAZ](https://twitter.com/Omarisal/status/1271923987962949632) - Just maybe not at 11am on a Friday. 
 * All the news reports I've seen only show the precinct and none of the beautiful artwork around it. They're trying to make it scarier than it is. 
 * Whether CHAZ becomes Seattle's [Christiania](https://theculturetrip.com/europe/denmark/articles/christiania-13-things-to-know-about-copenhagens-hippie-free-town/) or is disbanded, I hope the artwork remains. I hope the resolution is non-violent. I hope CHAZ is turning the dial toward social justice. 
+* Whatever we do to make things better for black and people of color - let's make sure we're doing it by listening to black and people of color. 
 
 
 
