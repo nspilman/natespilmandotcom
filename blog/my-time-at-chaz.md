@@ -17,6 +17,8 @@ Overall, it was nothing to be afraid of. There were no weapons - just folks taki
 * Places to get free food. 
 * A sausage stand where you can pay for a sausage. 
 
+Most businesses in the area were already closed due to covid, and the businesses that were open were still in full operation. I saw a couple waiting outside the Eltana for their order. 
+
 The Zone was lit up with artwork, starting with the enormous Black Lives Matter mural on the pavement. The police station was straight up vandalized. Regardless of how this ends, I hope the art remains. 
 
 Regarding the politics of it all - almost I spoke with expected to see the Zone used as a bargaining chip with the city for greater police reform measures. Most of the people at CHAZ were white. [Seattle is 65% white and only 7% black](https://en.wikipedia.org/wiki/Demographics_of_Seattle#:~:text=The%20racial%20composition%20of%20the,or%20Latino%20of%20any%20race.), but there were still some vibes that CHAZ was a way for white folks to co-opt a black movement (more on this later). I also encountered an older white man who kept trying to vandalize the police station even further, with a black male in his 20s standing guard against his efforts. 
@@ -39,7 +41,19 @@ As for the Police Station -
 
 ![](/uploads/chaz_7.jpg) ![](/uploads/chaz_10.jpg) ![](/uploads/chaz_31.jpg) ![](/uploads/chaz_37.jpg)
 
-And of course - 
+
+
+### Interactions with others - 
+
+I bought a sausage from the sausage guy from Kenya, and we discussed the Swahili language. 
+
+I then walked around taking photos, and overheard a conversation by one of the medical tents. There was a black woman asking the members of the Medical tent - all white - who was in charge and what the demands were to tear down the CHAZ barriers. They responded along the lines of "There is no leader, no organizer. We are but Medics. You'll have to talk to someone else about demands and organization, but remember, there is no leader." One of the guys was fairly rude. 
+
+I spoke with this woman after the conversation, indicating that I appreciated her inquiry of basically "now what?" for the CHAZ movement. It was also interesting to hear the opinion of a black woman at a zone organized (or not organized?) around the idea that Black Lives Matter. 
+
+I followed this woman in the direction of the No Cop Co-Op where she was going to ask similar questions when she stopped half way to ask a black volunteer in a tent outside the precinct. 
+
+![]()
 
 * The people I met - 
 
