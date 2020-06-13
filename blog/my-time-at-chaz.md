@@ -35,15 +35,11 @@ Without further ado, here are some photos.
 
 ![](/uploads/32a9bf48-cab8-4c95-a1b8-2a0c0c0b974a.jpeg)
 
-
-
 As for the Police Station - 
 
 ![](/uploads/chaz_7.jpg) ![](/uploads/chaz_10.jpg) ![](/uploads/chaz_31.jpg) ![](/uploads/chaz_37.jpg)
 
-
-
-### Interactions with others - 
+### Interactions with others -
 
 I bought a sausage from the sausage guy from Kenya, and we discussed the Swahili language. 
 
@@ -51,14 +47,22 @@ I then walked around taking photos, and overheard a conversation by one of the m
 
 I spoke with this woman after the conversation, indicating that I appreciated her inquiry of basically "now what?" for the CHAZ movement. It was also interesting to hear the opinion of a black woman at a zone organized (or not organized?) around the idea that Black Lives Matter. 
 
-I followed this woman in the direction of the No Cop Co-Op where she was going to ask similar questions when she stopped half way to ask a black volunteer in a tent outside the precinct. 
+I followed this woman in the direction of the No Cop Co-Op where she was going to ask similar questions when she stopped half way to ask a black volunteer in a tent outside the precinct. Here's the scene below - with blurred faces to respect their privacy. 
 
-![]()
+![](/uploads/chaz_21.jpg)
 
-* The people I met - 
 
-  * DJ - Protestor 
-  * Kenyan hotdog guy
-  * Black woman who wanted the barriers down
-  * Lunatic anarchist 
-  * Bootstrapping young black man
+
+The conversation between the two more or less boiled down to - 
+
+The woman indicated that she was in LA during the race riots and Johannesburg during the end of Apartheid. The argued that real progress would need to be made via identifying a list of demands, and was concerned that CHAZ appeared leaderless. She was also concerned that   CHAZ was a distraction from the good work that BLM is doing, and that it was largely co-opted by white people.  The protestor argued that although there was no top-down leadership in place, moves were being made with people in power in Seattle - and that while the there were a ton of white people around at CHAZ, it was 11am on a Friday, and not indicative of the area during an organized protest. 
+
+At this point at small crowd had form - all white - including a man running for Congress, and an older gentleman who told me he "needed to spraypaint the windows of the police station black so when Trump orders the cops back, they can't see outside." Crazy Anarchist Man is an example of a white person co-opting to movement. I soon after learned that our protestor friend was in his tent outside the precinct explicitly to play defense against Crazy Anarchist Man. 
+
+A third black person showed up - appearing in his early 20s (but who can tell with the masks) - who shared in the opinion that the whole CHAZ project was another example of white people running away with their movement. Pretty soon there must have been a crowd of at least ten white folks listening to these three black folks speak. At one point a white lady in the crowd cut off the black woman mid-sentence to say "I just want to let you know that I'm listening to you." completely missing the tragic irony of her statement. "I'm here so I can broaden my experience and bring it back to my racist family members."  
+
+The younger black man responds "No disrespect but I don't need white people to like me. You can hate me as much as you want as long as I know my rights." 
+
+The black woman's main point was "We need to take down the barriers, as barriers represent what black people have been running up against for years. The barriers are offensive. " The protestor responded that he and other black protestors saw the barriers as necessary, and not as a reminder of their oppression. 
+
+Near the end of the conversation, the black woman pointed to a "BLM" tag behind a chain linked fence and indicated how awful of an image that was. A white guy in the crowd yells "Then let's replace it with art!" to which she responds "How will that help black people?"
