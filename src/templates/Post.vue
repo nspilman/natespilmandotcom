@@ -121,11 +121,16 @@ export default {
     text-align: left;
     display:flex;
     flex-direction: column;
+    align-items: center;
 }
 #post-body > p > img{
     max-width:100%;
-    max-height:50vh;
+    max-height:100vh;
     text-align: center;
+    margin:1em;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .post{
