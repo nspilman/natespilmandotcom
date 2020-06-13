@@ -41,7 +41,7 @@ As for the Police Station -
 
 ### Interactions with others -
 
-I bought a sausage from the sausage guy from Kenya, and we discussed the Swahili language. 
+I bought a sausage from the sausage guy from Kenya, and we discussed the Swahili language.  (*asante sana* means *thank you very much* in Swahali)
 
 I then walked around taking photos, and overheard a conversation by one of the medical tents. There was a black woman asking the members of the Medical tent - all white - who was in charge and what the demands were to tear down the CHAZ barriers. They responded along the lines of "There is no leader, no organizer. We are but Medics. You'll have to talk to someone else about demands and organization, but remember, there is no leader." One of the guys was fairly rude. 
 
