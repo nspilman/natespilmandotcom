@@ -19,7 +19,7 @@ Overall, there was nothing to fear. There were no weapons - just folks taking a 
 
 Most businesses in the area were already closed due to Covid, and the businesses that were open were still in full operation. I saw a couple waiting outside a bagel shop for their order. 
 
-The Zone was lit up with artwork, starting with the [enormous Black Lives Matter mural](https://twitter.com/kylekotajarvi/status/1271317000313167872) on the pavement. The police station was straight up vandalized. Regardless of how this ends, I hope the art remains. 
+The Zone was lit up with artwork, starting with the [enormous Black Lives Matter mural](https://twitter.com/kylekotajarvi/status/1271317000313167872) on the pavement. The police station was boarded up and covered in graffiti. Regardless of how this ends, I hope the art remains. 
 
 Most of the people at CHAZ were white. [Seattle is 65% white and only 7% black](https://en.wikipedia.org/wiki/Demographics_of_Seattle#:~:text=The%20racial%20composition%20of%20the,or%20Latino%20of%20any%20race.), but there were still some vibes that CHAZ was a way for white folks to co-opt a black movement (more on this later). I also encountered an older white man who kept trying to vandalize the police station even further, with a black male in his 20s standing guard against his efforts. 
 
