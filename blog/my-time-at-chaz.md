@@ -3,7 +3,7 @@ title: My time at CHAZ/CHOP
 description: >-
   Capitol Hill Autonomous Zone / Occupied Protest - Friday June 12 from 10:00 to
   11:30AM
-date: 2020-06-12T21:49:00.536Z
+date: 2020-06-13T21:49:00.536Z
 tags:
   - Seattle
   - BLM
