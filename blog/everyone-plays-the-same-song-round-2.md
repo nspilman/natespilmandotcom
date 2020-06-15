@@ -6,7 +6,7 @@ tags:
   - Music
 published: true
 ---
-#### The cover is in - 
+#### The cover is in -
 
 #### I Believe (When I Fall In Love) by Stevie Wonder
 
@@ -54,7 +54,7 @@ published: true
 | chained to the rhythm                    | katy perry                | <https://youtu.be/eYv_1D8URBY>                               |
 | number of the beast                      | Iron maiden.              | <https://youtu.be/7-iRf9AWoyE>                               |
 
-Hi
+
 
 ### Cover song Selection voting -
 
@@ -97,3 +97,7 @@ More numbers to come, but for now here's the average votes per song.
 | Tom Lehrer - Poisoning Pigeons In The Park                       | 2.64           | 3     |
 | YEEK - ONLY IN THE WEST                                          | 2.50           | 2     |
 | SUGAR Remix (feat. Dua Lipa, Ryan Beatty & Jon B) - BROCKHAMPTON | 2.07           | 6     |
+
+[Full data breakdown](https://docs.google.com/spreadsheets/d/153NAs4_qUfhkTZMJWj_99cos4EXdlGUFHNtUj3m2nNc/edit#gid=0)
+
+![Vote Breakdown](/uploads/eptss_rnd2_votebreakdown.png "Vote Breakdown")
