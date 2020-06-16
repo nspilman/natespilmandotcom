@@ -20,11 +20,7 @@ I spotted Shirley - the black woman from the previous post who was concerned abo
 * An older white man exited the alley, appearing to have just walked through the workshop. He yelled a few swear words and gave them the middle finger before leaving the alley. Fortunately I didn't hear any racial slurs. 
 * Another older white man with an impressive zoom lens lined up in front of the alley to take photos of the workshop. For the safety of the volunteers everyone in the area informed this man that this event was private and he shouldn't be taking photos. He responded, without putting his camera down, that this is "public property and therefore this is his right." I stepped in front of his lens and said while this is true, we are respectfully asking him not to engage in this behavior. He responded by saying that we were infringing on his constitutional rights, and that we were all hypocrites for fighting for "The very rights that you are now stripping me of." I asked him that if he did take any photos, to please blur out the faces. He responds "Why do you think I'd listen to anything you have to say to me?" 
 
-
-
 I also spoke with one of the volunteers of the No Cop Co-Op. I asked him how he got involved, and he said he showed up the day before and asked how he could help. He'd been working ever since, as he worked the night watch through the night, and was now making tomato soup for people. He also made reference to a person - "Mama" - who was a figure of authority. "Mama told me to take watch of the co-op to ensure there wasn't any looting." I hope he's gotten some rest. 
-
-
 
 ![](/uploads/chopBusiness1.jpg)
 ![](/uploads/chopBusiness2.jpg)
@@ -50,3 +46,13 @@ I also spoke with one of the volunteers of the No Cop Co-Op. I asked him how he 
 ![](/uploads/chop19.jpg)
 ![](/uploads/chop20.jpg)
 ![](/uploads/chop21.jpg)
+
+
+Now that the work week is back upon us, I probably won't be returning to CHOP until next weekend. I hope it remains the self-sustaining pro-social community it's become. I hope black organizers are able to seize the narrative and drive lasting social change. 
+
+Thanks for reading. 
+
+
+
+
+
