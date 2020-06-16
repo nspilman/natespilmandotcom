@@ -12,7 +12,9 @@
                 <g-link :to="post.node.path">{{post.node.title}}</g-link>
               </h2>
               <p>{{post.node.description}} </p>
-              <span v-for="tag in post.node.tags" :key="tag.title">#{{tag.title}} </span>
+              <span v-for="tag in post.node.tags" :key="tag.title">
+                  <g-link :to="'/tags/'+tag.title">#{{tag.title}}</g-link>
+                </span>
             </div>
           </div>
         </div>

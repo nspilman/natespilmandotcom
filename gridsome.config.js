@@ -15,9 +15,9 @@ module.exports = {
         remark: {
         },
         refs: {
-          tags:{
+          tags:{  
             typeName: 'Tag',
-            route: '/tag/:id',
+            route: '/tags/:id',
             create: true
           }
         }
