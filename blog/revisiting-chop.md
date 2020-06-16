@@ -10,6 +10,8 @@ tags:
   - BLM
 published: false
 ---
+*This post makes reference to [part 1](https://natespilman.com/blog/my-time-at-chaz/)* 
+
 I went back to CHOP on Sunday. I'm going to highlight my key takeaways and experiences and let the photos do the rest of the talking. 
 
 There were way more people out and about at CHOP at noon on a Sunday than at 11 on a Friday. It felt like a summer festival, but with Black Lives Matter as the central theme.  There was a bubble blowing man, a jazz bluegrass band and a guy selling Black Lives Matter shirts and masks. The police precinct had a few new signs and looked a lot more put together. There was an Indigenous People's display telling Washington governor Inslee to defund fossil fuel projects. 
@@ -22,37 +24,8 @@ I spotted Shirley - the black woman from the previous post who was concerned abo
 
 I also spoke with one of the volunteers of the No Cop Co-Op. I asked him how he got involved, and he said he showed up the day before and asked how he could help. He'd been working ever since, as he worked the night watch through the night, and was now making tomato soup for people. He also made reference to a person - "Mama" - who was a figure of authority. "Mama told me to take watch of the co-op to ensure there wasn't any looting." I hope he's gotten some rest. 
 
-![](/uploads/chopBusiness1.jpg)
-![](/uploads/chopBusiness2.jpg)
-![](/uploads/chopBus3.jpg)
-![](/uploads/chop1.jpg)
-![](/uploads/chop2.jpg)
-![](/uploads/chop3.jpg)
-![](/uploads/chop4.jpg)
-![](/uploads/chop5.jpg)
-![](/uploads/chop6.jpg)
-![](/uploads/chop7.jpg)
-![](/uploads/chop8.jpg)
-![](/uploads/chop9.jpg)
-![](/uploads/chop10.jpg)
-![](/uploads/chop11.jpg)
-![](/uploads/chop12.jpg)
-![](/uploads/chop13.jpg)
-![](/uploads/chop14.jpg)
-![](/uploads/chop15.jpg)
-![](/uploads/chop16.jpg)
-![](/uploads/chop17.jpg)
-![](/uploads/chop18.jpg)
-![](/uploads/chop19.jpg)
-![](/uploads/chop20.jpg)
-![](/uploads/chop21.jpg)
-
+![](/uploads/chopBusiness1.jpg) ![](/uploads/chopBusiness2.jpg) ![](/uploads/chopBus3.jpg) ![](/uploads/chop1.jpg) ![](/uploads/chop2.jpg) ![](/uploads/chop3.jpg) ![](/uploads/chop4.jpg) ![](/uploads/chop5.jpg) ![](/uploads/chop6.jpg) ![](/uploads/chop7.jpg) ![](/uploads/chop8.jpg) ![](/uploads/chop9.jpg) ![](/uploads/chop10.jpg) ![](/uploads/chop11.jpg) ![](/uploads/chop12.jpg) ![](/uploads/chop13.jpg) ![](/uploads/chop14.jpg) ![](/uploads/chop15.jpg) ![](/uploads/chop16.jpg) ![](/uploads/chop17.jpg) ![](/uploads/chop18.jpg) ![](/uploads/chop19.jpg) ![](/uploads/chop20.jpg) ![](/uploads/chop21.jpg)
 
 Now that the work week is back upon us, I probably won't be returning to CHOP until next weekend. I hope it remains the self-sustaining pro-social community it's become. I hope black organizers are able to seize the narrative and drive lasting social change. 
 
-Thanks for reading. 
-
-
-
-
-
+Thanks for reading.
