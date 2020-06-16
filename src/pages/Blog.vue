@@ -1,9 +1,9 @@
 <template>
   <Layout>
     <article id="blog" class="panel special">
-      <div class="image">
+      <!-- <div class="image">
         <img :src="mainImage" alt data-position="center center" id="main-image" />
-      </div>
+      </div> -->
       <div class="content">
         <div class="inner">
           <div v-for="post in posts" :key="post.id" class="post">
@@ -12,6 +12,7 @@
                 <g-link :to="post.node.path">{{post.node.title}}</g-link>
               </h2>
               <p>{{post.node.description}} </p>
+              <span v-for="tag in post.node.tags" :key="tag.title">#{{tag.title}} </span>
             </div>
           </div>
         </div>
@@ -32,6 +33,9 @@ query Posts {
         path
         excerpt
         published
+        tags {
+          title
+        }
     }
   }
   }
@@ -63,10 +67,30 @@ img {
   background-color: white;
 }
 
+.post{
+  padding-bottom:4em;
+  padding-top:.5em;
+  padding-left:.5em;
+  border-bottom:4px dotted rgb(165,197,250);
+  text-align: left;
+  transition: .3s;
+}
+
+
+.post:hover{
+  background-color: rgb(225,240,255);
+}
+
 @media only screen and (max-width: 600px) {
 .image{
 max-height: unset;
 }  
+}
+
+#blog{
+  display:flex;
+  width:100%;
+  align-items: center;
 }
 
 
@@ -77,5 +101,6 @@ max-height: unset;
 .content {
   justify-content: flex-start;
   display:block;
+  width:80%;
 }
 </style>
