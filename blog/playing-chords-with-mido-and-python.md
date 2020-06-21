@@ -7,6 +7,8 @@ tags:
   - music
   - midi
   - mido
+  - software
+  
 published: true
 ---
 Welcome back. This is part II of my python midi series. Part I can be found [here.](https://natespilman.com/blog/2020-03-23-generating-midi-music-stream-with-python/)

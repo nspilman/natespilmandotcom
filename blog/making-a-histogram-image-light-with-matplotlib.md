@@ -8,6 +8,7 @@ tags:
   - histogram
   - data science
   - pillow
+  - software
 published: true
 ---
 *All images used in this post are from the amazing [Unsplash.com](Unsplash.com)*

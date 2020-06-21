@@ -3,7 +3,9 @@ title: Everyone Plays the Same Song - Round 1
 description: The details and data points of our first go at Everyone Plays the Same Song
 date: 2020-05-17T16:26:32.440Z
 tags:
-  - Music
+  - music
+  - covers
+
 published: true
 ---
 [Info on the project as a whole lives here](https://natespilman.com/blog/everyone-plays-the-same-song/)

@@ -5,8 +5,11 @@ description: >-
   11:30AM
 date: 2020-06-13T21:49:00.536Z
 tags:
-  - Seattle
+  - seattle
   - BLM
+  - protest
+  - CHOP
+
 published: true
 ---
 *Note: Right before I published this, CHAZ changed its name to CHOP - Capitol Hill Occupied Protest. I'm going to leave the references to CHAZ in the original piece, but recognize the recent name change.* 

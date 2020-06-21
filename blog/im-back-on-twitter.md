@@ -3,7 +3,7 @@ title: I'm back on Twitter!
 description: Refreshing my twitter account after 5+ years of dormancy
 date: 2020-04-19T02:33:57.828Z
 tags:
-  - Twitter
+  - twitter
   - misc
   - update
 published: true

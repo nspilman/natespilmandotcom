@@ -4,6 +4,7 @@ description: A seemingly hacky way to handle pagination
 date: 2020-03-28T17:13:36.586Z
 tags:
   - Meta
+  - Software
   - Gridsome
   - graphql
   - building the blog

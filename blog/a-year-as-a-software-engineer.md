@@ -3,7 +3,7 @@ title: A year as a Software Engineer
 description: A crude list of what I've learned
 date: 2020-05-17T16:49:49.488Z
 tags:
-  - Software development
+  - software
   - tech
   - career
 published: true

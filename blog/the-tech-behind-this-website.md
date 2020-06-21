@@ -8,9 +8,11 @@ tags:
   - meta
   - Netlify
   - Gridsome
-  - Netlifycms
-  - Namecheap
-  - Vue.js
+  - netlifycms
+  - namecheap
+  - vue.js
+  - software
+  
 published: true
 ---
 ## Front End - Frameworks and styles - 

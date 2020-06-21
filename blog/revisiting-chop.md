@@ -5,10 +5,11 @@ description: >-
   12:30AM
 date: 2020-06-15T21:49:00.536Z
 tags:
-  - Seattle
+  - seattle
   - CHOP
   - BLM
-  - Protest
+  - protest
+  
 published: true
 ---
 *This post makes reference to [part 1](https://natespilman.com/blog/my-time-at-chaz/)* 
