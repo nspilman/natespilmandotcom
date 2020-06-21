@@ -1,13 +1,16 @@
 ---
 templateKey: blog-post
 title: Generating a midi music stream with Python
-description: using python package Mido to send midi information to midi player - an introduction
+description: >-
+  using python package Mido to send midi information to midi player - an
+  introduction
 date: 2020-03-21T06:37:03.014Z
 tags:
   - python
   - music
   - midi
   - mido
+  - software
 published: true
 ---
 *instructions originally sourced from [this fine reddit post](https://www.reddit.com/r/ableton/comments/5tuihk/any_good_resources_on_python_to_ableton/)*
