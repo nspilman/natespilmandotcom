@@ -1,22 +1,6 @@
 <template>
   <Layout>
-      <section class="panel special">
-       <div class="content">
-        <div class="inner">
-          <div v-for="post in $page.tag.belongsTo.edges.map(edge => edge.node)" :key="post.id" class="post">
-            <div class="title">
-              <h2>
-                <g-link :to="post.path">{{post.title}}</g-link>
-              </h2>
-              <p>{{post.description}} </p>
-              <span v-for="tag in post.tags" :key="tag.title">
-                  <g-link :to="'/tags/'+tag.title">#{{tag.title}}</g-link>
-                   </span>
-            </div>
-          </div>
-        </div>
-      </div>
-      </section>
+    <Blogposts :title="$page.tag.title" :posts="$page.tag.belongsTo.edges"/>
   </Layout>
 </template>
 
@@ -53,7 +37,11 @@ query Tag ($id: ID!) {
 </page-query>
 
 <script>
+import Blogposts from "../components/Blogposts"
 export default {
+  components:{
+    Blogposts
+  }
     
 }
 </script>
