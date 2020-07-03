@@ -7,6 +7,16 @@ tags:
   - covers
 published: true
 ---
+#### The Playlist is here - 
+
+<iframe width="100%" height="300" scrolling="no" frameborder="no" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/playlists/1082682211&color=%23ff0000&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true&visual=true"></iframe><div style="font-size: 10px; color: #cccccc;line-break: anywhere;word-break: normal;overflow: hidden;white-space: nowrap;text-overflow: ellipsis; font-family: Interstate,Lucida Grande,Lucida Sans Unicode,Lucida Sans,Garuda,Verdana,Tahoma,sans-serif;font-weight: 100;"><a href="https://soundcloud.com/nate-spilman" title="Nate Spilman" target="_blank" style="color: #cccccc; text-decoration: none;">Nate Spilman</a> · <a href="https://soundcloud.com/nate-spilman/sets/everyone-plays-the-same-song-i" title="Everyone Plays the Same Song - I Believe (When I Fall in Love It Will Be Forever)" target="_blank" style="color: #cccccc; text-decoration: none;">Everyone Plays the Same Song - I Believe (When I Fall in Love It Will Be Forever)</a></div>
+
+
+
+Thank you to all the artists who participated in round two of Everyone Plays the Same Song. 
+
+\-----------------------------------------------------
+
 #### The cover is in -
 
 #### I Believe (When I Fall In Love) by Stevie Wonder
@@ -54,8 +64,6 @@ published: true
 | Under The Boardwalk                      | The Drifters              | <https://youtu.be/EPEqRMVnZNU>                               |
 | chained to the rhythm                    | katy perry                | <https://youtu.be/eYv_1D8URBY>                               |
 | number of the beast                      | Iron maiden.              | <https://youtu.be/7-iRf9AWoyE>                               |
-
-
 
 ### Cover song Selection voting -
 
