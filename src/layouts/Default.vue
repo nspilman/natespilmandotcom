@@ -1,15 +1,56 @@
 <template>
   <div id="app">
-    <div id = "header">
-      <g-link v-if="path !='/'" to= "/">
-          <span class="home-link"> NATESPILMAN.COM </span>
-      </g-link>
+    <div id="wrapper">
+      <!-- Main -->
+      <div id="main">
+        <div class="inner">
+          <!-- Header -->
+          <header id="header">
+            <g-link to="/" class="logo">
+              <strong>Nate Spilman</strong> dot com
+            </g-link>
+            <ul class="icons">
+              <li>
+                <g-link href="https://twitter.com/Natetheperson" class="icon brands fa-twitter">
+                  <span class="label">Twitter</span>
+                </g-link>
+              </li>
+              <li>
+                <g-link href="https://www.instagram.com/natespilman/" class="icon brands fa-instagram">
+                  <span class="label">Instagram</span>
+                </g-link>
+              </li>
+              <li>
+            <a href="https://github.com/nspilman" target="_blank" class="icon brands fa-github">
+              <span class="label">GitHub</span>
+            </a>
+          </li>
+          <li>
+            <a
+              href="https://www.linkedin.com/in/natespilman/"
+              target="_blank"
+              class="icon brands fa-linkedin"
+            >
+              <span class="label">LinkedIn</span>
+            </a>
+          </li>
+            </ul>
+          </header>
+          <!-- <transition name="component-fade" mode="out-in"> -->
+            <slot />
+          <!-- </transition> -->
+        </div>
       </div>
-			<div id="wrapper">
-        <transition name="component-fade" mode="out-in">
-        <slot/>
-        </transition>
-			</div>
+      <div id="sidebar-wrapper" :style="{width: showSidebarMenu ? '25em' : '4em'}">
+        <img
+          class="toggle"
+          :style="showSidebarMenu ? openMenuStyles : closedMenuStyles"
+          @click="showSidebarMenu = !showSidebarMenu"
+          src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/b2/Hamburger_icon.svg/440px-Hamburger_icon.svg.png"
+        />
+        <Sidebar :toggleShow="showSidebarMenu" />
+      </div>
+    </div>
   </div>
 </template>
 
@@ -22,13 +63,30 @@ query {
 </static-query>
 
 <script>
+import Sidebar from "../components/Sidebar";
 export default {
-  data(){
-    return {
-      path: process.isClient ? window.location.pathname : "/",
+  components: {
+    Sidebar
+  },
+  created() {
+    if (process.isClient) {
+      if(window.innerWidth < 800){
+        this.showSidebarMenu = false;
+      }
     }
+  },
+  data() {
+    return {
+      showSidebarMenu: true,
+      openMenuStyles: {
+        left: "22em"
+      },
+      closedMenuStyles: {
+        left: "1em"
+      }
+    };
   }
-}
+};
 </script>
 
 <style>
@@ -38,49 +96,29 @@ export default {
 @import "../assets/css/font-awesome.min.css";
 @import "../assets/css/main.css";
 
-.layout {
-  max-width: 760px;
-  margin: 0 auto;
-  padding-left: 20px;
-  padding-right: 20px;
+#sidebar-wrapper {
+  display: flex;
+  justify-content: flex-end;
 }
 
-#header {
-  height: 20px;
-  padding:1em;
-  background-color: white;
+#main {
+  display: flex;
 }
 
-.home-link{
-  font-size: 1rem;
-  letter-spacing: 3px;
-  font-weight: 600;
+#sidebar-wrapper .toggle {
+  height: 40px;
+  width: 40px;
 }
 
-.nav__link {
-  margin-left: 20px;
+.toggle {
+  display: none;
 }
 
-#app {
-  background-color: #ffffff;
-background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='100%25' height='100%25' %3E%3Cdefs%3E%3ClinearGradient id='a' x1='0' x2='0' y1='0' y2='1'%3E%3Cstop offset='0' stop-color='%23fdfff2'/%3E%3Cstop offset='1' stop-color='%2399c3ff'/%3E%3C/linearGradient%3E%3C/defs%3E%3Cpattern id='b' width='24' height='24' patternUnits='userSpaceOnUse'%3E%3Ccircle fill='%23ffffff' cx='12' cy='12' r='12'/%3E%3C/pattern%3E%3Crect width='100%25' height='100%25' fill='url(%23a)'/%3E%3Crect width='100%25' height='100%25' fill='url(%23b)' fill-opacity='0.1'/%3E%3C/svg%3E");
-background-attachment: fixed;
-background-size: cover;
-}
-
-a:visited{
-    text-decoration: none;
-}
-
-.component-fade-enter-active, .component-fade-leave-active {
-  transition: opacity .3s ease;
-}
-.component-fade-enter, .component-fade-leave-to
-/* .component-fade-leave-active below version 2.1.8 */ {
-  opacity: 0;
-}
-
-ul {
-    list-style-position: outside;
+@media only screen and (max-width: 800px) {
+  .toggle {
+    position: fixed;
+    display: block;
+    top: 1em;
+  }
 }
 </style>
