@@ -1,14 +1,14 @@
 ---
-title: How to organize a creative project, remotely
+title: 'How to organize a creative project, remotely'
 description: How 'Everyone Plays the Same Song' works
-date: 2020-06-25
+date: 2020-06-25T00:00:00.000Z
 tags:
   - music
   - creative
   - career
 published: true
 ---
-Around the "Oh, this is going to be a while" realization portion of Quaratimes, I began organizing a cover project called Everyone Plays the Same Song, in which all musicians participating record their interpretation of the same song. Round 1 had 9 songs submitted. Round 2 and 11. There are partipants on the East Coast, Midwest and West Coast. It's been a rewarding project, and in this post I want to distill down the basics of how it's done, and how you can replicate it. 
+Around the "Oh, this is going to be a while" realization portion of Quaratimes, I began organizing a cover project called Everyone Plays the Same Song, in which all musicians participating record their interpretation of the same song. Round 1 had 9 songs submitted. Round 2 and 11. There are participants on the East Coast, Midwest and West Coast. It's been a rewarding project, and in this post I want to distill down the basics of how it's done, and how you can replicate it. 
 
 If you're interested in learning more about the project itself, [here is its official page. ](https://natespilman.com/blog/everyone-plays-the-same-song/)Signups for round 3 are open at the time of this writing. 
 
@@ -22,7 +22,7 @@ If you're interested in learning more about the project itself, [here is its off
 4. Google Meet for video conferencing. Any conferencing platform would do. 
 5. I use a blogpost on my website - probably the site you're reading this on - as a landing page for the project, with links to the signup and pertinent information. 
 
-###### Structure -
+#### Structure -
 
 All forms are sent out over email
 
