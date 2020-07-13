@@ -1,7 +1,7 @@
 ---
 title: 'How to Organize a Creative Project, Remotely'
 description: How 'Everyone Plays the Same Song' works
-date: 2020-06-25T00:00:00.000Z
+date: 2020-07-14T00:00:00.000Z
 tags:
   - music
   - creative
