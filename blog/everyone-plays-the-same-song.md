@@ -14,8 +14,8 @@ published: true
 [Round Three Signup Form Link](https://forms.gle/PAFj6rvmtwJirqqt8) - closing **7/22.** 
 
 project details after the Round One and Two links. 
-
-\------------------------------
+<br>
+<hr>
 
 
 
@@ -25,7 +25,8 @@ project details after the Round One and Two links.
 
 [Details on round 2 live here.](https://natespilman.com/blog/everyone-plays-the-same-song-round-2/)
 
-\------------------------------
+<br>
+<hr>
 
 ## Round One - Bags by Clairo -  is complete!
 
@@ -33,7 +34,8 @@ project details after the Round One and Two links.
 
 [Details on round 1 live here](https://natespilman.com/blog/everyone-plays-the-same-song-round-1/).
 
-\------------------------------
+<br>
+<hr>
 
 ## Project Details
 
@@ -69,5 +71,6 @@ After song submission closes, all participants will fill out of poll with all su
 
 We'll decide on a deadline, and all participants will submit a link to their cover on soundcloud by that deadline. I'll then publish a playlist with everyone's versions, which we'll all listen to together at a post-submission listening party. 
 
-Thanks for being involved,\
+Thanks for being involved,
+
 Nate
