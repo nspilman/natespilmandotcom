@@ -11,9 +11,9 @@ tags:
   - everyone plays the same song
 published: true
 ---
-Around the "Oh, this is going to be a while" realization portion of Quaratimes, I began organizing a cover project called Everyone Plays the Same Song, in which all musicians participating record their interpretation of the same song. It has been a rewarding project, and in this post I want to distill down the basics of how it's done, and how you can replicate it. I've go over the tenets, tools and actual implementation steps of the project itself. 
+Around the "Oh, this is going to be a while" realization portion of Quaratimes, I began organizing a cover project called Everyone Plays the Same Song, in which all musicians participating record their interpretation of the same song. It has been a rewarding project, and in this post I want to distill down the basics of how it's done, and how you can replicate it. I'll go over the tenets, tools and actual implementation steps of the project itself. 
 
-If you're interested in learning more about the project itself or listen to the covers, [here is its official page. ](https://natespilman.com/blog/everyone-plays-the-same-song/) We've had two rounds at the time of this writing, and Signups for round 3 are open. 
+If you're interested in learning more about the project itself or listening to the covers, [here is its official page. ](https://natespilman.com/blog/everyone-plays-the-same-song/) We've had two rounds at the time of this writing, and Signups for round 3 are open. 
 
 ### The structure and tools that make Everyone Plays the Same Song work -
 
@@ -27,7 +27,7 @@ If you're interested in learning more about the project itself or listen to the 
 #### Tools -
 
 1. Google forms for signups, voting, cover submission, surveys. 
-2. Email for mass communication to everyone participating. I also text people / IG or Fb message people individually as needed. 
+2. Email for mass communication to everyone participating. I also text people / IG or FB message people individually as needed. 
 3. Soundcloud for hosting the playlist, the project deliverable. 
 4. Google Meet for video conferencing. Any conferencing platform would do. 
 5. I use a [blogpost on my website](https://natespilman.com/blog/everyone-plays-the-same-song/) - probably the site you're reading this on - as a landing page for the project, with links to the signup and pertinent information. 
