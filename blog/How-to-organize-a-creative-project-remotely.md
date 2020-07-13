@@ -1,11 +1,14 @@
 ---
-title: 'How to organize a creative project, remotely'
+title: 'How to Organize a Creative Project, Remotely'
 description: How 'Everyone Plays the Same Song' works
 date: 2020-06-25T00:00:00.000Z
 tags:
   - music
   - creative
   - career
+  - projects
+  - organizing
+  - everyone plays the same song
 published: true
 ---
 Around the "Oh, this is going to be a while" realization portion of Quaratimes, I began organizing a cover project called Everyone Plays the Same Song, in which all musicians participating record their interpretation of the same song. It has been a rewarding project, and in this post I want to distill down the basics of how it's done, and how you can replicate it. I've go over the tenets, tools and actual implementation steps of the project itself. 
