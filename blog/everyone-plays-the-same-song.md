@@ -1,11 +1,13 @@
 ---
-title: 'Everyone Plays the Same Song '
+title: 'Everyone Plays the Same Song'
 description: A fun and educational covers project
 date: 2020-04-19T19:43:55.705Z
 tags:
   - music
   - covers
 published: true
+favorite: true
+
 ---
 [](https://forms.gle/QnkJ6snwtAJ6Betq5)
 

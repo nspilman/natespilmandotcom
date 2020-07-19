@@ -12,6 +12,7 @@ tags:
   - mido
   - software
 published: true
+favorite: false
 ---
 *instructions originally sourced from [this fine reddit post](https://www.reddit.com/r/ableton/comments/5tuihk/any_good_resources_on_python_to_ableton/)*
 

@@ -5,6 +5,8 @@ date: 2020-04-08T02:33:57.828Z
 tags:
   - beer
 published: false
+favorite: false
+
 ---
 ## The Seattle Breweries That Do No Wrong - 
 - Reuben's 

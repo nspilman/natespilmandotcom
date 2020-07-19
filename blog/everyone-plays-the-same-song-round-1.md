@@ -7,6 +7,8 @@ tags:
   - covers
 
 published: true
+favorite: false
+
 ---
 [Info on the project as a whole lives here](https://natespilman.com/blog/everyone-plays-the-same-song/)
 

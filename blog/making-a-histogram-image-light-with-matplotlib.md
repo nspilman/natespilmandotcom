@@ -10,6 +10,8 @@ tags:
   - pillow
   - software
 published: true
+favorite: false
+
 ---
 *All images used in this post are from the amazing [Unsplash.com](Unsplash.com)*
 

@@ -8,6 +8,8 @@ tags:
   - music
   - guitar
 published: true
+favorite: false
+
 ---
 I took a guitar lesson with [William Z Villian](https://www.youtube.com/watch?v=ZPaS0A5Z0VY) (billvillain@gmail.com, if anyone wants a lesson), and my biggest takeaway from the lesson was that I should get comfortable in all scale modes on the guitar. 
 

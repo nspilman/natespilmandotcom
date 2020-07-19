@@ -14,6 +14,8 @@ tags:
   - software
   
 published: true
+favorite: true
+
 ---
 ## Front End - Frameworks and styles - 
 ### Gridsome - Static site generation

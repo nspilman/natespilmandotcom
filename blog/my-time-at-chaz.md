@@ -11,6 +11,8 @@ tags:
   - CHOP
 
 published: true
+favorite: false
+
 ---
 *Note: Right before I published this, CHAZ changed its name to CHOP - Capitol Hill Occupied Protest. I'm going to leave the references to CHAZ in the original piece, but recognize the recent name change.* 
 

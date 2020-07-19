@@ -6,6 +6,8 @@ tags:
   - music
   - covers
 published: true
+favorite: false
+
 ---
 #### The Playlist is here - 
 

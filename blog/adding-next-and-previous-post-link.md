@@ -9,6 +9,8 @@ tags:
   - graphql
   - building the blog
 published: true
+favorite: false
+
 ---
 Readers of the blog will now see links to previous and next blog posts at the bottom of the page! I've accomplished this via what feels like a hack, as it's really not a scaleable solution... but it works for now!
 

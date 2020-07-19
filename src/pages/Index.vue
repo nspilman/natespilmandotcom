@@ -61,17 +61,15 @@
     <section>
       <h1>The Blog</h1>
       <br />
+      <h2>Favorite Posts</h2>
       <div class="posts">
-        <article v-for="post in posts.map(post => post.node)" :key="post.id">
-          <h3>{{post.title}}</h3>
-          <h5>{{formatDate(post.date)}}</h5>
-          <p>{{post.description}}</p>
-          <ul class="actions">
-            <li>
-              <g-link :to="post.path" class="button">More</g-link>
-            </li>
-          </ul>
-        </article>
+          <PostThumbnail :post="post" v-for="post in posts.filter(post =>post.favorite)" :key="post.id"/> 
+      </div>
+      <br>
+      <br>
+      <h2>All Posts</h2>
+      <div class="posts">
+          <PostThumbnail :post="post" v-for="post in posts" :key="post.id"/> 
       </div>
     </section>
   </Layout>
@@ -89,6 +87,7 @@ query Posts {
         path
         excerpt
         published
+        favorite
         tags {
           title
         }
@@ -100,16 +99,14 @@ query Posts {
 
 <script>
 import mainImage from "../assets/img/Jan52020-pro-photo.png";
-import formattedDateString from "../utils/formattedDateString";
+import PostThumbnail from "../components/homepage/PostThumbnail";
+
 export default {
   metaInfo: {
     title: "Nate Spilman | Personal and Professional Website"
   },
-  created() {},
-  methods: {
-    formatDate(string) {
-      return formattedDateString(string);
-    }
+  components: {
+    PostThumbnail
   },
   data() {
     return {
@@ -118,9 +115,13 @@ export default {
   },
   computed: {
     posts() {
-      return this.$page.posts.edges;
+      return this.$page.posts.edges.map(post => post.node);
+    },
+  },
+      created(){
+      console.log(this.posts.filter(post => post.title == "Everyone Plays the Same Song"))
     }
-  }
+
 };
 </script>
 

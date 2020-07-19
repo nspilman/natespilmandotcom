@@ -24,7 +24,7 @@
 
 <script>
 export default {
-  props: ["posts", "title"]
+  props: ["posts", "title"],
 };
 </script>
 
@@ -53,9 +53,9 @@ img {
   }
 }
 
-.tag{
-    font-weight: bold;
-    padding:.3em;
+.tag {
+  font-weight: bold;
+  padding: 0.3em;
 }
 
 #blog {

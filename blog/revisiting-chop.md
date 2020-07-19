@@ -11,6 +11,8 @@ tags:
   - protest
   
 published: true
+favorite: false
+
 ---
 *This post makes reference to [part 1](https://natespilman.com/blog/my-time-at-chaz/)* 
 

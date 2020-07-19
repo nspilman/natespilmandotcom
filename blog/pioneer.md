@@ -7,6 +7,8 @@ tags:
   - a multi-word tag
   - test
 published: false
+favorite: false
+
 ---
 
 # Markdown: Syntax

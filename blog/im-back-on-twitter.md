@@ -7,6 +7,8 @@ tags:
   - misc
   - update
 published: true
+favorite: false
+
 ---
 I am at @Natetheperson on Twitter. I had posted semiregularly on twitter between 2011 and 2014, after which point I completely dropped it. 
 

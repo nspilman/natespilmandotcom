@@ -7,6 +7,8 @@ tags:
   - tech
   - career
 published: true
+favorite: true
+
 ---
 Time has flown since I started my first full time software developer role. I wanted to reflect on my time and try to identify all the important stuff I've learned over the year. 
 

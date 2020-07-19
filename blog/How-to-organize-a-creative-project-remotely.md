@@ -7,6 +7,8 @@ tags:
   - creative
   - career
 published: true
+favorite: true
+
 ---
 Around the "Oh, this is going to be a while" realization portion of Quaratimes, I began organizing a cover project called Everyone Plays the Same Song, in which all musicians participating record their interpretation of the same song. Round 1 had 9 songs submitted. Round 2 and 11. There are partipants on the East Coast, Midwest and West Coast. It's been a rewarding project, and in this post I want to distill down the basics of how it's done, and how you can replicate it. 
 

@@ -7,6 +7,8 @@ tags:
   - Google Sheets
   - Everyone Plays the Same Song
 published: false
+favorite: false
+
 ---
 I put together everyoneplaysthesamesong as an excuse to engage in something with friends remotely, and to use social pressure to force me/us to practice music. 
 
