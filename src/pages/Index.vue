@@ -61,13 +61,13 @@
     <section>
       <h1>The Blog</h1>
       <br />
-      <h2>Favorite Posts</h2>
+      <h2 class="section-header">Favorite Posts</h2>
       <div class="posts">
           <PostThumbnail :post="post" v-for="post in posts.filter(post =>post.favorite)" :key="post.id"/> 
       </div>
       <br>
       <br>
-      <h2>All Posts</h2>
+      <h2 class="section-header">All Posts</h2>
       <div class="posts">
           <PostThumbnail :post="post" v-for="post in posts" :key="post.id"/> 
       </div>
@@ -133,6 +133,10 @@ img {
 
 #main-image {
   height: 30em !important;
+}
+
+.section-header{
+  text-decoration: underline;
 }
 
 @media only screen and (max-width: 600px) {
