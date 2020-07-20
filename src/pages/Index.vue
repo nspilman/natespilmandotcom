@@ -99,7 +99,7 @@ query Posts {
 
 <script>
 import mainImage from "../assets/img/Jan52020-pro-photo.png";
-import PostThumbnail from "../components/homepage/PostThumbnail.vue";
+import PostThumbnail from "../components/homepage/postThumbnail";
 
 export default {
   metaInfo: {
