@@ -118,10 +118,6 @@ export default {
       return this.$page.posts.edges.map(post => post.node);
     },
   },
-      created(){
-      console.log(this.posts.filter(post => post.title == "Everyone Plays the Same Song"))
-    }
-
 };
 </script>
 
