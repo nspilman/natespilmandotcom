@@ -1,5 +1,5 @@
 ---
-title: 'Everyone Plays the Same Song'
+title: Everyone Plays the Same Song
 description: A fun and educational covers project
 date: 2020-04-19T19:43:55.705Z
 tags:
@@ -7,17 +7,12 @@ tags:
   - covers
 published: true
 favorite: true
-
 ---
 [](https://forms.gle/QnkJ6snwtAJ6Betq5)
 
-## Round Three - Signups are open!
+## Round Three is Underway!
 
-[Round Three Signup Form Link](https://forms.gle/PAFj6rvmtwJirqqt8) - closing **7/22.** 
-
-project details after the Round One and Two links. 
-<br>
-<hr>
+[See Round 3's page for more details. ](https://natespilman.com/blog/everyone-plays-the-same-song-round-3/)
 
 
 
