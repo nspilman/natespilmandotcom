@@ -8,11 +8,11 @@ tags:
 published: true
 favorite: false
 ---
-15 Participants
 
- 7 Cities
 
-1 Song to Cover!
+* 15 Participants
+* 7 Cities
+* 1 Song to Cover!
 
 
 
