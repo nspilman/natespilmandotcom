@@ -1,6 +1,9 @@
 <template>
   <Layout>
-    <h1 />
+    <h1> EPTSS Round 3 Cover Song Selection Results </h1>
+        <p>One of the most fun parts of this project is watching the votes come in and the songs jocky for position. I thought I'd share this pleasure best I could here.
+         Increment up the votes to see the whole thing play out at your speed. 
+         Or click 'Jump to Winner' to see which song is the cover song of Round 3! </p>
     <div id="vote-count-controller-container">
       <div>
         <h2 id="vote-count-header">
@@ -12,17 +15,18 @@
       <div id="controls">
         <p id="increment-vote">Increment Vote</p>
         <button
-          :disabled="numberOfVotesSubmitted == maxVotes - 1"
-          class="vote-count-button increase-vote"
-          @click="numberOfVotesSubmitted = numberOfVotesSubmitted + 1"
-        >+</button>
-        <button
           :disabled="numberOfVotesSubmitted == 0"
           class="vote-count-button increase-vote"
           @click="numberOfVotesSubmitted= numberOfVotesSubmitted - 1"
         >-</button>
-        <p v-if="numberOfVotesSubmitted != 14" id="show-winner" @click="numberOfVotesSubmitted=14">jump to winner</p>
-        <p v-else id="show-winner" @click="numberOfVotesSubmitted=0">start over</p>
+         <button
+          :disabled="numberOfVotesSubmitted == maxVotes - 1"
+          class="vote-count-button increase-vote"
+          @click="numberOfVotesSubmitted = numberOfVotesSubmitted + 1"
+        >+</button>
+        <br>
+        <button v-if="numberOfVotesSubmitted != 14" id="show-winner" @click="numberOfVotesSubmitted=14">jump to winner</button>
+        <button v-else id="show-winner" @click="numberOfVotesSubmitted=0">start over</button>
       </div>
     </div>
     <div id="song-averages-grid-container">
@@ -90,7 +94,10 @@ export default {
 
 #show-winner{
     cursor: pointer;
-    padding-top: 2em;
+    margin-top: 2em;
+    background-color:gold;
+    height:50px;
+    width:170px;
 }
 
 #increment-vote{
