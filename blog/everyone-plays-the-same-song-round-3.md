@@ -12,9 +12,9 @@ favorite: false
 * 7 Cities
 * 1 Song to Cover!
 
-
-
 ### Round 3's cover is This Year by The Mountain Goats
+
+The cover is due August 17th, 2020. 
 
 ### <iframe width="560" height="315" src="https://www.youtube.com/embed/ii6kJaGiRaI" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
