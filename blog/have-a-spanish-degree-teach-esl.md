@@ -31,7 +31,9 @@ The aspect of "There is actual utility in having studied Spanish" is a reward in
 
 ### To have fun, engage socially and form relationships
 
-Emily is the champion of ice breakers and social inclusion, and each hour a week spent with her and the students was a highlight. Social distancing can lead to social isolation. It's been personally helpful, mentally, to have an hour scheduled weekly to form social connections over Zoom. We're providing education services, but we're also building a community for people in a foreign country who may or may not have any family with them. 
+Emily is the champion of ice breakers and social inclusion, and each hour a week spent with her and the students was a highlight. Working with the other teachers, who taught the same students on a different day of the week, was also fun and pleasant. 
+
+Social distancing can lead to social isolation. It's been personally helpful, mentally, to have an hour scheduled weekly to form social connections over Zoom. We're providing education services, but we're also building a community for people in a foreign country who may or may not have any family with them. 
 
 ## In conclusion - 
 
