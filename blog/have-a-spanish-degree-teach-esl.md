@@ -33,4 +33,6 @@ The aspect of "There is actual utility in having studied Spanish" is a reward in
 
 Emily is the champion of ice breakers and social inclusion, and each hour a week spent with her and the students was a highlight. Social distancing can lead to social isolation. It's been personally helpful, mentally, to have an hour scheduled weekly to form social connections over Zoom. We're providing education services, but we're also building a community for people in a foreign country who may or may not have any family with them. 
 
+## In conclusion - 
+
 I hope this reading has convinced you that volunteering to teach English is a good use of your time - even if it's just a half hour a week. It's never been easier to help - all you have to do is open your laptop from your couch. If you're interested in Volunteering with [The Open Door](https://www.theopendoornjny.org/), hit me up (nate.spilman@gmail.com) and I'll make an introduction.
