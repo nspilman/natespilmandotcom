@@ -5,6 +5,7 @@ date: 2020-04-19T19:43:55.705Z
 tags:
   - music
   - covers
+  - everyonePlaysTheSameSong
 published: true
 favorite: true
 ---
