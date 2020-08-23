@@ -5,10 +5,9 @@ date: 2020-05-17T16:26:32.440Z
 tags:
   - music
   - covers
-
+  - everyonePlaysTheSameSong
 published: true
 favorite: false
-
 ---
 [Info on the project as a whole lives here](https://natespilman.com/blog/everyone-plays-the-same-song/)
 
