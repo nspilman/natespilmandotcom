@@ -13,7 +13,7 @@ favorite: true
 
 The purpose of this writing is to convince you - a professional with a Spanish degree - that volunteering with an ESL program is a good idea. 
 
-When the Pandemic first hit, I saw an Instagram post from my friend Emily Litman with an invitation to volunteer with [The Open Door ](https://www.theopendoornjny.org/)and engage in English conversations with adults in the greater New York metro area who were learning English as a non-native language. Now that everything had been forced online, the fact that I now lived in Seattle didn't restrict me from hopping on a weekly Zoom call and speaking English really slowly with some wonderful people. I was then invited to co-teach an English basics class weekly with Emily - who did the vast majority of the heavy lifting, with me annotating on the screen for our class of roughly 8. It has been a joy forging relationships, helping others learn English and speaking Spanish again. The students are exclusively Spanish speakers, but the vast majority are.
+When the Pandemic first hit, I saw an Instagram post from my friend Emily Litman with an invitation to volunteer with [The Open Door ](https://www.theopendoornjny.org/)and engage in English conversations with adults in the greater New York metro area who were learning English as a non-native language. Now that everything had been forced online, the fact that I now lived in Seattle didn't restrict me from hopping on a weekly Zoom call and speaking English really slowly with some wonderful people. I was then invited to co-teach an English basics class weekly with Emily - who did the vast majority of the heavy lifting, with me annotating on the screen for our class of roughly 8. It has been a joy forging relationships, helping others learn English and speaking Spanish again. The students are not exclusively Spanish speakers, but the vast majority are.
 
 For some personal background, I have a degree in Spanish from Penn State, and lived a semester in Sevilla, Spain. Aside from when I accidentally rear-ended a group of South American immigrants, my ability to speak Spanish hasn't really been useful in any capacity. Teaching ESL changes that. 
 
@@ -35,6 +35,6 @@ Emily is the champion of ice breakers and social inclusion, and each hour a week
 
 Social distancing can lead to social isolation. It's been personally helpful, mentally, to have an hour scheduled weekly to form social connections over Zoom. We're providing education services, but we're also building a community for people in a foreign country who may or may not have any family with them. Some of our students were calling into the Zoom from Colombia, which the need to go online due to the pandemic itself made possible. 
 
-## In conclusion - 
+## In conclusion -
 
 I hope this reading has convinced you that volunteering to teach English is a good use of your time - even if it's just a half hour a week. It's never been easier to help - all you have to do is open your laptop from your couch. If you're interested in Volunteering with [The Open Door](https://www.theopendoornjny.org/), hit me up (nate.spilman@gmail.com) and I'll make an introduction.
