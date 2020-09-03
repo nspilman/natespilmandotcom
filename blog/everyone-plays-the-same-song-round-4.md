@@ -18,7 +18,7 @@ It's time to vote on which song will be this round's cover! Voting will close mi
 
 **Important links -**  
 
-[](https://www.youtube.com/playlist?list=PLDkm3cHHN23Gnx9zkZCe9NgUXeFvGUdj7)[The Playlist on Youtub](https://www.youtube.com/playlist?list=PLDkm3cHHN23Gnx9zkZCe9NgUXeFvGUdj7)e
+[The Playlist on Youtube](https://www.youtube.com/playlist?list=PLDkm3cHHN23Gnx9zkZCe9NgUXeFvGUdj7)
 
 [The Voting Form](https://forms.gle/CxbaFmvoRCno3wJ77)
 
