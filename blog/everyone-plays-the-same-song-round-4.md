@@ -20,6 +20,8 @@ It's time to vote on which song will be this round's cover! Voting will close mi
 
 [The Playlist on Youtube](https://www.youtube.com/playlist?list=PLDkm3cHHN23Gnx9zkZCe9NgUXeFvGUdj7)
 
+[The Playlist on Spotify](https://open.spotify.com/playlist/7b2eaIX5I4Cwu4VGv3AXGI?si=FVFZTUsxRBKu6KbLVfWlgg)
+
 [The Voting Form](https://forms.gle/CxbaFmvoRCno3wJ77)
 
 And the cover candidates are -
