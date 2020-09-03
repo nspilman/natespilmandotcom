@@ -14,11 +14,13 @@ favorite: false
 * 7 Cities
 * 1 Song to Cover!
 
-
-
 It's time to vote on which song will be this round's cover! Voting will close midnight of **Wednesday, Sept 9th -** at which point we'll have our cover!
 
-[](https://www.youtube.com/playlist?list=PLDkm3cHHN23Gnx9zkZCe9NgUXeFvGUdj7)[The Playlist on Youtube](https://www.youtube.com/playlist?list=PLDkm3cHHN23Gnx9zkZCe9NgUXeFvGUdj7)
+**Important links -**  
+
+[](https://www.youtube.com/playlist?list=PLDkm3cHHN23Gnx9zkZCe9NgUXeFvGUdj7)[The Playlist on Youtub](https://www.youtube.com/playlist?list=PLDkm3cHHN23Gnx9zkZCe9NgUXeFvGUdj7)
+
+[The Voting Form](https://forms.gle/CxbaFmvoRCno3wJ77)
 
 And the cover candidates are -
 
