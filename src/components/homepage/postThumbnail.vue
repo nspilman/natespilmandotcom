@@ -1,8 +1,10 @@
 <template>
   <article>
-    <h3>{{post.title}}</h3>
-    <h5>{{formatDate(post.date)}}</h5>
-    <p>{{post.description}}</p>
+    <g-link :to="post.path">
+      <h3>{{post.title}}</h3>
+      <h5>{{formatDate(post.date)}}</h5>
+      <p>{{post.description}}</p>
+    </g-link>
     <ul class="actions">
       <li>
         <g-link :to="post.path" class="button">More</g-link>
@@ -19,8 +21,8 @@ export default {
   methods: {
     formatDate(string) {
       return formattedDateString(string);
-    }
-  }
+    },
+  },
 };
 </script>
 
