@@ -50,7 +50,8 @@ export default {
 
 <style scoped>
  .music-post{ 
-     width:60vw;
+    min-width:60vw;
+    max-width:90vw;
     padding:2rem 0;
      };
 </style>
