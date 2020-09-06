@@ -21,7 +21,18 @@ module.exports = {
             create: true
           }
         }
-      }
+      },
+    },
+    {
+      use: '@gridsome/source-filesystem',
+      options: {
+        path: './music/*.md',
+        typeName: 'Music',
+        remark: {
+        },
+        refs: {
+        }
+      },
     },
     {
       use: `gridsome-plugin-netlify-cms`,
