@@ -17,6 +17,9 @@
             <li>
               <g-link to="https://natespilman.tech/media/pdfs/Resume_Aug_2020.pdf" class="button">Resume</g-link>
             </li>
+             <li>
+              <g-link to="/music" class="button">Music</g-link>
+            </li>
           </ul>
         </nav>
         <ul class="icons">
