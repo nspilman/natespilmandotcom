@@ -29,5 +29,4 @@ collections:
       - {label: "Description", name: "description", widget: "string"}
       - {label: "Publish Date", name: "date", widget: "date"}
       - {label: "Published", name: "published", widget: "boolean", default: false}
-      - {label: "embed_code", name: "embed_code", widget: "string"}
       - {label: "Body", name: "body", widget: "markdown"}
