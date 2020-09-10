@@ -14,7 +14,11 @@ favorite: false
 * 7 Cities
 * 1 Song to Cover!
 
-It's time to vote on which song will be this round's cover! Voting will close midnight of **Wednesday, Sept 9th -** at which point we'll have our cover!
+
+
+This round's song to cover is **Each Coming Night by Iron and Wine.** 
+
+The cover is due **Monday October 5th!**
 
 **Important links -**  
 
@@ -22,7 +26,29 @@ It's time to vote on which song will be this round's cover! Voting will close mi
 
 [The Playlist on Spotify](https://open.spotify.com/playlist/7b2eaIX5I4Cwu4VGv3AXGI?si=FVFZTUsxRBKu6KbLVfWlgg)
 
-[The Voting Form](https://forms.gle/CxbaFmvoRCno3wJ77)
+\
+Round 4 cover voting final tally - 
+
+| **Song**                                   | **Score** | **Vetoes** |
+| ------------------------------------------ | --------- | ---------- |
+| **Each Coming Night - Iron & Wine**        | **3.56**  | **0**      |
+| Use Somebody - Kings of Leon               | 3.56      | 1          |
+| Ain't No Sunshine - Bill Withers           | 3.50      | 3          |
+| Fields of Gold - Sting                     | 3.25      | 2          |
+| Helicopter - Bloc Party                    | 3.13      | 2          |
+| Taro - Alt J                               | 3.13      | 1          |
+| Head Over Heals - Tears for Fears          | 3.06      | 1          |
+| Wake Me Up When September Ends - Green Day | 3.06      | 3          |
+| White Wedding Pt 1 - Billy Idol            | 3.06      | 3          |
+| Like Eating Glass - Bloc Party             | 3.00      | 3          |
+| I think ur a contra - Vampire Weekend      | 2.94      | 1          |
+| Dance Monkey - Tones and I                 | 2.94      | 4          |
+| We’re in this Together - Nine In Nails     | 2.81      | 5          |
+| Heart it Races - Architecture in Helsinki  | 2.69      | 5          |
+| Arrow Through Me - Wings                   | 2.69      | 3          |
+| Hoppípolla - Sigur Ros                     | 2.56      | 3          |
+
+
 
 And the cover candidates are -
 
