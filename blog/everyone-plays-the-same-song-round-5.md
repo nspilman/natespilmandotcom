@@ -18,20 +18,20 @@ Song voting is **due 10/30,** after which the song cover begins.
 
 [Playlist on Spotify](https://open.spotify.com/playlist/2yciibpMj4ZNV9wEMxajfE?si=tv5qe-jRSe2cteVpVkbizw)
 
-| Song Title                             | Artist                                               | Youtube link                                |
-| -------------------------------------- | ---------------------------------------------------- | ------------------------------------------- |
-| Now You Know                           | Anaïs Mitchell                                       | https://youtu.be/39Wd_s7o4po                |
-| 1979                                   | The Smashing Pumpkins                                | https://youtu.be/4aeETEoNfOg                |
-| PERFECT                                | Tyler the Creator ft Kali Uchis and Austin Feinstein | https://www.youtube.com/watch?v=XIqVCJWSoeE |
-| Sledgehammer                           | Peter Gabriel                                        | https://youtu.be/OJWJE0x7T4Q                |
-| It’s Not Living (If It’s Not With You) | The 1975                                             | https://m.youtube.com/watch?v=ZqoXU583vsY   |
-| The Story                              | Brandi Carlile                                       | https://youtu.be/BLgzxizPTzM                |
-| Hung Up                                | Madonna                                              | https://youtu.be/EDwb9jOVRtU                |
-| This Year                              | The Mountain Goats                                   | https://www.youtube.com/watch?v=ii6kJaGiRaI |
-| Like a Prayer                          | Madonna                                              | https://youtu.be/79fzeNUqQbQ                |
-| Anonanimal                             | Andrew Bird                                          | https://www.youtube.com/watch?v=6CRiR52YtjE |
-| Nobody                                 | mitski                                               | https://youtu.be/qooWnw5rEcI                |
-| Our Day Will Come                      | Amy Winehouse                                        | https://youtu.be/oLwccfUjdUk                |
-| Stay Awake                             | Julie Andrews                                        | https://www.youtube.com/watch?v=8yC_voMY6kY |
-| The Way                                | Fastball                                             | https://youtu.be/2m9Woo6UwoI                |
-| Train Song                             | Vashti Bunyan                                        | https://youtu.be/hswWRRk4vAo                |
+| Song Title                       | Artist                   | Youtube link                                |
+|----------------------------------|--------------------------|---------------------------------------------|
+| Looking Out For You              | Joy Again                | https://www.youtube.com/watch?v=jx-4NuzjA1Y |
+| I Fell In Love With The City     | Another Sky              | https://www.youtube.com/watch?v=DN2AC-wf0K8 |
+| We Will Become Silhouettes       | The Postal Service       | https://youtu.be/0rKC7ElkTUQ                |
+| Stand by me                      | Various (Tracy Chapman)  | https://youtu.be/8XL6C3vY0jM                |
+| Sweet is the night               | Electric Light Orchestra | https://youtu.be/85oGazzEHbY                |
+| Danny Dont You Know              | Ninja Sex Party          | https://youtu.be/kT8cX2-_7pQ                |
+| Giants                           | Sure Sure                | https://www.youtube.com/watch?v=AIk49qPi9ak |
+| Some Things Last a Long Time     | Daniel Johnston          | https://www.youtube.com/watch?v=qghpdpiGnu4 |
+| Man In The Hall                  | State Radio              | https://www.youtube.com/watch?v=XwZRvgjfEcI |
+| When I Get My Hands On You       | The New Basement Tapes   | https://www.youtube.com/watch?v=N11MNiopKP4 |
+| Tomorrow Comes Today             | Gorillaz                 | https://www.youtube.com/watch?v=PiNdcBg3xC8 |
+| Sail                             | AWOLNATION               | https://youtu.be/tgIqecROs5M                |
+| Summer of Roses                  | Willie Nelson            | https://m.youtube.com/watch?v=-RCJummiw6A   |
+| Way Over Yonder in the Minor Key | Billy Bragg & Wilco      | https://www.youtube.com/watch?v=AOjgLptZCn0 |
+| Homeward Bound                   | Simon and Garfunkel      | https://youtu.be/HAnj2fyjxRw                |
