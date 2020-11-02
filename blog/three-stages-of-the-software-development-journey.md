@@ -4,7 +4,7 @@ description: A high level roadmap for Software Engineer education
 date: 2020-11-01T16:15:45.639Z
 tags:
   - Development
-published: false
+published: true
 favorite: false
 ---
 In conversations I've had with some of the more senior folks at work, I've enjoyed musing about the different milestones in the junior software developer's journey. For the sake of easy consumption, I've distilled them into three sections. 
