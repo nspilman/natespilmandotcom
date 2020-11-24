@@ -5,7 +5,7 @@ date: 2020-11-12T18:52:51.159Z
 tags:
   - JDSB
   - Career
-published: false
+published: true
 favorite: false
 ---
 I've a few conversations with community member recently about the frustration and distress of applying for positions and not being asked to interview. I wanted to share my thoughts on how to best handle this phase of the job hunting process. This is aimed at junior software developers looking to break into the industry, but I'm sure a lot of this could be applied to any job hunting situation. 
