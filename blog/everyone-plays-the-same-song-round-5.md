@@ -10,19 +10,19 @@ tags:
 published: true
 favorite: false
 ---
-Everyone Plays the Same Song round 5 is upon us!
+Everyone Plays the Same Song round 5 is complete!
 
 The song to cover is **Tomorrow Comes Today** by Gorillaz!
 
-Covers are due **Monday, November 23rd.**
+Covers were due **Monday, November 23rd.**
 
 <!--StartFragment-->
 
-![Gorillaz: Tomorrow Comes Today (Video 2000) - IMDb](https://m.media-amazon.com/images/M/MV5BMjY0N2QyM2MtNWMyYi00YzE5LWFkMWMtNjViZGVjZWNiYzc5XkEyXkFqcGdeQXVyNDE4OTY5NzI@._V1_.jpg)
+![Gorillaz: Tomorrow Comes Today (Video 2000) - IMDb](/uploads/tomorrowcomestoday.png)
 
 <!--EndFragment-->
 
-
+<iframe width="100%" height="300" scrolling="no" frameborder="no" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/playlists/1166898181&color=%23ff0000&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true&visual=true"></iframe><div style="font-size: 10px; color: #cccccc;line-break: anywhere;word-break: normal;overflow: hidden;white-space: nowrap;text-overflow: ellipsis; font-family: Interstate,Lucida Grande,Lucida Sans Unicode,Lucida Sans,Garuda,Verdana,Tahoma,sans-serif;font-weight: 100;"><a href="https://soundcloud.com/nate-spilman" title="Nate Spilman" target="_blank" style="color: #cccccc; text-decoration: none;">Nate Spilman</a> · <a href="https://soundcloud.com/nate-spilman/sets/everyone-plays-the-same-song-1" title="Everyone Plays the Same Song - Tomorrow Comes Today" target="_blank" style="color: #cccccc; text-decoration: none;">Everyone Plays the Same Song - Tomorrow Comes Today</a></div>
 
 <!--StartFragment-->
 
@@ -45,8 +45,6 @@ Covers are due **Monday, November 23rd.**
 | Some Things Last a Long Time - Daniel Johnston         | 2.60  | 3         |
 
 <!--EndFragment-->
-
-
 
 ## **Cover Selection**
 
