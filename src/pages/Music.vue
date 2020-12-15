@@ -1,11 +1,14 @@
 <template>
   <Layout>
-      <h1>Music</h1>
+    <div id="music-page">
+      <h1 id="music-title">Music</h1>
+      <hr/>
       <div v-for="post in posts" :key="post.title" class="music-post">
-          <h2>{{post.title}}</h2>
+          <h3>{{post.title}}</h3>
           <h4>{{post.description}}</h4>
           <div v-html="post.content"/>
-        </div>
+      </div>
+    </div>
   </Layout>
 </template>
 
@@ -49,9 +52,11 @@ export default {
 </script>
 
 <style scoped>
- .music-post{ 
-    min-width:60vw;
-    max-width:90vw;
-    padding:2rem 0;
-     };
+#music-page{
+  padding:5rem 2rem;
+}
+
+.music-post{
+  padding:2rem;
+}
 </style>

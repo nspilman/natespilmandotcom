@@ -1,81 +1,57 @@
 <template>
-  <Layout>
-    <section id="banner">
-      <div class="content">
-        <header>
-          <div>
+  <!DOCTYPE html>
+  <html lang="en">
+    <head>
+      <meta charset="UTF-8" />
+      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <title>Nate Spilman</title>
+    </head>
+
+    <body>
+      <Layout>
+        <section class="hero">
+          <div class="hero-container">
             <h1>Hi, I'm Nate Spilman</h1>
-            <p>Welcome to my Website and Blog</p>
+            <p>
+              I’m a professional software developer and amateur musician and
+              photographer. I like to write and put things on the internet, and
+              this is where those enjoyments intersect. Thanks for stopping by.
+            </p>
+            <div class="nate"></div>
+                <Icons/>
           </div>
-        </header>
-        <p>I'm a professional software developer and amateur musician and photographer. I like to write and put things on the internet, and this is where those enjoyments intersect. Thanks for stopping by.</p>
-        <nav id="nav">
-          <ul class="actions">
-            <li>
-              <g-link class="button" to="/blog">Blog</g-link>
-            </li>
-            <li>
-              <g-link to="https://natespilman.tech/media/pdfs/Resume_Aug_2020.pdf" class="button">Resume</g-link>
-            </li>
-             <li>
-              <g-link to="/music" class="button">Music</g-link>
-            </li>
-          </ul>
-        </nav>
-        <ul class="icons">
-          <li>
-            <g-link href="https://twitter.com/Natetheperson" class="icon brands fa-twitter">
-              <span class="label">Twitter</span>
-            </g-link>
-          </li>
-          <li>
-            <a href="https://github.com/nspilman" target="_blank" class="icon brands fa-github">
-              <span class="label">GitHub</span>
-            </a>
-          </li>
-          <li>
-            <a
-              href="https://www.instagram.com/natespilman/"
-              target="_blank"
-              class="icon brands fa-instagram"
-            >
-              <span class="label">Instagram</span>
-            </a>
-          </li>
-          <li>
-            <a
-              href="https://www.linkedin.com/in/natespilman/"
-              target="_blank"
-              class="icon brands fa-linkedin"
-            >
-              <span class="label">LinkedIn</span>
-            </a>
-          </li>
-          <br />
-          <li>
-            <span class="label">nate.spilman@gmail.com</span>
-          </li>
-        </ul>
-      </div>
-      <span class="image object">
-        <img :src="mainImage" alt data-position="center center" id="main-image" />
-      </span>
-    </section>
-    <section>
-      <h1>The Blog</h1>
-      <br />
-      <h2 class="section-header">Favorite Posts</h2>
-      <div class="posts">
-          <PostThumbnail :post="post" v-for="post in posts.filter(post =>post.favorite)" :key="post.id"/> 
-      </div>
-      <br>
-      <br>
-      <h2 class="section-header">All Posts</h2>
-      <div class="posts">
-          <PostThumbnail :post="post" v-for="post in posts" :key="post.id"/> 
-      </div>
-    </section>
-  </Layout>
+        </section>
+
+        <main class="main">
+          <div class="content-container">
+            <div class="card-header">
+              <h2>Nate's Blog</h2>
+              <hr />
+            </div>
+            <div class="card-blog-container">
+             <PostThumbnail :post="post" v-for="post in lastFourPosts" :key="post.id"/> 
+            </div>
+            <div class="button-container">
+              <g-link to="/blog">
+                <button>Read</button>
+              </g-link>
+            </div>
+            <div class="card-header">
+              <h2>Nate's Music</h2>
+              <hr />
+            </div>
+           <Song
+            :song="latestSong"
+
+           />
+            <div class="button-container">
+              <g-link to="/music"><button>Listen</button></g-link>
+            </div>
+          </div>
+        </main>
+      </Layout>
+    </body>
+  </html>
 </template>
 
 <page-query>
@@ -97,55 +73,63 @@ query Posts {
     }
   }
   }
+    music: allMusic(filter: { published: { eq: true }}) {
+    edges {
+      node {
+        id
+        title
+        date
+        content
+        description
+        path
+        excerpt
+        published
+    }
+  }
+  }
   }
   </page-query>
 
 <script>
 import mainImage from "../assets/img/Jan52020-pro-photo.png";
 import PostThumbnail from "../components/homepage/postThumbnail";
+import Icons from "../components/Icons";
+import Song from "../components/Song"
 
 export default {
   metaInfo: {
-    title: "Nate Spilman | Personal and Professional Website"
+    title: "Nate Spilman | Personal and Professional Website",
   },
   components: {
-    PostThumbnail
+    PostThumbnail,
+    Icons,
+    Song
   },
   data() {
     return {
-      mainImage
+      mainImage,
     };
   },
   computed: {
     posts() {
-      return this.$page.posts.edges.map(post => post.node);
+      return this.$page.posts.edges.map((post) => post.node);
     },
+    lastFourPosts(){
+        return this.posts.slice(0,4)
+    },
+    music(){
+        return this.$page.music.edges.map(song=>song.node)
+    },
+    latestSong(){
+        return this.music[0]
+    }
+
   },
 };
 </script>
 
 <style scoped>
-img {
-  /* padding: 3em; */
-  background-color: white;
-}
-
-#main-image {
-  height: 30em !important;
-}
-
-.section-header{
-  text-decoration: underline;
-}
-
-@media only screen and (max-width: 600px) {
-  #banner {
-    display: flex;
-    flex-direction: column-reverse;
-  }
-
-  #main-image {
-    height: 35vh !important;
-  }
+.hero{
+  padding:5rem 0;
 }
 </style>
