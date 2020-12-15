@@ -132,4 +132,10 @@ export default {
 .hero{
   padding:5rem 0;
 }
+@media only screen and (max-width: 600px) {
+.hero{
+  padding:1rem 0;
+}
+}
+
 </style>

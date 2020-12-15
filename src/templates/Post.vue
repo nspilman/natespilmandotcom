@@ -4,7 +4,6 @@
     <article id="home" class="panel special">
       <div id="post-main">
         <Title/>
-
         <article class="post">
           <header>
             <h2 id="post-title">{{ $page.post.title }}</h2>
@@ -139,5 +138,25 @@ ul {
 
 .post {
   padding: 1rem 10rem;
+}
+
+img{
+  max-width:100px;
+}
+
+@media only screen and (max-width: 1000px) {
+.post {
+  padding: 1rem 5rem;
+}
+}
+@media only screen and (max-width: 600px) {
+.post {
+  padding: 1rem 3.5rem;
+}
+
+h2{
+  font-size:2rem;
+}
+
 }
 </style>
