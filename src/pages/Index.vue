@@ -1,5 +1,4 @@
 <template>
-    <body>
       <Layout>
         <section class="hero">
           <div class="hero-container">
@@ -42,7 +41,6 @@
           </div>
         </main>
       </Layout>
-    </body>
 </template>
 
 <page-query>
