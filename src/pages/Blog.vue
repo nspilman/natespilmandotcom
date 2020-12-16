@@ -1,6 +1,11 @@
 <template>
   <Layout>
-    <Blogposts :posts="posts"/>
+      <Title/>
+    <div id="blog-page">
+      <div id="blog-post-wrapper">
+        <Blogposts :posts="posts" />
+      </div>
+    </div>
   </Layout>
 </template>
 
@@ -28,27 +33,36 @@ query Posts {
 <script>
 import mainImage from "../assets/img/blog_main.jpeg";
 import Blogposts from "../components/Blogposts";
+import Title from "../components/BlogTitle.vue";
+
 
 export default {
+  name:"Blog",
   metaInfo: {
-    title: "Nate Spilman | Personal and Professional Website"
+    title: "Nate Spilman | Personal and Professional Website",
   },
-  components:{
-    Blogposts
+  components: {
+    Blogposts,
+    Title
   },
   data() {
     return {
-      mainImage
-    }
+      mainImage,
+    };
   },
-  computed:{
-    posts(){
-      return this.$page.posts.edges
-    }
-  }
+  computed: {
+    posts() {
+      return this.$page.posts.edges;
+    },
+  },
 };
 </script>
 
 <style scoped>
+#blog-page {
+  display:flex;
+  flex-direction: column;
+  padding:1rem 3rem;
+}
 
 </style>

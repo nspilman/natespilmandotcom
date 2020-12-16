@@ -2,7 +2,7 @@
 // The Client API can be used here. Learn more: gridsome.org/docs/client-api
 
 import DefaultLayout from '~/layouts/Default.vue'
-import mainImage from "./assets/img/Jan52020-pro-photo.png";
+import mainImage from "./assets/img/nate-professional.jpg";
 
 export default function (Vue, { router, head, isClient }) {
   // Set default layout as a global component
