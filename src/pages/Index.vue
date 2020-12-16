@@ -86,6 +86,7 @@ import Icons from "../components/Icons";
 import Song from "../components/Song"
 
 export default {
+  name:"Index",
   metaInfo: {
     title: "Nate Spilman | Personal and Professional Website",
   },

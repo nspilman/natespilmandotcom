@@ -37,6 +37,7 @@ import Title from "../components/BlogTitle.vue";
 
 
 export default {
+  name:"Blog",
   metaInfo: {
     title: "Nate Spilman | Personal and Professional Website",
   },

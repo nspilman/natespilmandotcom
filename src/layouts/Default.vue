@@ -9,9 +9,9 @@
                 <div>
                   <ul>
                     <li><g-link to="/">Home</g-link></li>
-                    <li><g-link href="/blog">Blog</g-link></li>
-                    <li><g-link href="/music">Music</g-link></li>
-                    <li><g-link href="https://natespilman.tech/media/pdfs/Resume_Aug_2020.pdf">Resume</g-link></li>
+                    <li><g-link to="/blog">Blog</g-link></li>
+                    <li><g-link to="/music">Music</g-link></li>
+                    <li><g-link to="https://natespilman.tech/media/pdfs/Resume_Aug_2020.pdf">Resume</g-link></li>
                   </ul>
                 </div>
               </div>

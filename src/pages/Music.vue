@@ -35,6 +35,7 @@ query Posts {
 import mainImage from "../assets/img/blog_main.jpeg";
 
 export default {
+  name:"Music",
   metaInfo: {
     title: "Nate Spilman | Personal and Professional Website"
   },
