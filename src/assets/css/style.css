@@ -322,7 +322,7 @@ button{
 }
 
 button:hover {
-    background-color: var(--darkblue);
+    background-color: var(--ultimategray);
 }
 
 .button-container{

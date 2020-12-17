@@ -25,4 +25,9 @@ export default {
 
 <style scoped>
 
+#content{
+  max-width:1200px;
+  margin:auto;
+}
+
 </style>
