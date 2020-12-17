@@ -11,5 +11,10 @@ export default function (Vue, { router, head, isClient }) {
     name: 'og:image',
     content: mainImage,
   })
+  head.meta.push({
+      key: 'description',
+      name: 'description',
+      content: 'The Personal and Professional Website of Nate Spilman'
+  })
   Vue.component('Layout', DefaultLayout)
 }

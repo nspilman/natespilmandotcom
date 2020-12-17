@@ -1,7 +1,7 @@
 <template>
   <div id="blog-title">
     <g-link to="/blog">
-      <h1>The Blog</h1>
+      <h1>Nate's Blog</h1>
     </g-link>
     <hr />
   </div>
@@ -16,6 +16,8 @@ export default {};
   padding-top: 5rem;
   padding-left: 3rem;
   padding-right: 3rem;
+  max-width:1200px;
+  margin:auto;
 }
 
 a {

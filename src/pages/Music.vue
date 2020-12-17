@@ -1,7 +1,7 @@
 <template>
   <Layout>
     <div id="music-page">
-      <h1 id="music-title">Music</h1>
+      <h1 id="music-title">Nate's Music</h1>
       <hr/>
       <div v-for="post in posts" :key="post.title" class="music-post">
           <h3>{{post.title}}</h3>
@@ -59,5 +59,7 @@ export default {
 
 .music-post{
   padding:2rem;
+  background-color:var(--grayblue);
+  margin:1rem;
 }
 </style>
