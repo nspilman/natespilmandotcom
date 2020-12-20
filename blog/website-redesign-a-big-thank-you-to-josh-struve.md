@@ -6,7 +6,7 @@ tags:
   - website
   - meta
   - jdsb
-published: false
+published: true
 favorite: false
 ---
 I'm excited to announce that my website has gone through a redesign. I honestly don't know who actually comes to this site, but I'm excited as can be about the new look. 
