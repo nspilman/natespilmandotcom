@@ -1,7 +1,7 @@
 ---
 title: 'JDSB Newsletter - 2/1/2021 - Logical Scope, in Code and Life'
 description: 'Logical Scope, in Code and Life'
-date: 2021-02-08T00:48:41.522Z
+date: 2021-02-02T00:48:41.522Z
 tags:
   - JDSB
   - Career
