@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html data-html-server-rendered="true" lang="en" data-vue-tag="%7B%22lang%22:%7B%22ssr%22:%22en%22%7D%7D">
+  <head>
+    <title>Playing chords with Mido and Python - Nate Spilman - Website and Blog</title><meta name="gridsome:hash" content="1acd9ff7544f5ebc679a6336555ee451878b9c4a"><meta data-vue-tag="ssr" charset="utf-8"><meta data-vue-tag="ssr" name="generator" content="Gridsome v0.7.13"><meta data-vue-tag="ssr" data-key="viewport" name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover"><meta data-vue-tag="ssr" data-key="format-detection" name="format-detection" content="telephone=no"><meta data-vue-tag="ssr" name="description" content="Playing something that actually sounds musical"><link data-vue-tag="ssr" rel="icon" href="data:,"><link data-vue-tag="ssr" rel="icon" type="image/png" sizes="16x16" href="/assets/static/favicon.ce0531f.c80fec4a30576dc445ab6aaefa7ada40.png"><link data-vue-tag="ssr" rel="icon" type="image/png" sizes="32x32" href="/assets/static/favicon.ac8d93a.c80fec4a30576dc445ab6aaefa7ada40.png"><link data-vue-tag="ssr" rel="icon" type="image/png" sizes="96x96" href="/assets/static/favicon.b9532cc.c80fec4a30576dc445ab6aaefa7ada40.png"><link data-vue-tag="ssr" rel="apple-touch-icon" type="image/png" sizes="76x76" href="/assets/static/favicon.f22e9f3.c80fec4a30576dc445ab6aaefa7ada40.png"><link data-vue-tag="ssr" rel="apple-touch-icon" type="image/png" sizes="152x152" href="/assets/static/favicon.62d22cb.c80fec4a30576dc445ab6aaefa7ada40.png"><link data-vue-tag="ssr" rel="apple-touch-icon" type="image/png" sizes="120x120" href="/assets/static/favicon.1539b60.c80fec4a30576dc445ab6aaefa7ada40.png"><link data-vue-tag="ssr" rel="apple-touch-icon" type="image/png" sizes="167x167" href="/assets/static/favicon.dc0cdc5.c80fec4a30576dc445ab6aaefa7ada40.png"><link data-vue-tag="ssr" rel="apple-touch-icon" type="image/png" sizes="180x180" href="/assets/static/favicon.7b22250.c80fec4a30576dc445ab6aaefa7ada40.png"><link rel="preload" href="/assets/css/0.styles.fd367411.css" as="style"><link rel="preload" href="/assets/js/app.007676c5.js" as="script"><link rel="preload" href="/assets/js/page--src--templates--post-vue.a6d96d51.js" as="script"><link rel="prefetch" href="/assets/js/8.bf9ed3fe.js"><link rel="prefetch" href="/assets/js/page--src--pages--404-vue.4c21ad69.js"><link rel="prefetch" href="/assets/js/page--src--pages--blog-vue.3b14c5f2.js"><link rel="prefetch" href="/assets/js/page--src--pages--index-vue.3cef7730.js"><link rel="prefetch" href="/assets/js/page--src--pages--tags-vue.78ac3027.js"><link rel="prefetch" href="/assets/js/page--src--templates--tag-vue.7cf76674.js"><link rel="stylesheet" href="/assets/css/0.styles.fd367411.css"><noscript data-vue-tag="ssr"><style>.g-image--loading{display:none;}</style></noscript>
+  </head>
+  <body >
+    <div id="app" data-server-rendered="true"><div id="wrapper"><div id="main"><div class="inner"><header id="header"><a href="/" class="logo active"><strong>Nate Spilman</strong> dot com
+          </a><ul class="icons"><li><a href="https://twitter.com/Natetheperson" target="_blank" rel="noopener" class="icon brands fa-twitter"><span class="label">Twitter</span></a></li><li><a href="https://www.instagram.com/natespilman/" target="_blank" rel="noopener" class="icon brands fa-instagram"><span class="label">Instagram</span></a></li><li><a href="https://github.com/nspilman" target="_blank" class="icon brands fa-github"><span class="label">GitHub</span></a></li><li><a href="https://www.linkedin.com/in/natespilman/" target="_blank" class="icon brands fa-linkedin"><span class="label">LinkedIn</span></a></li></ul></header><article id="home" class="panel special"><div id="post-main"><article class="post"><header><h1>Playing chords with Mido and Python</h1><p>Playing something that actually sounds musical</p><time datetime="2015-11-01" class="published">Monday, March 23, 2020</time></header><div id="post-body"><p>Welcome back. This is part II of my python midi series. Part I can be found <a href="https://natespilman.com/blog/2020-03-23-generating-midi-music-stream-with-python/" target="_blank" rel="nofollow noopener noreferrer">here.</a></p>
+<p>Last time we set up our python program to successfully send a midi stream to our midi player. </p>
+<p>Today we're going to loop a basic chord progression, and add some texture. Again, my midi player is Ableton Live, but this will work for anything that takes midi input. </p>
+<hr>
+<h3 id="writing-chords--"><a href="#writing-chords--" aria-hidden="true"><span class="icon icon-link"></span></a>Writing Chords -</h3>
+<p>We're going to start with some basic minor and major triads - the root, the third and the fifth. The major third is 2 whole steps up from the root - 4 steps - and the minor third is a whole and a half step up from the root - 3 steps. </p>
+<p>First, our function setup - </p>
+<pre><code class="language-python">import mido
+from time import sleep
+ 
+def note(note,velocity = 64, time = 2):
+    return mido.Message('note_on',note=note,velocity = velocity, time=time)
+
+def note_off(note,velocity = 64, time=2):
+    return mido.Message('note_off',note=note,velocity = velocity, time=time)
+
+outport = mido.open_output('IAC Driver pioneer')
+
+def majorChord(root, duration):
+    outport.send(note(root))
+    outport.send(note(root+4))
+    outport.send(note(root+7))
+    sleep(duration)
+    outport.send(note_off(root))
+    outport.send(note_off(root+4))
+    outport.send(note_off(root+7))
+
+def minorChord(root ,duration):
+    outport.send(note(root))
+    outport.send(note(root+3))
+    outport.send(note(root+7))
+    sleep(duration)
+    outport.send(note_off(root))
+    outport.send(note_off(root+3))
+    outport.send(note_off(root+7))
+</code></pre>
+<p>The <code>note</code> method returns a mido.Message object that is sent to the port. </p>
+<p>The <code>majorChord</code> and <code>minorChord</code> functions take in their root note, but also a duration argument. These functions play the chord, sleep for the duration, and then turn off the notes by triggering 'note_off' messages. </p>
+<p>With this, we can loop a nice chord progression like so - </p>
+<pre><code class="language-python">C = 60 
+G = 55 
+A = 57 
+F = 53 
+
+while True:
+    majorChord(C,1)
+    majorChord(G,1)
+    minorChord(A,1)
+    majorChord(F,1)
+    majorChord(F,1)
+    majorChord(G,1)
+    majorChord(C,2)
+</code></pre>
+<p>Tada! we have a chord progression! It sounds a bit dull, though, so let's add some texture. </p>
+<iframe width="75%" height="265" src="https://clyp.it/2dtqyn41/widget" frameborder="0"></iframe>
+<hr>
+<h3 id="adding-texture--"><a href="#adding-texture--" aria-hidden="true"><span class="icon icon-link"></span></a>Adding Texture -</h3>
+<p>We're going to make two changes to make this progression sound less robotic. First, in our note generation, we've added a velocity modification variable. With every note generated, the velocity is now anywhere, randomly, between 44 and 84. This changes the intensity of the note. </p>
+<p>In addition, we've added a <code>pause</code> function, which inserts of <code>sleep</code> of anywhere between 0 and .05 seconds. We've added this pause between the  individual notes on the chord, everyso slightly staggering the notes. </p>
+<pre><code class="language-python">def note(note,velocity = 64, time = 2):
+    velocity_modification = randint(-20,20)
+    return mido.Message('note_on',note=note,velocity = velocity + velocity_modification, time=time)
+
+def note_off(note,velocity = 64, time=2):
+    return mido.Message('note_off',note=note,velocity = velocity, time=time)
+
+def pause():
+    sleep(randint(0,100) * .0005)
+
+def majorChord(root ,duration):
+    outport.send(note(root))
+    pause()
+    outport.send(note(root+4))
+    pause()
+    outport.send(note(root+7))
+    pause()
+    sleep(duration)
+    outport.send(note_off(root))
+    outport.send(note_off(root+4))
+    outport.send(note_off(root+7))
+
+def minorChord(root ,duration):
+    outport.send(note(root))
+    pause()
+    outport.send(note(root+3))
+    pause()
+    outport.send(note(root+7))
+    sleep(duration) 
+    outport.send(note_off(root))
+    outport.send(note_off(root+4))
+    outport.send(note_off(root+7))
+</code></pre>
+<p>And here is the output. </p>
+<iframe width="75%" height="265" src="https://clyp.it/g54lv0zg/widget" frameborder="0"></iframe>
+<p>You can hear how much more organic it sounds. Each loop is unique in its velocity and stagger values. </p>
+<p>Thanks for reading. Stay tuned for more python midi projects!</p>
+</div></article><ul style="display:flex;flex-wrap:wrap;justify-content:space-between;list-style:none;padding:2em;"><li><a href="/blog/2020-03-23-generating-midi-music-stream-with-python/"> Generating a midi music stream with Python </a></li><li><a href="/blog/the-tech-behind-this-website/"> The tech behind this website </a></li></ul></div></article></div></div><div id="sidebar-wrapper" style="width:25em;"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/b2/Hamburger_icon.svg/440px-Hamburger_icon.svg.png" class="toggle" style="left:22em;"><div id="sidebar"><div class="inner"><section id="search" class="alt"></section><nav id="menu"><header class="major"><h2>Menu</h2></header><ul><li><a href="/" class="active">Home</a></li><li><a href="/blog" class="active">Blog</a></li><li><a href="https://natespilman.tech/media/pdfs/2019_Resume.pdf" target="_blank" rel="noopener">Resume</a></li></ul></nav></div></div></div></div></div>
+    <script>window.__INITIAL_STATE__={"data":{"post":{"title":"Playing chords with Mido and Python","description":"Playing something that actually sounds musical","path":"\u002Fblog\u002Fplaying-chords-with-mido-and-python\u002F","content":"\u003Cp\u003EWelcome back. This is part II of my python midi series. Part I can be found \u003Ca href=\"https:\u002F\u002Fnatespilman.com\u002Fblog\u002F2020-03-23-generating-midi-music-stream-with-python\u002F\" target=\"_blank\" rel=\"nofollow noopener noreferrer\"\u003Ehere.\u003C\u002Fa\u003E\u003C\u002Fp\u003E\n\u003Cp\u003ELast time we set up our python program to successfully send a midi stream to our midi player. \u003C\u002Fp\u003E\n\u003Cp\u003EToday we're going to loop a basic chord progression, and add some texture. Again, my midi player is Ableton Live, but this will work for anything that takes midi input. \u003C\u002Fp\u003E\n\u003Chr\u003E\n\u003Ch3 id=\"writing-chords--\"\u003E\u003Ca href=\"#writing-chords--\" aria-hidden=\"true\"\u003E\u003Cspan class=\"icon icon-link\"\u003E\u003C\u002Fspan\u003E\u003C\u002Fa\u003EWriting Chords -\u003C\u002Fh3\u003E\n\u003Cp\u003EWe're going to start with some basic minor and major triads - the root, the third and the fifth. The major third is 2 whole steps up from the root - 4 steps - and the minor third is a whole and a half step up from the root - 3 steps. \u003C\u002Fp\u003E\n\u003Cp\u003EFirst, our function setup - \u003C\u002Fp\u003E\n\u003Cpre\u003E\u003Ccode class=\"language-python\"\u003Eimport mido\nfrom time import sleep\n \ndef note(note,velocity = 64, time = 2):\n    return mido.Message('note_on',note=note,velocity = velocity, time=time)\n\ndef note_off(note,velocity = 64, time=2):\n    return mido.Message('note_off',note=note,velocity = velocity, time=time)\n\noutport = mido.open_output('IAC Driver pioneer')\n\ndef majorChord(root, duration):\n    outport.send(note(root))\n    outport.send(note(root+4))\n    outport.send(note(root+7))\n    sleep(duration)\n    outport.send(note_off(root))\n    outport.send(note_off(root+4))\n    outport.send(note_off(root+7))\n\ndef minorChord(root ,duration):\n    outport.send(note(root))\n    outport.send(note(root+3))\n    outport.send(note(root+7))\n    sleep(duration)\n    outport.send(note_off(root))\n    outport.send(note_off(root+3))\n    outport.send(note_off(root+7))\n\u003C\u002Fcode\u003E\u003C\u002Fpre\u003E\n\u003Cp\u003EThe \u003Ccode\u003Enote\u003C\u002Fcode\u003E method returns a mido.Message object that is sent to the port. \u003C\u002Fp\u003E\n\u003Cp\u003EThe \u003Ccode\u003EmajorChord\u003C\u002Fcode\u003E and \u003Ccode\u003EminorChord\u003C\u002Fcode\u003E functions take in their root note, but also a duration argument. These functions play the chord, sleep for the duration, and then turn off the notes by triggering 'note_off' messages. \u003C\u002Fp\u003E\n\u003Cp\u003EWith this, we can loop a nice chord progression like so - \u003C\u002Fp\u003E\n\u003Cpre\u003E\u003Ccode class=\"language-python\"\u003EC = 60 \nG = 55 \nA = 57 \nF = 53 \n\nwhile True:\n    majorChord(C,1)\n    majorChord(G,1)\n    minorChord(A,1)\n    majorChord(F,1)\n    majorChord(F,1)\n    majorChord(G,1)\n    majorChord(C,2)\n\u003C\u002Fcode\u003E\u003C\u002Fpre\u003E\n\u003Cp\u003ETada! we have a chord progression! It sounds a bit dull, though, so let's add some texture. \u003C\u002Fp\u003E\n\u003Ciframe width=\"75%\" height=\"265\" src=\"https:\u002F\u002Fclyp.it\u002F2dtqyn41\u002Fwidget\" frameborder=\"0\"\u003E\u003C\u002Fiframe\u003E\n\u003Chr\u003E\n\u003Ch3 id=\"adding-texture--\"\u003E\u003Ca href=\"#adding-texture--\" aria-hidden=\"true\"\u003E\u003Cspan class=\"icon icon-link\"\u003E\u003C\u002Fspan\u003E\u003C\u002Fa\u003EAdding Texture -\u003C\u002Fh3\u003E\n\u003Cp\u003EWe're going to make two changes to make this progression sound less robotic. First, in our note generation, we've added a velocity modification variable. With every note generated, the velocity is now anywhere, randomly, between 44 and 84. This changes the intensity of the note. \u003C\u002Fp\u003E\n\u003Cp\u003EIn addition, we've added a \u003Ccode\u003Epause\u003C\u002Fcode\u003E function, which inserts of \u003Ccode\u003Esleep\u003C\u002Fcode\u003E of anywhere between 0 and .05 seconds. We've added this pause between the  individual notes on the chord, everyso slightly staggering the notes. \u003C\u002Fp\u003E\n\u003Cpre\u003E\u003Ccode class=\"language-python\"\u003Edef note(note,velocity = 64, time = 2):\n    velocity_modification = randint(-20,20)\n    return mido.Message('note_on',note=note,velocity = velocity + velocity_modification, time=time)\n\ndef note_off(note,velocity = 64, time=2):\n    return mido.Message('note_off',note=note,velocity = velocity, time=time)\n\ndef pause():\n    sleep(randint(0,100) * .0005)\n\ndef majorChord(root ,duration):\n    outport.send(note(root))\n    pause()\n    outport.send(note(root+4))\n    pause()\n    outport.send(note(root+7))\n    pause()\n    sleep(duration)\n    outport.send(note_off(root))\n    outport.send(note_off(root+4))\n    outport.send(note_off(root+7))\n\ndef minorChord(root ,duration):\n    outport.send(note(root))\n    pause()\n    outport.send(note(root+3))\n    pause()\n    outport.send(note(root+7))\n    sleep(duration) \n    outport.send(note_off(root))\n    outport.send(note_off(root+4))\n    outport.send(note_off(root+7))\n\u003C\u002Fcode\u003E\u003C\u002Fpre\u003E\n\u003Cp\u003EAnd here is the output. \u003C\u002Fp\u003E\n\u003Ciframe width=\"75%\" height=\"265\" src=\"https:\u002F\u002Fclyp.it\u002Fg54lv0zg\u002Fwidget\" frameborder=\"0\"\u003E\u003C\u002Fiframe\u003E\n\u003Cp\u003EYou can hear how much more organic it sounds. Each loop is unique in its velocity and stagger values. \u003C\u002Fp\u003E\n\u003Cp\u003EThanks for reading. Stay tuned for more python midi projects!\u003C\u002Fp\u003E\n","date":"2020-03-24T04:34:19.922Z"}},"context":{}};(function(){var s;(s=document.currentScript||document.scripts[document.scripts.length-1]).parentNode.removeChild(s);}());</script><script src="/assets/js/app.007676c5.js" defer></script><script src="/assets/js/page--src--templates--post-vue.a6d96d51.js" defer></script>
+  </body>
+</html>
