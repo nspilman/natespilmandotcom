@@ -5,9 +5,18 @@ import { graphql, Link } from "gatsby"
 import Layout from "../components/layout"
 import SEO from "../components/seo"
 
+interface Props {
+  readonly data: PageQueryData
+  readonly pageContext: {
+    previous?:Navigation,
+      next:Navigation
+    }
+    next?: any
+  }
+
 import formattedDateString from "../utils/formattedDateString"
 
-export default function Template({ data, pageContext }) {
+export default function Template({ data, pageContext } :Props) {
   const { markdownRemark } = data
   const { frontmatter, html } = markdownRemark
   const {title, date, description} = frontmatter
@@ -65,3 +74,23 @@ export const pageQuery = graphql`
     }
   }
 `
+
+interface PageQueryData {
+  markdownRemark:{
+    html: string,
+    frontmatter :{
+      date: string,
+      title: string,
+      description: string
+    }
+  }
+}
+
+interface Navigation {
+  fields:{
+    slug: string
+  },
+  frontmatter:{
+    title: string
+  }
+}

@@ -6,47 +6,15 @@ import SEO from "../components/seo"
 import Icons from "../components/icons"
 import Post from "../components/postCard"
 
+import Blog from "../types/blog";
+import Music from "../types/music";
+
 type IndexPageProps = {
   data: {
-    blog: {
-      edges: [
-        {
-          node: {
-            html: string,
-            fields: {
-              slug: string,
-            }
-            frontmatter: {
-              date: string,
-              description: string,
-              favorite: boolean,
-              published: boolean,
-              title: string,
-              tags: string[],
-            }
-          }
-        }
-      ]
-    },
-    music: {
-      edges: [
-        {
-        node: {
-          html:string,
-          frontmatter: {
-            date: string,
-            description: string,
-            favorite: boolean,
-            title: string,
-            published: boolean
-          }
-        }
-      }
-      ]
-    }
+    blog: Blog,
+    music: Music
   }
 }
-
 
 const IndexPage = ({ data }: IndexPageProps) => {
   const { blog, music } = data;

@@ -4,8 +4,15 @@ import Post from "../components/postCard";
 import SEO from "../components/seo"
 
 import Layout from "../components/layout"
+import BlogType from "../types/blog";
 
-const Blog = ({ data }) => {
+type BlogProps = {
+  data: {
+    blog:BlogType
+  }
+}
+
+const Blog = ({ data }: BlogProps) => {
   const { blog } = data;
   const posts = blog.edges.map(post => post.node)
 

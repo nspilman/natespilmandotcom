@@ -4,7 +4,15 @@ import SEO from "../components/seo"
 
 import Layout from "../components/layout"
 
-const IndexPage = ({ data }) => {
+import Music from "../types/music";
+
+type MusicProps = {
+  data: {
+    music:Music
+  }
+}
+
+const MusicPage = ({ data }: MusicProps) => {
   const { music } = data;
   const songs = music.edges.map(song => song.node)
 
@@ -36,6 +44,7 @@ export const query = graphql`
     edges {
       node {
         html
+        id
         fields{
           slug
           }
@@ -53,4 +62,4 @@ export const query = graphql`
   }
 `
 
-export default IndexPage
+export default MusicPage

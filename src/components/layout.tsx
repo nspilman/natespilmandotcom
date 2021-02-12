@@ -5,24 +5,19 @@
  * See: https://www.gatsbyjs.com/docs/use-static-query/
  */
 
-import React from "react"
+import React, { ReactNode } from "react"
 import PropTypes from "prop-types"
 import { useStaticQuery, graphql, Link } from "gatsby"
 
 import Icons from "./icons"
 import "../assets/css/style.css"
 
-const Layout = ({ children, removePadding = false}) => {
-  const data = useStaticQuery(graphql`
-    query SiteTitleQuery {
-      site {
-        siteMetadata {
-          title
-        }
-      }
-    }
-  `)
+type LayoutProps = {
+  children: ReactNode,
+  removePadding?: boolean
+}
 
+const Layout : React.FC<LayoutProps> = ({ children, removePadding = false } : LayoutProps) => {
   return (
     <>
       <div id="app">
@@ -44,19 +39,15 @@ const Layout = ({ children, removePadding = false}) => {
             </div>
           </div>
         </header>
-        <div id='layout-wrapper' style={{padding: removePadding ? 0 : '5rem'}}>
+        <div id='layout-wrapper' style={{ padding: removePadding ? 0 : '5rem' }}>
           {children}
         </div>
         <footer className="footer">
-          <Icons/>
+          <Icons />
         </footer>
       </div>
     </>
   )
-}
-
-Layout.propTypes = {
-  children: PropTypes.node.isRequired,
 }
 
 export default Layout
