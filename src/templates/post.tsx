@@ -7,13 +7,11 @@ import Layout from "../components/layout"
 import formattedDateString from "../utils/formattedDateString"
 
 export default function Template(props) {
-  console.log(props)
   const {data, pageContext} = props;
   const { markdownRemark } = data 
   const { frontmatter, html } = markdownRemark
 
   const { next, previous } = pageContext
-  console.log(pageContext)
   return (
 <Layout>
 <article id="home" className="panel special">
@@ -39,14 +37,12 @@ export default function Template(props) {
             padding: '2em',
           }}
         >
-          <li v-if="previousPost">
-          <Link to={previous.fields.slug}> {previous.frontmatter.title } </Link>
-
-          </li>
-          <li v-if="nextPost">
-          <Link to={next.fields.slug}> {next.frontmatter.title } </Link>
-
-          </li>
+          {
+            previous && <li><Link to={previous.fields.slug}> {previous.frontmatter.title } </Link> </li>
+          }
+          {
+            next && <li><Link to={next.fields.slug}> {next.frontmatter.title } </Link></li>
+          }
         </ul>
       </div>
     </article>
