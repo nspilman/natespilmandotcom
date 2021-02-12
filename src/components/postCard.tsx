@@ -9,8 +9,8 @@ const Post = ({post}) => {
     <div className="card-blog">
     <Link to={fields.slug} style={{textDecoration:'none'}}>
       <h3>{ title }</h3>
-      <p>{ formattedDateString(date) }</p>
-      <p>{description }</p>
+      <p style={{color:"white"}}>{ formattedDateString(date) }</p>
+      <p style={{color:"white"}}>{description }</p>
       <p className="tags">
           {tags.map(tag => <span className = "tag" key={tag}>#{tag} </span>) }
          </p>

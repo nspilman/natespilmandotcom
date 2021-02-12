@@ -1,6 +1,7 @@
 import React from "react"
-import { Link, graphql } from "gatsby"
+import { graphql } from "gatsby"
 import Post from "../components/postCard";
+import SEO from "../components/seo"
 
 import Layout from "../components/layout"
 
@@ -10,18 +11,18 @@ const Blog = ({ data }) => {
 
   return (
     <Layout>
+      <SEO title="Nate's Blog"/>
       {/* <Title /> */}
       <div id="blog-page">
         <div id="blog-post-wrapper">
-          <article id="blog" class="panel special">
-            <div class="content">
+          <article id="blog" className="panel special">
+            <div className="content">
               <h1>The Blog</h1>
-              <div class="card-blog-container">
-                {posts.map(post => <Post post={post}/>)}
+              <div className="card-blog-container">
+                {posts.map(post => <Post post={post} key={post.id}/>)}
               </div>
             </div>
           </article>
-          )
         </div>
       </div>
     </Layout>
@@ -35,6 +36,7 @@ export const query = graphql`
     filter: { fields: { collection: { eq: "blog" } }}) {
     edges {
       node {
+        id
         fields{
           slug
           }

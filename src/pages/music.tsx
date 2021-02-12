@@ -1,6 +1,6 @@
 import React from "react"
-import { Link, graphql } from "gatsby"
-import Post from "../components/postCard";
+import { graphql } from "gatsby"
+import SEO from "../components/seo"
 
 import Layout from "../components/layout"
 
@@ -10,6 +10,7 @@ const IndexPage = ({ data }) => {
 
   return (
     <Layout>
+      <SEO title="Nate's Music"/>
       {/* <Title /> */}
     <div id="music-page">
       <h1 id="music-title">Nate's Music</h1>

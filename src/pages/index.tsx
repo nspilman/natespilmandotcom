@@ -2,24 +2,66 @@ import React from "react"
 import { Link, graphql } from "gatsby"
 
 import Layout from "../components/layout"
-import Image from "../components/image"
 import SEO from "../components/seo"
 import Icons from "../components/icons"
 import Post from "../components/postCard"
 
-const IndexPage = ({ data }) => {
+type IndexPageProps = {
+  data: {
+    blog: {
+      edges: [
+        {
+          node: {
+            html: string,
+            fields: {
+              slug: string,
+            }
+            frontmatter: {
+              date: string,
+              description: string,
+              favorite: boolean,
+              published: boolean,
+              title: string,
+              tags: string[],
+            }
+          }
+        }
+      ]
+    },
+    music: {
+      edges: [
+        {
+        node: {
+          html:string,
+          frontmatter: {
+            date: string,
+            description: string,
+            favorite: boolean,
+            title: string,
+            published: boolean
+          }
+        }
+      }
+      ]
+    }
+  }
+}
+
+
+const IndexPage = ({ data }: IndexPageProps) => {
   const { blog, music } = data;
   const posts = blog.edges.map(post => post.node)
   const song = music.edges.map(song => song.node)[0]
   return (
-    <Layout>
+    <Layout
+    removePadding={true}>
+      <SEO
+        title="Home" />
       <section className="hero">
         <div className="hero-container">
           <h1>Hi, I'm Nate Spilman</h1>
           <p>
-            I’m a professional software developer and amateur musician and
-            photographer. I like to write and put things on the internet, and
-            this is where those enjoyments intersect. Thanks for stopping by.
+            I’m a software developer, musician and creative organizer.
             </p>
           <div className="nate"></div>
           <Icons />
@@ -54,8 +96,8 @@ const IndexPage = ({ data }) => {
             <hr />
           </div>
           <div className="card-music">
-            <h3>{song.title}</h3>
-            <p>{song.description}</p>
+            <h3>{song.frontmatter.title}</h3>
+            <p>{song.frontmatter.description}</p>
             <div>
 
               <div dangerouslySetInnerHTML={{ __html: song.html }} />

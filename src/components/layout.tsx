@@ -9,11 +9,10 @@ import React from "react"
 import PropTypes from "prop-types"
 import { useStaticQuery, graphql, Link } from "gatsby"
 
-import Header from "./header"
 import Icons from "./icons"
 import "../assets/css/style.css"
 
-const Layout = ({ children }) => {
+const Layout = ({ children, removePadding = false}) => {
   const data = useStaticQuery(graphql`
     query SiteTitleQuery {
       site {
@@ -45,7 +44,9 @@ const Layout = ({ children }) => {
             </div>
           </div>
         </header>
-        {children}
+        <div id='layout-wrapper' style={{padding: removePadding ? 0 : '5rem'}}>
+          {children}
+        </div>
         <footer className="footer">
           <Icons/>
         </footer>
