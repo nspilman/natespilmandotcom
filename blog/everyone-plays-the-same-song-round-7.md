@@ -17,7 +17,7 @@ Song voting is due Monday, February 22nd.
 
 [Youtube Playlist](https://www.youtube.com/playlist?list=PLDkm3cHHN23HasgxjoAOoQm00G4P-fV8-)
 
-| Song Title                                           | Artist                     | Youtube link                                |
+| **Song Title**                                       | **Artist**                 | **Youtube link**                            |
 | ---------------------------------------------------- | -------------------------- | ------------------------------------------- |
 | All Star                                             | Smashmouth                 | https://www.youtube.com/watch?v=L_jWHffIx5E |
 | Zombie                                               | The Cranberries            | https://youtu.be/6Ejga4kJUts                |
