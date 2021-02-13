@@ -3,9 +3,8 @@ title: Everyone Plays the Same Song - Round 7
 description: The official info page of EPTSS Round 7
 date: 2021-02-13T17:46:05.339Z
 tags:
-  - eptss
   - everyonePlaysTheSameSong
-  - eptts7
+  - eptss7
 published: true
 favorite: false
 ---
