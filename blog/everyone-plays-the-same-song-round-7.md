@@ -9,14 +9,16 @@ tags:
 published: true
 favorite: false
 ---
-## EPTSS Round 7 is upon us! Below are the potential songs to cover for round 7. 
+## EPTSS Round 7 is upon us! Below are the potential songs to cover for round 7.
 
 Song voting is due Monday, February 22nd. 
 
+[Spotify Playlist](https://open.spotify.com/playlist/7rdVBO4O6cGK13FePxYoET?si=fRh5-YzzS8GR_hM410bu8g)
 
+[Youtube Playlist](https://www.youtube.com/playlist?list=PLDkm3cHHN23HasgxjoAOoQm00G4P-fV8-)
 
 | Song Title                                           | Artist                     | Youtube link                                |
-|------------------------------------------------------|----------------------------|---------------------------------------------|
+| ---------------------------------------------------- | -------------------------- | ------------------------------------------- |
 | All Star                                             | Smashmouth                 | https://www.youtube.com/watch?v=L_jWHffIx5E |
 | Zombie                                               | The Cranberries            | https://youtu.be/6Ejga4kJUts                |
 | Magestic                                             | Wax Fang                   | https://youtu.be/NMSe3f39Dhg                |
