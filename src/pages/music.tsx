@@ -1,9 +1,7 @@
 import React from "react"
 import { graphql } from "gatsby"
 import SEO from "../components/seo"
-
-import Layout from "../components/layout"
-
+import ContentPageWrapper from "../components/contentPageWrapper"
 import Music from "../types/music";
 
 type MusicProps = {
@@ -17,7 +15,7 @@ const MusicPage = ({ data }: MusicProps) => {
   const songs = music.edges.map(song => song.node)
 
   return (
-    <Layout>
+    <ContentPageWrapper>
       <SEO title="Nate's Music"/>
       {/* <Title /> */}
     <div id="music-page">
@@ -32,7 +30,7 @@ const MusicPage = ({ data }: MusicProps) => {
       ))}
 
     </div>
-    </Layout>
+    </ContentPageWrapper>
   )
 }
 

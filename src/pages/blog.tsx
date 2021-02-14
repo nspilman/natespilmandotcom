@@ -3,7 +3,7 @@ import { graphql } from "gatsby"
 import Post from "../components/postCard";
 import SEO from "../components/seo"
 
-import Layout from "../components/layout"
+import ContentPageWrapper from "../components/contentPageWrapper"
 import BlogType from "../types/blog";
 
 type BlogProps = {
@@ -17,14 +17,14 @@ const Blog = ({ data }: BlogProps) => {
   const posts = blog.edges.map(post => post.node)
 
   return (
-    <Layout>
+    <ContentPageWrapper>
       <SEO title="Nate's Blog"/>
-      {/* <Title /> */}
       <div id="blog-page">
+      <h1>Nate's Blog</h1>
+      <hr />
         <div id="blog-post-wrapper">
           <article id="blog" className="panel special">
             <div className="content">
-              <h1>The Blog</h1>
               <div className="card-blog-container">
                 {posts.map(post => <Post post={post} key={post.id}/>)}
               </div>
@@ -32,7 +32,7 @@ const Blog = ({ data }: BlogProps) => {
           </article>
         </div>
       </div>
-    </Layout>
+    </ContentPageWrapper>
   )
 }
 

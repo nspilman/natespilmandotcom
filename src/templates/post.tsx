@@ -2,34 +2,53 @@
 
 import React from "react"
 import { graphql, Link } from "gatsby"
-import Layout from "../components/layout"
+import ContentPageWrapper from "../components/contentPageWrapper"
 import SEO from "../components/seo"
 
 interface Props {
   readonly data: PageQueryData
   readonly pageContext: {
-    previous?:Navigation,
-      next:Navigation
-    }
-    next?: any
+    previous?: Navigation,
+    next: Navigation
   }
+  next?: any
+}
 
 import formattedDateString from "../utils/formattedDateString"
 
-export default function Template({ data, pageContext } :Props) {
+export default function Template({ data, pageContext }: Props) {
   const { markdownRemark } = data
   const { frontmatter, html } = markdownRemark
-  const {title, date, description} = frontmatter
+  const { title, date, description } = frontmatter
 
   const { next, previous } = pageContext
   return (
-    <Layout>
+    <ContentPageWrapper>
       <SEO
-      title={title}/>
-      <article id="home" className="panel special">
+        title={title} />
+      <article
+        style={{
+          paddingTop: "5rem",
+          paddingLeft: "3rem",
+          paddingRight: "3rem",
+        }}
+        id="home" className="panel special">
         <div id="post-main">
-          {/* <Title/> */}
-          <article className="post">
+          <div id="blog-title">
+            <Link style={{
+                  textDecoration: 'none'
+                }} to="/blog">
+              <h1>Nate's Blog</h1>
+            </Link>
+            <hr />
+          </div>
+          <article className="post"
+                 style={{
+                  maxWidth:'1200px',
+                  margin:'auto',
+                  padding:'3rem 2rem'
+                }}
+          >
             <header>
               <h2 id="post-title">{title}</h2>
               <p>{description}</p>
@@ -38,7 +57,8 @@ export default function Template({ data, pageContext } :Props) {
               }</time>
             </header>
 
-            <div id="post-body" dangerouslySetInnerHTML={{ __html: html }} />
+            <div id="post-body" 
+            dangerouslySetInnerHTML={{ __html: html }} />
           </article>
           <ul
             style={{
@@ -58,7 +78,7 @@ export default function Template({ data, pageContext } :Props) {
           </ul>
         </div>
       </article>
-    </Layout>
+    </ContentPageWrapper>
   )
 }
 
@@ -76,9 +96,9 @@ export const pageQuery = graphql`
 `
 
 interface PageQueryData {
-  markdownRemark:{
+  markdownRemark: {
     html: string,
-    frontmatter :{
+    frontmatter: {
       date: string,
       title: string,
       description: string
@@ -87,10 +107,10 @@ interface PageQueryData {
 }
 
 interface Navigation {
-  fields:{
+  fields: {
     slug: string
   },
-  frontmatter:{
+  frontmatter: {
     title: string
   }
 }

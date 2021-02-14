@@ -21,8 +21,7 @@ const IndexPage = ({ data }: IndexPageProps) => {
   const posts = blog.edges.map(post => post.node)
   const song = music.edges.map(song => song.node)[0]
   return (
-    <Layout
-    removePadding={true}>
+    <Layout>
       <SEO
         title="Home" />
       <section className="hero">

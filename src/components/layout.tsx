@@ -14,10 +14,9 @@ import "../assets/css/style.css"
 
 type LayoutProps = {
   children: ReactNode,
-  removePadding?: boolean
 }
 
-const Layout : React.FC<LayoutProps> = ({ children, removePadding = false } : LayoutProps) => {
+const Layout : React.FC<LayoutProps> = ({ children } : LayoutProps) => {
   return (
     <>
       <div id="app">
@@ -39,7 +38,7 @@ const Layout : React.FC<LayoutProps> = ({ children, removePadding = false } : La
             </div>
           </div>
         </header>
-        <div id='layout-wrapper' style={{ padding: removePadding ? 0 : '5rem' }}>
+        <div id='layout-wrapper'>
           {children}
         </div>
         <footer className="footer">
