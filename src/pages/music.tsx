@@ -38,7 +38,7 @@ export const query = graphql`
   query AllMusicPosts {
     music: allMarkdownRemark(
       sort: {fields: frontmatter___date, order: DESC}
-    filter: { fields: { collection: { eq: "music" }, , published: {eq: true} }}) {
+    filter: { fields: { collection: { eq: "music" }}, frontmatter: {published: {eq: true} }}) {
     edges {
       node {
         html
