@@ -4,6 +4,7 @@ import React from "react"
 import { graphql, Link } from "gatsby"
 import ContentPageWrapper from "../components/contentPageWrapper"
 import SEO from "../components/seo"
+import styled from "styled-components"
 
 interface Props {
   readonly data: PageQueryData
@@ -13,6 +14,22 @@ interface Props {
   }
   next?: any
 }
+
+const StyledPost = styled.article`
+  padding:5rem 3rem;
+  @media (max-width: 1068px) {
+    padding:5rem .5rem;
+  }
+`
+
+const StyledPostBody = styled.article`
+  max-width:1200px;
+  margin:auto;
+  padding:3rem 2rem;
+  @media (max-width: 768px) {
+    padding:2rem .5rem;
+  }
+`
 
 import formattedDateString from "../utils/formattedDateString"
 
@@ -26,12 +43,7 @@ export default function Template({ data, pageContext }: Props) {
     <ContentPageWrapper>
       <SEO
         title={title} />
-      <article
-        style={{
-          paddingTop: "5rem",
-          paddingLeft: "3rem",
-          paddingRight: "3rem",
-        }}
+      <StyledPost
         id="home" className="panel special">
         <div id="post-main">
           <div id="blog-title">
@@ -42,13 +54,7 @@ export default function Template({ data, pageContext }: Props) {
             </Link>
             <hr />
           </div>
-          <article className="post"
-                 style={{
-                  maxWidth:'1200px',
-                  margin:'auto',
-                  padding:'3rem 2rem'
-                }}
-          >
+          <StyledPostBody className="post">
             <header>
               <h2 id="post-title">{title}</h2>
               <p>{description}</p>
@@ -59,7 +65,7 @@ export default function Template({ data, pageContext }: Props) {
 
             <div id="post-body" 
             dangerouslySetInnerHTML={{ __html: html }} />
-          </article>
+          </StyledPostBody>
           <ul
             style={{
               display: `flex`,
@@ -77,7 +83,7 @@ export default function Template({ data, pageContext }: Props) {
             }
           </ul>
         </div>
-      </article>
+      </StyledPost>
     </ContentPageWrapper>
   )
 }

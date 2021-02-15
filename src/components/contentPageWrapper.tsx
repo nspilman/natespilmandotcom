@@ -1,17 +1,19 @@
 import React from "react"
 import Layout from "./layout"
+import styled from "styled-components"
+
+const Wrapper = styled.div`
+    padding:5rem;
+    @media (max-width: 768px) {
+        padding:2rem;
+      }
+`
 
 const ContentPageWrapper : React.FC = ({ children } ) => {
     return (<Layout>
-        <div className="content-page-wrapper"
-            style={
-                {
-                  padding:'5rem',
-                }
-                }
-        >
+        <Wrapper className="content-page-wrapper">
         {children}
-        </div>
+        </Wrapper>
     </Layout>)
 }
 
