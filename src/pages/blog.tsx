@@ -40,7 +40,7 @@ export const query = graphql`
   query AllBlogPosts {
     blog: allMarkdownRemark(
       sort: {fields: frontmatter___date, order: DESC}
-    filter: { fields: { collection: { eq: "blog" } }}) {
+    filter: { fields: { collection: { eq: "blog" }}, frontmatter: {published: {eq: true}}}) {
     edges {
       node {
         id
