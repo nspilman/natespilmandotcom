@@ -1,0 +1,21 @@
+backend:
+  name: github
+  repo: nspilman/natespilmandotcom
+
+media_folder: "static/uploads"
+public_folder: "/uploads"
+
+collections:
+  - name: "posts"
+    label: "Posts"
+    folder: "blog"
+    create: true
+    slug: "{{slug}}"
+    fields:
+      - {label: "Title", name: "title", widget: "string"}
+      - {label: "Description", name: "description", widget: "string"}
+      - {label: "Publish Date", name: "date", widget: "date"}
+      - {label: "Tags", name: "tags", widget: "list"}
+      - {label: "Published", name: "published", widget: "boolean", default: false}
+      - {label: "Favorite", name: "favorite", widget: "boolean", default: false}
+      - {label: "Body", name: "body", widget: "markdown"}
