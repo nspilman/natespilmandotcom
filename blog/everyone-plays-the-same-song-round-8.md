@@ -6,7 +6,7 @@ tags:
   - everyonePlaysTheSameSong
   - eptss8
   - eptss
-published: false
+published: true
 ---
 ## EPTSS Round 8 is live! Below are the potential songs to cover for round 8.
 
@@ -59,3 +59,5 @@ Song voting is due Friday, April 23rd.
 | Golden                                     | Harry Styles                               | https://m.youtube.com/watch?v=P3cffdsEXXw                            |
 | Hoops                                      | Wolf                                       | https://youtu.be/dLIflZLMyuI                                         |
 | St James Infirmary                         | Louis Armstrong                            | https://www.youtube.com/watch?v=QzcpUdBw7gs&ab_channel=phalenopsis1  |
+| It’s My Life                         | Talk Talk                            | https://youtu.be/yWQezjGjiqs  |
+| Daydreamin'                         | Lupe Fiasco & Jill Scott                            | https://www.youtube.com/watch?v=7XOAStfv-v0  |
