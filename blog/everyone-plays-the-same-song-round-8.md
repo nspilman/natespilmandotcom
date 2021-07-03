@@ -8,7 +8,9 @@ tags:
   - eptss
 published: true
 ---
-## EPTSS Round 8 is live! Below are the potential songs to cover for round 8.
+<iframe width="100%" height="300" scrolling="no" frameborder="no" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/playlists/1261631341&color=%23ff5500&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true&visual=true"></iframe><div style="font-size: 10px; color: #cccccc;line-break: anywhere;word-break: normal;overflow: hidden;white-space: nowrap;text-overflow: ellipsis; font-family: Interstate,Lucida Grande,Lucida Sans Unicode,Lucida Sans,Garuda,Verdana,Tahoma,sans-serif;font-weight: 100;"><a href="https://soundcloud.com/nate-spilman" title="Nate Spilman" target="_blank" style="color: #cccccc; text-decoration: none;">Nate Spilman</a> · <a href="https://soundcloud.com/nate-spilman/sets/everyone-plays-the-same-song-6" title="Everyone Plays The Same Song - Don&#x27;t Let Me Be Misunderstood - Round 8" target="_blank" style="color: #cccccc; text-decoration: none;">Everyone Plays The Same Song - Don&#x27;t Let Me Be Misunderstood - Round 8</a></div>
+
+## EPTSS Round 8 is Over! Below are the potential songs to cover for round 8.
 
 Song voting is due Friday, April 23rd. 
 
@@ -59,5 +61,5 @@ Song voting is due Friday, April 23rd.
 | Golden                                     | Harry Styles                               | https://m.youtube.com/watch?v=P3cffdsEXXw                            |
 | Hoops                                      | Wolf                                       | https://youtu.be/dLIflZLMyuI                                         |
 | St James Infirmary                         | Louis Armstrong                            | https://www.youtube.com/watch?v=QzcpUdBw7gs&ab_channel=phalenopsis1  |
-| It’s My Life                         | Talk Talk                            | https://youtu.be/yWQezjGjiqs  |
-| Daydreamin'                         | Lupe Fiasco & Jill Scott                            | https://www.youtube.com/watch?v=7XOAStfv-v0  |
+| It’s My Life                               | Talk Talk                                  | https://youtu.be/yWQezjGjiqs                                         |
+| Daydreamin'                                | Lupe Fiasco & Jill Scott                   | https://www.youtube.com/watch?v=7XOAStfv-v0                          |
