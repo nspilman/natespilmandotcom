@@ -23,4 +23,8 @@ Software applications can store information in memory. When you declare a variab
 
 **Conditionally doing things based on whether or not something is true -**
 
-The concept of if and else exists across all (to my knowledge) languages. This concept is foundational to how everything else works - do something if true, do something else if false.
+The concept of if and else exists across all (to my knowledge) languages. This concept is foundational to how everything else works - do something if true, do something else if false. 
+
+**State management -** 
+
+Often, values in memory are stored somewhere that can be accessed by all other parts of the code.
