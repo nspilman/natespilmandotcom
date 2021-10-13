@@ -1,12 +1,12 @@
 ---
 title: Everyone Plays the Same Song - Round 2
-description: The second round of the community covers project
 date: 2020-05-28T04:15:25.054Z
+description: The second round of the community covers project
 tags:
   - music
   - covers
   - everyonePlaysTheSameSong
-  - eptss-rnd2
+  - eptss-2
 published: true
 favorite: false
 ---
