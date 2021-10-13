@@ -1,12 +1,12 @@
 ---
 title: Everyone Plays the Same Song - Round 4
-description: The Fourth Round of the Community Covers Project
 date: 2020-09-02T18:54:56.429Z
+description: The Fourth Round of the Community Covers Project
 tags:
   - Music
   - Covers
   - everyonePlaysTheSameSong
-  - eptss-rnd4
+  - eptss-4
 published: true
 favorite: false
 ---
