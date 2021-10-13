@@ -4,8 +4,7 @@ date: 2021-04-15T02:20:41.498Z
 description: The official info page of EPTSS Round 8
 tags:
   - everyonePlaysTheSameSong
-  - eptss8
-  - eptss
+  - eptss-8
 published: true
 ---
 ## Everyone Plays the Same Song round 8 is complete!
