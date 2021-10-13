@@ -1,12 +1,12 @@
 ---
 title: Everyone Plays the Same Song - Round 1
-description: The details and data points of our first go at Everyone Plays the Same Song
 date: 2020-05-17T16:26:32.440Z
+description: The details and data points of our first go at Everyone Plays the Same Song
 tags:
   - music
   - covers
   - everyonePlaysTheSameSong
-  - eptss-rnd1
+  - eptss-1
 published: true
 favorite: false
 ---
