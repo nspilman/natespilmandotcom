@@ -4,8 +4,7 @@ date: 2021-02-13T17:46:05.339Z
 description: The official info page of EPTSS Round 7
 tags:
   - everyonePlaysTheSameSong
-  - eptss7
-  - eptss
+  - eptss-7
 published: true
 favorite: false
 ---
