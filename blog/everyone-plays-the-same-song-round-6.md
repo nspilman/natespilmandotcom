@@ -1,12 +1,12 @@
 ---
 title: Everyone Plays the Same Song - Round 6
-description: The Sixth Round of the Community Covers Project
 date: 2020-12-15T18:52:51.159Z
+description: The Sixth Round of the Community Covers Project
 tags:
   - Music
   - Covers
   - everyonePlaysTheSameSong
-  - eptss-rnd6
+  - eptss-6
 published: true
 favorite: false
 ---
