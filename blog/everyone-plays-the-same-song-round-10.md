@@ -4,7 +4,7 @@ date: 2021-08-24T13:54:17.550Z
 description: The official info page of EPTSS Round 10
 tags:
   - everyonePlaysTheSameSong
-  - eptss10
+  - eptss-10
   - eptss
 published: true
 ---
