@@ -1,12 +1,12 @@
 ---
 title: Everyone Plays the Same Song - Round 5
-description: The Fifth Round of the Community Covers Project
 date: 2020-10-14T18:54:56.429Z
+description: The Fifth Round of the Community Covers Project
 tags:
   - Music
   - Covers
   - everyonePlaysTheSameSong
-  - eptss-rnd5
+  - eptss-5
 published: true
 favorite: false
 ---
