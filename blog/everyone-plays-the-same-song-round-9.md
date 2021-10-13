@@ -4,8 +4,7 @@ date: 2021-07-03T18:27:55.744Z
 description: The official info page of EPTSS Round 9
 tags:
   - everyonePlaysTheSameSong
-  - eptss9
-  - eptss
+  - eptss-9
 published: true
 ---
 ## EPTSS Round 9 is underway!
