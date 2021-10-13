@@ -5,7 +5,6 @@ description: The official info page of EPTSS Round 10
 tags:
   - everyonePlaysTheSameSong
   - eptss-10
-  - eptss
 published: true
 ---
 ## EPTSS Round 10 is upon us!
