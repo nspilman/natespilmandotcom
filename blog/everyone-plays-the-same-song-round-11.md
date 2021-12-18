@@ -4,8 +4,7 @@ date: 2021-10-16T00:15:00.000Z
 description: The official info page of EPTSS Round 11
 tags:
   - everyonePlaysTheSameSong
-  - eptss11
-  - eptss
+  - eptss-11
 published: true
 ---
 ## Round 11, Hoops, is over!
