@@ -126,7 +126,6 @@
 
 .menu-wrap .menu > div > div > ul > li {
   list-style: none;
-  color: #fff;
   font-size: 1.5rem;
   padding: 1rem;
 }
@@ -142,15 +141,6 @@
 .menu-wrap .menu > div > div > ul > li > a:hover {
   color: var(--yellow);
 }
-
-/* FOOTER STYLES */
-
-.footer {
-  padding: 30px;
-  height: 50px;
-  background-color: var(--darkblue);
-}
-
 /* MEDIA QUERIES */
 
 @media all and (max-width: 600px) {

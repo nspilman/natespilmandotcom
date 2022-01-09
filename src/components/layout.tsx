@@ -25,7 +25,10 @@ const Layout: React.FC<LayoutProps> = ({ children }: LayoutProps) => {
       <div id="app" className={classnames(darkTheme, styles.body)}>
         <header id="header">
           <div className={classnames("menu-wrap", styles.menuWrap)}>
-            <input type="checkbox" className="toggler" />
+            <input
+              type="checkbox"
+              className={classnames("toggler", styles.menuToggleIcon)}
+            />
             <div className="hamburger">
               <div></div>
             </div>
@@ -54,7 +57,7 @@ const Layout: React.FC<LayoutProps> = ({ children }: LayoutProps) => {
           </div>
         </header>
         <div id="layout-wrapper">{children}</div>
-        <footer className="footer">
+        <footer className={styles.footer}>
           <Icons />
         </footer>
       </div>

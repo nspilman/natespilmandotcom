@@ -55,23 +55,17 @@ export const menuWrap = style({
   zIndex: 1,
 })
 
-// /* MENU STYLES */
-// .menu-wrap {
-//     position: fixed;
-//     top: 0;
-//     left: 0;
-//     z-index: 1;
-//   }
+export const menuToggleIcon = style({
+  position: "absolute",
+  top: 0,
+  left: 0,
+  zIndex: 2,
+  cursor: "pointer",
+  width: "50px",
+  height: "50px",
+  opacity: 0,
+})
 
-//   .menu-wrap .toggler {
-//     position: absolute;
-//     top: 0;
-//     left: 0;
-//     z-index: 2;
-//     cursor: pointer;
-//     width: 50px;
-//     height: 50px;
-//     opacity: 0;
 //   }
 
 //   .menu-wrap .hamburger {
@@ -355,6 +349,11 @@ export const nateIcon = style({
 // /* FOOTER STYLES */
 
 // .footer{
+const footer = style({
+  padding: "30px",
+  height: "50px",
+  backgroundColor: vars.colors.darkblue,
+})
 //     padding:30px;
 //     height:50px;
 //     background-color: var(--darkblue);
