@@ -8,39 +8,52 @@
 import React, { ReactNode } from "react"
 import PropTypes from "prop-types"
 import { useStaticQuery, graphql, Link } from "gatsby"
+import { darkTheme, lightTheme } from "../styles/theme.css"
+import * as styles from "./layout.css"
+import classnames from "classnames"
 
 import Icons from "./icons"
 import "../assets/css/style.css"
 
 type LayoutProps = {
-  children: ReactNode,
+  children: ReactNode
 }
 
-const Layout : React.FC<LayoutProps> = ({ children } : LayoutProps) => {
+const Layout: React.FC<LayoutProps> = ({ children }: LayoutProps) => {
   return (
     <>
-      <div id="app">
+      <div id="app" className={classnames(darkTheme, styles.body)}>
         <header id="header">
-          <div className="menu-wrap">
+          <div className={classnames("menu-wrap", styles.menuWrap)}>
             <input type="checkbox" className="toggler" />
-            <div className="hamburger"><div></div></div>
+            <div className="hamburger">
+              <div></div>
+            </div>
             <div className="menu">
               <div>
                 <div>
                   <ul>
-                    <li><Link to="/">Home</Link></li>
-                    <li><Link to="/blog">Blog</Link></li>
-                    <li><Link to="/music">Music</Link></li>
-                    <li><Link to="https://natespilman.tech/media/pdfs/Resume_Aug_2020.pdf">Resume</Link></li>
+                    <li>
+                      <Link to="/">Home</Link>
+                    </li>
+                    <li>
+                      <Link to="/blog">Blog</Link>
+                    </li>
+                    <li>
+                      <Link to="/music">Music</Link>
+                    </li>
+                    <li>
+                      <Link to="https://natespilman.tech/media/pdfs/Resume_Aug_2020.pdf">
+                        Resume
+                      </Link>
+                    </li>
                   </ul>
                 </div>
               </div>
             </div>
           </div>
         </header>
-        <div id='layout-wrapper'>
-          {children}
-        </div>
+        <div id="layout-wrapper">{children}</div>
         <footer className="footer">
           <Icons />
         </footer>

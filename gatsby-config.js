@@ -15,6 +15,7 @@ module.exports = {
     },
     `gatsby-plugin-typescript`,
     `gatsby-transformer-sharp`,
+    `gatsby-plugin-vanilla-extract`,
     `gatsby-plugin-sharp`,
     `gatsby-transformer-remark`,
     `gatsby-plugin-netlify-cms`,
