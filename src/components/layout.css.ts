@@ -31,8 +31,8 @@ globalStyle("img", {
 
 export const body = style({
   margin: 0,
-  background: vars.gradients.background,
-  color: vars.colors.white,
+  background: vars.colorsTheme.background,
+  color: vars.colorsTheme.text,
   fontSize: "1rem",
   overflowX: "hidden",
   display: "flex",
@@ -244,8 +244,6 @@ export const contentContainer = style({
   },
 })
 
-import backgroundImage from "../assets/img/bwMountainsAndClouds.jpg"
-
 export const hero = style({
   alignItems: "center",
   display: "flex",
@@ -255,8 +253,7 @@ export const hero = style({
   height: "70vh",
   maxHeight: "1000px",
   width: "100%",
-  background: `linear-gradient(${vars.colors.darkbluehero},${vars.colors.ultimategrayhero}),
-      url(${backgroundImage}) center center / cover no-repeat`,
+  background: vars.colorsTheme.bannerBackground,
   margin: 0,
   marginBottom: "30px",
   backgroundAttachment: "fixed",
@@ -287,7 +284,7 @@ export const cardBlogContainer = style({
 
 export const cardMusic = style({
   flexBasis: "100%",
-  backgroundColor: vars.colors.grayblue,
+  backgroundColor: vars.colorsTheme.elementBackground,
   boxShadow: "0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23)",
   transition: "all 0.3s cubic-bezier(.25,.8,.25,1)",
   padding: "20px",
@@ -298,7 +295,7 @@ export const cardMusic = style({
 
 export const cardBlog = style({
   flexBasis: "46%",
-  backgroundColor: vars.colors.grayblue,
+  backgroundColor: vars.colorsTheme.elementBackground,
   boxShadow: "0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23)",
   transition: "all 0.3s cubic-bezier(.25,.8,.25,1)",
   padding: "20px",
@@ -349,49 +346,26 @@ export const nateIcon = style({
 // /* FOOTER STYLES */
 
 // .footer{
-const footer = style({
+export const footer = style({
   padding: "30px",
   height: "50px",
   backgroundColor: vars.colors.darkblue,
 })
-//     padding:30px;
-//     height:50px;
-//     background-color: var(--darkblue);
-// }
 
 // /* MISC STYLES */
 
-// hr{
-//     border: 1px solid var(--ultimategray);
-// }
-
-// ul{
-//     /* padding: 0; */
-// }
-
 export const tag = style({
-  color: vars.colors.yellow,
+  color: vars.colorsTheme.headersAndLinks,
   cursor: "pointer",
 })
 
-/* BUTTON STYLES */
-
-export const buttonStyle = style({
-  margin: "15px 0",
-  padding: "20px 40px",
-  width: "160px",
-  backgroundColor: vars.colors.grayblue,
-  color: vars.colors.yellow,
-  border: `1px solid ${vars.colors.yellow}`,
-  fontFamily: `"IBM Plex Sans", sans-serif`,
-  fontSize: "0.85rem",
-  fontWeight: 500,
-  textTransform: "uppercase",
-  cursor: "pointer",
-  transition: "all 0.4s ease",
-  ":hover": {
-    backgroundColor: vars.colors.ultimategray,
-  },
+export const themeToggler = style({
+  position: "fixed",
+  padding: "1rem",
+  top: 0,
+  right: 15,
+  width: "150px",
+  zIndex: 100,
 })
 
 // a{

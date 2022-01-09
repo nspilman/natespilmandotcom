@@ -22,7 +22,7 @@ const Blog = ({ data }: BlogProps) => {
     <ContentPageWrapper>
       <SEO title="Nate's Blog" />
       <div id="blog-page">
-        <h1 className={headers.h1}>Nate's Blog</h1>
+        <h1>Nate's Blog</h1>
         <hr />
         <div id="blog-post-wrapper">
           <article id="blog">

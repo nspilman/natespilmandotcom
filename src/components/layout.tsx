@@ -5,9 +5,9 @@
  * See: https://www.gatsbyjs.com/docs/use-static-query/
  */
 
-import React, { ReactNode } from "react"
+import React, { ReactNode, useState } from "react"
 import PropTypes from "prop-types"
-import { useStaticQuery, graphql, Link } from "gatsby"
+import { Link } from "gatsby"
 import { darkTheme, lightTheme } from "../styles/theme.css"
 import * as styles from "./layout.css"
 import classnames from "classnames"
@@ -20,9 +20,17 @@ type LayoutProps = {
 }
 
 const Layout: React.FC<LayoutProps> = ({ children }: LayoutProps) => {
+  const [theme, setTheme] = useState(lightTheme)
+  const toggleTheme = () => {
+    if (theme === darkTheme) {
+      setTheme(lightTheme)
+    } else {
+      setTheme(darkTheme)
+    }
+  }
   return (
     <>
-      <div id="app" className={classnames(darkTheme, styles.body)}>
+      <div id="app" className={classnames(theme, styles.body)}>
         <header id="header">
           <div className={classnames("menu-wrap", styles.menuWrap)}>
             <input
@@ -56,6 +64,11 @@ const Layout: React.FC<LayoutProps> = ({ children }: LayoutProps) => {
             </div>
           </div>
         </header>
+        <div>
+          <button className={styles.themeToggler} onClick={() => toggleTheme()}>
+            Toggle Theme
+          </button>
+        </div>
         <div id="layout-wrapper">{children}</div>
         <footer className={styles.footer}>
           <Icons />

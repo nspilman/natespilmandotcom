@@ -10,7 +10,7 @@ const NotFoundPage = () => (
   <ContentPageWrapper>
     <SEO title="404: Not found" />
     <section id="not-found">
-      <h1 className={headers.h1}> 404 Page Not Found </h1>
+      <h1> 404 Page Not Found </h1>
       <h2 className={headers.h2}>A Bit lost?</h2>
       <h4>Follow the path back Home </h4>
       <Link to="/">

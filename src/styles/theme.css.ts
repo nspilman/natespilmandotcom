@@ -1,8 +1,8 @@
 const colors = {
   white: "white",
   yellow: "#fffe53",
-  yellowLight: "#FFFF87",
-  yellowDark: "#C9CB10",
+  // yellowLight: "#FFFF87",
+  // yellowDark: "#C9CB10",
   darkblue: "#1C2026",
   grayblue: "#43474E",
   ultimategray: "#939597",
@@ -20,6 +20,7 @@ import {
   style,
   globalStyle,
 } from "@vanilla-extract/css"
+import backgroundImage from "../assets/img/bwMountainsAndClouds.jpg"
 
 const root = createGlobalTheme("#app", {
   space: {
@@ -31,40 +32,33 @@ const root = createGlobalTheme("#app", {
     heading: "Georgia, Times, Times New Roman, serif",
     body: "system-ui",
   },
-  gradients: {
-    background: `linear-gradient(${colors.darkblue}, ${colors.grayblue})`,
-  },
   colors,
 })
 
 const colorsTheme = createThemeContract({
-  primary: null,
-  secondary: null,
+  text: null,
+  headersAndLinks: null,
   background: null,
-  text: {
-    normal: null,
-    dimmed: null,
-  },
+  elementBackground: null,
+  bannerBackground: null,
 })
 
 export const lightTheme = createTheme(colorsTheme, {
-  primary: colors.darkblue,
-  secondary: "#DB2777",
-  background: "#EFF6FF",
-  text: {
-    normal: "#1F2937",
-    dimmed: "#6B7280",
-  },
+  text: colors.darkblue,
+  headersAndLinks: colors.grayblue,
+  background: `linear-gradient(${colors.lightgray}, ${colors.white})`,
+  elementBackground: colors.lightgray,
+  bannerBackground: `linear-gradient(${colors.lightgray},rgb(0,0,0,0)),
+  url(${backgroundImage}) center center / cover no-repeat`,
 })
 
 export const darkTheme = createTheme(colorsTheme, {
-  primary: colors.white,
-  secondary: "#F472B6",
-  background: "#1F2937",
-  text: {
-    normal: "#F9FAFB",
-    dimmed: "#D1D5DB",
-  },
+  text: colors.white,
+  headersAndLinks: colors.yellow,
+  background: `linear-gradient(${colors.darkblue}, ${colors.grayblue})`,
+  elementBackground: colors.grayblue,
+  bannerBackground: `linear-gradient(${colors.darkbluehero},${colors.ultimategrayhero}),
+  url(${backgroundImage}) center center / cover no-repeat`,
 })
 
 export const vars = { ...root, colorsTheme }
@@ -76,7 +70,7 @@ enum FontWeights {
 const header = style([
   {
     fontWeight: FontWeights.Light,
-    color: colors.yellow,
+    color: vars.colorsTheme.headersAndLinks,
   },
 ])
 
@@ -116,7 +110,7 @@ export const headers = styleVariants({
 })
 
 export const textColorPrimary = style({
-  color: vars.colorsTheme.primary,
+  color: vars.colorsTheme.text,
 })
 
 export const textAlignLeft = style({
@@ -132,5 +126,24 @@ globalStyle("hr", {
 })
 
 globalStyle("a", {
-  color: vars.colors.yellow,
+  color: vars.colorsTheme.headersAndLinks,
+})
+
+globalStyle("button", {
+  margin: "15px 0",
+  padding: "20px 40px",
+  width: "160px",
+  backgroundColor: vars.colorsTheme.elementBackground,
+  color: vars.colorsTheme.headersAndLinks,
+  border: `1px solid ${vars.colorsTheme.headersAndLinks}`,
+  fontFamily: `"IBM Plex Sans", sans-serif`,
+  fontSize: "0.85rem",
+  fontWeight: 500,
+  textTransform: "uppercase",
+  cursor: "pointer",
+  transition: "all 0.4s ease",
+})
+
+globalStyle("button:hover", {
+  backgroundColor: vars.colors.ultimategray,
 })

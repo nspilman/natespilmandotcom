@@ -50,7 +50,7 @@ export default function Template({ data, pageContext }: Props) {
               }}
               to="/blog"
             >
-              <h1 className={headers.h1}>Nate's Blog</h1>
+              <h1>Nate's Blog</h1>
             </Link>
             <hr />
           </div>
