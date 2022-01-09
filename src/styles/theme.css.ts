@@ -1,5 +1,6 @@
 const colors = {
   white: "white",
+  black: "rgb(10,10,10)",
   yellow: "#fffe53",
   // yellowLight: "#FFFF87",
   // yellowDark: "#C9CB10",
@@ -10,6 +11,14 @@ const colors = {
   graybluehero: "rgba(67, 71, 78, 0.9)",
   lightgray: "rgba(141, 144, 154, 0.9)",
   ultimategrayhero: "rgba(147, 149, 151, 0.9)",
+}
+
+const lightmodeColors = {
+  imperialRed: "#e63946ff",
+  honeydew: "#f1faeeff",
+  powderBlue: "#a8dadcff",
+  celadonBlue: "#457b9dff",
+  prussianBlue: "#1d3557ff",
 }
 
 import {
@@ -44,11 +53,11 @@ const colorsTheme = createThemeContract({
 })
 
 export const lightTheme = createTheme(colorsTheme, {
-  text: colors.darkblue,
-  headersAndLinks: colors.grayblue,
-  background: `linear-gradient(${colors.lightgray}, ${colors.white})`,
+  text: colors.black,
+  headersAndLinks: lightmodeColors.prussianBlue,
+  background: `linear-gradient(${lightmodeColors.honeydew}, ${colors.white})`,
   elementBackground: colors.lightgray,
-  bannerBackground: `linear-gradient(${colors.lightgray},rgb(0,0,0,0)),
+  bannerBackground: `linear-gradient(${lightmodeColors.honeydew},rgb(0,0,0,0)),
   url(${backgroundImage}) center center / cover no-repeat`,
 })
 

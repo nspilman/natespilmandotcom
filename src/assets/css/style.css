@@ -1,7 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@300;400;500&family=IBM+Plex+Sans:wght@300;400;500&family=IBM+Plex+Serif:wght@300;400;500&display=swap");
 
-/* HEADER FONT STYLES */
-
 /* MENU STYLES */
 
 .toggler {
@@ -140,29 +138,4 @@
 
 .menu-wrap .menu > div > div > ul > li > a:hover {
   color: var(--yellow);
-}
-/* MEDIA QUERIES */
-
-@media all and (max-width: 600px) {
-  .content-container {
-    margin: 0 20px;
-  }
-
-  .card-blog {
-    flex-basis: 100%;
-  }
-
-  h2 {
-    font-size: 2rem;
-  }
-}
-
-@media all and (max-width: 1200px) {
-  .card-blog {
-    flex-basis: 100%;
-  }
-
-  .content-container {
-    margin: 0 20px;
-  }
 }

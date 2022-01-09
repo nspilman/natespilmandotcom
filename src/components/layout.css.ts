@@ -2,6 +2,11 @@
 
 import { style, globalStyle } from "@vanilla-extract/css"
 import { vars } from "../styles/theme.css"
+import {
+  flexColumn,
+  flexRow,
+  flexColumnAlignItemsCenterJustifyContentCenter,
+} from "../styles/design-system.css"
 
 globalStyle("html", {
   MozTextSizeAdjust: "100%",
@@ -22,22 +27,20 @@ globalStyle("img", {
   marginLeft: 0,
   marginRight: 0,
   marginTop: 0,
-  paddingBottom: 0,
-  paddingLeft: 0,
-  paddingRight: 0,
-  paddingTop: 0,
+  padding: 0,
   marginBottom: "1.45rem",
 })
 
-export const body = style({
-  margin: 0,
-  background: vars.colorsTheme.background,
-  color: vars.colorsTheme.text,
-  fontSize: "1rem",
-  overflowX: "hidden",
-  display: "flex",
-  flexDirection: "column",
-})
+export const body = style([
+  flexColumn,
+  {
+    margin: 0,
+    background: vars.colorsTheme.background,
+    color: vars.colorsTheme.text,
+    fontSize: "1rem",
+    overflowX: "hidden",
+  },
+])
 
 export const buttonContainer = style({
   textAlign: "center",
@@ -48,183 +51,42 @@ export const buttonContainer = style({
   },
 })
 
-export const menuWrap = style({
-  position: "fixed",
+const topLeft = style({
   top: 0,
   left: 0,
-  zIndex: 1,
 })
 
-export const menuToggleIcon = style({
-  position: "absolute",
-  top: 0,
-  left: 0,
-  zIndex: 2,
-  cursor: "pointer",
-  width: "50px",
-  height: "50px",
-  opacity: 0,
-})
+export const menuWrap = style([
+  topLeft,
+  {
+    position: "fixed",
+    zIndex: 1,
+  },
+])
 
-//   }
-
-//   .menu-wrap .hamburger {
-//     position: absolute;
-//     top: 0;
-//     left: 0;
-//     z-index: 1;
-//     width: 30px;
-//     height: 20px;
-//     padding: 1rem;
-//     display: flex;
-//     align-items: center;
-//     justify-content: center;
-//   }
-
-//   /* Hamburger Line */
-//   .menu-wrap .hamburger > div {
-//     position: relative;
-//     flex: none;
-//     width: 100%;
-//     height: 2px;
-//     background: #fff;
-//     display: flex;
-//     align-items: center;
-//     justify-content: center;
-//     transition: all 0.4s ease;
-//   }
-
-//   /* Hamburger Lines - Top & Bottom */
-//   .menu-wrap .hamburger > div::before,
-//   .menu-wrap .hamburger > div::after {
-//     content: '';
-//     position: absolute;
-//     z-index: 1;
-//     top: -10px;
-//     width: 100%;
-//     height: 2px;
-//     background: inherit;
-//   }
-
-//   /* Moves Line Down */
-//   .menu-wrap .hamburger > div::after {
-//     top: 10px;
-//   }
-
-//   /* Toggler Animation */
-//   .menu-wrap .toggler:checked + .hamburger > div {
-//     transform: rotate(135deg);
-//   }
-
-//   /* Turns Lines Into X */
-//   .menu-wrap .toggler:checked + .hamburger > div:before,
-//   .menu-wrap .toggler:checked + .hamburger > div:after {
-//     top: 0;
-//     transform: rotate(90deg);
-//   }
-
-//   /* Rotate On Hover When Checked */
-//   .menu-wrap .toggler:checked:hover + .hamburger > div {
-//     transform: rotate(225deg);
-//   }
-
-//   /* Show Menu */
-//   .menu-wrap .toggler:checked ~ .menu {
-//     visibility: visible;
-//   }
-
-//   .menu-wrap .toggler:checked ~ .menu > div {
-//     transform: scale(1);
-//     transition-duration: var(--menu-speed);
-//   }
-
-//   .menu-wrap .toggler:checked ~ .menu > div > div {
-//     opacity: 1;
-//     transition:  opacity 0.4s ease 0.4s;
-//   }
-
-//   .menu-wrap .menu {
-//     position: fixed;
-//     top: 0;
-//     left: 0;
-//     width: 100%;
-//     height: 100%;
-//     visibility: hidden;
-//     overflow: hidden;
-//     display: flex;
-//     align-items: center;
-//     justify-content: center;
-//   }
-
-//   .menu-wrap .menu > div {
-//     background: linear-gradient(var(--darkbluehero), var(--graybluehero));
-//     backdrop-filter: blur(5px);
-//     width: 200vw;
-//     height: 200vw;
-//     display: flex;
-//     flex: none;
-//     align-items: center;
-//     justify-content: center;
-//     transform: opacity(0);
-//     transition: all 0.4s ease;
-//   }
-
-//   .menu-wrap .menu > div > div {
-//     text-align: center;
-//     max-width: 90vw;
-//     max-height: 100vh;
-//     opacity: 0;
-//     transition: opacity 0.4s ease;
-//   }
-
-//   .menu-wrap .menu > div > div > ul > li {
-//     list-style: none;
-//     color: #fff;
-//     font-size: 1.5rem;
-//     padding: 1rem;
-//   }
-
-//   .menu-wrap .menu > div > div > ul > li > a {
-//     font-family: 'IBM Plex Mono', sans-serif;
-//     font-weight: 300;
-//     color: inherit;
-//     text-decoration: none;
-//     transition: color 0.4s ease;
-//   }
-
-//   .menu-wrap .menu > div > div > ul > li > a:hover {
-//     color: var(--yellow);
-//   }
-
-// /* HERO STYLES */
-
-// .nate{
-//     display: flex;
-//     justify-content: center;
-//     margin: 0 auto 20px auto;
-//     width:130px;
-//     height: 130px;
-//     border-radius: 50%;
-//     border: 3px solid #939597;
-//     background: url('../img/nate-professional.jpg') center center / cover no-repeat;
-//     background-size: 110%;
-//     filter: saturate(.9);
-// }
-
-// .p.hero{
-//     margin: auto;
-// }
+export const menuToggleIcon = style([
+  topLeft,
+  {
+    position: "absolute",
+    zIndex: 2,
+    cursor: "pointer",
+    width: "50px",
+    height: "50px",
+    opacity: 0,
+  },
+])
 
 // /* ICON STYLES */
 
-export const iconContainer = style({
-  maxWidth: "130px",
-  height: "25px",
-  display: "flex",
-  flexDirection: "row",
-  justifyContent: "space-between",
-  margin: "auto",
-})
+export const iconContainer = style([
+  flexRow,
+  {
+    maxWidth: "130px",
+    height: "25px",
+    justifyContent: "space-between",
+    margin: "auto",
+  },
+])
 
 export const icon = style({
   height: "25px",
@@ -232,37 +94,37 @@ export const icon = style({
 
 // /* CARD STYLES */
 
-export const contentContainer = style({
-  maxWidth: "1200px",
-  margin: "auto",
-  display: "flex",
-  flexDirection: "column",
-  "@media": {
-    "(max-width: 1200px)": {
-      margin: " 0 20px",
+export const contentContainer = style([
+  flexColumn,
+  {
+    maxWidth: "1200px",
+    margin: "auto",
+    "@media": {
+      "(max-width: 1200px)": {
+        margin: " 0 20px",
+      },
     },
   },
-})
+])
 
-export const hero = style({
-  alignItems: "center",
-  display: "flex",
-  flexDirection: "column",
-  justifyContent: "center",
-  textAlign: "center",
-  height: "70vh",
-  maxHeight: "1000px",
-  width: "100%",
-  background: vars.colorsTheme.bannerBackground,
-  margin: 0,
-  marginBottom: "30px",
-  backgroundAttachment: "fixed",
-  "@media": {
-    "(max-width: 600px)": {
-      height: "100vh",
+export const hero = style([
+  flexColumnAlignItemsCenterJustifyContentCenter,
+  {
+    textAlign: "center",
+    height: "70vh",
+    maxHeight: "1000px",
+    width: "100%",
+    background: vars.colorsTheme.bannerBackground,
+    margin: 0,
+    marginBottom: "30px",
+    backgroundAttachment: "fixed",
+    "@media": {
+      "(max-width: 600px)": {
+        height: "100vh",
+      },
     },
   },
-})
+])
 
 export const heroContainer = style({
   width: "50%",
@@ -275,12 +137,13 @@ export const heroContainer = style({
   },
 })
 
-export const cardBlogContainer = style({
-  display: "flex",
-  flexDirection: "row",
-  flexWrap: "wrap",
-  justifyContent: "space-between",
-})
+export const cardBlogContainer = style([
+  flexRow,
+  {
+    flexWrap: "wrap",
+    justifyContent: "space-between",
+  },
+])
 
 export const cardMusic = style({
   flexBasis: "100%",
@@ -325,27 +188,8 @@ export const nateIcon = style({
   filter: "saturate(0.9)",
 })
 
-// .card-music {
-//     flex-basis: 100%;
-//     background-color: var(--grayblue);
-//     box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
-//     transition: all 0.3s cubic-bezier(.25,.8,.25,1);
-//     padding:20px;
-// }
-
-// /* BUTTON STYLES */
-
-// button:hover {
-//     background-color: var(--ultimategray);
-// }
-
-// .button-container{
-//     text-align: center;
-// }
-
 // /* FOOTER STYLES */
 
-// .footer{
 export const footer = style({
   padding: "30px",
   height: "50px",
@@ -367,7 +211,3 @@ export const themeToggler = style({
   width: "150px",
   zIndex: 100,
 })
-
-// a{
-//   color:var(--yellow);
-// }
