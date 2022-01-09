@@ -45,16 +45,25 @@ const Layout: React.FC<LayoutProps> = ({ children }: LayoutProps) => {
                 <div>
                   <ul>
                     <li>
-                      <Link to="/">Home</Link>
+                      <Link className={styles.menuItemStyles} to="/">
+                        Home
+                      </Link>
                     </li>
                     <li>
-                      <Link to="/blog">Blog</Link>
+                      <Link className={styles.menuItemStyles} to="/blog">
+                        Blog
+                      </Link>
                     </li>
                     <li>
-                      <Link to="/music">Music</Link>
+                      <Link className={styles.menuItemStyles} to="/music">
+                        Music
+                      </Link>
                     </li>
                     <li>
-                      <Link to="https://natespilman.tech/media/pdfs/Resume_Aug_2020.pdf">
+                      <Link
+                        className={styles.menuItemStyles}
+                        to="https://natespilman.tech/media/pdfs/Resume_Aug_2020.pdf"
+                      >
                         Resume
                       </Link>
                     </li>

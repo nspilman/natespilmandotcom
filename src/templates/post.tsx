@@ -3,6 +3,7 @@ import { graphql, Link } from "gatsby"
 import ContentPageWrapper from "../components/contentPageWrapper"
 import SEO from "../components/seo"
 import styled from "styled-components"
+import { backgroundColorPrimary } from "../styles/theme.css"
 
 interface Props {
   readonly data: PageQueryData
@@ -41,7 +42,7 @@ export default function Template({ data, pageContext }: Props) {
   return (
     <ContentPageWrapper>
       <SEO title={title} />
-      <StyledPost id="home">
+      <StyledPost id="home" className={backgroundColorPrimary}>
         <div id="post-main">
           <div id="blog-title">
             <Link
@@ -62,8 +63,9 @@ export default function Template({ data, pageContext }: Props) {
               <p>{description}</p>
               <time dateTime={date}>{formattedDateString(date)}</time>
             </header>
-
-            <div id="post-body" dangerouslySetInnerHTML={{ __html: html }} />
+            <div className={backgroundColorPrimary}>
+              <div id="post-body" dangerouslySetInnerHTML={{ __html: html }} />
+            </div>
           </StyledPostBody>
           <ul
             style={{

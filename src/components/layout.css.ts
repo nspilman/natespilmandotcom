@@ -211,3 +211,10 @@ export const themeToggler = style({
   width: "150px",
   zIndex: 100,
 })
+
+export const menuItemStyles = style({
+  color: vars.colorsTheme.menuItemPrimary,
+  ":hover": {
+    color: vars.colorsTheme.menuItemSecondary,
+  },
+})

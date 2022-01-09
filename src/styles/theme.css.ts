@@ -19,6 +19,7 @@ const lightmodeColors = {
   powderBlue: "#a8dadcff",
   celadonBlue: "#457b9dff",
   prussianBlue: "#1d3557ff",
+  lightgray: "rgba(220, 220,220, 0.9)",
 }
 
 import {
@@ -50,15 +51,19 @@ const colorsTheme = createThemeContract({
   background: null,
   elementBackground: null,
   bannerBackground: null,
+  menuItemPrimary: null,
+  menuItemSecondary: null,
 })
 
 export const lightTheme = createTheme(colorsTheme, {
   text: colors.black,
   headersAndLinks: lightmodeColors.prussianBlue,
-  background: `linear-gradient(${lightmodeColors.honeydew}, ${colors.white})`,
-  elementBackground: colors.lightgray,
-  bannerBackground: `linear-gradient(${lightmodeColors.honeydew},rgb(0,0,0,0)),
+  background: `linear-gradient(${lightmodeColors.celadonBlue}, ${lightmodeColors.honeydew})`,
+  elementBackground: lightmodeColors.lightgray,
+  bannerBackground: `linear-gradient(${lightmodeColors.celadonBlue},rgb(0,0,0,0)),
   url(${backgroundImage}) center center / cover no-repeat`,
+  menuItemPrimary: lightmodeColors.honeydew,
+  menuItemSecondary: lightmodeColors.imperialRed,
 })
 
 export const darkTheme = createTheme(colorsTheme, {
@@ -68,6 +73,8 @@ export const darkTheme = createTheme(colorsTheme, {
   elementBackground: colors.grayblue,
   bannerBackground: `linear-gradient(${colors.darkbluehero},${colors.ultimategrayhero}),
   url(${backgroundImage}) center center / cover no-repeat`,
+  menuItemPrimary: colors.yellow,
+  menuItemSecondary: colors.white,
 })
 
 export const vars = { ...root, colorsTheme }
@@ -155,4 +162,8 @@ globalStyle("button", {
 
 globalStyle("button:hover", {
   backgroundColor: vars.colors.ultimategray,
+})
+
+export const backgroundColorPrimary = style({
+  backgroundColor: vars.colorsTheme.elementBackground,
 })
