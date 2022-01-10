@@ -2,8 +2,8 @@ import React from "react"
 import { graphql, Link } from "gatsby"
 import ContentPageWrapper from "../components/contentPageWrapper"
 import SEO from "../components/seo"
-import styled from "styled-components"
 import { backgroundColorPrimary } from "../styles/theme.css"
+import * as styles from "../components/layout.css"
 
 interface Props {
   readonly data: PageQueryData
@@ -13,22 +13,6 @@ interface Props {
   }
   next?: any
 }
-
-const StyledPost = styled.article`
-  padding: 5rem 3rem;
-  @media (max-width: 1068px) {
-    padding: 5rem 0.5rem;
-  }
-`
-
-const StyledPostBody = styled.article`
-  max-width: 1200px;
-  margin: auto;
-  padding: 3rem 2rem;
-  @media (max-width: 768px) {
-    padding: 2rem 0.5rem;
-  }
-`
 
 import formattedDateString from "../utils/formattedDateString"
 import { headers } from "../styles/theme.css"
@@ -42,7 +26,7 @@ export default function Template({ data, pageContext }: Props) {
   return (
     <ContentPageWrapper>
       <SEO title={title} />
-      <StyledPost id="home" className={backgroundColorPrimary}>
+      <article id="home" className={styles.postStyle}>
         <div id="post-main">
           <div id="blog-title">
             <Link
@@ -55,7 +39,7 @@ export default function Template({ data, pageContext }: Props) {
             </Link>
             <hr />
           </div>
-          <StyledPostBody>
+          <article className={styles.postBodyStyle}>
             <header>
               <h2 className={headers.h2} id="post-title">
                 {title}
@@ -66,7 +50,7 @@ export default function Template({ data, pageContext }: Props) {
             <div className={backgroundColorPrimary}>
               <div id="post-body" dangerouslySetInnerHTML={{ __html: html }} />
             </div>
-          </StyledPostBody>
+          </article>
           <ul
             style={{
               display: `flex`,
@@ -91,7 +75,7 @@ export default function Template({ data, pageContext }: Props) {
             )}
           </ul>
         </div>
-      </StyledPost>
+      </article>
     </ContentPageWrapper>
   )
 }

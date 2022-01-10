@@ -1,7 +1,7 @@
 // @import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@300;400;500&family=IBM+Plex+Sans:wght@300;400;500&family=IBM+Plex+Serif:wght@300;400;500&display=swap');
 
 import { style, globalStyle } from "@vanilla-extract/css"
-import { vars } from "../styles/theme.css"
+import { backgroundColorPrimary, vars } from "../styles/theme.css"
 import {
   flexColumn,
   flexRow,
@@ -218,3 +218,37 @@ export const menuItemStyles = style({
     color: vars.colorsTheme.menuItemSecondary,
   },
 })
+
+export const contentPageWrapper = style({
+  padding: "5rem",
+  "@media": {
+    "(max-width: 768px)": {
+      padding: "2rem",
+    },
+  },
+})
+
+export const postStyle = style([
+  backgroundColorPrimary,
+  {
+    padding: "5rem 3rem",
+    "@media": {
+      "(max-width: 1068px)": {
+        padding: "5rem 0.5rem",
+      },
+    },
+  },
+])
+
+export const postBodyStyle = style([
+  {
+    maxWidth: "1200px",
+    margin: "auto",
+    padding: "3rem 2rem",
+    "@media": {
+      "(max-width: 768px)": {
+        padding: "2rem 0.5rem",
+      },
+    },
+  },
+])
