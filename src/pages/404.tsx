@@ -5,6 +5,7 @@ import SEO from "../components/seo"
 import notFoundImage from "../assets/img/404forest.jpg"
 import ContentPageWrapper from "../components/contentPageWrapper"
 import { headers } from "../styles/theme.css"
+import * as styles from "./404.css"
 
 const NotFoundPage = () => (
   <ContentPageWrapper>
@@ -16,7 +17,7 @@ const NotFoundPage = () => (
       <Link to="/">
         <img
           id="not-found-image"
-          style={{ maxWidth: "85vw" }}
+          className={styles.image}
           src={notFoundImage}
         />
       </Link>

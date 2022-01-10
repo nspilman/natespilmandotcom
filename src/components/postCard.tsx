@@ -2,7 +2,7 @@ import { Link } from "gatsby"
 import React from "react"
 import formattedDateString from "../utils/formattedDateString"
 import { headers, textColorPrimary } from "../styles/theme.css"
-import * as styles from "../components/layout.css"
+import * as styles from "../styles/global.css"
 
 const Post = ({ post }) => {
   const { fields, frontmatter } = post

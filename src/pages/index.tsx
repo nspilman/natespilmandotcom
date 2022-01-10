@@ -8,8 +8,9 @@ import Post from "../components/postCard"
 
 import Blog from "../types/blog"
 import Music from "../types/music"
-import { headers, textAlignLeft, marginAuto, hr } from "../styles/theme.css"
-import * as styles from "../components/layout.css"
+import { headers, textAlignLeft, marginAuto } from "../styles/theme.css"
+import { blogPostsWrapper } from "../styles/global.css"
+import * as styles from "./index.css"
 
 type IndexPageProps = {
   data: {
@@ -40,16 +41,16 @@ const IndexPage = ({ data }: IndexPageProps) => {
         <div className={styles.contentContainer}>
           <div className={textAlignLeft}>
             <h2 className={headers.h2}>Nate's Blog</h2>
-            <hr className={hr} />
+            <hr />
           </div>
-          <div className={styles.cardBlogContainer}>
+          <div className={blogPostsWrapper}>
             {posts.map(post => {
               return <Post post={post} key={post.fields.slug} />
             })}
           </div>
           <div className={styles.buttonContainer}>
             <Link to="/blog">
-              <button className={styles.buttonStyle}>Read</button>
+              <button>Read</button>
             </Link>
           </div>
           <div className={textAlignLeft}>
@@ -65,7 +66,7 @@ const IndexPage = ({ data }: IndexPageProps) => {
           </div>
           <div className={styles.buttonContainer}>
             <Link to="/music">
-              <button className={styles.buttonStyle}>Listen</button>
+              <button>Listen</button>
             </Link>
           </div>
         </div>

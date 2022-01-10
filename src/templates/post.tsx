@@ -3,7 +3,7 @@ import { graphql, Link } from "gatsby"
 import ContentPageWrapper from "../components/contentPageWrapper"
 import SEO from "../components/seo"
 import { backgroundColorPrimary } from "../styles/theme.css"
-import * as styles from "../components/layout.css"
+import * as styles from "../styles/global.css"
 
 interface Props {
   readonly data: PageQueryData
@@ -51,15 +51,7 @@ export default function Template({ data, pageContext }: Props) {
               <div id="post-body" dangerouslySetInnerHTML={{ __html: html }} />
             </div>
           </article>
-          <ul
-            style={{
-              display: `flex`,
-              flexWrap: `wrap`,
-              justifyContent: `space-between`,
-              listStyle: `none`,
-              padding: "2em",
-            }}
-          >
+          <ul className={styles.nextAndPrevious}>
             {previous && (
               <li>
                 <Link to={previous.fields.slug}>

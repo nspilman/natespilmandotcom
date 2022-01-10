@@ -5,8 +5,7 @@ import SEO from "../components/seo"
 
 import ContentPageWrapper from "../components/contentPageWrapper"
 import BlogType from "../types/blog"
-import { headers } from "../styles/theme.css"
-import * as styles from "../components/layout.css"
+import * as styles from "../styles/global.css"
 
 type BlogProps = {
   data: {
@@ -27,7 +26,7 @@ const Blog = ({ data }: BlogProps) => {
         <div id="blog-post-wrapper">
           <article id="blog">
             <div>
-              <div className={styles.cardBlogContainer}>
+              <div className={styles.blogPostsWrapper}>
                 {posts.map(post => (
                   <Post post={post} key={post.id} />
                 ))}

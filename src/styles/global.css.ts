@@ -1,12 +1,12 @@
 // @import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@300;400;500&family=IBM+Plex+Sans:wght@300;400;500&family=IBM+Plex+Serif:wght@300;400;500&display=swap');
 
 import { style, globalStyle } from "@vanilla-extract/css"
-import { backgroundColorPrimary, vars } from "../styles/theme.css"
+import { backgroundColorPrimary, vars } from "./theme.css"
 import {
   flexColumn,
   flexRow,
   flexColumnAlignItemsCenterJustifyContentCenter,
-} from "../styles/design-system.css"
+} from "./design-system.css"
 
 globalStyle("html", {
   MozTextSizeAdjust: "100%",
@@ -41,15 +41,6 @@ export const body = style([
     overflowX: "hidden",
   },
 ])
-
-export const buttonContainer = style({
-  textAlign: "center",
-  "@media": {
-    "(max-width: 600px)": {
-      marginBottom: "20px",
-    },
-  },
-})
 
 const topLeft = style({
   top: 0,
@@ -94,50 +85,7 @@ export const icon = style({
 
 // /* CARD STYLES */
 
-export const contentContainer = style([
-  flexColumn,
-  {
-    maxWidth: "1200px",
-    margin: "auto",
-    "@media": {
-      "(max-width: 1200px)": {
-        margin: " 0 20px",
-      },
-    },
-  },
-])
-
-export const hero = style([
-  flexColumnAlignItemsCenterJustifyContentCenter,
-  {
-    textAlign: "center",
-    height: "70vh",
-    maxHeight: "1000px",
-    width: "100%",
-    background: vars.colorsTheme.bannerBackground,
-    margin: 0,
-    marginBottom: "30px",
-    backgroundAttachment: "fixed",
-    "@media": {
-      "(max-width: 600px)": {
-        height: "100vh",
-      },
-    },
-  },
-])
-
-export const heroContainer = style({
-  width: "50%",
-  maxWidth: "1200px",
-  "@media": {
-    "(max-width: 600px)": {
-      width: "90%",
-      marginTop: 0,
-    },
-  },
-})
-
-export const cardBlogContainer = style([
+export const blogPostsWrapper = style([
   flexRow,
   {
     flexWrap: "wrap",
@@ -252,3 +200,11 @@ export const postBodyStyle = style([
     },
   },
 ])
+
+export const nextAndPrevious = style({
+  display: `flex`,
+  flexWrap: `wrap`,
+  justifyContent: `space-between`,
+  listStyle: `none`,
+  padding: "2em",
+})

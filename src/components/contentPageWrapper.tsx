@@ -1,6 +1,6 @@
 import React from "react"
 import Layout from "./layout"
-import * as styles from "../components/layout.css"
+import * as styles from "../styles/global.css"
 
 const ContentPageWrapper: React.FC = ({ children }) => {
   return (

@@ -5,7 +5,7 @@ import linkedInImg from "../assets/img/linkedin@2x.png"
 import twitterImg from "../assets/img/twitter@2x.png"
 import githubImg from "../assets/img/github@2x.png"
 import instagramImg from "../assets/img/instagram@2x.png"
-import * as styles from "../components/layout.css"
+import * as styles from "../styles/global.css"
 
 const Icons = () => (
   <div className={styles.iconContainer}>
