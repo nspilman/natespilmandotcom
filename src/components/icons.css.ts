@@ -1,6 +1,4 @@
-// /* ICON STYLES */
-
-import { flexRow } from "src/styles/design-system.css"
+import { flexRow } from "../styles/design-system.css"
 import { style } from "@vanilla-extract/css"
 
 export const iconContainer = style([
