@@ -8,7 +8,7 @@
 import React, { ReactNode, useState } from "react"
 import { Link } from "gatsby"
 import { darkTheme, lightTheme } from "../styles/theme.css"
-import * as styles from "../styles/global.css"
+import * as styles from "./layout.css"
 import classnames from "classnames"
 
 import Icons from "./icons"

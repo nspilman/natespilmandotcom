@@ -2,11 +2,7 @@
 
 import { style, globalStyle } from "@vanilla-extract/css"
 import { backgroundColorPrimary, vars } from "./theme.css"
-import {
-  flexColumn,
-  flexRow,
-  flexColumnAlignItemsCenterJustifyContentCenter,
-} from "./design-system.css"
+import { flexColumn, flexRow } from "./design-system.css"
 
 globalStyle("html", {
   MozTextSizeAdjust: "100%",
@@ -67,22 +63,6 @@ export const menuToggleIcon = style([
   },
 ])
 
-// /* ICON STYLES */
-
-export const iconContainer = style([
-  flexRow,
-  {
-    maxWidth: "130px",
-    height: "25px",
-    justifyContent: "space-between",
-    margin: "auto",
-  },
-])
-
-export const icon = style({
-  height: "25px",
-})
-
 // /* CARD STYLES */
 
 export const blogPostsWrapper = style([
@@ -92,17 +72,6 @@ export const blogPostsWrapper = style([
     justifyContent: "space-between",
   },
 ])
-
-export const cardMusic = style({
-  flexBasis: "100%",
-  backgroundColor: vars.colorsTheme.elementBackground,
-  boxShadow: "0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23)",
-  transition: "all 0.3s cubic-bezier(.25,.8,.25,1)",
-  padding: "20px",
-  ":hover": {
-    boxShadow: "0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23)",
-  },
-})
 
 export const cardBlog = style({
   flexBasis: "46%",
@@ -119,21 +88,6 @@ export const cardBlog = style({
       flexBasis: "100%",
     },
   },
-})
-
-import myHeadshot from "../assets/img/nate-professional.jpg"
-
-export const nateIcon = style({
-  display: "flex",
-  justifyContent: "center",
-  margin: "0 auto 20px auto",
-  width: "130px",
-  height: "130px",
-  borderRadius: "50%",
-  border: "3px solid #939597",
-  background: `url(${myHeadshot}) center center / cover no-repeat`,
-  backgroundSize: "110%",
-  filter: "saturate(0.9)",
 })
 
 // /* FOOTER STYLES */
