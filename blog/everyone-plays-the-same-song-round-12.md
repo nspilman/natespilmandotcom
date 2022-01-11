@@ -4,7 +4,7 @@ date: 2022-01-11T16:05:54.654Z
 description: The official info page of EPTSS Round 12
 tags:
   - everyonePlaysTheSameSong
-  - eptss12
+  - eptss-12
 published: true
 ---
 ## EPTSS Round 12 is upon us!
