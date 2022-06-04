@@ -4,7 +4,7 @@ date: 2022-06-04T06:25:36.585Z
 description: The official info page of EPTSS Round 13
 tags:
   - everyonePlaysTheSameSong
-  - eptss-12
+  - eptss-13
 published: true
 ---
 ## EPTSS Round 13 is upon us!
