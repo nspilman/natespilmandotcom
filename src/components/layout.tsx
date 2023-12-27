@@ -2,7 +2,7 @@
 import React, { useRef } from "react";
 
 import Link from "next/link";
-import { Icons } from "@/components/Icons";
+import { Icons } from "@/components/icons";
 
 export function Layout({ children }: { children: React.ReactNode }) {
   const toggler = useRef<HTMLInputElement>(null);
