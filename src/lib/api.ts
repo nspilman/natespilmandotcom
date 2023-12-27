@@ -28,6 +28,7 @@ export function getPostBySlug(slug: string): Blog {
 export function getAllPosts(): Blog[] {
   const slugs = getPostSlugs();
   const posts = slugs
+    .filter((slug) => slug.endsWith(".md"))
     .map((slug) => getPostBySlug(slug))
     .filter((post) => post.frontmatter.published)
     // sort posts by date in descending order
