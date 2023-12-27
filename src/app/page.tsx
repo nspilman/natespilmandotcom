@@ -1,4 +1,4 @@
-import { Icons } from "@/components/Icons";
+import { Icons } from "@/components/icons";
 import { Blog } from "./types";
 import Post from "@/components/Post";
 import Link from "next/link";
