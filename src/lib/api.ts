@@ -6,7 +6,11 @@ import { Blog } from "@/app/types";
 const postsDirectory = join(process.cwd(), "blog");
 
 export function getPostSlugs() {
-  return fs.readdirSync(postsDirectory);
+  const allFiles = fs.readdirSync(postsDirectory);
+  const slugs = allFiles.filter((slug) => slug.endsWith(".md"));
+  console.log({ slugs });
+
+  return slugs;
 }
 
 export function getPostBySlug(slug: string): Blog {
@@ -27,13 +31,17 @@ export function getPostBySlug(slug: string): Blog {
 
 export function getAllPosts(): Blog[] {
   const slugs = getPostSlugs();
-  const posts = slugs
-    .filter((slug) => slug.endsWith(".md"))
-    .map((slug) => getPostBySlug(slug))
-    .filter((post) => post.frontmatter.published)
-    // sort posts by date in descending order
-    .sort((post1, post2) =>
-      post1.frontmatter.date > post2.frontmatter.date ? -1 : 1
-    );
-  return posts;
+  try {
+    const posts = slugs
+      .map((slug) => getPostBySlug(slug))
+      .filter((post) => post.frontmatter.published)
+      // sort posts by date in descending order
+      .sort((post1, post2) =>
+        post1.frontmatter.date > post2.frontmatter.date ? -1 : 1
+      );
+    return posts;
+  } catch (e) {
+    console.log(e);
+    throw new Error("it broke");
+  }
 }
