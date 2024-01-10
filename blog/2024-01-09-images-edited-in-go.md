@@ -15,6 +15,7 @@ Before we get into the images - here's how it works kinda. I two upload images v
 
 ## So first off, the double exposure blend -
 
+![](/img/2024-01-09-image-processing-in-go/doubleExposure.jpg)
 ![](/img/2024-01-09-image-processing-in-go/flrrsBoat.jpg)
 
 ## What I like to call, the Stencil transform setting
