@@ -43,6 +43,7 @@ export default async function Post({ params }: { params: { slug: string } }) {
 
           <div
             id="post-body"
+            className="p-8"
             dangerouslySetInnerHTML={{ __html: await markdownToHtml(html) }}
           />
         </div>
