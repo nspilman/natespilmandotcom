@@ -13,7 +13,7 @@ const Post = ({ post }: { post: Blog }) => {
         <p style={{ color: "white" }}>{formatDateString(date)}</p>
         <p style={{ color: "white" }}>{description}</p>
         <p className="tags">
-          {tags.map((tag) => (
+          {tags?.map((tag) => (
             <span className="tag" key={tag}>
               #{tag}{" "}
             </span>
