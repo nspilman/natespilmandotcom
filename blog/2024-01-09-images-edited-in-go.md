@@ -3,27 +3,32 @@ favorite: true
 title: Editing Images in GoLang
 description: A Showcase of outputs
 date: 2024-01-09
-published: true
+published: false
 ---
+
 My company laid off some engineers. I survived the layoffs, but my stress response over the weekend got me to start learning Go - a programming language by Google. I'd previous written an image processing application in Python, and I was curious what it'd look like in Go. The details of that are for another post. This post is mostly yelling "Look at these cool images I made. They're cool, right?"
 
-Before we get into the images - here's how it works kinda. I two upload images via a web UI, and I choose a blend function. One blend function gives a double exposure effect. One blend function replaces the hue - the RGB color ratio - with the hue of another image, which keeping the light values of the first image, etc. I'll demonstrate. I have some transformation settings that only take in one image. 
+Before we get into the images - here's how it works kinda. I two upload images via a web UI, and I choose a blend function. One blend function gives a double exposure effect. One blend function replaces the hue - the RGB color ratio - with the hue of another image, which keeping the light values of the first image, etc. I'll demonstrate. I have some transformation settings that only take in one image.
 
-## So first off, the double exposure blend - 
+## So first off, the double exposure blend -
+
 ![[download (7).jpg]]![[flrrsBoat.jpg]]
 
 ## What I like to call, the Stencil transform setting
-This setting takes in 2 pictures, and replaces all the parts from the first images that are brighter than 50% brightness with the second image. What you end up with is an interesting collage type image. 
+
+This setting takes in 2 pictures, and replaces all the parts from the first images that are brighter than 50% brightness with the second image. What you end up with is an interesting collage type image.
 
 ![[xrSkiBeach.jpg]]
 ![[lowerManhattanStencil.jpg]]
 
 ## Hue replacement
+
 ![[IMG_4308.jpeg]]
 ![[treeSunset.jpg]]
 
-## Light Quantization - 
+## Light Quantization -
+
 ![[qauntCloud.jpg]]
 ![[quantizedGranada.jpg]]
 
-Thank you for viewing. I hope you enjoyed. Let me know if you want a print. 
+Thank you for viewing. I hope you enjoyed. Let me know if you want a print.
