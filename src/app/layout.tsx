@@ -3,9 +3,15 @@ import "../../public/css/globals.css";
 import { Layout } from "@/components/layout";
 
 export const metadata: Metadata = {
-  title: "Nate Spilman Dot Com",
+  title: {
+    absolute: "Nate Spilman Dot Com",
+    template: "%s | Nate Spilman Dot Com",
+  },
   description: "Nate Spilman's Personal Website",
   icons: "/favicon.png",
+  authors: [{ name: "Nate Spilman", url: "https://natespilman.com" }],
+  creator: "Nate Spilman",
+  publisher: "Nate Spilman",
 };
 
 export default function RootLayout({

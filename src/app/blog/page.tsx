@@ -1,6 +1,11 @@
 import React from "react";
 import { getAllPosts } from "@/lib/api";
 import Post from "@/components/Post";
+import { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: "Blog",
+};
 
 const BlogPage = () => {
   const posts = getAllPosts();

@@ -1,8 +1,21 @@
 import { getAllPosts, getPostBySlug } from "@/lib/api";
 import { markdownToHtml } from "@/lib/utils";
 import { formatDateString } from "@/utils";
+import { Metadata } from "next";
 import Link from "next/link";
 import React from "react";
+
+interface Props {
+  params: {
+    slug: string;
+  };
+}
+
+export async function generateMetadata({ params }: Props): Promise<Metadata> {
+  return {
+    title: getPostBySlug(params.slug).frontmatter.title,
+  };
+}
 
 export default async function Post({ params }: { params: { slug: string } }) {
   const post = getPostBySlug(params.slug);
