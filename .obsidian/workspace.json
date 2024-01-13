@@ -25,7 +25,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "2024-01-12-successfully-updated-metadata-title.md",
+                "file": "blog/2024-01-12-successfully-updated-metadata-title.md",
                 "mode": "source",
                 "source": false
               }
@@ -108,7 +108,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "2024-01-12-successfully-updated-metadata-title.md",
+                "file": "blog/2024-01-12-successfully-updated-metadata-title.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -125,7 +125,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "2024-01-12-successfully-updated-metadata-title.md",
+                "file": "blog/2024-01-12-successfully-updated-metadata-title.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -148,7 +148,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "2024-01-12-successfully-updated-metadata-title.md"
+                "file": "blog/2024-01-12-successfully-updated-metadata-title.md"
               }
             }
           }
@@ -172,7 +172,7 @@
   "active": "1b4d8513114497a8",
   "lastOpenFiles": [
     "img/Pasted.md",
-    "2024-01-12-successfully-updated-metadata-title.md",
+    "blog/2024-01-12-successfully-updated-metadata-title.md",
     "img",
     "public/img/Pasted image 20240112165030.png",
     "blog/2024-01-09-images-edited-in-go.md",
