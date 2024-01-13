@@ -1,5 +1,5 @@
+import MarkdownContent from "@/components/RenderMarkdown";
 import { getAllPosts, getPostBySlug } from "@/lib/api";
-import { markdownToHtml } from "@/lib/utils";
 import { formatDateString } from "@/utils";
 import { Metadata } from "next";
 import Link from "next/link";
@@ -53,12 +53,7 @@ export default async function Post({ params }: { params: { slug: string } }) {
               {formatDateString(date)}
             </time>
           </header>
-
-          <div
-            id="post-body"
-            className="p-8"
-            dangerouslySetInnerHTML={{ __html: await markdownToHtml(html) }}
-          />
+          <MarkdownContent content={html} />
         </div>
         <ul
           style={{
