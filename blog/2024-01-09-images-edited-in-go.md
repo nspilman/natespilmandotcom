@@ -15,24 +15,24 @@ Before we get into the images - here's how it works kinda. I two upload images v
 
 ## So first off, the double exposure blend -
 
-![](/img/2024-01-09-image-processing-in-go/doubleExposure.jpg)
-![](/img/2024-01-09-image-processing-in-go/flrrsBoat.jpg)
+![](https://ihkgojiseqpwinwdowvm.supabase.co/storage/v1/object/public/natespilmanblog/2024-01-09%20image%20editing%20in%20go/doubleExposure.jpg?t=2024-01-13T06%3A31%3A30.227Z)
+![](https://ihkgojiseqpwinwdowvm.supabase.co/storage/v1/object/public/natespilmanblog/2024-01-09%20image%20editing%20in%20go/flrrsBoat.jpg?t=2024-01-13T06%3A31%3A49.289Z)
 
 ## What I like to call, the Stencil transform setting
 
 This setting takes in 2 pictures, and replaces all the parts from the first images that are brighter than 50% brightness with the second image. What you end up with is an interesting collage type image.
 
-![](/img/2024-01-09-image-processing-in-go/xrSkiBeach.jpg)
-![](/img/2024-01-09-image-processing-in-go/lowerManhattanStencil.jpg)
+![](https://ihkgojiseqpwinwdowvm.supabase.co/storage/v1/object/public/natespilmanblog/2024-01-09%20image%20editing%20in%20go/xrSkiBeach.jpg)
+![](https://ihkgojiseqpwinwdowvm.supabase.co/storage/v1/object/public/natespilmanblog/2024-01-09%20image%20editing%20in%20go/lowerManhattanStencil.jpg?t=2024-01-13T06%3A42%3A10.047Z)
 
 ## Hue replacement
 
-![](/img/2024-01-09-image-processing-in-go/IMG_4308.jpeg)
-![](/img/2024-01-09-image-processing-in-go/treeSunset.jpg)
+![](https://ihkgojiseqpwinwdowvm.supabase.co/storage/v1/object/public/natespilmanblog/2024-01-09%20image%20editing%20in%20go/IMG_4308.jpeg)
+![](https://ihkgojiseqpwinwdowvm.supabase.co/storage/v1/object/public/natespilmanblog/2024-01-09%20image%20editing%20in%20go/treeSunset.jpg?t=2024-01-13T06%3A42%3A24.773Z)
 
 ## Light Quantization -
 
-![](/img/2024-01-09-image-processing-in-go/qauntCloud.jpg)
-![](/img/2024-01-09-image-processing-in-go/quantizedGranada.jpg)
+![](https://ihkgojiseqpwinwdowvm.supabase.co/storage/v1/object/public/natespilmanblog/2024-01-09%20image%20editing%20in%20go/qauntCloud.jpg?t=2024-01-13T06%3A42%3A35.646Z)
+![](https://ihkgojiseqpwinwdowvm.supabase.co/storage/v1/object/public/natespilmanblog/2024-01-09%20image%20editing%20in%20go/quantizedGranada.jpg?t=2024-01-13T06%3A42%3A48.709Z)
 
 Thank you for viewing. I hope you enjoyed. Let me know if you want a print.
