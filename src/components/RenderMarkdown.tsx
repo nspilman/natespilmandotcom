@@ -7,13 +7,17 @@ type RendererFunction = (props: any) => JSX.Element;
 // Define the renderers with basic types
 const renderers: { [nodeType: string]: RendererFunction } = {
   a: ({ href, children }) => {
-    return href.startsWith("https://") ? (
-      <a href={href} target="_blank" rel="noopener noreferrer">
-        {children}
-      </a>
-    ) : (
-      <a href={href}>{children}</a>
-    );
+    const linkProps: {
+      href: string;
+      ["aria-label"]: string;
+      target?: "_blank";
+      rel?: "noopener noreferrer";
+    } = { href, ["aria-label"]: `link to ${href}` };
+    if (href.startsWith("https://")) {
+      linkProps.target = "_blank";
+      linkProps.rel = "noopener noreferrer";
+    }
+    return <a {...linkProps}>{children}</a>;
   },
 };
 
@@ -21,10 +25,10 @@ type MarkdownContentProps = {
   content: string;
 };
 
-const MarkdownContent: React.FC<MarkdownContentProps> = ({ content }) => (
+export const MarkdownContent: React.FC<MarkdownContentProps> = ({
+  content,
+}) => (
   <ReactMarkdown components={renderers as any} remarkPlugins={[remarkGfm]}>
     {content}
   </ReactMarkdown>
 );
-
-export default MarkdownContent;

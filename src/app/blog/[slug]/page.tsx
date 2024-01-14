@@ -1,4 +1,4 @@
-import MarkdownContent from "@/components/RenderMarkdown";
+import { MarkdownContent } from "@/components/RenderMarkdown";
 import { getAllPosts, getPostBySlug } from "@/lib/api";
 import { formatDateString } from "@/utils";
 import { Metadata } from "next";
