@@ -8,7 +8,6 @@ const postsDirectory = join(process.cwd(), "blog");
 export function getPostSlugs() {
   const allFiles = fs.readdirSync(postsDirectory);
   const slugs = allFiles.filter((slug) => slug.endsWith(".md"));
-  console.log({ slugs });
 
   return slugs;
 }
