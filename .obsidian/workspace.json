@@ -20,24 +20,26 @@
             }
           },
           {
-            "id": "1b4d8513114497a8",
+            "id": "8280860304969767",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "blog/2024-01-12-successfully-updated-metadata-title.md",
+                "file": "blog/2024-01-14-markdown-transformation-layer.md",
                 "mode": "source",
                 "source": false
               }
             }
           },
           {
-            "id": "62e108d120b2e3b4",
+            "id": "1b4d8513114497a8",
             "type": "leaf",
             "state": {
-              "type": "image",
+              "type": "markdown",
               "state": {
-                "file": "public/img/Pasted image 20240112165030.png"
+                "file": "blog/2024-01-10-blog-improvement-opportunities.md",
+                "mode": "source",
+                "source": false
               }
             }
           }
@@ -108,7 +110,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "blog/2024-01-12-successfully-updated-metadata-title.md",
+                "file": "blog/2024-01-14-markdown-transformation-layer.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -125,7 +127,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "blog/2024-01-12-successfully-updated-metadata-title.md",
+                "file": "blog/2024-01-14-markdown-transformation-layer.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -148,7 +150,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "blog/2024-01-12-successfully-updated-metadata-title.md"
+                "file": "blog/2024-01-14-markdown-transformation-layer.md"
               }
             }
           }
@@ -169,53 +171,53 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "1b4d8513114497a8",
+  "active": "8280860304969767",
   "lastOpenFiles": [
-    "node_modules/@babel/runtime/helpers/readOnlyError 2.js",
-    "node_modules/hastscript/lib/svg-case-sensitive-tag-names.d 2.ts",
-    "node_modules/@babel/runtime/helpers/tdz 2.js",
-    "node_modules/@babel/runtime/helpers/temporalUndefined 2.js",
-    "node_modules/hastscript/lib/jsx-classic 2.js",
-    "node_modules/github-from-package/test/e 2.json",
-    "node_modules/hastscript/lib/jsx-automatic 2.js",
-    "node_modules/entities/lib/esm/generated/encode-html.d 2.ts",
-    "node_modules/entities/lib/esm/package 2.json",
-    "node_modules/entities/lib/esm/generated/decode-data-xml.d 2.ts",
-    "node_modules/entities/lib/generated/decode-data-xml.d 2.ts",
-    "node_modules/@parcel/watcher-darwin-arm64/README 2.md",
-    "node_modules/@netlify/esbuild-darwin-arm64/README 2.md",
-    "node_modules/@netlify/esbuild/README 2.md",
+    "node_modules/@types/prop-types/LICENSE 2",
+    "node_modules/@types/mdx/LICENSE 2",
+    "node_modules/next/dist/client/performance-relayer-app 3.js",
+    "node_modules/next/dist/client/use-intersection 3.js",
+    "node_modules/next/dist/client/performance-relayer 3.js",
+    "node_modules/next/dist/client/resolve-href 3.js",
+    "node_modules/next/dist/client/webpack 3.js",
+    "node_modules/next/dist/client/get-domain-locale 3.js",
+    "node_modules/next/dist/client/trusted-types 3.js",
+    "node_modules/next/dist/client/normalize-trailing-slash 3.js",
+    "node_modules/next/dist/client/with-router 3.js",
+    "node_modules/@webassemblyjs/ast/README 3.md",
+    "node_modules/@webassemblyjs/wasm-edit/README 3.md",
+    "node_modules/@webassemblyjs/floating-point-hex-parser/README 2.md",
+    "node_modules/@babel/code-frame/README 2.md",
+    "node_modules/@testing-library/dom/node_modules/@babel/runtime/README 2.md",
+    "node_modules/next/node_modules/caniuse-lite/README 3.md",
+    "node_modules/webidl-conversions/LICENSE 2.md",
+    "node_modules/keyv/README 2.md",
+    "node_modules/xss/README.zh 2.md",
+    "node_modules/@testing-library/react/CHANGELOG 2.md",
+    "node_modules/acorn-import-assertions/README 2.md",
+    "node_modules/node-addon-api/LICENSE 2.md",
+    "node_modules/language-tags/README 2.md",
+    "node_modules/ts-api-utils/LICENSE 2.md",
+    "node_modules/balanced-match/LICENSE 2.md",
+    "node_modules/ms/license 2.md",
+    "node_modules/json-parse-even-better-errors/LICENSE 2.md",
+    "node_modules/arg/LICENSE 2.md",
+    "node_modules/tailwind-merge/LICENSE 2.md",
+    "node_modules/@radix-ui/react-slot/README 2.md",
+    "node_modules/mdast-util-mdxjs-esm/readme 2.md",
+    "node_modules/esutils/README 2.md",
+    "node_modules/node-fetch/LICENSE 2.md",
+    "node_modules/hastscript/readme 2.md",
+    "node_modules/hast-util-parse-selector/readme 2.md",
+    "node_modules/highlight.js/styles/school-book.png",
+    "node_modules/highlight.js/styles/pojoaque.jpg",
+    "node_modules/highlight.js/styles/brown-papersq.png",
+    "node_modules/highlight.js/scss/school-book.png",
+    "node_modules/highlight.js/scss/pojoaque.jpg",
+    "node_modules/highlight.js/scss/brown-papersq.png",
     "public/img/2024-01-09-image-processing-in-go/lowerManhattanStencil.jpg",
-    "node_modules/hast-util-raw/node_modules/mdast-util-to-hast/readme.md",
-    "node_modules/hast-util-to-estree/node_modules/style-to-object/node_modules/inline-style-parser/CHANGELOG.md",
-    "node_modules/hast-util-to-estree/node_modules/style-to-object/node_modules/inline-style-parser/README.md",
-    "node_modules/hast-util-to-estree/node_modules/style-to-object/README.md",
-    "node_modules/hast-util-to-html/node_modules/mdast-util-to-hast/readme.md",
-    "node_modules/@mdx-js/mdx/node_modules/remark-rehype/node_modules/mdast-util-to-hast/readme.md",
-    "node_modules/@mdx-js/mdx/node_modules/remark-rehype/readme.md",
-    "node_modules/remark-html/node_modules/mdast-util-to-hast/readme.md",
-    "node_modules/react-markdown/node_modules/@types/react/README.md",
-    "node_modules/napi-wasm/README.md",
-    "node_modules/markdown-table/readme.md",
-    "node_modules/mdast-util-find-and-replace/node_modules/escape-string-regexp/readme.md",
-    "node_modules/mdast-util-find-and-replace/readme.md",
-    "node_modules/micromark-extension-gfm-task-list-item/readme.md",
-    "node_modules/micromark-extension-gfm-tagfilter/readme.md",
-    "node_modules/micromark-extension-gfm-table/readme.md",
-    "node_modules/micromark-extension-gfm-strikethrough/readme.md",
-    "node_modules/micromark-extension-gfm-footnote/readme.md",
-    "node_modules/micromark-extension-gfm-autolink-literal/readme.md",
-    "node_modules/mdast-util-gfm-task-list-item/readme.md",
-    "node_modules/mdast-util-gfm-table/readme.md",
-    "node_modules/mdast-util-gfm-strikethrough/readme.md",
     "public/img/Pasted image 20240112165030.png",
     "public/img/2024-01-09-image-processing-in-go/xrSkiBeach.jpg",
-    "public/img/2024-01-09-image-processing-in-go/treeSunset.jpg",
-    "public/img/2024-01-09-image-processing-in-go/quantizedGranada.jpg",
-    "public/img/2024-01-09-image-processing-in-go/qauntCloud.jpg",
-    "public/img/2024-01-09-image-processing-in-go/image.png",
-    "public/img/2024-01-09-image-processing-in-go/flrrsBoat.jpg",
-    "public/img/2024-01-09-image-processing-in-go/doubleExposure.jpg",
-    "public/img/2024-01-09-image-processing-in-go/IMG_4308.jpeg"
+    "public/img/2024-01-09-image-processing-in-go/treeSunset.jpg"
   ]
 }

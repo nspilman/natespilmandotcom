@@ -8,11 +8,6 @@ tags:
   - "#softwareEngineering"
   - "#blog"
 ---
-
-Relevant commits - 
-- [Installing `react-markdown` and use renderers and `remarkGfm` to rewrite external links to open in new tabs](https://github.com/nspilman/natespilmandotcom/commit/94f678ccb9280e002edc0cad6c4af8717120cb47)
-- [Adding unit tests links that render in Markdown](https://github.com/nspilman/natespilmandotcom/commit/39969feef07a84d085aef6142c9941d377f1dbe1)
-
 In my blog improvement travels, I identified that I wanted external links to open in new tab. "But how can I do that?" I asked myself, since there's no special syntax for that in markdown. 
 
 The answer was to use [MarkdownContent](https://github.com/remarkjs/react-markdown) and the [remarkGfm](https://github.com/remarkjs/remark-gfm) plugin. 
@@ -102,3 +97,7 @@ test("link with enteral href opens to new tab ", async () => {
 	);
 });
 ```
+
+### Relevant Commits 
+- [Installing `react-markdown` and use renderers and `remarkGfm` to rewrite external links to open in new tabs](https://github.com/nspilman/natespilmandotcom/commit/94f678ccb9280e002edc0cad6c4af8717120cb47)
+- [Adding unit tests links that render in Markdown](https://github.com/nspilman/natespilmandotcom/commit/39969feef07a84d085aef6142c9941d377f1dbe1) 

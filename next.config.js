@@ -7,6 +7,9 @@ const nextConfig = {
   experimental: {
     appDir: true,
   },
+  images: {
+    domains: ["ihkgojiseqpwinwdowvm.supabase.co"],
+  },
   // Optionally, add any other Next.js config below
 };
 
