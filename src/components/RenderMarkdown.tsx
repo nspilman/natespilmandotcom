@@ -4,22 +4,30 @@ import remarkGfm from "remark-gfm";
 // Define a type for the renderer functions
 type RendererFunction = (props: any) => JSX.Element;
 
+const renderLink = ({
+  href,
+  children,
+}: {
+  href: string;
+  children: React.ReactElement;
+}) => {
+  const linkProps: {
+    href: string;
+    ["aria-label"]: string;
+    target?: "_blank";
+    rel?: "noopener noreferrer";
+  } = { href, ["aria-label"]: `link to ${href}` };
+
+  if (href.startsWith("https://")) {
+    linkProps.target = "_blank";
+    linkProps.rel = "noopener noreferrer";
+  }
+  return <a {...linkProps}>{children}</a>;
+};
+
 // Define the renderers with basic types
 const renderers: { [nodeType: string]: RendererFunction } = {
-  a: ({ href, children }): React.ReactElement => {
-    const linkProps: {
-      href: string;
-      ["aria-label"]: string;
-      target?: "_blank";
-      rel?: "noopener noreferrer";
-    } = { href, ["aria-label"]: `link to ${href}` };
-
-    if (href.startsWith("https://")) {
-      linkProps.target = "_blank";
-      linkProps.rel = "noopener noreferrer";
-    }
-    return <a {...linkProps}>{children}</a>;
-  },
+  a: ({ href, children }): React.ReactElement => renderLink({ href, children }),
   code: ({ children }): React.ReactElement => {
     return <code className="font-thin bg-black text-gray-300">{children}</code>;
   },
