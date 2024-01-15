@@ -33,3 +33,21 @@ test("link with enteral href opens to new tab ", async () => {
     "noopener noreferrer"
   );
 });
+
+test("code blocks render", async () => {
+  const expected = "`code test`";
+  const testCodeMarkdown = `anyText ${expected}`;
+
+  const { getByText } = render(<MarkdownContent content={testCodeMarkdown} />);
+  const codeBlock = await getByText("code test");
+  expect(Array.from(codeBlock.classList).includes("bg-black")).toBe(true);
+  expect(Array.from(codeBlock.classList).includes("text-gray-300")).toBe(true);
+});
+
+test("images render with max height of the view height", async () => {
+  const testImageMarkdown = `![anyAltText](http://example.com/anyImage.jpeg)`;
+
+  const { getByRole } = render(<MarkdownContent content={testImageMarkdown} />);
+  const codeBlock = await getByRole("img");
+  expect(Array.from(codeBlock.classList).includes("max-h-[100vh]")).toBe(true);
+});
