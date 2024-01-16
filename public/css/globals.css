@@ -411,8 +411,31 @@ button{
     transition: all 0.4s ease;
 }
 
+.resetStyles {
+  margin: initial;
+  padding: initial;
+  width: initial;
+  background-color: initial;
+  color: initial;
+  border: initial;
+  font-family: initial;
+  font-size: initial;
+  font-weight: initial;
+  text-transform: initial;
+  cursor: initial;
+  transition: initial;
+}
+
+
+
+
+
 button:hover {
     background-color: var(--ultimategray);
+}
+
+.resetStyles:hover {
+  background-color: initial
 }
 
 .button-container{

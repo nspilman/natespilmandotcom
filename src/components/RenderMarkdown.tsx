@@ -1,5 +1,17 @@
+"use client";
 import ReactMarkdown from "react-markdown";
 import remarkGfm from "remark-gfm";
+import { PrismLight as SyntaxHighlighter } from "react-syntax-highlighter";
+import { oneDark } from "react-syntax-highlighter/dist/cjs/styles/prism";
+import tsx from "react-syntax-highlighter/dist/cjs/languages/prism/tsx";
+import typescript from "react-syntax-highlighter/dist/cjs/languages/prism/typescript";
+import markdown from "react-syntax-highlighter/dist/cjs/languages/prism/markdown";
+import CopyToClipboard from "react-copy-to-clipboard";
+import DocumentDuplicateIcon from "@heroicons/react/24/outline/DocumentDuplicateIcon";
+
+SyntaxHighlighter.registerLanguage("tsx", tsx);
+SyntaxHighlighter.registerLanguage("typescript", typescript);
+SyntaxHighlighter.registerLanguage("markdown", markdown);
 
 // Define a type for the renderer functions
 type RendererFunction = (props: any) => JSX.Element;
@@ -28,11 +40,71 @@ const renderLink = ({
 // Define the renderers with basic types
 const renderers: { [nodeType: string]: RendererFunction } = {
   a: ({ href, children }): React.ReactElement => renderLink({ href, children }),
-  code: ({ children }): React.ReactElement => {
-    return <code className="font-thin bg-black text-gray-300">{children}</code>;
+  code: ({ children, className }): React.ReactElement => {
+    const classNames =
+      "mockup-code scrollbar-thin scrollbar-track-base-content/5 scrollbar-thumb-base-content/40 scrollbar-track-rounded-md scrollbar-thumb-rounded text-themeYellow font-light";
+    const hasLang = /language-(\w+)/.exec(className || "");
+    return children.includes("\n") ? (
+      <>
+        <SyntaxHighlighter
+          style={oneDark}
+          PreTag="div"
+          className={classNames + ` border-themeYellow border `}
+          showLineNumbers
+          language={hasLang?.[1]}
+          useInlineStyles
+          data-testid="multi-line-code-block"
+        >
+          {children}
+        </SyntaxHighlighter>
+      </>
+    ) : (
+      <code data-testid="single-line-code-block" className={classNames}>
+        {children}
+      </code>
+    );
   },
   img: ({ src, alt }): React.ReactElement => {
     return <img src={src} alt={alt} className="max-h-[100vh] py-2" />;
+  },
+  pre: (pre) => {
+    if (!pre) {
+      return <></>;
+    }
+    const codeChunk = (pre as any).node.children[0].children[0].value as string;
+    const language = (pre as any)?.children?.props?.className?.replace(
+      /language-/g,
+      ""
+    ) as string;
+
+    return (
+      <div className="relative overflow-none w-full">
+        <button
+          style={{
+            right: 0,
+          }}
+          className="resetStyles tooltip tooltip-left absolute z-40 mr-2 mt-5 p-6 bg-gray-50"
+          data-tip={"Copy"}
+        >
+          <div className="bg-gray-400 m-2 rounded">
+            <CopyToClipboard text={codeChunk}>
+              <DocumentDuplicateIcon className="h-5 w-5 cursor-pointer hover:text-blue-600" />
+            </CopyToClipboard>
+          </div>
+        </button>
+        <span
+          style={{
+            bottom: 0,
+            right: 0,
+          }}
+          data-testid="language"
+          className="absolute z-40 mb-5 mr-1 rounded-lg bg-base-content/40 p-1 text-xs uppercase text-base-300 backdrop-blur-sm"
+        >
+          {language}
+        </span>
+        <pre {...pre}></pre>
+      </div>
+    );
   },
 };
 

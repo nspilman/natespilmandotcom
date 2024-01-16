@@ -29,17 +29,47 @@ test("link with enteral href opens to new tab ", async () => {
   );
 });
 
-test("code blocks render", async () => {
+test("code without returns renders inline", async () => {
+  cleanup();
   const expected = "`code test`";
   const testCodeMarkdown = `anyText ${expected}`;
 
-  const { getByText } = render(<MarkdownContent content={testCodeMarkdown} />);
-  const codeBlock = await getByText("code test");
-  expect(Array.from(codeBlock.classList).includes("bg-black")).toBe(true);
-  expect(Array.from(codeBlock.classList).includes("text-gray-300")).toBe(true);
+  const { getByTestId } = render(
+    <MarkdownContent content={testCodeMarkdown} />
+  );
+  const codeBlock = await getByTestId("single-line-code-block");
+  expect(codeBlock).not.toBeUndefined();
+});
+
+test("multi-line code renders code block", async () => {
+  const myMarkdown = `
+  \`\`\`
+  const exampleVariable = 'some value';
+  const secondLine = "whateverDiscount"
+  \`\`\`
+  `;
+
+  const { getByTestId } = render(<MarkdownContent content={myMarkdown} />);
+  const codeBlock = await getByTestId("multi-line-code-block");
+  expect(codeBlock).not.toBeUndefined();
+});
+
+test("multi-line code with tsx declared renders language tag", async () => {
+  cleanup();
+  const myMarkdown = `
+  \`\`\`tsx
+  const exampleVariable = 'some value';
+  const secondLine = "whateverDiscount"
+  \`\`\`
+  `;
+
+  const { getByTestId } = render(<MarkdownContent content={myMarkdown} />);
+  const languageTag = await getByTestId("language");
+  expect(languageTag.textContent).toBe("tsx");
 });
 
 test("images render with max height of the view height", async () => {
+  cleanup();
   const testImageMarkdown = `![anyAltText](http://example.com/anyImage.jpeg)`;
 
   const { getByRole } = render(<MarkdownContent content={testImageMarkdown} />);
