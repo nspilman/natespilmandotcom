@@ -5,6 +5,7 @@ import { PrismLight as SyntaxHighlighter } from "react-syntax-highlighter";
 import { oneDark } from "react-syntax-highlighter/dist/cjs/styles/prism";
 import tsx from "react-syntax-highlighter/dist/cjs/languages/prism/tsx";
 import typescript from "react-syntax-highlighter/dist/cjs/languages/prism/typescript";
+import go from "react-syntax-highlighter/dist/cjs/languages/prism/go";
 import markdown from "react-syntax-highlighter/dist/cjs/languages/prism/markdown";
 import CopyToClipboard from "react-copy-to-clipboard";
 import DocumentDuplicateIcon from "@heroicons/react/24/outline/DocumentDuplicateIcon";
@@ -12,6 +13,7 @@ import DocumentDuplicateIcon from "@heroicons/react/24/outline/DocumentDuplicate
 SyntaxHighlighter.registerLanguage("tsx", tsx);
 SyntaxHighlighter.registerLanguage("typescript", typescript);
 SyntaxHighlighter.registerLanguage("markdown", markdown);
+SyntaxHighlighter.registerLanguage("go", go);
 
 // Define a type for the renderer functions
 
