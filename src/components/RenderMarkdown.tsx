@@ -46,6 +46,9 @@ const renderers: { [nodeType: string]: RendererFunction } = {
   img: ({ src, alt }): React.ReactElement => {
     return <img src={src} alt={alt} className="max-h-[100vh] py-2" />;
   },
+  p: ({ children }) => {
+    return <p className="p-2">{children}</p>;
+  },
   code: ({ children, className }): React.ReactElement => {
     const classNames =
       "mockup-code scrollbar-thin scrollbar-track-base-content/5 scrollbar-thumb-base-content/40 scrollbar-track-rounded-md scrollbar-thumb-rounded text-themeYellow font-light";
