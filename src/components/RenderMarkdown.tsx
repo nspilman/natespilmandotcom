@@ -14,15 +14,8 @@ SyntaxHighlighter.registerLanguage("typescript", typescript);
 SyntaxHighlighter.registerLanguage("markdown", markdown);
 
 // Define a type for the renderer functions
-type RendererFunction = (props: any) => JSX.Element;
 
-const renderLink = ({
-  href,
-  children,
-}: {
-  href: string;
-  children: React.ReactElement;
-}) => {
+const renderLink = ({ href, children }: { href: string; children: string }) => {
   const linkProps: {
     href: string;
     ["aria-label"]: string;
@@ -37,9 +30,20 @@ const renderLink = ({
   return <a {...linkProps}>{children}</a>;
 };
 
+type RendererFunction = (props: {
+  href?: string;
+  children: string;
+  src?: string;
+  alt?: string;
+  className?: string;
+}) => JSX.Element;
 // Define the renderers with basic types
 const renderers: { [nodeType: string]: RendererFunction } = {
-  a: ({ href, children }): React.ReactElement => renderLink({ href, children }),
+  a: ({ href = "", children }): React.ReactElement =>
+    renderLink({ href, children }),
+  img: ({ src, alt }): React.ReactElement => {
+    return <img src={src} alt={alt} className="max-h-[100vh] py-2" />;
+  },
   code: ({ children, className }): React.ReactElement => {
     const classNames =
       "mockup-code scrollbar-thin scrollbar-track-base-content/5 scrollbar-thumb-base-content/40 scrollbar-track-rounded-md scrollbar-thumb-rounded text-themeYellow font-light";
@@ -64,9 +68,7 @@ const renderers: { [nodeType: string]: RendererFunction } = {
       </code>
     );
   },
-  img: ({ src, alt }): React.ReactElement => {
-    return <img src={src} alt={alt} className="max-h-[100vh] py-2" />;
-  },
+
   pre: (pre) => {
     if (!pre) {
       return <></>;
@@ -116,7 +118,7 @@ export const MarkdownContent: React.FC<MarkdownContentProps> = ({
   content,
 }) => (
   <ReactMarkdown
-    components={renderers as any}
+    components={renderers}
     remarkPlugins={[remarkGfm]}
     className="py-8"
   >
