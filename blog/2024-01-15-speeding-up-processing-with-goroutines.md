@@ -9,7 +9,7 @@ tags:
   - "#goLang"
 ---
 
-I realize I still need to do a deeper dive on my Go program that I used to make the images [displayed here](https://www.amazon.com/dp/B08B3FWYBX?ref_=cm_sw_r_mwn_dp_H0MB0N9HSWTFFVNZFS1X&language=en-US), but until then, let's chat concurrency!
+I realize I still need to do a deeper dive on my Go program that I used to make the images [displayed here](https://natespilman.com/blog/2024-01-09-images-edited-in-go), but until then, let's chat concurrency!
 
 All you need to know is, I have a program that performs actions on every pixel in an image. I'd heard that [goroutines](https://go.dev/tour/concurrency/1) could be used to do some of this work in parallel. What if I could process ever pixel at once? While wasn't able to get to that level of speed, I cut total performance speed by about 4 times.
 
