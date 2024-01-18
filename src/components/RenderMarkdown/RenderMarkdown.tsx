@@ -15,8 +15,6 @@ SyntaxHighlighter.registerLanguage("typescript", typescript);
 SyntaxHighlighter.registerLanguage("markdown", markdown);
 SyntaxHighlighter.registerLanguage("go", go);
 
-// Define a type for the renderer functions
-
 const renderLink = ({ href, children }: { href: string; children: string }) => {
   const linkProps: {
     href: string;
@@ -54,7 +52,7 @@ const renderers: { [nodeType: string]: RendererFunction } = {
       "mockup-code scrollbar-thin scrollbar-track-base-content/5 scrollbar-thumb-base-content/40 scrollbar-track-rounded-md scrollbar-thumb-rounded text-themeYellow font-light";
     const hasLang = /language-(\w+)/.exec(className || "");
     return children.includes("\n") ? (
-      <>
+      <div className="relative h-full">
         <SyntaxHighlighter
           style={oneDark}
           PreTag="div"
@@ -66,35 +64,16 @@ const renderers: { [nodeType: string]: RendererFunction } = {
         >
           {children}
         </SyntaxHighlighter>
-      </>
-    ) : (
-      <code data-testid="single-line-code-block" className={classNames}>
-        {children}
-      </code>
-    );
-  },
-
-  pre: (pre) => {
-    if (!pre) {
-      return <></>;
-    }
-    const codeChunk = (pre as any).node.children[0].children[0].value as string;
-    const language = (pre as any)?.children?.props?.className?.replace(
-      /language-/g,
-      ""
-    ) as string;
-
-    return (
-      <div className="relative overflow-none w-full">
         <button
           style={{
             right: 0,
+            top: 0,
           }}
-          className="resetStyles tooltip tooltip-left absolute z-40 mr-2 mt-5 p-6 bg-gray-50"
+          className="resetStyles absolute tooltip tooltip-left z-40 mr-2 mt-5 p-6 bg-gray-50 top-0 right-0"
           data-tip={"Copy"}
         >
           <div className="bg-gray-400 m-2 rounded">
-            <CopyToClipboard text={codeChunk}>
+            <CopyToClipboard text={children}>
               <DocumentDuplicateIcon className="h-5 w-5 cursor-pointer hover:text-blue-600" />
             </CopyToClipboard>
           </div>
@@ -107,10 +86,13 @@ const renderers: { [nodeType: string]: RendererFunction } = {
           data-testid="language"
           className="absolute z-40 mb-5 mr-1 rounded-lg bg-base-content/40 p-1 text-xs uppercase text-base-300 backdrop-blur-sm"
         >
-          {language}
+          {hasLang?.[1]}
         </span>
-        <pre {...pre}></pre>
       </div>
+    ) : (
+      <code data-testid="single-line-code-block" className={classNames}>
+        {children}
+      </code>
     );
   },
 };
