@@ -9,6 +9,7 @@ import go from "react-syntax-highlighter/dist/cjs/languages/prism/go";
 import markdown from "react-syntax-highlighter/dist/cjs/languages/prism/markdown";
 import CopyToClipboard from "react-copy-to-clipboard";
 import DocumentDuplicateIcon from "@heroicons/react/24/outline/DocumentDuplicateIcon";
+import HLSAudioPlayer from "./HLSAudioPlayer";
 
 SyntaxHighlighter.registerLanguage("tsx", tsx);
 SyntaxHighlighter.registerLanguage("typescript", typescript);
@@ -39,8 +40,12 @@ type RendererFunction = (props: {
 }) => JSX.Element;
 // Define the renderers with basic types
 const renderers: { [nodeType: string]: RendererFunction } = {
-  a: ({ href = "", children }): React.ReactElement =>
-    renderLink({ href, children }),
+  a: ({ href = "", children }): React.ReactElement => {
+    if (href.endsWith(".m3u8")) {
+      return <HLSAudioPlayer src={href} />;
+    }
+    return renderLink({ href, children });
+  },
   img: ({ src, alt }): React.ReactElement => {
     return <img src={src} alt={alt} className="max-h-[100vh] py-2" />;
   },
