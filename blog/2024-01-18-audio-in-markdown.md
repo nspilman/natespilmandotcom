@@ -1,7 +1,7 @@
 ---
 favorite: true
-title: I set up an audio streaming with ffmpeg and aws
-description: test
+title: I set up streaming audio with ffmpeg and aws
+description: I'm hype about this. First step to becoming Spotify.
 date: 2024-01-18
 published: true
 tags:
@@ -75,7 +75,8 @@ const renderers: { [nodeType: string]: RendererFunction } = {
 ```
 
 
-In honor of the late Nicholas Hazel, who commissioned this song for the intro to [his podcast series](https://www.youtube.com/watch?v=BpRVdXdUq98). I think he'd be honored to know it was my "hello world" here.   
+I share this in honor of the late Nicholas Hazel, who commissioned this song from me for the intro to [his podcast series](https://www.youtube.com/watch?v=BpRVdXdUq98). There was one episode, but I'm still forever honored. He was a fellow Software engineer, a kind and creative thinker. I think he'd be honored to know it was my "hello world" here.   
+
 [Tech Debt theme](https://d3qxyro07qwbpl.cloudfront.net/stream/output.m3u8)
 
 
