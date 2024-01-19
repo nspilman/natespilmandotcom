@@ -26,7 +26,7 @@ I then used `ffmpeg` to convert my `.wav` file into a bunch of chunked `.acc` fi
 
 Once those are in the S3 bucket, and I updated all the CORs permissions to allow other websites to query the endpoint, I was almost done! 
 
-I don't know the specifics, but basically we can now point and `<audio/>` element at our `.m3u8` on cloudfront. The page will make the request and then somehow understand to start streaming in the rest of the files. 
+I don't know the specifics, but basically we can now point and `<audio/>` element at our `.m3u8` on Cloudfront. The page will make the request and then somehow understand to start streaming in the rest of the files. 
 
 ### Updating my website 
 Rendering the audio player in the blog is a little tricky for two reasons. The first is that there's no native markdown that I'm aware of that is natively rendered to the audio player, and that I need to polyfill support for `hls`, which I understand as `the thing that allows us to stream in this audio.` 
