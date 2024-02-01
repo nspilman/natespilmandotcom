@@ -3,10 +3,8 @@ favorite: true
 title: Setting Myself up for Continued Momentum
 description: A post about posting more
 date: 2024-02-01
-published:
+published: true
 ---
-
-
 Hey folks - 
 I'm feeling my blog post writing momentum slipping - I haven't written anything since 01-18-2024 - so this post will be about sticking to it. 
 
