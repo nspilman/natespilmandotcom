@@ -6,14 +6,8 @@ date: 2024-02-02
 published: true
 ---
 
-Hey y'all - I wanted to take this time to recap what's been done an look forward to what's outstanding. 
-
-First off, Pop Off is what I'm calling a song pre-launch fan organization platform, that I plan on launching with Toneway's upcoming song Falling. 
-
-This project started with an RFC. 
-First off, to everyone that commented on the RFC - thank you! 
-
-The benefit of the RFC was both to get the helpful feedback of friends, but also to get my thoughts organized. 
+Hey y'all - I wanted to take this time to recap what's been done an look forward to what's outstanding. First off, Pop Off is what I'm calling a song pre-launch fan organization platform, that I plan on launching with Toneway's upcoming song Falling. This project started with an RFC. 
+First off, to everyone that commented on the RFC - thank you! The benefit of the RFC was both to get the helpful feedback of friends, but also to get my thoughts organized. 
 
 ## Status of things 
 
