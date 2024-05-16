@@ -2,7 +2,7 @@
 favorite: true
 title: Sending audio input to default output
 description: aka, I can now hear what I'm sending in from Ableton
-date: 2024-05-15
+date: 2024-05-16
 published: true
 ---
 Via the commit below, I'm now piping the incoming audio stream to my default output. I'm essentially sending my computer's audio the longer way to my default device, with my tuning program as an interceptor. It's a powerful feeling to be intercepting audio data like this. 
