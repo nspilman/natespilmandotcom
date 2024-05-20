@@ -19,6 +19,8 @@ My basic understanding of how this works is that the detected pitch is the close
 
 I ran a quick experiment where I incremented the buffer size and evaluated the pitch. I incremented the buffer size by `2205`, since that's a factor of our sample rate of `44100`.
 
+![Detected Pitch vs Buffer size](https://ihkgojiseqpwinwdowvm.supabase.co/storage/v1/object/public/natespilmanblog/2024-05-20%20pitch%20detection%20variance%20by%20buffer%20size/detected%20pitch%20by%20buffer%20size.jpg?t=2024-05-20T16%3A01%3A54.350Z)
+
 Every time the buffer size is a multiple of `2205`, we get the result of `440 Hz`. This is because of the following relationship:
 
 ```python
