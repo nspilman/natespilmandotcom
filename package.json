@@ -6,7 +6,9 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "next lint"
+    "lint": "next lint",
+    "upload-media": "node uploadMedia.js",
+    "test-commit": "echo 'we out here'"
   },
   "dependencies": {
     "@happy-dom/global-registrator": "^13.0.6",
