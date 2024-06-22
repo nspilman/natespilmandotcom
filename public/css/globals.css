@@ -101,6 +101,10 @@ h1, h2{
     margin:auto;
 }
 
+ol, ul, li` {
+  list-style: circle;
+}
+
 h1, h2, h3, .logo{
     font-weight:300;
     color:var(--yellow);
@@ -277,7 +281,7 @@ h6{
   }
   
   .menu-wrap .menu > div > div > ul > li {
-    list-style: none;
+    list-style: circle;
     color: #fff;
     font-size: 1.5rem;
     padding: 1rem;
