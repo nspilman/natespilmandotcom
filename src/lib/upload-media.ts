@@ -28,13 +28,9 @@ const uploadFile = async ({
   destinationDirName: string;
 }) => {
   try {
-    const here = path.resolve("./");
-    const fileContent = await fs.readFile(
-      path.resolve(path.join(here, filepath))
-    );
+    const fileContent = await fs.readFile(`/${filepath}`);
 
     const filename = filepath.split("/")[filepath.split("/").length - 1];
-
     const uploadFilePath = `${destinationDirName}/${filename}`;
 
     const { data, error } = await supabase.storage
@@ -161,10 +157,11 @@ async function replaceLocalReferenceWithRemote(
     let content = await fs.readFile(file, "utf-8");
 
     // Escape special characters in the local filepath for use in regex
-    const escapedLocalPath = status.localFilepath.replace(
-      /[.*+?^${}()|[\]\\]/g,
-      "\\$&"
-    );
+    const filename =
+      status.localFilepath.split("/")[
+        status.localFilepath.split("/").length - 1
+      ];
+    const escapedLocalPath = filename.replace(/[.*+?^${}()|[\]\\]/g, "\\$&");
 
     // Create a regex that matches the local filepath, accounting for possible relative paths and an optional preceding slash
     const localPathRegex = new RegExp(
@@ -186,7 +183,7 @@ async function replaceLocalReferenceWithRemote(
       console.log(
         `Updated references to ${status.localFilepath} in file: ${file}`
       );
-      deleteLocalFile(status.localFilepath);
+      deleteLocalFile(`/${status.localFilepath}`);
     }
   }
 }
