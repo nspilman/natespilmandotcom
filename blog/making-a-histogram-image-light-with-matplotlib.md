@@ -25,7 +25,7 @@ For example - The light distribution of the this image ...
 
 is this -
 
-![](/uploads/3lightdistroimages_introexample.png)
+![](https://ihkgojiseqpwinwdowvm.supabase.co/storage/v1/object/public/natespilmanblog/making-a-histogram-image-light-with-matplotlib/3lightdistroimages_introexample.png)
 
 We can see a large distribution of dark pixels than light ones.
 
@@ -190,7 +190,7 @@ plt.show()
 
 #### output
 
-![Dark Image light distribution](/uploads/3lightdistroimages_darkimage.png "Dark Image light distribution")
+![Dark Image light distribution]https://ihkgojiseqpwinwdowvm.supabase.co/storage/v1/object/public/natespilmanblog/making-a-histogram-image-light-with-matplotlib/3lightdistroimages_darkimage.png "Dark Image light distribution")
 
 ---
 
@@ -200,7 +200,7 @@ plt.show()
 
 #### output
 
-![Dark Image neutral distribution](/uploads/3lightdistroimages_neutralimage.png "Dark Image neutral distribution")
+![Dark Image neutral distribution]https://ihkgojiseqpwinwdowvm.supabase.co/storage/v1/object/public/natespilmanblog/making-a-histogram-image-light-with-matplotlib/3lightdistroimages_neutralimage.png "Dark Image neutral distribution")
 
 ---
 
@@ -210,4 +210,4 @@ plt.show()
 
 #### output
 
-![Dark Image light distribution](/uploads/3lightdistroimages_lightimage.png "Dark Image light distribution")
+![Dark Image light distribution]https://ihkgojiseqpwinwdowvm.supabase.co/storage/v1/object/public/natespilmanblog/making-a-histogram-image-light-with-matplotlib/3lightdistroimages_lightimage.png "Dark Image light distribution")
