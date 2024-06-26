@@ -52,6 +52,15 @@ const renderers: { [nodeType: string]: RendererFunction } = {
   p: ({ children }) => {
     return <p className="p-2">{children}</p>;
   },
+  ol: ({ children }) => {
+    return <ol className="list-decimal list-inside pl-4">{children}</ol>;
+  },
+  ul: ({ children }) => {
+    return <ul className="list-disc list-inside pl-4">{children}</ul>;
+  },
+  li: ({ children }) => {
+    return <li className="mb-1">{children}</li>;
+  },
   code: ({ children, className }): React.ReactElement => {
     const classNames =
       "mockup-code scrollbar-thin scrollbar-track-base-content/5 scrollbar-thumb-base-content/40 scrollbar-track-rounded-md scrollbar-thumb-rounded text-themeYellow font-light";
