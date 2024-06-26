@@ -277,13 +277,20 @@ This function ties together all the previous steps: finding local media referenc
 
 To run this script automatically before each commit, you can set up a pre-commit hook in your Git repository. Create a file named `pre-commit` in the `.git/hooks/` directory of your repository with the following content:
 
-```
+```bash
 #!/bin/bash
 
 # Exit on any error
 set -e
 
+# Run your existing script to replace image references and delete images
 bun run upload-media
+
+# Stage all changes
+git add -A
+
+# Exit successfully
+exit 0
 ```
 
 Make sure to make the hook executable:
