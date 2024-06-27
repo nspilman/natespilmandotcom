@@ -29,7 +29,7 @@ export function Layout({ children }: { children: React.ReactNode }) {
                   <li>
                     <Link href="/blog">Blog</Link>
                   </li>
-                  <li>{/* <Link href="/music">Music</Link> */}</li>
+                  {/* <li><Link href="/music">Music</Link></li> */}
                   {/* <li>
                       <Link href="https://natespilman.tech/media/pdfs/Resume_Aug_2020.pdf">
                         Resume
