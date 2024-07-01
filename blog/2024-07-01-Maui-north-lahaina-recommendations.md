@@ -3,7 +3,7 @@ favorite: false
 title: Recommendations for staying in North Lahaina
 description: for my cousins and their two kids
 date: 2024-07-01
-published:
+published: true
 ---
 This blog post is written for my cousins and their two kids who are staying close to where we just stayed in Maui. I thought I'd post it on my blog, in case it comes in handy in the future. 
 
