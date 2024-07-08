@@ -112,8 +112,16 @@ h1, h2, h3, .logo{
 
 h1, h2, h3, h4, h5, h6{
   text-wrap: pretty;
-  padding: 1rem 0 .5rem 0 ;
 }
+
+#post-main h1, 
+#post-main h2,
+#post-main h3, 
+#post-main h4,
+#post-main h5,
+#post-main h6{
+  padding: 1rem 0 .5rem 0 ;
+ }
 
 p {
   text-wrap: pretty
