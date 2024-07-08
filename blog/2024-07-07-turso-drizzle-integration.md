@@ -111,7 +111,9 @@ First off, now that I've applied the database migrations, I can use `drizzle stu
 `bunx drizzle-kit studio`
 
 This spins up a UI at `https://local.drizzle.studio`, and I can clearly see that my migrations were applied, based on the existence of the `posts` and `users` table.  
-![[Pasted image 20240707105026.png]]
+
+![Drizzle studio UI confirms that we successfully built our tables](https://ihkgojiseqpwinwdowvm.supabase.co/storage/v1/object/public/natespilmanblog/2024-07-07-turso-drizzle-integration/drizzle-studio-first-look.png)
+
 Not only can I see my data or currently lack thereof, but I can also run SQL directly against the database via the `SQL runner`, or write `drizzle TS api` code in `Drizzle Runner`. I foresee that being super helpful in situations where you want to test your application queries without needing to run your application. Build the queries first in `Drizzle runner` and then insert them into your application with confidence. 
 
 Next I'm going to add a couple of users and give them a couple of posts, and then query the database for posts by user. This should be a pretty simple `Hello World` sort of confirmation that this has all worked. 
@@ -143,7 +145,7 @@ So when I run the app, it will add this user to the database. The great thing wi
 
 `bun index.ts`
 annnnd, boom - 
-![Drizzle studio UI confirms that we successfully built our tables](https://ihkgojiseqpwinwdowvm.supabase.co/storage/v1/object/public/natespilmanblog/2024-07-07-turso-drizzle-integration/drizzle-studio-first-look.png)
+![Drizzle Studio now shows the users I just created](https://ihkgojiseqpwinwdowvm.supabase.co/storage/v1/object/public/natespilmanblog/2024-07-07-turso-drizzle-integration/drizzle-studio-users-created.png)
 
 Now let's make some a post.
 

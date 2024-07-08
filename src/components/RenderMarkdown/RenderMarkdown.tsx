@@ -66,8 +66,14 @@ const renderers: { [nodeType: string]: RendererFunction } = {
   code: ({ children, className }): React.ReactElement => {
     const classNames =
       "mockup-code scrollbar-thin scrollbar-track-base-content/5 scrollbar-thumb-base-content/40 scrollbar-track-rounded-md scrollbar-thumb-rounded text-themeYellow font-light";
+
+    const codeContentWithoutEndingWhitespace = children
+      .split("\n")
+      .filter((val, i) => i !== children.split("\n").length - 1 || val !== "")
+      .join("\n");
+
     const hasLang = /language-(\w+)/.exec(className || "");
-    return children.includes("\n") ? (
+    return codeContentWithoutEndingWhitespace.includes("\n") ? (
       <div className="relative h-full">
         <SyntaxHighlighter
           style={oneDark}
@@ -78,7 +84,7 @@ const renderers: { [nodeType: string]: RendererFunction } = {
           useInlineStyles
           data-testid="multi-line-code-block"
         >
-          {children}
+          {codeContentWithoutEndingWhitespace}
         </SyntaxHighlighter>
         <button
           style={{
@@ -107,7 +113,7 @@ const renderers: { [nodeType: string]: RendererFunction } = {
       </div>
     ) : (
       <code data-testid="single-line-code-block" className={classNames}>
-        {children}
+        {codeContentWithoutEndingWhitespace}
       </code>
     );
   },
