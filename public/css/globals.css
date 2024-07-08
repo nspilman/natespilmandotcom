@@ -101,7 +101,7 @@ h1, h2{
     margin:auto;
 }
 
-ol, ul, li` {
+ol, ul, li {
   list-style: circle;
 }
 
@@ -111,7 +111,8 @@ h1, h2, h3, .logo{
 }
 
 h1, h2, h3, h4, h5, h6{
-  text-wrap: balance
+  text-wrap: pretty;
+  padding: 1rem 0 .5rem 0 ;
 }
 
 p {

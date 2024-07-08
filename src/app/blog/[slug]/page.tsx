@@ -41,7 +41,7 @@ export default async function Post({ params }: { params: { slug: string } }) {
             }}
             href="/blog"
           >
-            <h1>{`Nate's Blog`}</h1>
+            <h1 className="font-thin text-lg">{`Nate's Blog`}</h1>
           </Link>
           <hr />
         </div>

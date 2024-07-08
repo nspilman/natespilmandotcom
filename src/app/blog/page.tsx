@@ -13,7 +13,7 @@ const BlogPage = () => {
   return (
     <div className="p-8 md:p-20">
       <div id="blog-page">
-        <h1>{`Nate's Blog`}</h1>
+        <h1 className="font-thin text-lg">{`Nate's Blog`}</h1>
         <hr />
         <div id="blog-post-wrapper">
           <article id="blog" className="panel special">
