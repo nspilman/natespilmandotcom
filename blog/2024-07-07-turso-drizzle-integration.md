@@ -98,7 +98,6 @@ export default defineConfig({
     authToken: process.env.TURSO_AUTH_TOKEN!,
   },
 });
-
 ```
 - generate the migrations file for the database (the change log from which it will build) and then apply those migrations to create or modify database table(s). 
 ```
@@ -189,7 +188,6 @@ const userTwoPosts = await db
   .from(postsTable)
   .where(eq(postsTable.userId, 2));
 console.log({ userOnePosts, userTwoPosts });
-
 ```
 
 console logs - 
