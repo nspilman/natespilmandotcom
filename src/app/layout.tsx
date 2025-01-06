@@ -2,6 +2,7 @@ import { Metadata } from "next";
 import "../../public/css/globals.css";
 import { Layout } from "@/components/layout";
 import Script from "next/script";
+import { CSPostHogProvider } from "./posthog-provider";
 
 export const metadata: Metadata = {
   title: {
@@ -21,6 +22,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }) {
   return (
+    <CSPostHogProvider>
     <html lang="en">
       <Script
         strategy="lazyOnload"
@@ -38,5 +40,6 @@ export default function RootLayout({
         <Layout>{children}</Layout>
       </body>
     </html>
+    </CSPostHogProvider>
   );
 }
