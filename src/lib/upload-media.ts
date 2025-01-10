@@ -13,6 +13,8 @@ if (!supabaseUrl || !supabaseKey) {
   );
 }
 
+const CONTENT_DIR = "./blog/public"; // Adjust this to your content directory
+
 const isMediaFile = (fileName: string) => {
   const ext = path.extname(fileName).toLowerCase();
   return !!ext.length;
@@ -149,8 +151,7 @@ async function replaceLocalReferenceWithRemote(
     return;
   }
 
-  const contentDir = "./blog/public"; // Adjust this to your content directory
-  const allFiles = await walkDir(contentDir);
+  const allFiles = await walkDir(CONTENT_DIR);
   const mdFiles = allFiles.filter((file) => path.extname(file) === ".md");
 
   for (const file of mdFiles) {
@@ -197,8 +198,8 @@ async function deleteLocalFile(filepath: string) {
 }
 
 const main = async () => {
-  const contentDirectory = "./blog"; // Adjust this to your content directory
-  await findLocalMediaReferences(contentDirectory)
+  // const contentDirectory = CONTENT_DIR // Adjust this to your content directory
+  await findLocalMediaReferences(CONTENT_DIR)
     .then((files) =>
       files.forEach(async ({ fullPath, destinationDirName }) => {
         const status = await uploadFile({
