@@ -149,7 +149,7 @@ async function replaceLocalReferenceWithRemote(
     return;
   }
 
-  const contentDir = "./blog"; // Adjust this to your content directory
+  const contentDir = "./blog/public"; // Adjust this to your content directory
   const allFiles = await walkDir(contentDir);
   const mdFiles = allFiles.filter((file) => path.extname(file) === ".md");
 
