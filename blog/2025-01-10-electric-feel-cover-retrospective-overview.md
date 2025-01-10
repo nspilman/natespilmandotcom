@@ -12,7 +12,7 @@ Everyone Plays the Same Song round 24 just ended with a diverse playlist and a v
 
 First off, below is a screenshot of my collapsed Ableton Live set. I use Ableton 10 Suite. I'll go into each individual group in future posts, but here is a high level overview of the parts. 
 
-![Screenshot of my Electric Feel Ableton Live session](electric-feel-ableton-overview.png)
+![Screenshot of my Electric Feel Ableton Live session](https://ihkgojiseqpwinwdowvm.supabase.co/storage/v1/object/public/natespilmanblog/2025-01-10-electric-feel-cover-retrospective-overview/electric-feel-ableton-overview.png?t=2025-01-10T17%3A04%3A16.844Z)
 
 
 I tidied up a bit for the screenshot, but the basic groups are as follow. 
