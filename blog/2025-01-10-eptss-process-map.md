@@ -41,12 +41,13 @@ How to automate -
 	3. direction (from / since)
 	4. roundEvent (Signups | voting close | signups open | listening party)
 	5. email_id (fk email table below)
+	6. population ("round-signed-up" | "mailing_list" )
 2. and a new table for **email templates** to send out. Table columns
 	1. id
 	2. email_subject
 	3. email_body_template
 3. Write all the email templates & create all the email automation records
-4. Write a script to check to see if any emails should be sent out today. 
+4. Write a script to check to see if any emails should be sent out today, and then uses [Resend](https://resend.com/emails) to send the email. 
 	1. Darn, I also probably need a `sent_emails` table. 
 5. Run a daily Github Action to run the script and send emails when necessary. 
 
