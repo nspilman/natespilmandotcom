@@ -26,6 +26,7 @@ Let's walk through the admin activities per each round.
 - Send checkin emails 
 - open song submission 
 - Send invitation to listening party 
+- Create playlist
 - Host listening party
 
 ## Thoughts on the list
