@@ -14,6 +14,22 @@ export const metadata: Metadata = {
   authors: [{ name: "Nate Spilman", url: "https://natespilman.com" }],
   creator: "Nate Spilman",
   publisher: "Nate Spilman",
+  openGraph: {
+    title: 'Nate Spilman Dot Com',
+    description: "Nate Spilman's Personal Website",
+    url: 'https://natespilman.com',
+    siteName: 'Your Website Name',
+    images: [
+      {
+        url: "/favicon.png",  // Your preferred image
+        width: 630,
+        height: 630,
+        alt: 'Nate Spilman Dot Com',
+      },
+    ],
+    locale: 'en_US',
+    type: 'website',
+  },
 };
 
 export default function RootLayout({
