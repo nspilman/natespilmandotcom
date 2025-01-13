@@ -43,7 +43,7 @@ type RendererFunction = (props: {
 // Define the renderers with basic types
 const renderers: { [nodeType: string]: RendererFunction } = {
   a: ({ href = "", children }): React.ReactElement => {
-    if (href.endsWith(".m3u8")) {
+    if (href.endsWith(".m3u8") || href.endsWith(".mp3")) {
       return <HLSAudioPlayer src={href} />;
     }
     return renderLink({ href, children });
