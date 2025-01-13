@@ -4,6 +4,9 @@ title: Getting working on Hella Good by No Doubt
 description: Initial exporation
 date: 2025-01-12
 published: true
+tags:
+  - eptss
+  - music
 ---
 I started working on Hella Good for round 25 of [Everyone Plays the Same Song](everyoneplaysthesamesong.com). 
 
