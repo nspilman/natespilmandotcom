@@ -11,6 +11,7 @@ import markdown from "react-syntax-highlighter/dist/cjs/languages/prism/markdown
 import CopyToClipboard from "react-copy-to-clipboard";
 import DocumentDuplicateIcon from "@heroicons/react/24/outline/DocumentDuplicateIcon";
 import HLSAudioPlayer from "./HLSAudioPlayer";
+import { MP3AudioPlayer } from "./Mp3AudioPlayer";
 
 SyntaxHighlighter.registerLanguage("tsx", tsx);
 SyntaxHighlighter.registerLanguage("typescript", typescript);
@@ -43,8 +44,12 @@ type RendererFunction = (props: {
 // Define the renderers with basic types
 const renderers: { [nodeType: string]: RendererFunction } = {
   a: ({ href = "", children }): React.ReactElement => {
-    if (href.endsWith(".m3u8") || href.endsWith(".mp3")) {
+    if (href.endsWith(".m3u8")) {
       return <HLSAudioPlayer src={href} />;
+    }
+
+    if(href.endsWith(".mp3")){
+      return <MP3AudioPlayer src={href}/>
     }
     return renderLink({ href, children });
   },
