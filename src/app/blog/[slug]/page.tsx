@@ -32,53 +32,63 @@ export default async function Post({ params }: { params: { slug: string } }) {
   } = post;
 
   return (
-    <div id="home" className="panel special min-h-screen p-8 md:p-20">
-      <div id="post-main">
-        <div id="blog-title">
-          <Link
-            style={{
-              textDecoration: "none",
-            }}
-            href="/blog"
-          >
-            <h1 className="font-thin text-lg">{`Nate's Blog`}</h1>
+    <div className="min-h-screen px-6 py-12 md:px-8 lg:px-12 bg-gray-900/50">
+      <article className="mx-auto max-w-2xl">
+        <div className="mb-16">
+          <Link href="/blog" className="block">
+            <h1 className="text-2xl font-light  hover:text-yellow-300">
+              Nate&apos;s Blog
+            </h1>
           </Link>
-          <hr />
+          <hr className="mt-6 border-gray-700" />
         </div>
-        <div className="post">
-          <header>
-            <h2 id="post-title">{title}</h2>
-            <p>{description}</p>
-            <time className="published" dateTime={date}>
+
+        <div className="prose prose-lg prose-invert max-w-none space-y-4">
+          <header className="space-y-1">
+            <h2 className="text-4xl font-bold tracking-tight text-white">
+              {title}
+            </h2>
+            <p className="text-xl text-gray-300 leading-relaxed">
+              {description}
+            </p>
+            <time 
+              className="mt-8 block text-base text-gray-400" 
+              dateTime={date}
+            >
               {formatDateString(date)}
             </time>
           </header>
-          <MarkdownContent content={html} />
+
+          <div className="mt-12 space-y-8">
+            <MarkdownContent content={html} />
+          </div>
         </div>
-        <ul
-          style={{
-            display: `flex`,
-            flexWrap: `wrap`,
-            justifyContent: `space-between`,
-            listStyle: `none`,
-            padding: "2em",
-          }}
-        >
-          {previous && (
-            <li>
-              <Link href={previous.fields.slug}>
-                {" "}
-                {previous.frontmatter.title}{" "}
-              </Link>{" "}
-            </li>
-          )}
-          {next && (
-            <li>
-              <Link href={next.fields.slug}> {next.frontmatter.title} </Link>
-            </li>
-          )}
-        </ul>
-      </div>
+
+        <nav className="mt-24 border-t border-gray-800 pt-8">
+          <ul className="flex flex-wrap justify-between gap-4">
+            {previous && (
+              <li>
+                <Link 
+                  href={previous.fields.slug}
+                  className="text-gray-400 hover:text-yellow-400 transition-colors"
+                >
+                  ← {previous.frontmatter.title}
+                </Link>
+              </li>
+            )}
+            {next && (
+              <li>
+                <Link 
+                  href={next.fields.slug}
+                  className="text-gray-400 hover:text-yellow-400 transition-colors"
+                >
+                  {next.frontmatter.title} →
+                </Link>
+              </li>
+            )}
+          </ul>
+        </nav>
+      </article>
     </div>
   );
 }
