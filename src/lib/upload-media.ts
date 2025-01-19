@@ -13,7 +13,7 @@ if (!supabaseUrl || !supabaseKey) {
   );
 }
 
-const CONTENT_DIR = "./blog"; // Adjust this to your content directory
+const CONTENT_DIR = "./blog/public"; // Adjust this to your content directory
 
 const isMediaFile = (fileName: string) => {
   const ext = path.extname(fileName).toLowerCase();
@@ -123,23 +123,21 @@ async function findLocalMediaReferences(contentDir: string): Promise<
     destinationDirName: string;
   }[] = [];
 
-  // Find all .md files in the content directory
   const allFiles = await walkDir(contentDir);
   const mdFiles = allFiles.filter((file) => path.extname(file) === ".md");
 
   for (const file of mdFiles) {
     const content = await fs.readFile(file, "utf-8");
 
-    // Regular expression to match Markdown image and link syntax
-    const mediaRegex =
-      /!\[.*?\]\(((?!http|https:\/\/).*?)\)|(?<!!)\[.*?\]\(((?!http|https:\/\/).*?)\)/g;
+    // Updated regex to include both standard markdown and Obsidian syntax
+    const mediaRegex = /(?:!\[.*?\]\(((?!http|https:\/\/).*?)\)|(?<!!)\[.*?\]\(((?!http|https:\/\/).*?)\)|!\[\[(.*?)\]\])/g;
 
     const destinationDirName = file.split("/")[1].split(".")[0];
 
     let match;
     while ((match = mediaRegex.exec(content)) !== null) {
-      const mediaPath = match[1] || match[2];
-      if (isMediaFile(mediaPath)) {
+      const mediaPath = match[1] || match[2] || match[3]; // Added match[3] for Obsidian syntax
+      if (mediaPath && isMediaFile(mediaPath)) {
         const fullPath = path
           .resolve(path.dirname(file), mediaPath)
           .split("/")
@@ -153,6 +151,7 @@ async function findLocalMediaReferences(contentDir: string): Promise<
 
   return mediaFiles;
 }
+
 async function replaceLocalReferenceWithRemote(
   status:
     | {
@@ -179,29 +178,21 @@ async function replaceLocalReferenceWithRemote(
   for (const file of mdFiles) {
     let content = await fs.readFile(file, "utf-8");
 
-    // Escape special characters in the local filepath for use in regex
-    const filename =
-      status.localFilepath.split("/")[
-        status.localFilepath.split("/").length - 1
-      ];
+    const filename = status.localFilepath.split("/")[
+      status.localFilepath.split("/").length - 1
+    ];
     const escapedLocalPath = filename.replace(/[.*+?^${}()|[\]\\]/g, "\\$&");
 
-    // Create a regex that matches the local filepath, accounting for possible relative paths and an optional preceding slash
+    // Updated regex to match both standard markdown and Obsidian syntax
     const localPathRegex = new RegExp(
-      `(\\.\\.?\\/)*\\/?${escapedLocalPath}`,
+      `(?:!\\[\\[${escapedLocalPath}\\]\\]|(?:\\.\\.?\\/)*\\/?${escapedLocalPath})`,
       "g"
     );
 
     if (localPathRegex.test(content)) {
-      // Replace all occurrences of the local path with the remote path, preserving any preceding slash
-      content = content.replace(localPathRegex, (match) => {
-        const hasLeadingSlash = match.startsWith("/");
-        return hasLeadingSlash
-          ? `/${status.remoteFilepath}`
-          : status.remoteFilepath;
-      });
+      // Replace with standard markdown image syntax
+      content = content.replace(localPathRegex, `![](${status.remoteFilepath})`);
 
-      // Write updated content back to the file
       await fs.writeFile(file, content, "utf-8");
       console.log(
         `Updated references to ${status.localFilepath} in file: ${file}`
@@ -210,6 +201,7 @@ async function replaceLocalReferenceWithRemote(
     }
   }
 }
+
 async function deleteLocalFile(filepath: string) {
   try {
     await fs.unlink(filepath);
