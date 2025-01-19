@@ -17,7 +17,29 @@ const CONTENT_DIR = "./blog/public"; // Adjust this to your content directory
 
 const isMediaFile = (fileName: string) => {
   const ext = path.extname(fileName).toLowerCase();
-  return !!ext.length;
+  const allowedExtensions = [
+    '.jpg', '.jpeg', '.png', '.gif', '.webp',  // images
+    '.mp3', '.wav', '.ogg', '.m4a'             // audio
+    // add more as needed
+  ];
+  return allowedExtensions.includes(ext);
+};
+
+const getContentType = (fileName: string) => {
+  const ext = path.extname(fileName).toLowerCase();
+  const mimeTypes: Record<string, string> = {
+    '.jpg': 'image/jpeg',
+    '.jpeg': 'image/jpeg',
+    '.png': 'image/png',
+    '.gif': 'image/gif',
+    '.webp': 'image/webp',
+    '.mp3': 'audio/mpeg',
+    '.wav': 'audio/wav',
+    '.ogg': 'audio/ogg',
+    '.m4a': 'audio/mp4'
+    // add more as needed
+  };
+  return mimeTypes[ext] || 'application/octet-stream';
 };
 
 const supabase: SupabaseClient = createClient(supabaseUrl, supabaseKey);
@@ -38,7 +60,7 @@ const uploadFile = async ({
     const { data, error } = await supabase.storage
       .from("natespilmanblog")
       .upload(uploadFilePath, fileContent, {
-        contentType: "image/jpeg",
+        contentType: getContentType(filename),
         cacheControl: "3600",
         upsert: true,
       });
@@ -202,6 +224,7 @@ const main = async () => {
   await findLocalMediaReferences(CONTENT_DIR)
     .then((files) =>
       files.forEach(async ({ fullPath, destinationDirName }) => {
+        console.log({destinationDirName})
         const status = await uploadFile({
           filepath: fullPath,
           destinationDirName,
