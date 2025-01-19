@@ -41,7 +41,7 @@ and ever farther right -
 
 I also looked up 360 videos in Sevilla. They were all short with varying video quality, but it feels wonderful to feel so immersed in Sevilla again. 
 
-![[sevilla-cathedral.jpg]]
+![](https://ihkgojiseqpwinwdowvm.supabase.co/storage/v1/object/public/natespilmanblog/2024-07-30-intro-to-360-video/sevilla-cathedral.jpg)
 
 ### Oculus Experiences
 I found a cool 360 video company called 360 Labs - https://360labs.net/. They have a full repository of their work [here](https://360labs.net/video). When I click on one, I see an Meta Quest link in the Also On section. I'm brought to [this page](https://www.oculus.com/experiences/media/727426067594005/454911792101393/) on the Oculus website with a `Watch in Device` option. I'm logged into my Oculus account, so it recognizes that I have a Quest 3, and gives me the option to view it as long as it is on the same WiFi network. As soon as I put the device on my head, the video begins to play on the Meta Quest TV app. 

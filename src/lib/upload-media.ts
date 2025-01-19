@@ -13,16 +13,20 @@ if (!supabaseUrl || !supabaseKey) {
   );
 }
 
-const CONTENT_DIR = "./blog/public"; // Adjust this to your content directory
+const CONTENT_DIR = "./blog"; // Adjust this to your content directory
 
 const isMediaFile = (fileName: string) => {
+  console.log("Checking if media file:", fileName);
   const ext = path.extname(fileName).toLowerCase();
+  console.log("Extension:", ext);
   const allowedExtensions = [
     '.jpg', '.jpeg', '.png', '.gif', '.webp',  // images
     '.mp3', '.wav', '.ogg', '.m4a'             // audio
     // add more as needed
   ];
-  return allowedExtensions.includes(ext);
+  const isAllowed = allowedExtensions.includes(ext);
+  console.log("Is allowed:", isAllowed);
+  return isAllowed;
 };
 
 const getContentType = (fileName: string) => {
@@ -124,28 +128,38 @@ async function findLocalMediaReferences(contentDir: string): Promise<
   }[] = [];
 
   const allFiles = await walkDir(contentDir);
+  console.log({allFiles})
   const mdFiles = allFiles.filter((file) => path.extname(file) === ".md");
 
   for (const file of mdFiles) {
+    console.log("Processing markdown file:", file);
     const content = await fs.readFile(file, "utf-8");
+    console.log("File content:", content);
+    
     const mediaRegex = /!\[\[(.*?)\]\]|!\[.*?\]\(((?!http|https:\/\/).*?)\)|(?<!!)\[.*?\]\(((?!http|https:\/\/).*?)\)/g;
 
     const destinationDirName = file.split("/")[1].split(".")[0];
+    console.log("Destination directory:", destinationDirName);
 
     let match;
     while ((match = mediaRegex.exec(content)) !== null) {
+      console.log("Found match:", match);
       const mediaPath = match[1] || match[2] || match[3];
+      console.log("Media path:", mediaPath);
+      
       if (mediaPath && isMediaFile(mediaPath)) {
         const fullPath = path
-          .resolve(path.dirname(file), mediaPath)
+          .resolve(path.join(path.dirname(file), 'public', mediaPath))
           .split("/")
           .slice(1)
           .join("/");
+        console.log("Full resolved path:", fullPath);
         mediaFiles.push({ fullPath, destinationDirName });
       }
     }
   }
 
+  console.log("All found media files:", mediaFiles);
   return mediaFiles;
 }
 
@@ -162,6 +176,7 @@ async function replaceLocalReferenceWithRemote(
         message: string;
       }
 ) {
+  // console.log({status})
   if (status.status !== "success") {
     console.log(
       `Skipping update for ${status.localFilepath} due to non-success status`
@@ -209,19 +224,19 @@ async function deleteLocalFile(filepath: string) {
 }
 
 const main = async () => {
+  // console.log({CONTENT_DIR})
   // const contentDirectory = CONTENT_DIR // Adjust this to your content directory
-  await findLocalMediaReferences(CONTENT_DIR)
-    .then((files) =>
-      files.forEach(async ({ fullPath, destinationDirName }) => {
-        console.log({destinationDirName})
+  const files = await findLocalMediaReferences(CONTENT_DIR)
+    console.log({files})
+      return files.forEach(async ({ fullPath, destinationDirName }) => {
+        console.log({fullPath, destinationDirName})
         const status = await uploadFile({
           filepath: fullPath,
           destinationDirName,
         });
         replaceLocalReferenceWithRemote(status);
       })
-    )
-    .catch((error) => console.error("Error finding local media files:", error));
+    // .catch((error) => console.error("Error finding local media files:", error));
 };
 
 main();
