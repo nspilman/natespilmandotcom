@@ -13,7 +13,7 @@ if (!supabaseUrl || !supabaseKey) {
   );
 }
 
-const CONTENT_DIR = "./blog/public"; // Adjust this to your content directory
+const CONTENT_DIR = "./blog"; // Adjust this to your content directory
 
 const isMediaFile = (fileName: string) => {
   const ext = path.extname(fileName).toLowerCase();
