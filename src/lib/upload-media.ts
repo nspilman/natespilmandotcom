@@ -128,22 +128,19 @@ async function findLocalMediaReferences(contentDir: string): Promise<
 
   for (const file of mdFiles) {
     const content = await fs.readFile(file, "utf-8");
-
-    // Updated regex to include both standard markdown and Obsidian syntax
-    const mediaRegex = /(?:!\[.*?\]\(((?!http|https:\/\/).*?)\)|(?<!!)\[.*?\]\(((?!http|https:\/\/).*?)\)|!\[\[(.*?)\]\])/g;
+    const mediaRegex = /!\[\[(.*?)\]\]|!\[.*?\]\(((?!http|https:\/\/).*?)\)|(?<!!)\[.*?\]\(((?!http|https:\/\/).*?)\)/g;
 
     const destinationDirName = file.split("/")[1].split(".")[0];
 
     let match;
     while ((match = mediaRegex.exec(content)) !== null) {
-      const mediaPath = match[1] || match[2] || match[3]; // Added match[3] for Obsidian syntax
+      const mediaPath = match[1] || match[2] || match[3];
       if (mediaPath && isMediaFile(mediaPath)) {
         const fullPath = path
           .resolve(path.dirname(file), mediaPath)
           .split("/")
           .slice(1)
-          .join("/")
-          .split(" ")[0];
+          .join("/");
         mediaFiles.push({ fullPath, destinationDirName });
       }
     }
