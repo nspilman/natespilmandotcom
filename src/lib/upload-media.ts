@@ -144,7 +144,9 @@ async function findLocalMediaReferences(contentDir: string): Promise<
     let match;
     while ((match = mediaRegex.exec(content)) !== null) {
       console.log("Found match:", match);
-      const mediaPath = match[1] || match[2] || match[3];
+      let mediaPath = match[1] || match[2] || match[3];
+      // Replace spaces with hyphens in the media path
+      mediaPath = mediaPath.replace(/\s+/g, '-');
       console.log("Media path:", mediaPath);
       
       if (mediaPath && isMediaFile(mediaPath)) {
