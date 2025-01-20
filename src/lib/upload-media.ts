@@ -59,7 +59,9 @@ const uploadFile = async ({
     const fileContent = await fs.readFile(`/${filepath}`);
 
     const filename = filepath.split("/")[filepath.split("/").length - 1];
-    const uploadFilePath = `${destinationDirName}/${filename}`;
+    // Replace spaces with dashes in the filename for upload
+    const dashedFilename = filename.replace(/\s+/g, '-');
+    const uploadFilePath = `${destinationDirName}/${dashedFilename}`;
 
     const { data, error } = await supabase.storage
       .from("natespilmanblog")
@@ -184,6 +186,7 @@ async function replaceLocalReferenceWithRemote(
   for (const file of mdFiles) {
     let content = await fs.readFile(file, "utf-8");
 
+    // Get original filename with spaces
     const filename = status.localFilepath.split("/")[
       status.localFilepath.split("/").length - 1
     ];
@@ -196,10 +199,9 @@ async function replaceLocalReferenceWithRemote(
     );
 
     if (localPathRegex.test(content)) {
-      // Replace spaces with hyphens in the remote filepath
-      const hyphenatedRemoteFilepath = status.remoteFilepath.replace(/\s+/g, '-');
-      // Replace with standard markdown image syntax without quotes
-      content = content.replace(localPathRegex, `![](${hyphenatedRemoteFilepath})`);
+      // Ensure we're using the dashed version in the remote URL
+      const dashedRemoteFilepath = status.remoteFilepath.replace(/\s+/g, '-');
+      content = content.replace(localPathRegex, `![](${dashedRemoteFilepath})`);
 
       await fs.writeFile(file, content, "utf-8");
       console.log(
