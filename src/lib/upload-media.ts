@@ -178,7 +178,6 @@ async function replaceLocalReferenceWithRemote(
         message: string;
       }
 ) {
-  // console.log({status})
   if (status.status !== "success") {
     console.log(
       `Skipping update for ${status.localFilepath} due to non-success status`
@@ -204,8 +203,10 @@ async function replaceLocalReferenceWithRemote(
     );
 
     if (localPathRegex.test(content)) {
-      // Replace with standard markdown image syntax
-      content = content.replace(localPathRegex, `![](${status.remoteFilepath})`);
+      // Replace spaces with hyphens in the remote filepath
+      const hyphenatedRemoteFilepath = status.remoteFilepath.replace(/\s+/g, '-');
+      // Replace with standard markdown image syntax without quotes
+      content = content.replace(localPathRegex, `![](${hyphenatedRemoteFilepath})`);
 
       await fs.writeFile(file, content, "utf-8");
       console.log(
