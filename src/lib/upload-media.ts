@@ -148,7 +148,7 @@ async function findLocalMediaReferences(contentDir: string): Promise<
       
       // Skip if the path is already a URL
       console.log({mediaPath})
-      if (mediaPath.startsWith('http:') || mediaPath.startsWith('https:')) {
+      if (mediaPath.includes('http:') || mediaPath.includes('https:')) {
         console.log("Skipping already uploaded file:", mediaPath);
         continue;
       }
