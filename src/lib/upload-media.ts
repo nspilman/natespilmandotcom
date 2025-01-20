@@ -59,7 +59,9 @@ const uploadFile = async ({
     const fileContent = await fs.readFile(`/${filepath}`);
 
     const filename = filepath.split("/")[filepath.split("/").length - 1];
-    const uploadFilePath = `${destinationDirName}/${filename}`;
+    // Replace spaces with dashes in the filename for upload
+    const dashedFilename = filename.replace(/\s+/g, '-');
+    const uploadFilePath = `${destinationDirName}/${dashedFilename}`;
 
     const { data, error } = await supabase.storage
       .from("natespilmanblog")
@@ -128,24 +130,20 @@ async function findLocalMediaReferences(contentDir: string): Promise<
   }[] = [];
 
   const allFiles = await walkDir(contentDir);
-  console.log({allFiles})
   const mdFiles = allFiles.filter((file) => path.extname(file) === ".md");
 
   for (const file of mdFiles) {
-    console.log("Processing markdown file:", file);
     const content = await fs.readFile(file, "utf-8");
-    console.log("File content:", content);
-    
     const mediaRegex = /!\[\[(.*?)\]\]|!\[.*?\]\(((?!http|https:\/\/).*?)\)|(?<!!)\[.*?\]\(((?!http|https:\/\/).*?)\)/g;
-
     const destinationDirName = file.split("/")[1].split(".")[0];
-    console.log("Destination directory:", destinationDirName);
 
     let match;
     while ((match = mediaRegex.exec(content)) !== null) {
-      console.log("Found match:", match);
-      const mediaPath = match[1] || match[2] || match[3];
-      console.log("Media path:", mediaPath);
+      let mediaPath = match[1] || match[2] || match[3];
+      
+      if (mediaPath.includes('http:') || mediaPath.includes('https:')) {
+        continue;
+      }
       
       if (mediaPath && isMediaFile(mediaPath)) {
         const fullPath = path
@@ -153,13 +151,12 @@ async function findLocalMediaReferences(contentDir: string): Promise<
           .split("/")
           .slice(1)
           .join("/");
-        console.log("Full resolved path:", fullPath);
+          
         mediaFiles.push({ fullPath, destinationDirName });
       }
     }
   }
 
-  console.log("All found media files:", mediaFiles);
   return mediaFiles;
 }
 
@@ -176,7 +173,6 @@ async function replaceLocalReferenceWithRemote(
         message: string;
       }
 ) {
-  // console.log({status})
   if (status.status !== "success") {
     console.log(
       `Skipping update for ${status.localFilepath} due to non-success status`
@@ -190,6 +186,7 @@ async function replaceLocalReferenceWithRemote(
   for (const file of mdFiles) {
     let content = await fs.readFile(file, "utf-8");
 
+    // Get original filename with spaces
     const filename = status.localFilepath.split("/")[
       status.localFilepath.split("/").length - 1
     ];
@@ -202,8 +199,9 @@ async function replaceLocalReferenceWithRemote(
     );
 
     if (localPathRegex.test(content)) {
-      // Replace with standard markdown image syntax
-      content = content.replace(localPathRegex, `![](${status.remoteFilepath})`);
+      // Ensure we're using the dashed version in the remote URL
+      const dashedRemoteFilepath = status.remoteFilepath.replace(/\s+/g, '-');
+      content = content.replace(localPathRegex, `![](${dashedRemoteFilepath})`);
 
       await fs.writeFile(file, content, "utf-8");
       console.log(
