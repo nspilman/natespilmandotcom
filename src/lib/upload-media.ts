@@ -128,34 +128,20 @@ async function findLocalMediaReferences(contentDir: string): Promise<
   }[] = [];
 
   const allFiles = await walkDir(contentDir);
-  console.log({allFiles})
   const mdFiles = allFiles.filter((file) => path.extname(file) === ".md");
 
   for (const file of mdFiles) {
-    console.log("Processing markdown file:", file);
     const content = await fs.readFile(file, "utf-8");
-    console.log("File content:", content);
-    
     const mediaRegex = /!\[\[(.*?)\]\]|!\[.*?\]\(((?!http|https:\/\/).*?)\)|(?<!!)\[.*?\]\(((?!http|https:\/\/).*?)\)/g;
-
     const destinationDirName = file.split("/")[1].split(".")[0];
-    console.log("Destination directory:", destinationDirName);
 
     let match;
     while ((match = mediaRegex.exec(content)) !== null) {
-      console.log("Found match:", match);
       let mediaPath = match[1] || match[2] || match[3];
       
-      // Skip if the path is already a URL
-      console.log({mediaPath})
       if (mediaPath.includes('http:') || mediaPath.includes('https:')) {
-        console.log("Skipping already uploaded file:", mediaPath);
         continue;
       }
-      
-      // Replace spaces with hyphens in the media path
-      mediaPath = mediaPath.replace(/\s+/g, '-');
-      console.log("Media path:", mediaPath);
       
       if (mediaPath && isMediaFile(mediaPath)) {
         const fullPath = path
@@ -163,13 +149,12 @@ async function findLocalMediaReferences(contentDir: string): Promise<
           .split("/")
           .slice(1)
           .join("/");
-        console.log("Full resolved path:", fullPath);
+          
         mediaFiles.push({ fullPath, destinationDirName });
       }
     }
   }
 
-  console.log("All found media files:", mediaFiles);
   return mediaFiles;
 }
 
