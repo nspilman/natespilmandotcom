@@ -145,6 +145,13 @@ async function findLocalMediaReferences(contentDir: string): Promise<
     while ((match = mediaRegex.exec(content)) !== null) {
       console.log("Found match:", match);
       let mediaPath = match[1] || match[2] || match[3];
+      
+      // Skip if the path is already a URL
+      if (mediaPath.startsWith('http://') || mediaPath.startsWith('https://')) {
+        console.log("Skipping already uploaded file:", mediaPath);
+        continue;
+      }
+      
       // Replace spaces with hyphens in the media path
       mediaPath = mediaPath.replace(/\s+/g, '-');
       console.log("Media path:", mediaPath);
