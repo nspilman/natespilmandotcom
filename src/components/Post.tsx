@@ -12,7 +12,7 @@ const Post = ({ post }: { post: Blog }) => {
           className="group rounded-lg w-full bg-gray-800/50 p-6 transition-all hover:bg-gray-800"
         >
           <Link href={`/blog/${post.fields.slug}`} className="block space-y-2">
-            <h2 className="text-xl font-medium text-yellow-400 group-hover:text-yellow-300">
+            <h2 className="text-xl font-medium">
               {title}
             </h2>
             

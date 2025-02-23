@@ -5,7 +5,8 @@ import Link from "next/link";
 import { getAllPosts } from "@/lib/api";
 
 export default function Home() {
-  const posts: Blog[] = getAllPosts();
+  const allPosts: Blog[] = getAllPosts();
+  const recentPosts = allPosts.slice(0, 3); // Show only 3 most recent posts
 
   return (
     <div>
@@ -29,15 +30,18 @@ export default function Home() {
             <h2>{`Nate's Blog`}</h2>
             <hr />
           </div>
-          <div className="card-blog-container">
-            {posts.map((post) => {
-              return <Post post={post} key={post.fields.slug} />;
-            })}
-          </div>
-          <div className="button-container">
-            <Link href="/blog">
-              <button>Read</button>
-            </Link>
+          <div className="card-blog-container space-y-4">
+            {recentPosts.map((post) => (
+              <Post post={post} key={post.fields.slug} />
+            ))}
+            <div className="flex justify-center pt-6">
+              <Link 
+                href="/blog"
+                className="transition-colors text-lg font-medium"
+              >
+                View All Posts ({allPosts.length - 3} more) →
+              </Link>
+            </div>
           </div>
           {/* <div className="card-header">
             <h2>{`Nate's Music`}</h2>
@@ -50,11 +54,11 @@ export default function Home() {
               <div dangerouslySetInnerHTML={{ __html: song.html }} />
             </div>
           </div> */}
-          <div className="button-container">
+          {/* <div className="button-container">
             <Link href="/music">
               <button>Listen</button>
             </Link>
-          </div>
+          </div> */}
         </div>
       </main>
     </div>

@@ -11,10 +11,6 @@ After much back and forth with Claude, I got a functioning script and this overv
 
 ----
 
-## Raycast to Supabase Image Upload
-
-A Raycast script that uploads clipboard images to Supabase storage with preserved image quality.
-
 ## Core Implementation
 ```bash
 # Key components

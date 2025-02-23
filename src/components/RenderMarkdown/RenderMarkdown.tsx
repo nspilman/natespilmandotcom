@@ -44,7 +44,7 @@ type RendererFunction = (props: {
 // Define the renderers with basic types
 const renderers: { [nodeType: string]: RendererFunction } = {
   h1: ({ children }) => {
-    return <h1 className="text-3xl font-semibold mt-8 mb-6">{children}</h1>;
+    return <h1 className="text-3xl font-semibold mt-10 mb-6">{children}</h1>;
   },
   h2: ({ children }) => {
     return <h2 className="text-2xl font-medium mt-8 mb-4">{children}</h2>;
