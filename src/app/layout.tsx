@@ -18,10 +18,10 @@ export const metadata: Metadata = {
     title: 'Nate Spilman Dot Com',
     description: "Nate Spilman's Personal Website",
     url: 'https://natespilman.com',
-    siteName: 'Your Website Name',
+    siteName: 'Nate Spilman Dot Com',
     images: [
       {
-        url: "/favicon.png",  // Your preferred image
+        url: 'https://natespilman.com/favicon.png',
         width: 630,
         height: 630,
         alt: 'Nate Spilman Dot Com',
