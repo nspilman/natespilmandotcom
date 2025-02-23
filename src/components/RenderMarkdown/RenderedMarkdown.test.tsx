@@ -1,10 +1,10 @@
 /// <reference lib="dom" />
 
-import { expect, test } from "bun:test";
+import { expect, test } from 'vitest'
 import { render, cleanup } from "@testing-library/react";
 import { MarkdownContent } from "./RenderMarkdown";
 
-test("link with internal href opens locally ", async () => {
+test("link opens locally when link has internal href", async () => {
   const testHref = "anyLocalLink";
   const testLinkMarkdown = `[any string](${testHref})`;
 
