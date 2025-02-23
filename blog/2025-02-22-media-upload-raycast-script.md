@@ -3,7 +3,7 @@ favorite: true
 title: Creating a media upload script for Raycast
 description: Building my Raycast tool belt
 date: 2025-02-22
-published:
+published: true
 ---
 Okay, so day 2 of Raycast blog work. I haven't blogged as much because it is still not a seamless experience - so I'm using Raycast to pull out those seams. 
 
