@@ -54,10 +54,17 @@ curl -X POST "$SUPABASE_URL/storage/v1/object/$BUCKET_NAME/$PATH"
 
 ---
 
-And just like that, we've uploaded this image to supabase. 
+### And just like that, we've uploaded this image to supabase. 
 
 *Image generated in Midjourney with the prompt `we out here --p` to generate in my "personal Style"*
 ![An image of a man with his eyes closed as the universe appears to explode out of his head in dramatic colors](https://ihkgojiseqpwinwdowvm.supabase.co/storage/v1/object/public/natespilmanblog/2025-02-22/weoutherepioneer.png)
+
+### The full workflow 
+1. generate image in Midjourney
+2. copy the image to my clipboard
+3. press `option + shift + u` to pull up the Raycast script.
+4. Write the folder and file name to upload to and press enter
+5. copy generated link - TADA
 
 ## Current state
 I now have two `Raycast` scripts to assist in publishing blog posts. 

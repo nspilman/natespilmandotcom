@@ -33,7 +33,7 @@ export default async function Post({ params }: { params: { slug: string } }) {
 
   return (
     <div className="min-h-screen px-6 py-12 md:px-8 lg:px-12 bg-gray-900/50">
-      <article className="mx-auto max-w-2xl">
+      <article className="mx-auto max-w-6xl">
         <div className="mb-16">
           <Link href="/blog" className="block">
             <h1 className="text-2xl font-light  hover:text-yellow-300">

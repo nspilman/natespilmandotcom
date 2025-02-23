@@ -43,6 +43,15 @@ type RendererFunction = (props: {
 }) => JSX.Element;
 // Define the renderers with basic types
 const renderers: { [nodeType: string]: RendererFunction } = {
+  h1: ({ children }) => {
+    return <h1 className="text-3xl font-semibold mt-8 mb-6">{children}</h1>;
+  },
+  h2: ({ children }) => {
+    return <h2 className="text-2xl font-medium mt-8 mb-4">{children}</h2>;
+  },
+  h3: ({ children }) => {
+    return <h3 className="text-xl font-medium mt-6 mb-3">{children}</h3>;
+  },
   a: ({ href = "", children }): React.ReactElement => {
     if (href.endsWith(".m3u8")) {
       return <HLSAudioPlayer src={href} />;
@@ -54,19 +63,19 @@ const renderers: { [nodeType: string]: RendererFunction } = {
     return renderLink({ href, children });
   },
   img: ({ src, alt }): React.ReactElement => {
-    return <img src={src} alt={alt} className="max-h-[100vh] py-2" />;
+    return <img src={src} alt={alt} className="max-h-[100vh] py-4" />;
   },
   p: ({ children }) => {
-    return <p className="p-2">{children}</p>;
+    return <p className="py-2 leading-relaxed">{children}</p>;
   },
   ol: ({ children }) => {
-    return <ol className="list-decimal list-inside pl-4">{children}</ol>;
+    return <ol className="list-decimal list-inside pl-6 my-3 space-y-1.5">{children}</ol>;
   },
   ul: ({ children }) => {
-    return <ul className="list-disc list-inside pl-4">{children}</ul>;
+    return <ul className="list-disc list-inside pl-6 my-3 space-y-1.5">{children}</ul>;
   },
   li: ({ children }) => {
-    return <li className="mb-1">{children}</li>;
+    return <li className="mb-1.5">{children}</li>;
   },
   code: ({ children, className }): React.ReactElement => {
     const classNames =
