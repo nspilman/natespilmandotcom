@@ -1,5 +1,5 @@
 import { MarkdownContent } from "@/components/RenderMarkdown";
-import { getAllPosts, getPostBySlug } from "@/lib/api";
+import { getPosts, getPostBySlug } from "@/lib/api";
 import { formatDateString } from "@/utils";
 import { Metadata } from "next";
 import Link from "next/link";
@@ -19,7 +19,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
 
 export default async function Post({ params }: { params: { slug: string } }) {
   const post = getPostBySlug(params.slug);
-  const allPosts = getAllPosts();
+  const allPosts = getPosts();
   const postIndex = allPosts.findIndex(
     (post) => post.fields.slug === params.slug
   );

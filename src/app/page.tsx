@@ -2,11 +2,10 @@ import { Icons } from "@/components/Icons";
 import { Blog } from "./types";
 import Post from "@/components/Post";
 import Link from "next/link";
-import { getAllPosts } from "@/lib/api";
+import { getPosts, getPostsCount } from "@/lib/api";
 
 export default function Home() {
-  const allPosts: Blog[] = getAllPosts();
-  const recentPosts = allPosts.slice(0, 3); // Show only 3 most recent posts
+  const recentPosts: Blog[] = getPosts(4);
 
   return (
     <div>
@@ -39,7 +38,7 @@ export default function Home() {
                 href="/blog"
                 className="transition-colors text-lg font-medium"
               >
-                View All Posts ({allPosts.length - 3} more) →
+                View All Posts ({getPostsCount() - recentPosts.length} more) →
               </Link>
             </div>
           </div>

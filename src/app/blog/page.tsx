@@ -1,5 +1,5 @@
 import React from "react";
-import { getAllPosts } from "@/lib/api";
+import { getPosts } from "@/lib/api";
 import Post from "@/components/Post";
 import { Metadata } from "next";
 import Link from "next/link";
@@ -9,7 +9,7 @@ export const metadata: Metadata = {
 };
 
 const BlogPage = () => {
-  const posts = getAllPosts();
+  const posts = getPosts();
 
   return (
     <div className="p-8 md:p-20">

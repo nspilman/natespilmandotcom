@@ -28,7 +28,7 @@ export function getPostBySlug(slug: string): Blog {
   };
 }
 
-export function getAllPosts(): Blog[] {
+export function getPosts(limit?: number): Blog[] {
   const slugs = getPostSlugs();
   try {
     const posts = slugs
@@ -38,9 +38,14 @@ export function getAllPosts(): Blog[] {
       .sort((post1, post2) =>
         post1.frontmatter.date > post2.frontmatter.date ? -1 : 1
       );
-    return posts;
+    return typeof limit === 'number' ? posts.slice(0, limit) : posts;
   } catch (e) {
     console.log(e);
     throw new Error("it broke");
   }
+}
+
+export const getPostsCount = () => {
+  const slugs = getPostSlugs();
+  return slugs.length;
 }
