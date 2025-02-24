@@ -3,7 +3,7 @@ favorite: true
 title: How to make this website searchable
 description: An exploration on exploration
 date: 2025-02-23
-published:
+published: true
 ---
 This website could use Search capabilities. If i want to reference a previous post, I need to physically go the website and find it. My idea endstate is to fire off a `Raycast` command, search how I care to and then copy the URL of the chosen post to my clipboard.
 
