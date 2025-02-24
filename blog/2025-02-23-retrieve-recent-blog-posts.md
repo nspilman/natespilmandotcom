@@ -4,6 +4,10 @@ title: Retrieving my recent blog posts with Raycast
 description: Breaking ground on the blog "search" story
 date: 2025-02-23
 published: true
+tags:
+  - raycast
+  - blog-dev
+  - software
 ---
 Using Raycast feels like a [Metroidvania](https://en.wikipedia.org/wiki/Metroidvania), wherein a build myself a new macro and unlock a new level. 
 
