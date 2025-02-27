@@ -1,6 +1,6 @@
 ---
 favorite: true
-title: Supabase bucket storage extension
+title: Supabase bucket storage extension in Raycast
 description: Uploading and view media to and from my blog supabase bucket
 date: 2025-02-27
 published: true
