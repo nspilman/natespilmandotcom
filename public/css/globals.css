@@ -319,7 +319,7 @@ h6{
     height: 70vh;
     max-height:1000px;
     width: 100%;
-    background: linear-gradient(var(--darkbluehero), var(--ultimategrayhero)), url('../img/bwMountainsAndClouds.jpg') center center / cover no-repeat;
+    background: linear-gradient(var(--darkbluehero), var(--ultimategrayhero)), url('https://ihkgojiseqpwinwdowvm.supabase.co/storage/v1/object/public/natespilmanblog/2025-02-27/website-updates/website-bg.png') center center / cover no-repeat;
     margin:0;
     margin-bottom:30px;
     background-attachment: fixed;
@@ -338,7 +338,7 @@ h6{
     height: 130px;
     border-radius: 50%;
     border: 3px solid #939597;
-    background: url('../img/nate-professional.jpg') center center / cover no-repeat;
+    background: url('https://ihkgojiseqpwinwdowvm.supabase.co/storage/v1/object/public/natespilmanblog/2025-02-27/website-updates/linkedin-profile.png') center center / cover no-repeat;
     background-size: 110%;
     filter: saturate(.9);
 }
