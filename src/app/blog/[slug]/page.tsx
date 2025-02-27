@@ -12,8 +12,25 @@ interface Props {
 }
 
 export async function generateMetadata({ params }: Props): Promise<Metadata> {
+  const post = getPostBySlug(params.slug);
+  const { title, description, date } = post.frontmatter;
+  
   return {
-    title: getPostBySlug(params.slug).frontmatter.title,
+    title,
+    description,
+    openGraph: {
+      title,
+      description,
+      type: 'article',
+      publishedTime: date,
+      url: `https://natespilman.com/blog/${params.slug}`,
+      siteName: 'Nate Spilman Dot Com',
+    },
+    twitter: {
+      card: 'summary',
+      title,
+      description,
+    }
   };
 }
 
