@@ -9,7 +9,7 @@ const Post = ({ post }: { post: Blog }) => {
   return (
 <article 
           key={post.fields.slug}
-          className="group rounded-lg w-full bg-gray-800/50 p-6 transition-all hover:bg-gray-800"
+          className="group rounded-lg w-full bg-gray-900/50 p-6 transition-all hover:bg-gray-800 mb-2"
         >
           <Link href={`/blog/${post.fields.slug}`} className="block space-y-2">
             <h2 className="text-xl font-medium">
