@@ -63,6 +63,20 @@ const renderers: { [nodeType: string]: RendererFunction } = {
     return renderLink({ href, children });
   },
   img: ({ src, alt }): React.ReactElement => {
+    if (src?.endsWith('.mp4')) {
+      return (
+        <div className="flex items-center justify-center max-w-full py-4">
+        <video 
+          controls
+          className="max-h-[80vh] shadow-[2px_2px_16px_rgba(255,254,83,0.3)]"
+          src={src}
+          title={alt || "Video"}
+        >
+          Your browser does not support the video tag.
+        </video>
+        </div>
+      );
+    }
     return <img src={src} alt={alt} className="max-h-[100vh] py-4" />;
   },
   p: ({ children }) => {
