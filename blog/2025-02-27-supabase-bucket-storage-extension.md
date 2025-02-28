@@ -21,6 +21,11 @@ Here it is!
 
 ![A short video of me using my new bucket storage extension](https://ihkgojiseqpwinwdowvm.supabase.co/storage/v1/object/public/natespilmanblog/2025-02-27/blog-storage-extension/bucket-storage-extnsion-usage-demo.mp4)
 	
+
+and here is the uploaded image in bucket storage - 
+![I digitally altered image of what appears to be a window to a colorful city through a window in the ceiling. Made in Luminframe.com](https://ihkgojiseqpwinwdowvm.supabase.co/storage/v1/object/public/natespilmanblog/2025-02-27/pioneer/upload-media-test.png)
+
+
 ### Permissions - 
 Managing secrets is straight forward. 
 1. Define your secrets as 'preferences' - [here](https://github.com/nspilman/raycast-supabase-bucket-manager/blob/main/package.json#L26)
