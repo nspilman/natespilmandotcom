@@ -1,6 +1,7 @@
 "use client";
 import ReactMarkdown from "react-markdown";
 import remarkGfm from "remark-gfm";
+import rehypeRaw from "rehype-raw";
 import { PrismLight as SyntaxHighlighter } from "react-syntax-highlighter";
 import { oneDark } from "react-syntax-highlighter/dist/cjs/styles/prism";
 import tsx from "react-syntax-highlighter/dist/cjs/languages/prism/tsx";
@@ -157,6 +158,7 @@ export const MarkdownContent: React.FC<MarkdownContentProps> = ({
   <ReactMarkdown
     components={renderers}
     remarkPlugins={[remarkGfm]}
+    rehypePlugins={[rehypeRaw]}
     className="py-8"
   >
     {content}
