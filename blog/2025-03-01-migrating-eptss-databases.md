@@ -3,7 +3,7 @@ favorite: true
 title: Migrating EPTSS Supabase instances
 description: Moving the production instance off of my personal Supabase account
 date: 2025-03-01
-published:
+published: true
 ---
 This is a work log of the migration. This is a follow up to [this post](https://natespilman.com/blog/2025-01-22-eptss-staging-environment-plan) in which I talk [EPTSS](everyoneplaysthesmesong.com) UX hardening. This new EPTSS specific [Supabase](https://supabase.com) account will house both the prod and staging database. 
 
