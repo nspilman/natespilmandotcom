@@ -1,4 +1,7 @@
+"use client";
+
 import React, { useEffect, useRef, useState } from "react";
+import dynamic from 'next/dynamic';
 
 interface Props {
   src: string;
@@ -9,7 +12,7 @@ interface Props {
   onEnded?: () => void;
 }
 
-export const MP3AudioPlayer = ({ 
+const MP3AudioPlayerComponent = ({ 
   src, 
   autoPlay = false,
   showDuration = true,
@@ -78,3 +81,7 @@ export const MP3AudioPlayer = ({
     </div>
   );
 };
+
+export const MP3AudioPlayer = dynamic(() => Promise.resolve(MP3AudioPlayerComponent), {
+  ssr: false
+});
