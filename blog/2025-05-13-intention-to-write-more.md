@@ -3,7 +3,7 @@ favorite: true
 title: An intention to write me
 description: Sharpening the axe vs cutting the tree
 date: 2025-05-13
-published:
+published: true
 ---
 [This video](https://www.youtube.com/watch?v=sqm4-B07LsE) came at the right time - though I'm just realizing it's a video trying to get me to use VIM. 
 
