@@ -1,6 +1,6 @@
 ---
 favorite: true
-title: An intention to write me
+title: An intention to write more
 description: Sharpening the axe vs cutting the tree
 date: 2025-05-13
 published: true
