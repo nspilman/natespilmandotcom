@@ -1,6 +1,6 @@
 ---
 favorite: true
-title: "EPTSS: beginning A Lot December by Counting Crows"
+title: "EPTSS: beginning A Long December by Counting Crows"
 description: getting started on this round of Everyone Plays the Same Song
 date: 2025-05-18
 published: true
