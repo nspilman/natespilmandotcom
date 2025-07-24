@@ -14,17 +14,27 @@ Welcome to the Shapmer bike tour!!
 [Google Maps](https://www.google.com/maps/dir/evo+Seattle,+Stone+Way+North,+Seattle,+WA/Gas+Works+Park,+2101+N+Northlake+Way,+Seattle,+WA+98103/@47.6475939,-122.3437113,16z/data=!3m1!4b1!4m14!4m13!1m5!1m1!1s0x549015a8e691a317:0x85564c6c5a53964!2m2!1d-122.3424596!2d47.6495146!1m5!1m1!1s0x54901502b25bb07f:0x1e6e55abec496196!2m2!1d-122.3343532!2d47.6456308!3e1?entry=ttu&g_ep=EgoyMDI1MDcyMS4wIKXMDSoASAFQAw%3D%3D)
 .3 miles 
 
+![Evo to Gasworks](https://ihkgojiseqpwinwdowvm.supabase.co/storage/v1/object/public/natespilmanblog/2025-07-24/evo%20to%20gasworks.png)
+
 Walk up to the top of the hill at Gasworks Park and enjoy the stunning views. 
+
+Gas Works Park in Seattle was transformed from an abandoned gas manufacturing plant (1906-1956) into a public park in 1975. Instead of demolishing the old industrial structures, landscape architect Richard Haag incorporated them into the design, creating a unique park that celebrates its industrial heritage while offering green space and lake views.
 
 ## Go to the University fountain
 [Google Maps](https://www.google.com/maps/dir/Gas+Works+Park,+2101+N+Northlake+Way,+Seattle,+WA+98103/Drumheller+Fountain,+Campus+of+the+University+of+Washington,+Seattle,+WA/@47.6506241,-122.3408375,14z/data=!3m1!4b1!4m14!4m13!1m5!1m1!1s0x54901502b25bb07f:0x1e6e55abec496196!2m2!1d-122.3343532!2d47.6456308!1m5!1m1!1s0x549014ed44cb910d:0x5f7e1a3d97a7a024!2m2!1d-122.3078057!2d47.6538254!3e1?entry=ttu&g_ep=EgoyMDI1MDcyMS4wIKXMDSoASAFQAw%3D%3D)
 2 miles
 
+![Gasworks to University Fountain](https://ihkgojiseqpwinwdowvm.supabase.co/storage/v1/object/public/natespilmanblog/2025-07-24/gasworks%20to%20university%20fountain.png)
+
 Bike to the campus of the University of Washington and check out this absurdly big fountain. Feel free to bop around campus before returning to the tour route. It's a beautiful university. 
+
+Drumheller Fountain is located at the heart of the University of Washington campus in Seattle, serving as a central landmark with views of Mount Rainier. The fountain was created as part of the 1909 Alaska-Yukon-Pacific Exposition, which shaped the campus layout and established the Rainier Vista - the scenic corridor that frames the fountain and provides the iconic view toward the mountain.
 
 ## Cross the bridge, bike Underneath 520 and end up at a cool park
 [Google Maps](https://www.google.com/maps/dir/Drumheller+Fountain,+Campus+of+the+University+of+Washington,+Seattle,+WA/47.6434882,-122.3064787/@47.644444,-122.3138158,15.13z/data=!4m9!4m8!1m5!1m1!1s0x549014ed44cb910d:0x5f7e1a3d97a7a024!2m2!1d-122.3078057!2d47.6538254!1m0!3e1?entry=ttu&g_ep=EgoyMDI1MDcyMS4wIKXMDSoASAFQAw%3D%3D)
 1 mile
+
+![Fountain to 520 underpass](https://ihkgojiseqpwinwdowvm.supabase.co/storage/v1/object/public/natespilmanblog/2025-07-24/fountain%20to%20520%20underpass.png)
 
 When crossing over the bridge, you'll want to be on the right hand side. Cross the street at the bottom of the University mall - the google maps should guide you accordingly.
 
@@ -35,12 +45,16 @@ Once you cross the bridge, you'll ride along a wide sidewalk for a few blocks. R
 
 0.7 miles 
 
+![underpass to interlaken park](https://ihkgojiseqpwinwdowvm.supabase.co/storage/v1/object/public/natespilmanblog/2025-07-24/to%20interlake%20park.png)
+
 from that field, bike a few blocks through the neighborhood and bike up a decently steep road to get to the beginning of Interlaken park. You'll be biking on a road that cuts through it. 
 
 ## Bike through Interlaken Park 
 [Google Maps](https://www.google.com/maps/dir/47.6420529,-122.3170492/47.6323752,-122.307321/@47.6263445,-122.3161466,4322m/data=!3m1!1e3!4m2!4m1!3e1?entry=ttu&g_ep=EgoyMDI1MDcyMS4wIKXMDSoASAFQAw%3D%3D)
 
 1.2 miles
+
+![through interlaken park](https://ihkgojiseqpwinwdowvm.supabase.co/storage/v1/object/public/natespilmanblog/2025-07-24/through%20Interlaken%20Park.png)
 
 Enjoy this beautiful gradual uphill. I love riding through here. 
 
