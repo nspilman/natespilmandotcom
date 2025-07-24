@@ -1,10 +1,14 @@
 ---
 favorite: true
-title: Bike Tour!!!
+title: The Shapmer Bike Tour
 description:
 date: 2025-07-24
 published: "true"
 ---
+
+Welcome to the Shapmer bike tour!! 
+
+Image incoming - 
 
 ## Get on the Burke Gilman and ride to Gasworks Park
 [Google Maps](https://www.google.com/maps/dir/evo+Seattle,+Stone+Way+North,+Seattle,+WA/Gas+Works+Park,+2101+N+Northlake+Way,+Seattle,+WA+98103/@47.6475939,-122.3437113,16z/data=!3m1!4b1!4m14!4m13!1m5!1m1!1s0x549015a8e691a317:0x85564c6c5a53964!2m2!1d-122.3424596!2d47.6495146!1m5!1m1!1s0x54901502b25bb07f:0x1e6e55abec496196!2m2!1d-122.3343532!2d47.6456308!3e1?entry=ttu&g_ep=EgoyMDI1MDcyMS4wIKXMDSoASAFQAw%3D%3D)
