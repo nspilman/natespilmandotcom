@@ -97,31 +97,57 @@ Occidental Square, at least in my opinion, is the heart of the Pioneer Square ne
 If you'd like, bike a few blocks south to see Lumen Field and T Mobile Park. 
 
 
-## Bike along the waterfront and through Belltown to KEXP
+## Bike along the waterfront and through Belltown to KEXP & Space Needle (Seattle Center)
 [Google Maps](https://www.google.com/maps/dir/Occidental+Square,+South+Washington+Street,+Seattle,+WA/Waterfront+Park,+Alaskan+Way,+Seattle,+WA/KEXP,+1st+Avenue+North,+Seattle,+WA/@47.6145605,-122.3506483,628m/data=!3m1!1e3!4m25!4m24!1m5!1m1!1s0x54906abad2c533a7:0x598f0f6c8013b92c!2m2!1d-122.3332236!2d47.600506!1m10!1m1!1s0x54906aad8caabc2f:0x201a7e734b873e0e!2m2!1d-122.3418276!2d47.60704!3m4!1m2!1d-122.3490655!2d47.6148787!3s0x5490154e728677a3:0x8f799a94530833de!1m5!1m1!1s0x549015438a09b597:0x6e29e8bd90342889!2m2!1d-122.355072!2d47.62305!3e1?entry=ttu&g_ep=EgoyMDI1MDcyMS4wIKXMDSoASAFQAw%3D%3D)
+
+![Occidental Square to KEXP](https://ihkgojiseqpwinwdowvm.supabase.co/storage/v1/object/public/natespilmanblog/2025-07-24/Occidental%20Square%20to%20KEXP.png)
 
 2.2 miles
 
+This is the https://www.kexp.org/ "Gathering Space", my favorite "third place" in the city. They record and broadcast from the radio booth on site, there's a great coffee shop and a ton of comfortable seating. 
+
+There are 2 entrances - one from the street and one from the Seattle Center interior. There are bike racks along the interior.
+
+Please also use this as an opportunity to tool around Seattle Center. Bike to the Space Needle, etc. 
+
 ## Bike Downtown to 2nd and Pike
 [Google Maps](https://www.google.com/maps/dir/KEXP,+472+1st+Ave+N,+Seattle,+WA+98109/Pike+Street+%26+Second+Avenue,+Seattle,+WA/@47.6269002,-122.3398408,4059m/data=!3m1!1e3!4m29!4m28!1m20!1m1!1s0x549015438a09b597:0x6e29e8bd90342889!2m2!1d-122.355072!2d47.62305!3m4!1m2!1d-122.3528445!2d47.6204959!3s0x54901545b01b8c3b:0xa026385ac33d262!3m4!1m2!1d-122.3528365!2d47.6191741!3s0x54901545771f1235:0x38d815eaba9db95c!3m4!1m2!1d-122.3528492!2d47.6186628!3s0x549015457b060c79:0x92732e8911e03127!1m5!1m1!1s0x54906ab306f83f81:0xb139bba55956d705!2m2!1d-122.3389309!2d47.6092798!3e1?entry=ttu&g_ep=EgoyMDI1MDcyMS4wIKXMDSoASAFQAw%3D%3D)
-
 1.8 miles
 
-## Bike to Cal Anderson Park
+![Seattle Center to Pike St](https://ihkgojiseqpwinwdowvm.supabase.co/storage/v1/object/public/natespilmanblog/2025-07-24/KEXP%20to%20downtown.png)
+
+Bike back downtown to then make your way to Capital Hill. Leave Seattle Center, bike a few blocks and connect with the 2nd avenue bike trail. 
+
+## Bike to Capitol Hill to Cal Anderson Park
 [Google Maps](https://www.google.com/maps/dir/2nd+Ave+%26+Pike+St,+Seattle,+WA+98101/Cal+Anderson+Park,+11th+Avenue,+Seattle,+WA/@47.6131487,-122.3393287,2123m/data=!3m2!1e3!4b1!4m14!4m13!1m5!1m1!1s0x54906ab306f83f81:0xb139bba55956d705!2m2!1d-122.338931!2d47.6092798!1m5!1m1!1s0x54906acd080dfa7d:0x800e21415769f540!2m2!1d-122.319127!2d47.6170185!3e1?entry=ttu&g_ep=EgoyMDI1MDcyMS4wIKXMDSoASAFQAw%3D%3D)
 1.1 miles
 
+![Downtown to Cap Hill](https://ihkgojiseqpwinwdowvm.supabase.co/storage/v1/object/public/natespilmanblog/2025-07-24/Downtown%20to%20cal%20anderson.png)
+
+Capitol Hill is probably the most urban Seattle neighborhood. Cal Anderson park is where "CHOP/CHAZ" happened a few years back. 
+
 ## Bike to Volunteer Park
 [Google Maps](https://www.google.com/maps/dir/Cal+Anderson+Park,+11th+Avenue,+Seattle,+WA/Volunteer+Park,+1247+15th+Ave+E,+Seattle,+WA+98112/@47.6267538,-122.3343667,2723m/data=!3m1!1e3!4m24!4m23!1m15!1m1!1s0x54906acd080dfa7d:0x800e21415769f540!2m2!1d-122.319127!2d47.6170185!3m4!1m2!1d-122.3182521!2d47.6199284!3s0x5490152d5cab9d31:0xac5cc8902788274d!3m4!1m2!1d-122.3126798!2d47.6214629!3s0x5490152ca1a94931:0x61a78ffbbc38a252!1m5!1m1!1s0x54901527fccc34dd:0x2cbf871ebbadc4b4!2m2!1d-122.3163794!2d47.6310836!3e1?entry=ttu&g_ep=EgoyMDI1MDcyMS4wIKXMDSoASAFQAw%3D%3D)
-1.0- miles
+1.0 - miles
+
+![Cal Anderson to Volunteer Park](https://ihkgojiseqpwinwdowvm.supabase.co/storage/v1/object/public/natespilmanblog/2025-07-24/Cal%20to%20Volunteer.png)
+
+
+This is lovely ride through Capitol Hill. I used to do a weekly open mic on 15th and Republican at the Hopvine. If you're hungry, 15th ave is a great place to stop. [This place is quick, cheap and delicious.](https://www.google.com/maps/place/spice+waala+capitol+hill/data=!4m2!3m1!1s0x549015d4c917b607:0x6ae9c5d2f494539a?sa=X&ved=1t:242&ictx=111)
 
 ## Bike down the hill to South Lake Union park 
 [Google Maps](https://www.google.com/maps/dir/Volunteer+Park,+1247+15th+Ave+E,+Seattle,+WA+98112/47.6273299,-122.3394199/@47.6274086,-122.3422697,882m/data=!3m1!1e3!4m9!4m8!1m5!1m1!1s0x54901527fccc34dd:0x2cbf871ebbadc4b4!2m2!1d-122.3163794!2d47.6310836!1m0!3e1?entry=ttu&g_ep=EgoyMDI1MDcyMS4wIKXMDSoASAFQAw%3D%3D)
 1.7 miles
 
+![Volunteer park to SLU](https://ihkgojiseqpwinwdowvm.supabase.co/storage/v1/object/public/natespilmanblog/2025-07-24/Volunteer%20to%20SLU.png)
+
+Bike downhill to get from Capitol Hill to South Lake Union. Enjoy the views from the overpass over i5. You'll be picking up with the Lake Union loop trail along Westlake. 
+
 ## Bike the Lake Union Loop trail the Ship Canal Trail
 [Google Maps](https://www.google.com/maps/dir/47.6273299,-122.3394199/47.6472982,-122.3503629/@47.6502819,-122.3587424,1906m/data=!3m1!1e3!4m2!4m1!3e1?entry=ttu&g_ep=EgoyMDI1MDcyMS4wIKXMDSoASAFQAw%3D%3D)
 1.6 miles
+
+![SLU to ship canal](https://ihkgojiseqpwinwdowvm.supabase.co/storage/v1/object/public/natespilmanblog/2025-07-24/Westlake%20to%20shipcanal.png)
 
 
 
