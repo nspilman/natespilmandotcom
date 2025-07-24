@@ -151,4 +151,27 @@ Bike downhill to get from Capitol Hill to South Lake Union. Enjoy the views from
 
 
 
+## Bike to the Ballard Locks 
+[Google Maps](https://www.google.com/maps/dir/47.6472982,-122.3503629/Ballard+Locks+Fish+Ladder,+West+Commodore+Way,+Seattle,+WA/@47.6563769,-122.4165228,8486m/data=!3m2!1e3!4b1!4m9!4m8!1m0!1m5!1m1!1s0x54901578a2c6d34f:0xddf058e60107f053!2m2!1d-122.3975822!2d47.6646806!3e1?entry=ttu&g_ep=EgoyMDI1MDcyMS4wIKXMDSoASAFQAw%3D%3D)
+3.3 miles
 
+![Ship Canal to Ballard Locks](https://ihkgojiseqpwinwdowvm.supabase.co/storage/v1/object/public/natespilmanblog/2025-07-24/Ship%20Canal%20to%20Ballard%20Locks.png)
+
+## Optional - Bike to Golden Gardens park 
+[Google Maps](https://www.google.com/maps/dir/Ballard+Locks+Fish+Ladder,+2930+W+Commodore+Way,+Seattle,+WA+98199/Golden+Gardens+Park,+Parking+lot,+Seaview+Place+Northwest,+Seattle,+WA/@47.6782147,-122.4217764,4241m/data=!3m2!1e3!4b1!4m14!4m13!1m5!1m1!1s0x54901578a2c6d34f:0xddf058e60107f053!2m2!1d-122.3975822!2d47.6646806!1m5!1m1!1s0x549016648e6062ef:0x5b2c838d4c7f0aca!2m2!1d-122.4030912!2d47.6917517!3e1?entry=ttu&g_ep=EgoyMDI1MDcyMS4wIKXMDSoASAFQAw%3D%3D)
+2.3 miles
+
+![Golden Gardens](https://ihkgojiseqpwinwdowvm.supabase.co/storage/v1/object/public/natespilmanblog/2025-07-24/Locks%20to%20Golden%20Gardens.png)
+
+This is a beautiful ride up the western coast of Seattle to a beautiful west facing beach. This will add about 4.6 miles total to the trip, as it's out and back. 
+
+## Optional - On the way back to Fremont - Stop at Urban Family brewing 
+[Google Maps](https://www.google.com/maps/dir/Ballard+Locks+Fish+Ladder,+2930+W+Commodore+Way,+Seattle,+WA+98199/Urban+Family+Brewing+Co.,+Northwest+52nd+Street,+Seattle,+WA/@47.6661744,-122.4048956,4242m/am=t/data=!3m1!1e3!4m15!4m14!1m5!1m1!1s0x54901578a2c6d34f:0xddf058e60107f053!2m2!1d-122.3975822!2d47.6646806!1m5!1m1!1s0x549015c65bb6b3bf:0x741bed57aed7bc5e!2m2!1d-122.3709428!2d47.6661377!3e1!5i2?entry=ttu&g_ep=EgoyMDI1MDcyMS4wIKXMDSoASAFQAw%3D%3D)
+
+![beers](https://ihkgojiseqpwinwdowvm.supabase.co/storage/v1/object/public/natespilmanblog/2025-07-24/Locks%20to%20Beer.png)
+
+## Ballard Locks to Return the bike
+[Google Maps](https://www.google.com/maps/dir/Ballard+Locks+Fish+Ladder,+2930+W+Commodore+Way,+Seattle,+WA+98199/evo+Seattle,+Stone+Way+North,+Seattle,+WA/@47.6585025,-122.40784,7599m/data=!3m1!1e3!4m15!4m14!1m5!1m1!1s0x54901578a2c6d34f:0xddf058e60107f053!2m2!1d-122.3975822!2d47.6646806!1m5!1m1!1s0x549015a8e691a317:0x85564c6c5a53964!2m2!1d-122.3424596!2d47.6495146!3e1!5i1?entry=ttu&g_ep=EgoyMDI1MDcyMS4wIKXMDSoASAFQAw%3D%3D)
+3.6 miles
+
+![Ballard to Evo](https://ihkgojiseqpwinwdowvm.supabase.co/storage/v1/object/public/natespilmanblog/2025-07-24/Locks%20to%20Evo.png)
