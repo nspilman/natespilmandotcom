@@ -61,23 +61,41 @@ Enjoy this beautiful gradual uphill. I love riding through here.
 ## Bike along Lake Washington Blvd to the i90 lid
 [Google Maps](https://www.google.com/maps/dir/47.6323752,-122.307321/47.6268235,-122.2929165/47.5905389,-122.2886526/@47.5706258,-122.3248147,12035m/data=!3m1!1e3!4m15!4m14!1m5!3m4!1m2!1d-122.3059924!2d47.633201!3s0x549014da0a75deb1:0x757af7d92c27a45b!1m5!3m4!1m2!1d-122.289152!2d47.592118!3s0x54906af1001f09dd:0xe8cad27d9ca6806f!1m0!3e1?entry=ttu&g_ep=EgoyMDI1MDcyMS4wIKXMDSoASAFQAw%3D%3D)
 
+This is a beautiful route, though you're sharing the road most of the way. There are certain sections with unfortunate potholes as well, but all in all the the ride worth the views!!
+
+![Lake Washington Blvd route](https://ihkgojiseqpwinwdowvm.supabase.co/storage/v1/object/public/natespilmanblog/2025-07-24/lake%20washington%20blvd.png)
+
 4.5 miles
 
 ## Bike to the bridge that connects Beacon Hill to the International District
 [Google Maps](https://www.google.com/maps/dir/47.5905389,-122.2886526/47.5943788,-122.3166269/@47.5926913,-122.323879,1089m/data=!3m1!1e3!4m2!4m1!3e1?entry=ttu&g_ep=EgoyMDI1MDcyMS4wIKXMDSoASAFQAw%3D%3D)
 
-1.6 miles
 
+![Through the tunnel and up to the bridge](https://ihkgojiseqpwinwdowvm.supabase.co/storage/v1/object/public/natespilmanblog/2025-07-24/Through%20the%20tunnel.png)
+1.6 miles
 
 
 ## Bike to Uwajmaya 
 [Google Maps](https://www.google.com/maps/dir/47.5943788,-122.3166269/Uwajimaya+Seattle,+5th+Avenue+South,+Seattle,+WA/@47.5994368,-122.328474,1617m/data=!3m1!1e3!4m9!4m8!1m0!1m5!1m1!1s0x54906abcdbd7d9ab:0xfeedcd4ac66b4ebb!2m2!1d-122.3270506!2d47.5967467!3e1?entry=ttu&g_ep=EgoyMDI1MDcyMS4wIKXMDSoASAFQAw%3D%3D)
 
-.9 miles
-## Bike to Oxidental Square
-[Google Maps](https://www.google.com/maps/dir/Uwajimaya+Seattle,+5th+Avenue+South,+Seattle,+WA/Occidental+Square,+South+Washington+Street,+Seattle,+WA/@47.5986897,-122.3349448,1062m/data=!3m2!1e3!4b1!4m14!4m13!1m5!1m1!1s0x54906abcdbd7d9ab:0xfeedcd4ac66b4ebb!2m2!1d-122.3270506!2d47.5967467!1m5!1m1!1s0x54906abad2c533a7:0x598f0f6c8013b92c!2m2!1d-122.3332236!2d47.600506!3e1?entry=ttu&g_ep=EgoyMDI1MDcyMS4wIKXMDSoASAFQAw%3D%3D)
+Uwajimaya is a Japanese grocery store with a food court. This place carries a bunch of fascinating products and a million flavors of KitKats. 
 
+Good place to stop for lunch. 
+
+![bike to uwajimaya](https://ihkgojiseqpwinwdowvm.supabase.co/storage/v1/object/public/natespilmanblog/2025-07-24/bike%20to%20uwajimaya.png)
+
+
+.9 miles
+## Bike to Occidental Square
+[Google Maps](https://www.google.com/maps/dir/Uwajimaya+Seattle,+5th+Avenue+South,+Seattle,+WA/Occidental+Square,+South+Washington+Street,+Seattle,+WA/@47.5986897,-122.3349448,1062m/data=!3m2!1e3!4b1!4m14!4m13!1m5!1m1!1s0x54906abcdbd7d9ab:0xfeedcd4ac66b4ebb!2m2!1d-122.3270506!2d47.5967467!1m5!1m1!1s0x54906abad2c533a7:0x598f0f6c8013b92c!2m2!1d-122.3332236!2d47.600506!3e1?entry=ttu&g_ep=EgoyMDI1MDcyMS4wIKXMDSoASAFQAw%3D%3D)
 .6 miles
+
+![uwajimaya to occidental square](https://ihkgojiseqpwinwdowvm.supabase.co/storage/v1/object/public/natespilmanblog/2025-07-24/Uwajimaya%20to%20Occidental%20square.png)
+
+Occidental Square, at least in my opinion, is the heart of the Pioneer Square neighborhood. This is one of the oldest (if not the oldest) neighborhood in Seattle. 
+
+If you'd like, bike a few blocks south to see Lumen Field and T Mobile Park. 
+
 
 ## Bike along the waterfront and through Belltown to KEXP
 [Google Maps](https://www.google.com/maps/dir/Occidental+Square,+South+Washington+Street,+Seattle,+WA/Waterfront+Park,+Alaskan+Way,+Seattle,+WA/KEXP,+1st+Avenue+North,+Seattle,+WA/@47.6145605,-122.3506483,628m/data=!3m1!1e3!4m25!4m24!1m5!1m1!1s0x54906abad2c533a7:0x598f0f6c8013b92c!2m2!1d-122.3332236!2d47.600506!1m10!1m1!1s0x54906aad8caabc2f:0x201a7e734b873e0e!2m2!1d-122.3418276!2d47.60704!3m4!1m2!1d-122.3490655!2d47.6148787!3s0x5490154e728677a3:0x8f799a94530833de!1m5!1m1!1s0x549015438a09b597:0x6e29e8bd90342889!2m2!1d-122.355072!2d47.62305!3e1?entry=ttu&g_ep=EgoyMDI1MDcyMS4wIKXMDSoASAFQAw%3D%3D)
@@ -104,6 +122,7 @@ Enjoy this beautiful gradual uphill. I love riding through here.
 ## Bike the Lake Union Loop trail the Ship Canal Trail
 [Google Maps](https://www.google.com/maps/dir/47.6273299,-122.3394199/47.6472982,-122.3503629/@47.6502819,-122.3587424,1906m/data=!3m1!1e3!4m2!4m1!3e1?entry=ttu&g_ep=EgoyMDI1MDcyMS4wIKXMDSoASAFQAw%3D%3D)
 1.6 miles
+
 
 
 
