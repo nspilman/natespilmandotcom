@@ -1,7 +1,7 @@
 import { MarkdownContent } from "@/components/RenderMarkdown";
 import { DocumentContent } from "@/components/standard-site/DocumentContent";
 import { getAllUnifiedPosts, getPostBySlug } from "@/lib/api";
-import { fetchDocument, fetchPublication, blobUrl, rkeyFromUri } from "@/lib/standard-site";
+import { fetchDocument, blobUrl } from "@/lib/standard-site";
 import { formatDateString } from "@/utils";
 import { Metadata } from "next";
 import Image from "next/image";
@@ -149,29 +149,15 @@ export default async function Post({ params }: { params: { slug: string } }) {
 
   // AT Protocol document
   const { record } = resolved;
-  const { title, publishedAt, description, tags, coverImage, site, path, content } =
+  const { title, publishedAt, description, tags, coverImage, content } =
     record.value;
-  const isPckt = (content as { $type?: string })?.$type === "blog.pckt.content";
-
-  // Fetch the publication to get source name and URL
-  const pubRkey = rkeyFromUri(site);
-  const publication = await fetchPublication(pubRkey);
-  const sourceName = publication.value.name;
-  const originalUrl = path
-    ? `${publication.value.url.replace(/\/$/, "")}/${path.replace(/^\//, "")}`
-    : publication.value.url;
+  const contentType = (content as { $type?: string })?.$type;
+  const isPckt = contentType === "blog.pckt.content";
+  const sourceName = isPckt ? "pckt.blog" : "Leaflet";
 
   const crossPostLink = (
     <p className="text-sm text-gray-400">
-      Cross-posted from{" "}
-      <a
-        href={originalUrl}
-        target="_blank"
-        rel="noopener noreferrer"
-        className="text-yellow-400/70 hover:text-yellow-300 transition-colors"
-      >
-        {sourceName}
-      </a>
+      Cross-posted from {sourceName}
     </p>
   );
 
