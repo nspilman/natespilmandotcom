@@ -149,8 +149,9 @@ export default async function Post({ params }: { params: { slug: string } }) {
 
   // AT Protocol document
   const { record } = resolved;
-  const { title, publishedAt, description, tags, coverImage, site, path } =
+  const { title, publishedAt, description, tags, coverImage, site, path, content } =
     record.value;
+  const isPckt = (content as { $type?: string })?.$type === "blog.pckt.content";
 
   // Fetch the publication to get source name and URL
   const pubRkey = rkeyFromUri(site);
@@ -206,7 +207,7 @@ export default async function Post({ params }: { params: { slug: string } }) {
               {title}
             </h2>
 
-            {description && (
+            {!isPckt && description && (
               <p className="text-xl text-gray-300 leading-relaxed">
                 {description}
               </p>
