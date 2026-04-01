@@ -1,7 +1,7 @@
 import { MarkdownContent } from "@/components/RenderMarkdown";
 import { DocumentContent } from "@/components/standard-site/DocumentContent";
 import { getAllUnifiedPosts, getPostBySlug } from "@/lib/api";
-import { fetchDocument, blobUrl } from "@/lib/standard-site";
+import { fetchDocument, fetchPublication, blobUrl, rkeyFromUri } from "@/lib/standard-site";
 import { formatDateString } from "@/utils";
 import { Metadata } from "next";
 import Image from "next/image";
@@ -149,7 +149,30 @@ export default async function Post({ params }: { params: { slug: string } }) {
 
   // AT Protocol document
   const { record } = resolved;
-  const { title, publishedAt, description, tags, coverImage } = record.value;
+  const { title, publishedAt, description, tags, coverImage, site, path } =
+    record.value;
+
+  // Fetch the publication to get source name and URL
+  const pubRkey = rkeyFromUri(site);
+  const publication = await fetchPublication(pubRkey);
+  const sourceName = publication.value.name;
+  const originalUrl = path
+    ? `${publication.value.url.replace(/\/$/, "")}/${path.replace(/^\//, "")}`
+    : publication.value.url;
+
+  const crossPostLink = (
+    <p className="text-sm text-gray-400">
+      Cross-posted from{" "}
+      <a
+        href={originalUrl}
+        target="_blank"
+        rel="noopener noreferrer"
+        className="text-yellow-400/70 hover:text-yellow-300 transition-colors"
+      >
+        {sourceName}
+      </a>
+    </p>
+  );
 
   return (
     <div className="min-h-screen px-6 py-12 md:px-8 lg:px-12 bg-gray-900/50">
@@ -205,11 +228,15 @@ export default async function Post({ params }: { params: { slug: string } }) {
                 ))}
               </div>
             )}
+
+            {crossPostLink}
           </header>
 
           <div className="mt-12 space-y-4">
             <DocumentContent document={record.value} />
           </div>
+
+          {crossPostLink}
         </div>
 
         <nav className="mt-24 border-t border-gray-800 pt-8">

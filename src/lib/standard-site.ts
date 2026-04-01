@@ -184,6 +184,16 @@ export async function fetchDocument(
   return data;
 }
 
+export async function fetchPublication(
+  rkey: string
+): Promise<ATRecord<StandardPublication>> {
+  const data = await xrpc<ATRecord<StandardPublication>>(
+    "com.atproto.repo.getRecord",
+    { repo: DID, collection: "site.standard.publication", rkey }
+  );
+  return data;
+}
+
 export function blobUrl(cid: string): string {
   return `${PDS_HOST}/xrpc/com.atproto.sync.getBlob?did=${DID}&cid=${cid}`;
 }
