@@ -8,7 +8,10 @@ const nextConfig = {
     appDir: true,
   },
   images: {
-    domains: ["ihkgojiseqpwinwdowvm.supabase.co"],
+    remotePatterns: [
+      { protocol: "https", hostname: "ihkgojiseqpwinwdowvm.supabase.co" },
+      { protocol: "https", hostname: "oyster.us-east.host.bsky.network" },
+    ],
   },
   // Optionally, add any other Next.js config below
 };

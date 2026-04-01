@@ -1,11 +1,13 @@
 import { Icons } from "@/components/Icons";
-import { Blog } from "./types";
 import Post from "@/components/Post";
 import Link from "next/link";
-import { getPosts, getPostsCount } from "@/lib/api";
+import { getAllUnifiedPosts, getUnifiedPostsCount } from "@/lib/api";
 
-export default function Home() {
-  const recentPosts: Blog[] = getPosts(4);
+export default async function Home() {
+  const [recentPosts, totalCount] = await Promise.all([
+    getAllUnifiedPosts(4),
+    getUnifiedPostsCount(),
+  ]);
 
   return (
     <div>
@@ -15,7 +17,7 @@ export default function Home() {
           <div className="mb-4 text-white">
             <h1 className="font-thin text-4xl">{`Hi, I'm Nate Spilman`}</h1>
             <p className="font-thin text-xl">
-              I’m a software developer, musician and creative organizer.
+              I&apos;m a software developer, musician and creative organizer.
             </p>
           </div>
           <div className="nate"></div>
@@ -31,14 +33,14 @@ export default function Home() {
           </div>
           <div className="card-blog-container space-y-4">
             {recentPosts.map((post) => (
-              <Post post={post} key={post.fields.slug} />
+              <Post post={post} key={post.slug} />
             ))}
             <div className="flex justify-center pt-6">
-              <Link 
+              <Link
                 href="/blog"
                 className="transition-colors text-lg font-medium"
               >
-                View All Posts ({getPostsCount() - recentPosts.length} more) →
+                View All Posts ({totalCount - recentPosts.length} more) →
               </Link>
             </div>
           </div>

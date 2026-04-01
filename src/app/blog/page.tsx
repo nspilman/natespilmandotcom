@@ -1,5 +1,5 @@
 import React from "react";
-import { getPosts } from "@/lib/api";
+import { getAllUnifiedPosts } from "@/lib/api";
 import Post from "@/components/Post";
 import { Metadata } from "next";
 import Link from "next/link";
@@ -8,8 +8,8 @@ export const metadata: Metadata = {
   title: "Blog",
 };
 
-const BlogPage = () => {
-  const posts = getPosts();
+export default async function BlogPage() {
+  const posts = await getAllUnifiedPosts();
 
   return (
     <div className="p-8 md:p-20">
@@ -26,7 +26,7 @@ const BlogPage = () => {
             <div className="content">
               <div className="card-blog-container">
                 {posts.map((post) => (
-                  <Post post={post} key={post.id} />
+                  <Post post={post} key={post.slug} />
                 ))}
               </div>
             </div>
@@ -35,6 +35,4 @@ const BlogPage = () => {
       </div>
     </div>
   );
-};
-
-export default BlogPage;
+}
