@@ -55,9 +55,9 @@ export function pruneConfirmed(realUris: Set<string>) {
 
   // Drop deletedUris that the server has now caught up on (no longer in real list).
   const stillDeleted = new Set<string>();
-  for (const uri of snapshot.deletedUris) {
+  snapshot.deletedUris.forEach((uri) => {
     if (realUris.has(uri)) stillDeleted.add(uri);
-  }
+  });
   if (stillDeleted.size !== snapshot.deletedUris.size) {
     snapshot.deletedUris = stillDeleted;
     changed = true;

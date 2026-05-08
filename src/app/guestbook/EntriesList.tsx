@@ -13,6 +13,7 @@ import {
 } from "./optimistic-store";
 import { resumeAgent } from "@/lib/atproto-oauth";
 import type { BskyProfile } from "@/lib/profile";
+import type { Did, Nsid } from "@atcute/lexicons/syntax";
 
 type Props = {
   initialEntries: GuestbookEntry[];
@@ -203,7 +204,7 @@ export default function EntriesList({ initialEntries, initialProfiles }: Props) 
 
     try {
       await result.rpc.post("com.atproto.repo.deleteRecord", {
-        input: { repo: did, collection, rkey },
+        input: { repo: did as Did, collection: collection as Nsid, rkey },
       });
       markDeleted(uri);
       setTimeout(() => router.refresh(), 3000);

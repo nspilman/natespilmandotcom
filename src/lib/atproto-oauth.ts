@@ -15,9 +15,14 @@ import {
   XrpcHandleResolver,
 } from "@atcute/identity-resolver";
 import { scope as atprotoScope } from "@atcute/oauth-types";
+// Triggers TypeScript module augmentation so `Client.post()` knows about
+// `com.atproto.repo.createRecord` and `com.atproto.repo.deleteRecord`.
+// Without this, those procedure names are typed as `never` at build time.
+import type {} from "@atcute/atproto";
+import type { ActorIdentifier, Did, Nsid } from "@atcute/lexicons/syntax";
 
-export const GUESTBOOK_OWNER_DID = "did:plc:c7frv4rcitff3p2nh7of5bcv";
-export const GUESTBOOK_COLLECTION = "com.natespilman.guestbook.entry";
+export const GUESTBOOK_OWNER_DID = "did:plc:c7frv4rcitff3p2nh7of5bcv" as Did;
+export const GUESTBOOK_COLLECTION = "com.natespilman.guestbook.entry" as Nsid;
 
 // Least-privilege scope: just the base atproto identity claim plus write access
 // to the single collection this app uses. No `transition:generic`, no other
@@ -66,7 +71,7 @@ function ensureConfigured() {
 export async function startLogin(handle: string) {
   ensureConfigured();
   const url = await createAuthorizationUrl({
-    target: { type: "account", identifier: handle },
+    target: { type: "account", identifier: handle as ActorIdentifier },
     scope: OAUTH_SCOPE,
   });
   await new Promise((r) => setTimeout(r, 200));
@@ -128,10 +133,10 @@ export async function signOut() {
   const did = getStoredDid();
   if (!did) return;
   try {
-    const session = await getSession(did, { allowStale: true });
+    const session = await getSession(did as Did, { allowStale: true });
     await new OAuthUserAgent(session).signOut();
   } catch {
-    deleteStoredSession(did);
+    deleteStoredSession(did as Did);
   } finally {
     localStorage.removeItem(STORED_DID_KEY);
   }

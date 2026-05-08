@@ -11,6 +11,7 @@ import {
 } from "@/lib/atproto-oauth";
 import { getProfile, type BskyProfile } from "@/lib/profile";
 import { addOptimistic } from "./optimistic-store";
+import type { Did } from "@atcute/lexicons/syntax";
 
 type Status =
   | { kind: "loading" }
@@ -97,7 +98,7 @@ export default function SignForm() {
     try {
       const response = await result.rpc.post("com.atproto.repo.createRecord", {
         input: {
-          repo: result.did,
+          repo: result.did as Did,
           collection: GUESTBOOK_COLLECTION,
           record,
         },

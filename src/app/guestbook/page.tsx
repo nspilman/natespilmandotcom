@@ -58,7 +58,9 @@ export default async function GuestbookPage() {
   const entries = await getEntries();
   const profileMap = await getProfiles(entries.map((e) => e.author_did));
   const initialProfiles: Record<string, BskyProfile> = {};
-  for (const [did, profile] of profileMap) initialProfiles[did] = profile;
+  profileMap.forEach((profile, did) => {
+    initialProfiles[did] = profile;
+  });
 
   return (
     <main className="mx-auto max-w-2xl px-6 py-16 sm:px-8 sm:py-24">
