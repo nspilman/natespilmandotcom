@@ -12,6 +12,9 @@
     "test": "vitest"
   },
   "dependencies": {
+    "@atcute/client": "^4.2.2",
+    "@atcute/identity-resolver": "^1.2.3",
+    "@atcute/oauth-browser-client": "^3.0.1",
     "@happy-dom/global-registrator": "^13.0.6",
     "@mdx-js/loader": "^3.0.0",
     "@mdx-js/react": "^3.0.0",
@@ -43,6 +46,7 @@
     "tailwindcss-animate": "^1.0.7"
   },
   "devDependencies": {
+    "@atproto/api": "^0.19.15",
     "@heroicons/react": "^2.1.1",
     "@netlify/esbuild-linux-64": "0.14.39",
     "@netlify/plugin-nextjs": "4.41.1",

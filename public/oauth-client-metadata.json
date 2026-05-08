@@ -1,0 +1,12 @@
+{
+  "client_id": "https://natespilman.com/oauth-client-metadata.json",
+  "client_name": "Nate's Guestbook",
+  "client_uri": "https://natespilman.com",
+  "redirect_uris": ["https://natespilman.com/oauth/callback"],
+  "scope": "atproto transition:generic",
+  "grant_types": ["authorization_code", "refresh_token"],
+  "response_types": ["code"],
+  "token_endpoint_auth_method": "none",
+  "application_type": "web",
+  "dpop_bound_access_tokens": true
+}
