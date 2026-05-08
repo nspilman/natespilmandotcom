@@ -3,7 +3,7 @@
   "client_name": "Nate's Guestbook",
   "client_uri": "https://natespilman.com",
   "redirect_uris": ["https://natespilman.com/oauth/callback"],
-  "scope": "atproto transition:generic",
+  "scope": "atproto repo?collection=com.natespilman.guestbook.entry",
   "grant_types": ["authorization_code", "refresh_token"],
   "response_types": ["code"],
   "token_endpoint_auth_method": "none",

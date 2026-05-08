@@ -14,10 +14,18 @@ import {
   WebDidDocumentResolver,
   XrpcHandleResolver,
 } from "@atcute/identity-resolver";
+import { scope as atprotoScope } from "@atcute/oauth-types";
 
 export const GUESTBOOK_OWNER_DID = "did:plc:c7frv4rcitff3p2nh7of5bcv";
 export const GUESTBOOK_COLLECTION = "com.natespilman.guestbook.entry";
-export const OAUTH_SCOPE = "atproto transition:generic";
+
+// Least-privilege scope: just the base atproto identity claim plus write access
+// to the single collection this app uses. No `transition:generic`, no other
+// record types. The `repo` helper grants create/update/delete by default.
+export const OAUTH_SCOPE = [
+  "atproto",
+  atprotoScope.repo({ collection: [GUESTBOOK_COLLECTION] }),
+].join(" ");
 
 const STORED_DID_KEY = "atproto:did";
 
