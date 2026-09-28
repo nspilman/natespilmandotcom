@@ -15,6 +15,7 @@
     "@atcute/client": "^4.2.2",
     "@atcute/identity-resolver": "^1.2.3",
     "@atcute/oauth-browser-client": "^3.0.1",
+    "@atproto/common-web": "^0.4.21",
     "@happy-dom/global-registrator": "^13.0.6",
     "@mdx-js/loader": "^3.0.0",
     "@mdx-js/react": "^3.0.0",

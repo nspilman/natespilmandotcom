@@ -8,15 +8,15 @@
 // Posts with `published: false` are never written, and if one was synced
 // earlier its record is deleted, so unpublishing a post unpublishes it here too.
 import { AtpAgent } from "@atproto/api";
+import { TID } from "@atproto/common-web";
 import { remark } from "remark";
 import remarkGfm from "remark-gfm";
 import "dotenv/config";
 import { getPostBySlug, getPostSlugs, type Post } from "./api";
-import { fetchDocuments, rkeyFromUri, SITE_PUBLICATION_URI, SITE_URL } from "./standard-site";
+import { DID, fetchDocuments, rkeyFromUri, SITE_PUBLICATION_URI, SITE_URL } from "./standard-site";
 
 const DOCS = "site.standard.document";
 const PUB_RKEY = SITE_PUBLICATION_URI.split("/").pop()!;
-const RKEY = /^[A-Za-z0-9._:~-]{1,512}$/;
 
 const publication = {
   $type: "site.standard.publication",
@@ -61,12 +61,13 @@ function toRecord({ slug, title, description, date, tags, markdown }: Post) {
   };
 }
 
+// This publication's documents, keyed by path, the identity of a post.
 async function listOurDocs() {
   const docs = await fetchDocuments();
-  return new Map<string, unknown>(
+  return new Map(
     docs
       .filter((doc) => doc.value.site === SITE_PUBLICATION_URI)
-      .map((doc) => [rkeyFromUri(doc.uri), doc.value])
+      .map((doc) => [doc.value.path!, { rkey: rkeyFromUri(doc.uri), value: doc.value }])
   );
 }
 
@@ -92,31 +93,30 @@ async function main() {
   const apply = process.argv.includes("--yes");
   const existing = await listOurDocs();
 
-  const writes: { rkey: string; record: any; kind: "create" | "update" }[] = [];
+  const writes: { rkey: string; path: string; record: any; kind: "create" | "update" }[] = [];
   const published = new Set<string>();
   for (const post of getPostSlugs().map(getPostBySlug)) {
     if (!post.published) continue;
-    const problem = !RKEY.test(post.slug) ? "slug isn't a valid record key"
-      : !post.title ? "no title"
-      : !post.date ? "no date"
-      : "";
+    const problem = !post.title ? "no title" : !post.date ? "no date" : "";
     if (problem) {
       console.warn(`skip ${JSON.stringify(post.slug)}: ${problem}`);
       continue;
     }
-    const { slug } = post;
-    published.add(slug);
     const record = toRecord(post);
-    const prev = existing.get(slug);
-    if (!prev) writes.push({ rkey: slug, record, kind: "create" });
-    else if (!same(record, prev)) {
-      writes.push({ rkey: slug, record: { ...record, updatedAt: new Date().toISOString() }, kind: "update" });
+    const { path } = record;
+    published.add(path);
+    const prev = existing.get(path);
+    if (!prev) writes.push({ rkey: TID.nextStr(), path, record, kind: "create" });
+    else if (!same(record, prev.value)) {
+      writes.push({ rkey: prev.rkey, path, record: { ...record, updatedAt: new Date().toISOString() }, kind: "update" });
     }
   }
-  const deletes = Array.from(existing.keys()).filter((rkey) => !published.has(rkey));
+  const deletes = Array.from(existing)
+    .filter(([path]) => !published.has(path))
+    .map(([path, { rkey }]) => ({ path, rkey }));
 
-  for (const w of writes) console.log(`${w.kind.padEnd(6)} ${w.rkey}`);
-  for (const rkey of deletes) console.log(`delete ${rkey}`);
+  for (const w of writes) console.log(`${w.kind.padEnd(6)} ${w.path}`);
+  for (const d of deletes) console.log(`delete ${d.path}`);
   console.log(`\n${writes.length} to write, ${deletes.length} to delete, ${published.size - writes.length} unchanged`);
 
   if (!apply) {
@@ -125,8 +125,9 @@ async function main() {
   }
 
   const agent = new AtpAgent({ service: "https://bsky.social" });
+  // Log in by DID: handles change (natespilman.com → natespilman.at), DIDs don't.
   await agent.login({
-    identifier: process.env.ATPROTO_HANDLE!,
+    identifier: DID,
     password: process.env.ATPROTO_APP_PASSWORD!,
   });
   const repo = agent.session!.did;
@@ -137,7 +138,7 @@ async function main() {
   for (const w of writes) {
     await agent.com.atproto.repo.putRecord({ repo, collection: DOCS, rkey: w.rkey, record: w.record });
   }
-  for (const rkey of deletes) {
+  for (const { rkey } of deletes) {
     await agent.com.atproto.repo.deleteRecord({ repo, collection: DOCS, rkey });
   }
   console.log("done");

@@ -1,7 +1,7 @@
 import { MarkdownContent } from "@/components/RenderMarkdown";
 import { DocumentContent } from "@/components/standard-site/DocumentContent";
 import { getAllUnifiedPosts, getPostBySlug } from "@/lib/api";
-import { fetchDocument, blobUrl, documentUri, SITE_URL } from "@/lib/standard-site";
+import { fetchDocument, blobUrl, findSiteDocumentUri, SITE_URL } from "@/lib/standard-site";
 import { formatDateString } from "@/utils";
 import { Metadata } from "next";
 import Image from "next/image";
@@ -147,6 +147,9 @@ export default async function Post({ params }: Props) {
     const allPosts = await getAllUnifiedPosts();
     const postIndex = allPosts.findIndex((p) => p.slug === post.slug);
     const [previous, next] = [allPosts[postIndex + 1], allPosts[postIndex - 1]];
+    const documentUri = post.published
+      ? await findSiteDocumentUri(`/blog/${post.slug}`).catch(() => undefined)
+      : undefined;
 
     return (
       <PostShell
@@ -172,10 +175,8 @@ export default async function Post({ params }: Props) {
           </ul>
         }
       >
-        {/* standard.site document verification, for posts synced by publish-posts.ts */}
-        {post.published && (
-          <link rel="site.standard.document" href={documentUri(post.slug)} />
-        )}
+        {/* standard.site document verification, once publish-posts.ts has synced it */}
+        {documentUri && <link rel="site.standard.document" href={documentUri} />}
         <div className="mt-12 space-y-8">
           <MarkdownContent content={post.markdown} />
         </div>

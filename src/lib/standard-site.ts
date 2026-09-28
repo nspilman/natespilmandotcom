@@ -4,11 +4,10 @@ export const DID = "did:plc:c7frv4rcitff3p2nh7of5bcv";
 export const PDS_HOST = "https://oyster.us-east.host.bsky.network";
 
 // This site's own publication. Markdown posts in /blog sync to documents under
-// it via src/lib/publish-posts.ts, with rkey = slug and path = /blog/<slug>.
+// it via src/lib/publish-posts.ts. A document is identified by its path
+// (/blog/<slug>); its record key is an opaque TID, as standard.site requires.
 export const SITE_URL = "https://natespilman.com";
-export const SITE_PUBLICATION_URI = `at://${DID}/site.standard.publication/natespilman.com`;
-export const documentUri = (slug: string) =>
-  `at://${DID}/site.standard.document/${slug}`;
+export const SITE_PUBLICATION_URI = `at://${DID}/site.standard.publication/3mwljqvvwmk2c`;
 
 // --- Types ---
 
@@ -223,4 +222,12 @@ export function groupDocumentsByPublication(
           new Date(a.value.publishedAt).getTime()
       ),
   }));
+}
+
+// The synced record for a page on this site, if one exists yet.
+export async function findSiteDocumentUri(path: string): Promise<string | undefined> {
+  const docs = await fetchDocuments();
+  return docs.find(
+    (doc) => doc.value.site === SITE_PUBLICATION_URI && doc.value.path === path
+  )?.uri;
 }
