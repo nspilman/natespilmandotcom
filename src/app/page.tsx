@@ -1,17 +1,14 @@
 import { Icons } from "@/components/Icons";
 import Post from "@/components/Post";
 import Link from "next/link";
-import { getAllUnifiedPosts, getUnifiedPostsCount } from "@/lib/api";
+import { getAllUnifiedPosts } from "@/lib/api";
 
 export default async function Home() {
-  const [recentPosts, totalCount] = await Promise.all([
-    getAllUnifiedPosts(4),
-    getUnifiedPostsCount(),
-  ]);
+  const allPosts = await getAllUnifiedPosts();
+  const recentPosts = allPosts.slice(0, 4);
 
   return (
     <div>
-      {/* <SEO title="Home" /> */}
       <section className="hero">
         <div className="hero-container">
           <div className="mb-4 text-white">
@@ -40,26 +37,10 @@ export default async function Home() {
                 href="/blog"
                 className="transition-colors text-lg font-medium"
               >
-                View All Posts ({totalCount - recentPosts.length} more) →
+                View All Posts ({allPosts.length - recentPosts.length} more) →
               </Link>
             </div>
           </div>
-          {/* <div className="card-header">
-            <h2>{`Nate's Music`}</h2>
-            <hr />
-          </div>
-          <div className="card-music">
-            <h3>{song.frontmatter.title}</h3>
-            <p>{song.frontmatter.description}</p>
-            <div>
-              <div dangerouslySetInnerHTML={{ __html: song.html }} />
-            </div>
-          </div> */}
-          {/* <div className="button-container">
-            <Link href="/music">
-              <button>Listen</button>
-            </Link>
-          </div> */}
         </div>
       </main>
     </div>

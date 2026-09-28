@@ -76,3 +76,15 @@ test("images render with max height of the view height", async () => {
   const codeBlock = await getByRole("img");
   expect(Array.from(codeBlock.classList).includes("max-h-[100vh]")).toBe(true);
 });
+
+test("widgets and audio players are never wrapped in a <p>", () => {
+  cleanup();
+  const { container } = render(
+    <MarkdownContent
+      content={"<big-o-share>fallback</big-o-share>\n\n[song](https://example.com/a.mp3)"}
+    />
+  );
+  // A <div> inside a <p> is invalid HTML and breaks hydration.
+  expect(container.querySelector("input[type=range]")).not.toBeNull();
+  expect(container.querySelectorAll("p div")).toHaveLength(0);
+});

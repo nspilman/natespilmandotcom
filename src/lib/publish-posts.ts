@@ -11,10 +11,9 @@ import { AtpAgent } from "@atproto/api";
 import { remark } from "remark";
 import remarkGfm from "remark-gfm";
 import "dotenv/config";
-import { getPostBySlug, getPostSlugs } from "./api";
-import { DID, SITE_PUBLICATION_URI, SITE_URL } from "./standard-site";
+import { getPostBySlug, getPostSlugs, type Post } from "./api";
+import { fetchDocuments, rkeyFromUri, SITE_PUBLICATION_URI, SITE_URL } from "./standard-site";
 
-const PDS = "https://oyster.us-east.host.bsky.network";
 const DOCS = "site.standard.document";
 const PUB_RKEY = SITE_PUBLICATION_URI.split("/").pop()!;
 const RKEY = /^[A-Za-z0-9._:~-]{1,512}$/;
@@ -48,34 +47,27 @@ function plain(node: any): string {
     .join(joiners[node.type] ?? "");
 }
 
-function toRecord(slug: string) {
-  const { frontmatter, html: markdown } = getPostBySlug(slug);
-  const { title, description, date, tags } = frontmatter;
+function toRecord({ slug, title, description, date, tags, markdown }: Post) {
   return {
     $type: DOCS,
     site: SITE_PUBLICATION_URI,
     path: `/blog/${slug}`,
     title,
     ...(description && { description }),
-    publishedAt: new Date(date).toISOString(),
-    ...(tags?.filter(Boolean).length && { tags: tags.filter(Boolean) }),
+    publishedAt: date,
+    ...(tags.length && { tags }),
     content: { $type: "com.natespilman.blog.content", markdown },
     textContent: plain(remark().use(remarkGfm).parse(markdown)),
   };
 }
 
 async function listOurDocs() {
-  const docs = new Map<string, any>();
-  let cursor = "";
-  do {
-    const url = `${PDS}/xrpc/com.atproto.repo.listRecords?repo=${DID}&collection=${DOCS}&limit=100${cursor && `&cursor=${cursor}`}`;
-    const data = await (await fetch(url)).json();
-    for (const r of data.records) {
-      if (r.value.site === SITE_PUBLICATION_URI) docs.set(r.uri.split("/").pop(), r.value);
-    }
-    cursor = data.records.length ? data.cursor ?? "" : "";
-  } while (cursor);
-  return docs;
+  const docs = await fetchDocuments();
+  return new Map<string, unknown>(
+    docs
+      .filter((doc) => doc.value.site === SITE_PUBLICATION_URI)
+      .map((doc) => [rkeyFromUri(doc.uri), doc.value])
+  );
 }
 
 // Compare everything except updatedAt, so re-running doesn't rewrite unchanged
@@ -91,7 +83,7 @@ const same = (a: any, b: any) =>
 async function main() {
   const preview = process.argv.indexOf("--preview");
   if (preview !== -1) {
-    const record = toRecord(process.argv[preview + 1]);
+    const record = toRecord(getPostBySlug(process.argv[preview + 1]));
     console.log(JSON.stringify({ ...record, content: "(markdown omitted)" }, null, 2));
     console.log(`\n--- textContent ---\n${record.textContent}`);
     return;
@@ -102,16 +94,19 @@ async function main() {
 
   const writes: { rkey: string; record: any; kind: "create" | "update" }[] = [];
   const published = new Set<string>();
-  for (const file of getPostSlugs()) {
-    const slug = file.replace(/\.md$/, "");
-    const { frontmatter } = getPostBySlug(slug);
-    if (!frontmatter.published) continue;
-    if (!RKEY.test(slug) || !frontmatter.title) {
-      console.warn(`skip ${JSON.stringify(slug)}: ${frontmatter.title ? "slug isn't a valid record key" : "no title"}`);
+  for (const post of getPostSlugs().map(getPostBySlug)) {
+    if (!post.published) continue;
+    const problem = !RKEY.test(post.slug) ? "slug isn't a valid record key"
+      : !post.title ? "no title"
+      : !post.date ? "no date"
+      : "";
+    if (problem) {
+      console.warn(`skip ${JSON.stringify(post.slug)}: ${problem}`);
       continue;
     }
+    const { slug } = post;
     published.add(slug);
-    const record = toRecord(slug);
+    const record = toRecord(post);
     const prev = existing.get(slug);
     if (!prev) writes.push({ rkey: slug, record, kind: "create" });
     else if (!same(record, prev)) {

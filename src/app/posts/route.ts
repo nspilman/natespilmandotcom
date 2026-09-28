@@ -9,14 +9,12 @@ export async function GET(req: Request) {
   const limit = limitParam ? parseInt(limitParam, 10) : undefined;
 
   try {
-    const posts = getPosts(limit).map(post => {
-      return {
-        title: post.frontmatter.title,
-        date: post.frontmatter.date,
-        description: post.frontmatter.description,
-        slug: post.fields.slug
-      }
-    });
+    const posts = getPosts(limit).map(({ title, date, description, slug }) => ({
+      title,
+      date,
+      description,
+      slug,
+    }));
     return NextResponse.json(posts);
   } catch (error) {
     return NextResponse.json(

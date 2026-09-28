@@ -1,7 +1,7 @@
 // AT Protocol data layer for standard.site publications
 
 export const DID = "did:plc:c7frv4rcitff3p2nh7of5bcv";
-const PDS_HOST = "https://oyster.us-east.host.bsky.network";
+export const PDS_HOST = "https://oyster.us-east.host.bsky.network";
 
 // This site's own publication. Markdown posts in /blog sync to documents under
 // it via src/lib/publish-posts.ts, with rkey = slug and path = /blog/<slug>.

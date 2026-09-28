@@ -37,7 +37,13 @@ const renderLink = ({ href, children }: { href: string; children: string }) => {
   return <a {...linkProps}>{children}</a>;
 };
 
+const rendersBlock = (el: any) =>
+  el.type === "element" &&
+  (el.tagName.includes("-") ||
+    (el.tagName === "a" && /\.(mp3|m3u8)$/.test(el.properties?.href ?? "")));
+
 type RendererFunction = (props: {
+  node?: any;
   href?: string;
   children: string;
   src?: string;
@@ -46,11 +52,8 @@ type RendererFunction = (props: {
 }) => JSX.Element;
 // Define the renderers with basic types
 const renderers: { [nodeType: string]: RendererFunction } = {
-  // Interactive widgets. Open and close tags on separate lines so markdown
-  // treats it as an HTML block, not inline HTML inside a <p>:
-  //   <big-o-growth>
-  //   </big-o-growth>
-  // Text between the tags is ignored here; it's the plain-text fallback
+  // Interactive widgets: <big-o-growth>fallback text</big-o-growth>.
+  // The text between the tags is ignored here; it's the plain-text fallback
   // that other standard.site readers show (see publish-posts.ts).
   "big-o-growth": () => <BigOGrowth />,
   "big-o-share": () => <BigOShare />,
@@ -90,7 +93,13 @@ const renderers: { [nodeType: string]: RendererFunction } = {
     }
     return <img src={src} alt={alt} className="max-h-[100vh] py-4" />;
   },
-  p: ({ children }) => {
+  p: ({ node, children }) => {
+    // A paragraph holding only a widget or audio player would put a <div>
+    // inside a <p>, which breaks hydration. Render it bare instead.
+    const kids = node.children.filter(
+      (c: any) => !(c.type === "text" && !c.value.trim())
+    );
+    if (kids.length === 1 && rendersBlock(kids[0])) return <>{children}</>;
     return <p className="py-2 leading-relaxed">{children}</p>;
   },
   ol: ({ children }) => {

@@ -1,8 +1,19 @@
 import fs from "fs";
 import { join } from "path";
 import matter from "gray-matter";
-import { Blog } from "@/app/types";
 import { fetchDocuments, rkeyFromUri, blobUrl, SITE_PUBLICATION_URI } from "@/lib/standard-site";
+
+// A markdown post from /blog. Frontmatter is loose YAML (dates arrive as Date
+// objects or strings, tags are often missing), so it's normalized here, once.
+export type Post = {
+  slug: string;
+  markdown: string;
+  title: string;
+  date: string; // ISO 8601, or "" for undated drafts
+  description: string;
+  tags: string[];
+  published: boolean;
+};
 
 export type UnifiedPost = {
   slug: string;
@@ -16,58 +27,43 @@ export type UnifiedPost = {
 
 const postsDirectory = join(process.cwd(), "blog");
 
-export function getPostSlugs() {
-  const allFiles = fs.readdirSync(postsDirectory);
-  const slugs = allFiles.filter((slug) => slug.endsWith(".md"));
-
-  return slugs;
+export function getPostSlugs(): string[] {
+  return fs
+    .readdirSync(postsDirectory)
+    .filter((file) => file.endsWith(".md"))
+    .map((file) => file.replace(/\.md$/, ""));
 }
 
-export function getPostBySlug(slug: string): Blog {
-  const realSlug = slug.replace(/\.md$/, "");
-  const fullPath = join(postsDirectory, `${realSlug}.md`);
-  const fileContents = fs.readFileSync(fullPath, "utf8");
-  const { data, content } = matter(fileContents);
-  const { date, description, favorite, published, title, tags } = data;
+export function getPostBySlug(slug: string): Post {
+  const file = fs.readFileSync(join(postsDirectory, `${slug}.md`), "utf8");
+  const { data, content } = matter(file);
+  const date = new Date(data.date);
   return {
-    id: realSlug,
-    html: content,
-    fields: {
-      slug: realSlug,
-    },
-    frontmatter: { date, description, favorite, published, title, tags },
+    slug,
+    markdown: content,
+    title: data.title ?? "",
+    date: isNaN(date.getTime()) ? "" : date.toISOString(),
+    description: data.description ?? "",
+    tags: (data.tags ?? []).filter(Boolean),
+    published: data.published === true || data.published === "true",
   };
 }
 
-export function getPosts(limit?: number): Blog[] {
-  const slugs = getPostSlugs();
-  try {
-    const posts = slugs
-      .map((slug) => getPostBySlug(slug))
-      .filter((post) => post.frontmatter.published)
-      // sort posts by date in descending order
-      .sort((post1, post2) =>
-        post1.frontmatter.date > post2.frontmatter.date ? -1 : 1
-      );
-    return typeof limit === 'number' ? posts.slice(0, limit) : posts;
-  } catch (e) {
-    console.log(e);
-    throw new Error("it broke");
-  }
+export function getPosts(limit?: number): Post[] {
+  const posts = getPostSlugs()
+    .map(getPostBySlug)
+    .filter((post) => post.published)
+    .sort((a, b) => (a.date > b.date ? -1 : 1));
+  return typeof limit === "number" ? posts.slice(0, limit) : posts;
 }
 
-export const getPostsCount = () => {
-  const slugs = getPostSlugs();
-  return slugs.length;
-}
-
-export async function getAllUnifiedPosts(limit?: number): Promise<UnifiedPost[]> {
+export async function getAllUnifiedPosts(): Promise<UnifiedPost[]> {
   const markdownPosts = getPosts().map((post): UnifiedPost => ({
-    slug: post.fields.slug,
-    title: post.frontmatter.title,
-    date: post.frontmatter.date,
-    description: post.frontmatter.description,
-    tags: post.frontmatter.tags || [],
+    slug: post.slug,
+    title: post.title,
+    date: post.date,
+    description: post.description,
+    tags: post.tags,
     source: "markdown",
   }));
 
@@ -78,28 +74,21 @@ export async function getAllUnifiedPosts(limit?: number): Promise<UnifiedPost[]>
       // Documents in this site's own publication are the markdown posts above.
       .filter((doc) => doc.value.site !== SITE_PUBLICATION_URI)
       .map((doc): UnifiedPost => ({
-      slug: rkeyFromUri(doc.uri),
-      title: doc.value.title,
-      date: doc.value.publishedAt,
-      description: doc.value.description || "",
-      tags: doc.value.tags || [],
-      source: "atproto",
-      coverImageUrl: doc.value.coverImage
-        ? blobUrl(doc.value.coverImage.ref.$link)
-        : undefined,
-    }));
+        slug: rkeyFromUri(doc.uri),
+        title: doc.value.title,
+        date: doc.value.publishedAt,
+        description: doc.value.description || "",
+        tags: doc.value.tags || [],
+        source: "atproto",
+        coverImageUrl: doc.value.coverImage
+          ? blobUrl(doc.value.coverImage.ref.$link)
+          : undefined,
+      }));
   } catch (e) {
     console.error("Failed to fetch AT Protocol documents:", e);
   }
 
-  const all = [...markdownPosts, ...atprotoPosts].sort(
+  return [...markdownPosts, ...atprotoPosts].sort(
     (a, b) => new Date(b.date).getTime() - new Date(a.date).getTime()
   );
-
-  return typeof limit === "number" ? all.slice(0, limit) : all;
-}
-
-export async function getUnifiedPostsCount(): Promise<number> {
-  const posts = await getAllUnifiedPosts();
-  return posts.length;
 }

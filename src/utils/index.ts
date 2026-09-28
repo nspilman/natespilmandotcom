@@ -4,5 +4,8 @@ export const formatDateString = (string: string): string => {
     year: "numeric",
     month: "long",
     day: "numeric",
+    // Posts are dated by calendar day (stored as UTC midnight); show that day
+    // no matter where this runs.
+    timeZone: "UTC",
   });
 };
