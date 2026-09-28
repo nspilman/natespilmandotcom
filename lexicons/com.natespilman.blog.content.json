@@ -1,0 +1,17 @@
+{
+  "lexicon": 1,
+  "id": "com.natespilman.blog.content",
+  "description": "Markdown content for a site.standard.document published from natespilman.com.",
+  "defs": {
+    "main": {
+      "type": "object",
+      "required": ["markdown"],
+      "properties": {
+        "markdown": {
+          "type": "string",
+          "description": "The post body as CommonMark + GFM. Interactive widgets appear as custom HTML elements (e.g. <big-o-growth>) whose inner text is a plain-text fallback. Readers that can't render them should use the document's textContent or link to the canonical URL."
+        }
+      }
+    }
+  }
+}

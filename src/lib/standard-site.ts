@@ -1,7 +1,14 @@
 // AT Protocol data layer for standard.site publications
 
-const DID = "did:plc:c7frv4rcitff3p2nh7of5bcv";
+export const DID = "did:plc:c7frv4rcitff3p2nh7of5bcv";
 const PDS_HOST = "https://oyster.us-east.host.bsky.network";
+
+// This site's own publication. Markdown posts in /blog sync to documents under
+// it via src/lib/publish-posts.ts, with rkey = slug and path = /blog/<slug>.
+export const SITE_URL = "https://natespilman.com";
+export const SITE_PUBLICATION_URI = `at://${DID}/site.standard.publication/natespilman.com`;
+export const documentUri = (slug: string) =>
+  `at://${DID}/site.standard.document/${slug}`;
 
 // --- Types ---
 

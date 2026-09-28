@@ -13,6 +13,8 @@ import CopyToClipboard from "react-copy-to-clipboard";
 import DocumentDuplicateIcon from "@heroicons/react/24/outline/DocumentDuplicateIcon";
 import HLSAudioPlayer from "./HLSAudioPlayer";
 import { MP3AudioPlayer } from "./Mp3AudioPlayer";
+import BigOGrowth from "./BigOGrowth";
+import BigOShare from "./BigOShare";
 
 SyntaxHighlighter.registerLanguage("tsx", tsx);
 SyntaxHighlighter.registerLanguage("typescript", typescript);
@@ -44,6 +46,14 @@ type RendererFunction = (props: {
 }) => JSX.Element;
 // Define the renderers with basic types
 const renderers: { [nodeType: string]: RendererFunction } = {
+  // Interactive widgets. Open and close tags on separate lines so markdown
+  // treats it as an HTML block, not inline HTML inside a <p>:
+  //   <big-o-growth>
+  //   </big-o-growth>
+  // Text between the tags is ignored here; it's the plain-text fallback
+  // that other standard.site readers show (see publish-posts.ts).
+  "big-o-growth": () => <BigOGrowth />,
+  "big-o-share": () => <BigOShare />,
   h1: ({ children }) => {
     return <h1 className="text-3xl font-semibold mt-10 mb-6">{children}</h1>;
   },

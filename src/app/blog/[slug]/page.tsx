@@ -1,11 +1,12 @@
 import { MarkdownContent } from "@/components/RenderMarkdown";
 import { DocumentContent } from "@/components/standard-site/DocumentContent";
 import { getAllUnifiedPosts, getPostBySlug } from "@/lib/api";
-import { fetchDocument, blobUrl } from "@/lib/standard-site";
+import { fetchDocument, blobUrl, documentUri } from "@/lib/standard-site";
 import { formatDateString } from "@/utils";
 import { Metadata } from "next";
 import Image from "next/image";
 import Link from "next/link";
+import { notFound } from "next/navigation";
 import React from "react";
 
 interface Props {
@@ -15,13 +16,18 @@ interface Props {
 }
 
 async function resolvePost(slug: string) {
+  let post;
   try {
-    const post = getPostBySlug(slug);
-    return { source: "markdown" as const, post };
+    post = getPostBySlug(slug);
   } catch {
     const record = await fetchDocument(slug);
     return { source: "atproto" as const, record };
   }
+  // Drafts (published: false) render in `next dev` only.
+  if (!post.frontmatter.published && process.env.NODE_ENV === "production") {
+    notFound();
+  }
+  return { source: "markdown" as const, post };
 }
 
 export async function generateMetadata({ params }: Props): Promise<Metadata> {
@@ -87,6 +93,10 @@ export default async function Post({ params }: { params: { slug: string } }) {
 
     return (
       <div className="min-h-screen px-6 py-12 md:px-8 lg:px-12 bg-gray-900/50">
+        {/* standard.site document verification, for posts synced by publish-posts.ts */}
+        {post.frontmatter.published && (
+          <link rel="site.standard.document" href={documentUri(params.slug)} />
+        )}
         <article className="mx-auto max-w-6xl">
           <div className="mb-16">
             <Link href="/blog" className="block">

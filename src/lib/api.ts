@@ -2,7 +2,7 @@ import fs from "fs";
 import { join } from "path";
 import matter from "gray-matter";
 import { Blog } from "@/app/types";
-import { fetchDocuments, rkeyFromUri, blobUrl } from "@/lib/standard-site";
+import { fetchDocuments, rkeyFromUri, blobUrl, SITE_PUBLICATION_URI } from "@/lib/standard-site";
 
 export type UnifiedPost = {
   slug: string;
@@ -74,7 +74,10 @@ export async function getAllUnifiedPosts(limit?: number): Promise<UnifiedPost[]>
   let atprotoPosts: UnifiedPost[] = [];
   try {
     const documents = await fetchDocuments();
-    atprotoPosts = documents.map((doc): UnifiedPost => ({
+    atprotoPosts = documents
+      // Documents in this site's own publication are the markdown posts above.
+      .filter((doc) => doc.value.site !== SITE_PUBLICATION_URI)
+      .map((doc): UnifiedPost => ({
       slug: rkeyFromUri(doc.uri),
       title: doc.value.title,
       date: doc.value.publishedAt,
