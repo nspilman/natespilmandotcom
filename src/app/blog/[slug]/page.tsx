@@ -20,7 +20,7 @@ async function resolvePost(slug: string) {
   try {
     post = getPostBySlug(slug);
   } catch {
-    const record = await fetchDocument(slug);
+    const record = await fetchDocument(slug).catch(() => notFound());
     return { source: "atproto" as const, record };
   }
   // Drafts (published: false) render in `next dev` only.
